@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header a{
+  color: black;
+}
+
+.RightSideItems li{
+  display: inline;
+  font-family: 'Prompt', sans-serif;
+  margin: 10px;
+}
+
+.LeftSideHeader{
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+
+.RightSideItems{
+  margin-right: 3rem;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.RightSideItems a{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Introduction{
+  text-align: center;
+}
+
+.IntroductionName{
+  margin-top: 250px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  Font-Size: 50px;
+}
+
+.IntroductionProfession{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  Font-Size: 25px;
+}
+
+.ScrollToTopArrow{
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  position: fixed;
+}
+
+.Arrow{
+  font-size: 50px;
+  background: none;
+  border: none;
+  color: inherit;
+  outline: inherit;
+  cursor: pointer;
+}
