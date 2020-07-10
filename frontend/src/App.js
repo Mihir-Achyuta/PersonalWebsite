@@ -24,46 +24,39 @@ class App extends Component {
             <div className="App">
               <div class="header">
               <ul>
-                <a href="#" class = "LeftSideHeader" style = {{float:"left"}}>
-                  <li>&lt; Mihir A. &gt;</li>
-                </a>
                 <div class = "RightSideItems" style = {{float:"right"}}>
-                  <a href="#">
-                    <li>Home</li>
-                  </a>
-                  <a href="#">
-                    <li>About</li>
-                  </a>
-                  <a href="#">
-                    <li>Skills</li>
-                  </a>
-                  <a href="#">
-                    <li>Projects</li>
-                  </a>
-                  <a href="#">
-                    <li> Contact </li>
-                    </a>
-                  </div>
+                  <li>&lt; Mihir A. &gt;</li>
+                </div>
               </ul>
             </div>
             <div class="Introduction">
               <div class="IntroductionName">
-                <p>Hey I'm Mihir</p>
+                <p>Hey I'm Mihir: A guy who likes building things</p>
               </div>
-              <div class="IntroductionProfession">
-                <p>A guy who likes building things</p>
-              </div>
-            </div>
-            <div class="ScrollToTopArrow">
-              <button class = "Arrow" type="button" name="ScrollUp"><span class="jam jam-arrow-circle-up"></span></button>
             </div>
             <div class="TransitionAbout">
+              <div class = "TransitionNavbar">
+              <a href="#">
+                <li>Home</li>
+              </a>
+              <a href="#">
+                <li>About</li>
+              </a>
+              <a href="#">
+                <li>Skills</li>
+              </a>
+              <a href="#">
+                <li>Projects</li>
+              </a>
+              <a href="#">
+                <li> Contact </li>
+              </a>
+              </div>
               <div class="TransitionQuestion">
                 <p>So who am I?</p>
               </div>
             </div>
             <header className="App-header">
-              <h1 className="App-title">Test App</h1>
             </header>
               <p className="App-intro">{this.state.apiResponse}</p>
           </div>
