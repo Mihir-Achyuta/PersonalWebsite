@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar";
-import Introduction from "./components/Introduction";
-import Transition from "./components/Transition";
-import Header from "./components/Header";
+import Navbar from "./components/FrontPage/Navbar";
+import Introduction from "./components/FrontPage/Introduction";
+import Transition from "./components/FrontPage/Transition";
+import Header from "./components/FrontPage/Header";
+import Front_Page from "./components/Front_Page"
 
 import "./App.css";
 
@@ -26,10 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Introduction/>
-        <Navbar/>
-        <Transition/>
+        <Front_Page/>
         {
         //connects backend with frontend
         //<p className="App-intro">{this.state.apiResponse}</p>

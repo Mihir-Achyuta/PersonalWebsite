@@ -22,6 +22,21 @@ a{
   color: black;
 }
 
+.LeftSideItems{
+  float: left;
+}
+
+.Hamburger{
+  margin-left: 50px;
+}
+
+.HamburgerLines{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
 .RightSideItems{
   margin-left: 2rem;
   margin-top: 2rem;
@@ -45,8 +60,13 @@ a{
 }
 
 .TransitionAbout{
-  float: right;
+  margin-top: 100px;
 }
+
+.TransitionQuestion{
+  margin: auto;
+}
+
 
 .TransitionNavbar{
   margin-top: 300px;
