@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import Front_Page from "./components/Front_Page"
-import Skillz from "./components/Skillz"
+import Front_Page from "./components/Front_Page";
+import Skillz from "./components/Skillz";
+import Project from "./components/Project";
+import Learning from "./components/Learning";
+import Contact from "./components/Contact";
 import "./App.css";
 
 class App extends Component {
@@ -25,6 +28,9 @@ class App extends Component {
       <div className="App">
         <Front_Page/>
         <Skillz/>
+        <Project/>
+        <Learning/>
+        <Contact/>
         {
         //connects backend with frontend
         //<p className="App-intro">{this.state.apiResponse}</p>
