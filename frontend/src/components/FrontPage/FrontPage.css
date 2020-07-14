@@ -1,0 +1,39 @@
+li{
+  display: inline;
+}
+
+.header a{
+  color: black;
+}
+
+.LeftSideItems{
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Prompt', sans-serif;
+  float: left;
+  color:#F64C72;
+}
+
+.BurgerPosition{
+  padding: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.HamburgerLines{
+  width: 35px;
+  height: 5px;
+  background-color:#F64C72;
+  margin: 6px 0;
+}
+
+.RightSideItems{
+  float: right;
+}
+
+.FP{
+  background-color: #2F2FA2;
+}

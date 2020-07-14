@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Front_Page from "./components/Front_Page";
-import Skillz from "./components/Skillz";
-import Project from "./components/Project";
-import Learning from "./components/Learning";
-import Contact from "./components/Contact";
+import Front_Page from "./components/FrontPage/Front_Page";
+import Skillz from "./components/SkillPage/Skillz";
+import Project from "./components/ProjectPage/Project";
+import Learning from "./components/LearnPage/Learning";
+import Contact from "./components/ContactPage/Contact";
 import "./App.css";
 
 class App extends Component {

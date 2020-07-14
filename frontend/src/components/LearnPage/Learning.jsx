@@ -1,5 +1,5 @@
 import React from "react";
-import Arrow from "./Learn/down.svg"
+import Arrow from "./down.svg"
 
 function Learning(){
   return(

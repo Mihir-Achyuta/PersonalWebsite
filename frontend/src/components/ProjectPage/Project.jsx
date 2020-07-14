@@ -1,5 +1,5 @@
 import React from "react";
-import Arrow from "./Projects/down.svg"
+import Arrow from "./down.svg"
 
 function Project(){
   return(
