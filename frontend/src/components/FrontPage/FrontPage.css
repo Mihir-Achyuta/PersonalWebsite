@@ -2,17 +2,51 @@ li{
   display: inline;
 }
 
-.header a{
-  color: black;
+.FP{
+  background-color: #2F2FA2;
 }
 
 .LeftSideItems{
-  margin-left: 2rem;
-  margin-top: 2rem;
-  font-size: 2.5rem;
+  border: 1px solid red;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 50px;
   font-family: 'Prompt', sans-serif;
   float: left;
   color:#F64C72;
+}
+
+.RightSideItems{
+  float: right;
+  margin-right: 50px;
+}
+
+.TransitionNavbar{
+  border: 1px solid red;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.TransitionNavbar a{
+  list-style-type: none;
+  color : white;
+  margin: 50px 50px;
+  font-size: 30px;
+  font-family: 'Prompt', sans-serif;
+}
+
+.Introduction{
+  border: 1px solid red;
+  width: 800px;
+  float: right;
+  margin-top: 250px;
+}
+
+.IntroductionName{
+  margin: auto;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  Font-Size: 50px;
 }
 
 .BurgerPosition{
@@ -30,10 +64,20 @@ li{
   margin: 6px 0;
 }
 
-.RightSideItems{
-  float: right;
+.TransitionAbout{
+  margin-top: 100px;
 }
 
-.FP{
-  background-color: #2F2FA2;
+.TransitionQuestion{
+  margin: auto;
+  margin-left: 750px;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.icon-tabler-arrow-up{
+  padding: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }

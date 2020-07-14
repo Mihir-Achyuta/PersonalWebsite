@@ -18,45 +18,6 @@ a{
   text-align: center;
 }
 
-.Introduction{
-  border: 1px solid red;
-  width: 800px;
-  float: right;
-  margin-top: 250px;
-}
-
-.IntroductionName{
-  margin: auto;
-  font-family: 'Dosis', sans-serif;
-  font-weight: 700;
-  Font-Size: 50px;
-}
-
-.TransitionAbout{
-  margin-top: 100px;
-}
-
-.TransitionQuestion{
-  margin: auto;
-}
-
-
-.TransitionNavbar{
-  border: 1px solid red;
-  display: inline-block;
-}
-
-.TransitionNavbar a{
-  list-style-type: none;
-  color : #99738E;
-}
-
-.TransitionQuestion{
-  margin-left: 750px;
-  border: 1px solid red;
-  width: 200px;
-}
-
 .FrontendSkills{
   border: 1px solid red;
   display: inline-block;
