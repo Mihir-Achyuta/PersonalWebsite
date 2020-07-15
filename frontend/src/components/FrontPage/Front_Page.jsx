@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import BurgerArrow from "./BurgerArrow";
 import Introduction from "./Introduction";
 import Transition from "./Transition";
 import Header from "./Header";
@@ -10,8 +10,8 @@ function Front_Page(){
     <div class = "FP">
       <Header/>
       <Introduction/>
-      <Navbar/>
       <Transition/>
+      <BurgerArrow/>
     </div>
   );
 }

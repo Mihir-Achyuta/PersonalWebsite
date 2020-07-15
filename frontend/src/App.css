@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  color:white;
 }
 
 ul{
@@ -16,6 +17,10 @@ a{
 
 .App {
   text-align: center;
+}
+
+.SkillzHeader{
+  margin-top: 600px;
 }
 
 .FrontendSkills{

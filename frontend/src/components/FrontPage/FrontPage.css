@@ -2,12 +2,12 @@ li{
   display: inline;
 }
 
-.FP{
+body{
   background-color: #2F2FA2;
+  font-family: 'Prompt', sans-serif;
 }
 
 .LeftSideItems{
-  border: 1px solid red;
   margin-left: 50px;
   margin-top: 50px;
   font-size: 50px;
@@ -22,7 +22,6 @@ li{
 }
 
 .TransitionNavbar{
-  border: 1px solid red;
   display: inline-block;
   margin-top: 50px;
 }
@@ -33,20 +32,21 @@ li{
   margin: 50px 50px;
   font-size: 30px;
   font-family: 'Prompt', sans-serif;
+  text-transform: uppercase;
 }
 
 .Introduction{
-  border: 1px solid red;
-  width: 800px;
-  float: right;
-  margin-top: 250px;
+  margin-top: 200px;
+  float: left;
+  margin-left: 50px;
 }
 
 .IntroductionName{
   margin: auto;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-weight: 700;
   Font-Size: 50px;
+  color:white;
 }
 
 .BurgerPosition{
@@ -69,10 +69,22 @@ li{
 }
 
 .TransitionQuestion{
-  margin: auto;
-  margin-left: 750px;
-  border: 1px solid red;
-  width: 200px;
+  float: right;
+  margin-right: 300px;
+  margin-top: 225px;
+}
+
+.TransitionButton{
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  color: #F64C72;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.TransitionButton:hover{
+  background-color: #F64C72;
 }
 
 .icon-tabler-arrow-up{
