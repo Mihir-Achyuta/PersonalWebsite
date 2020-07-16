@@ -77,14 +77,19 @@ body{
 .TransitionButton{
   text-decoration: none;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
   color: #F64C72;
   font-size: 30px;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: consolas;
 }
 
 .TransitionButton:hover{
-  background-color: #F64C72;
+  background: #F64C72;
+  color: white;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 10px #F64C72, 0 0 40px #F64C72, 0 0 10px #F64C72, 0 0 40px #F64C72;
 }
 
 .icon-tabler-arrow-up{
