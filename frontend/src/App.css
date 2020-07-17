@@ -18,29 +18,3 @@ a{
 .App {
   text-align: center;
 }
-
-.SkillzHeader{
-  margin-top: 800px;
-}
-
-.FrontendSkills{
-  border: 1px solid red;
-  display: inline-block;
-  margin: 50px 50px;
-}
-
-.BackendSkills{
-  border: 1px solid red;
-  display: inline-block;
-  margin: 50px 50px;
-}
-
-.ToolsSkills{
-  border: 1px solid red;
-  display: inline-block;
-  margin: 50px 50px;
-}
-
-.DabbedThings{
-  border : 1px solid red;
-}
