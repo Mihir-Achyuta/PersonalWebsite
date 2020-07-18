@@ -8,6 +8,11 @@
   margin: 50px 50px;
 }
 
+.JQuery-Icon{
+  width: 20px;
+  height: 20px;
+}
+
 .BackendSkills{
   border: 1px solid red;
   display: inline-block;
