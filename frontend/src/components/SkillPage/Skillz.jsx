@@ -13,7 +13,6 @@ function Skillz(){
       <FrontendTool/>
       <BackendTool/>
       <ToolTool/>
-      <DabbedTool/>
     </div>
   );
 }
