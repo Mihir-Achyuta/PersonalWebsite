@@ -3,7 +3,7 @@ import React from "react";
 class Header extends React.Component {
   render() {
     return (
-      <header className="Header">
+      <div className="Header">
         <div className="Header-Logo">
           <h1 className="Header-Logo-Left">Mihir</h1>
         </div>
@@ -17,7 +17,7 @@ class Header extends React.Component {
             <li>Resume</li>
           </ul>
         </nav>
-      </header>
+      </div>
     );
   }
 }

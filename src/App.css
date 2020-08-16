@@ -1,3 +1,23 @@
-.App {
-  text-align: center;
+li {
+  list-style-type: none;
 }
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header-Logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.Header-Unordered-List li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+/* https://codepen.io/Sukhjinder-arora/pen/OZGomv?editors=1100 */
