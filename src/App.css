@@ -9,15 +9,157 @@ li {
 }
 
 .Header-Logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
+  font-size: 100%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.Header-Navbar {
+  margin-right: 5%;
+}
+
+.Header-Unordered-List {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  margin-right: 5%;
 }
 
 .Header-Unordered-List li {
   text-align: center;
-  margin: 15px auto;
+  margin-left: 45px;
 }
 
+/* The flexbox navbar and the react version of it */
 /* https://codepen.io/Sukhjinder-arora/pen/OZGomv?editors=1100 */
+/* https://codepen.io/danbuda/pen/mAVALa */
+
+.Homepage {
+  margin-top: 5%;
+}
+.Homepage-Text-Div {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.Homepage-Grid {
+  margin: 0;
+  /* display: inline-flex; */
+}
+
+.Homepage-Greeting,
+.Homepage-Name {
+  display: flex;
+  margin-left: 10%;
+  font-size: 500%;
+}
+
+.Homepage-Description,
+.Homepage-Technology {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.Homepage-Description {
+  font-size: 400%;
+}
+
+.Homepage-Icons {
+  margin-top: 5%;
+}
+
+.Homepage-Icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.Homepage-Identification-Div {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.About-Header {
+  font-size: 150%;
+}
+
+.About-Statement-Div {
+  margin: auto;
+  width: 50%;
+}
+
+.About-Statement {
+  text-align: justify;
+}
+
+.About-Technology-Button {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.Front-Back-Tool {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Front-Back-Tool ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.Skills-Projects-Button-Div {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.Projects-One-Div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Projects-One-Description-Header,
+.Projects-One-Description-Text,
+.Projects-One-Stack-Header,
+.Projects-One-Stack-Text {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Learning {
+  margin-top: 7%;
+}
+
+.Learning-Course-One {
+  background-image: url(https://picsum.photos/300/200);
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.Contact {
+  margin-top: 7%;
+}
+
+.Footer {
+  margin-top: 7%;
+}
+
+.Footer img {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.Absolute-Icons-Arrow-Up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.Absolute-Icons-Hamburger {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}

@@ -6,7 +6,6 @@ class Contact extends React.Component {
       <section className="Contact">
         <form>
           <div className="Contact-Name-Div">
-            <label className="Contact-Name">Name</label>
             <input
               type="text"
               placeholder="Enter Name"
@@ -14,7 +13,6 @@ class Contact extends React.Component {
             ></input>
           </div>
           <div className="Contact-Email-Div">
-            <label className="Contact-Email">Email</label>
             <input
               className="Contact-Email-Text"
               type="text"
@@ -22,7 +20,6 @@ class Contact extends React.Component {
             ></input>
           </div>
           <div className="Contact-Message-Div">
-            <label className="Contact-Message">Message</label>
             <textarea
               className="Contact-Message-Text"
               placeholder="Enter Message"

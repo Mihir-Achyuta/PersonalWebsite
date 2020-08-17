@@ -8,18 +8,16 @@ class Learning extends React.Component {
           Where I've Learnt Programming and Web Dev
         </h1>
         <div className="Learning-Course-One">
-          <p>Lorem ipsum dolor sit amet</p>
-          <p>Lorem ipsum dolor sit amet, consectetur</p>
-          <img
-            className="Learning-Course-One-Picture"
-            src="https://picsum.photos/200/200"
-            alt="Project"
-          />
-          <img
-            className="Learning-Course-One-Icon"
-            src="https://img.icons8.com/material-sharp/24/000000/github.png"
-            alt="Github"
-          />
+          <div className="Learning-Course-One-Text">
+            <h2>One Two Three Four</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img
+              className="Learning-Course-One-Icon"
+              src="https://img.icons8.com/material-sharp/24/000000/github.png"
+              alt="Github"
+            />
+          </div>
         </div>
       </section>
     );

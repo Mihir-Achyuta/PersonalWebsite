@@ -5,12 +5,12 @@ class Homepage extends React.Component {
     return (
       <section className="Homepage">
         <div className="Homepage-Text-Div">
-          <h1 className="Homepage-Greeting">Hi</h1>
-          <h1 className="Homepage-Name">I'm Mihir</h1>
-          <h2 className="Homepage-Description">
-            A Guy Interested In Fullstack Web Development
+          <h1 className="Homepage-Greeting Homepage-Grid">Hi</h1>
+          <h2 className="Homepage-Description Homepage-Grid">
+            A Fullstack Developer
           </h2>
-          <p className="Homepage-Technology">(In Javascript)</p>
+          <h1 className="Homepage-Name Homepage-Grid">I'm Mihir</h1>
+          <p className="Homepage-Technology Homepage-Grid">(In Javascript)</p>
         </div>
         <div className="Homepage-Icons">
           <img
