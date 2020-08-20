@@ -16,6 +16,11 @@ class Header extends React.Component {
             <li>Contact</li>
             <li>Resume</li>
           </ul>
+          <img
+            className="Header-Hamburger"
+            src="https://img.icons8.com/android/24/000000/menu.png"
+            alt="Hamburger Menu"
+          />
         </nav>
       </div>
     );

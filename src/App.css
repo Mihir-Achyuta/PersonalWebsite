@@ -1,3 +1,20 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  /* max-width: 50em; */
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 li {
   list-style-type: none;
 }
@@ -28,6 +45,10 @@ li {
 .Header-Unordered-List li {
   text-align: center;
   margin-left: 45px;
+}
+
+.Header-Hamburger {
+  display: none;
 }
 
 /* The flexbox navbar and the react version of it */
@@ -63,6 +84,52 @@ li {
 
 .Homepage-Description {
   font-size: 400%;
+}
+
+@media screen and (max-width: 1100px) {
+  .Homepage-Greeting,
+  .Homepage-Name {
+    font-size: 400%;
+  }
+  .Homepage-Description {
+    font-size: 300%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .Homepage-Greeting,
+  .Homepage-Name {
+    font-size: 300%;
+  }
+  .Homepage-Description {
+    font-size: 200%;
+  }
+  .Header-Unordered-List {
+    display: none;
+  }
+  .Header-Hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Homepage-Greeting,
+  .Homepage-Name {
+    font-size: 250%;
+  }
+  .Homepage-Description {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Homepage-Greeting,
+  .Homepage-Name {
+    font-size: 200%;
+  }
+  .Homepage-Description {
+    font-size: 100%;
+  }
 }
 
 .Homepage-Icons {
@@ -125,6 +192,19 @@ li {
 .Projects-One-Stack-Text {
   display: flex;
   justify-content: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+  .Projects-One-Div {
+    flex-direction: column;
+  }
+  .Projects-One-Description-Header,
+  .Projects-One-Description-Text,
+  .Projects-One-Stack-Header,
+  .Projects-One-Stack-Text {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .Learning {
