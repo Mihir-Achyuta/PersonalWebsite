@@ -5,17 +5,19 @@ class Header extends React.Component {
     return (
       <div className="Header">
         <div className="Header-Logo">
-          <h1 className="Header-Logo-Left">Mihir</h1>
+          <h1 className="Header-Logo-Left">
+            {"<"}MIHIR{"/>"}
+          </h1>
         </div>
         <nav className="Header-Navbar">
-          <ul className="Header-Unordered-List">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>Resume</li>
-          </ul>
+          <ol className="Header-Unordered-List">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SKILLS</li>
+            <li>PROJECTS</li>
+            <li>CONTACT</li>
+            <li>RESUME</li>
+          </ol>
           <img
             className="Header-Hamburger"
             src="https://img.icons8.com/android/24/000000/menu.png"

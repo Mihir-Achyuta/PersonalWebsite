@@ -1,11 +1,14 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 class Homepage extends React.Component {
   render() {
     return (
       <section className="Homepage">
         <div className="Homepage-Text-Div">
-          <h1 className="Homepage-Greeting Homepage-Grid">Hi</h1>
+          <h1 className="Homepage-Greeting Homepage-Grid">Hi,</h1>
           <h2 className="Homepage-Description Homepage-Grid">
             A Fullstack Developer
           </h2>
@@ -13,24 +16,25 @@ class Homepage extends React.Component {
           <p className="Homepage-Technology Homepage-Grid">(In Javascript)</p>
         </div>
         <div className="Homepage-Icons">
-          <img
+          <FontAwesomeIcon
             className="Homepage-Icon"
-            src="https://img.icons8.com/material-sharp/24/000000/github.png"
-            alt="Github"
+            icon={faGithubSquare}
+            size="3x"
           />
-          <img
+          <FontAwesomeIcon
             className="Homepage-Icon"
-            src="https://img.icons8.com/android/24/000000/linkedin.png"
-            alt="Linkedin"
+            icon={faLinkedin}
+            size="3x"
           />
-          <img
+          <FontAwesomeIcon className="Homepage-Icon" icon={faFile} size="3x" />
+          <FontAwesomeIcon
             className="Homepage-Icon"
-            src="https://img.icons8.com/material-sharp/24/000000/open-resume.png"
-            alt="Resume"
+            icon={faEnvelope}
+            size="3x"
           />
         </div>
         <div className="Homepage-Identification-Div">
-          <button className="Homepage-Identification">So who am I?</button>
+          <button className="Homepage-Identification">WHO AM I?</button>
         </div>
       </section>
     );

@@ -13,8 +13,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Homepage />
+      <div class="Header-Homepage">
+        <Header />
+        <Homepage />
+      </div>
       <About />
       <Skills />
       <Projects />
