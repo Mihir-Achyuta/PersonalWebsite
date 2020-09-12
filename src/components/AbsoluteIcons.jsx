@@ -1,18 +1,20 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 class AbsoluteIcons extends React.Component {
   render() {
     return (
       <section className="Absolute-Icons">
-        <img
+        <FontAwesomeIcon
           className="Absolute-Icons-Arrow-Up"
-          src="https://img.icons8.com/android/24/000000/thick-arrow-pointing-up.png"
-          alt="Up Arrow"
+          icon={faArrowUp}
+          size="2x"
         />
-        <img
+        <FontAwesomeIcon
           className="Absolute-Icons-Hamburger"
-          src="https://img.icons8.com/android/24/000000/menu.png"
-          alt="Hamburger Menu"
+          icon={faBars}
+          size="2x"
         />
       </section>
     );

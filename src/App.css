@@ -50,9 +50,22 @@ li {
   margin-right: 5%;
 }
 
+.underline {
+  height: 3px;
+  background-color: #2f4858;
+  width: 0%;
+  transition: width 0.2s;
+  margin: 0 auto;
+}
+
+li:hover .underline {
+  width: 100%;
+}
+
 .Header-Unordered-List li {
   text-align: center;
   margin-left: 45px;
+  display: inline-block;
 }
 
 .Header-Hamburger {
@@ -104,7 +117,7 @@ li {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 870px) {
   .Homepage-Greeting,
   .Homepage-Name {
     font-size: 300%;
@@ -197,8 +210,15 @@ li {
   }
 }
 
+.About {
+  background-color: #2f4858;
+  color: #14bdad;
+  border-top: 5px solid #2f4858;
+}
+
 .About-Header {
-  font-size: 150%;
+  margin-top: 5%;
+  font-size: 250%;
 }
 
 .About-Statement-Div {
@@ -207,12 +227,52 @@ li {
 }
 
 .About-Statement {
-  text-align: justify;
+  text-align: center;
+  line-height: 2.5;
+  font-size: 130%;
+}
+
+.About-Technology-Button-Div {
 }
 
 .About-Technology-Button {
   margin-top: 10%;
   margin-bottom: 10%;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #2f4858;
+  color: #14bdad;
+  padding: 15px 30px;
+  border: 5px solid #14bdad;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1100px) {
+  .About-Statement-Div {
+    width: 70%;
+  }
+  .About-Header {
+    margin-top: 7%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .About-Statement-Div {
+    width: 85%;
+  }
+  .About-Header {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .About-Statement {
+    font-size: 100%;
+  }
+  .About-Header {
+    margin-top: 20%;
+  }
 }
 
 .Front-Back-Tool {
@@ -225,9 +285,38 @@ li {
   list-style: none;
 }
 
-.Skills-Projects-Button-Div {
-  margin-top: 10%;
+.Skills {
+  border-top: 5px solid #2f4858;
+  background-color: #14bdad;
+}
+
+.Skills-Header {
+  font-size: 250%;
+  margin-top: 7%;
+}
+
+.Skills-Projects-Button {
+  margin-top: 7%;
   margin-bottom: 10%;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #14bdad;
+  color: #2f4858;
+  padding: 15px 30px;
+  border: 5px solid #2f4858;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 600px) {
+  .Front-Back-Tool {
+    flex-direction: column;
+  }
+}
+
+.Projects {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .Projects-One-Div {
@@ -243,6 +332,11 @@ li {
   justify-content: flex-start;
 }
 
+.Projects-One-Icon {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
 @media screen and (max-width: 700px) {
   .Projects-One-Div {
     flex-direction: column;
@@ -256,29 +350,23 @@ li {
   }
 }
 
-.Learning {
-  margin-top: 7%;
-}
-
-.Learning-Course-One {
-  background-image: url(https://picsum.photos/300/200);
-  display: inline-block;
-  height: 200px;
-  width: 300px;
-  border-radius: 20px;
-}
-
 .Contact {
-  margin-top: 7%;
+  padding-top: 5%;
+  background-color: #2f4858;
+  padding-bottom: 5%;
+  color: #7ae2dd;
 }
 
 .Footer {
-  margin-top: 7%;
+  border-top: 5px solid #2f4858;
+  background-color: #7ae2dd;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-.Footer img {
-  margin-left: 2%;
-  margin-right: 2%;
+.Footer-Icon {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .Absolute-Icons-Arrow-Up {

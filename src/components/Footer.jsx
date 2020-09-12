@@ -1,24 +1,21 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 class Footer extends React.Component {
   render() {
     return (
       <section className="Footer">
         <p>Made by ©Mihir-Achyuta</p>
-        <img
-          src="https://img.icons8.com/material-sharp/24/000000/github.png"
-          alt="Github"
+        <FontAwesomeIcon
+          className="Footer-Icon"
+          icon={faGithubSquare}
+          size="2x"
         />
-        <img
-          src="https://img.icons8.com/android/24/000000/linkedin.png"
-          alt="Linkedin"
-        />
-        <a href="mailto: achyutamihir@gmail.com">
-          <img
-            src="https://img.icons8.com/android/24/000000/filled-message.png"
-            alt="Email"
-          />
-        </a>
+        <FontAwesomeIcon className="Footer-Icon" icon={faLinkedin} size="2x" />
+        <FontAwesomeIcon className="Footer-Icon" icon={faFile} size="2x" />
+        <FontAwesomeIcon className="Footer-Icon" icon={faEnvelope} size="2x" />
       </section>
     );
   }
