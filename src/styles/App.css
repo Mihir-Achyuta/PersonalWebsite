@@ -1,22 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /* max-width: 50em; */
   overflow-x: hidden;
   color: #2f4858;
   font-family: Lato;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+ul {
+  padding-left: 0;
+  list-style: none;
 }
 
 li {
@@ -32,8 +25,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-
-.Header-Logo {
+.Header .Header-Logo {
   font-size: 100%;
   margin-left: 2%;
   margin-top: 1%;
@@ -42,113 +34,93 @@ li {
 .Header-Navbar {
   margin-right: 5%;
 }
-
-.Header-Unordered-List {
+.Header-Navbar .Header-Unordered-List {
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-end; */
   margin-right: 5%;
 }
-
-.underline {
+.Header-Navbar .Header-Unordered-List .Header-List-Item {
+  text-align: center;
+  margin-left: 45px;
+  display: inline-block;
+}
+.Header-Navbar .Header-Unordered-List .Header-List-Item .underline {
   height: 3px;
   background-color: #2f4858;
   width: 0%;
   transition: width 0.2s;
   margin: 0 auto;
 }
-
-li:hover .underline {
+.Header-Navbar .Header-Unordered-List .Header-List-Item:hover .underline {
   width: 100%;
 }
-
-.Header-Unordered-List li {
-  text-align: center;
-  margin-left: 45px;
-  display: inline-block;
-}
-
-.Header-Hamburger {
+.Header-Navbar .Header-Hamburger {
   display: none;
+}
+@media screen and (max-width: 870px) {
+  .Header-Navbar .Header-Hamburger {
+    display: block;
+  }
+  .Header-Navbar .Header-Unordered-List {
+    display: none;
+  }
 }
 
 /* The flexbox navbar and the react version of it */
 /* https://codepen.io/Sukhjinder-arora/pen/OZGomv?editors=1100 */
 /* https://codepen.io/danbuda/pen/mAVALa */
-
 .Homepage {
   margin-top: 5%;
 }
-.Homepage-Text-Div {
+.Homepage .Homepage-Text-Div {
   display: grid;
   grid-template-columns: auto auto;
 }
-
-.Homepage-Grid {
+.Homepage .Homepage-Text-Div .Homepage-Grid {
   margin: 0;
-  /* display: inline-flex; */
 }
-
-.Homepage-Greeting,
-.Homepage-Name {
+.Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
   display: flex;
   margin-left: 10%;
   font-size: 500%;
 }
-
-.Homepage-Description,
-.Homepage-Technology {
+.Homepage .Homepage-Text-Div .Homepage-Description, .Homepage .Homepage-Text-Div .Homepage-Technology {
   display: flex;
   justify-content: flex-end;
   margin-right: 5%;
 }
-
-.Homepage-Description {
+.Homepage .Homepage-Text-Div .Homepage-Description {
   font-size: 400%;
 }
-
 @media screen and (max-width: 1100px) {
-  .Homepage-Greeting,
-  .Homepage-Name {
+  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
     font-size: 400%;
   }
-  .Homepage-Description {
+  .Homepage .Homepage-Text-Div .Homepage-Description {
     font-size: 300%;
   }
 }
-
 @media screen and (max-width: 870px) {
-  .Homepage-Greeting,
-  .Homepage-Name {
+  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
     font-size: 300%;
   }
-  .Homepage-Description {
+  .Homepage .Homepage-Text-Div .Homepage-Description {
     font-size: 200%;
   }
-  .Header-Unordered-List {
-    display: none;
-  }
-  .Header-Hamburger {
-    display: block;
-  }
 }
-
 @media screen and (max-width: 600px) {
-  .Homepage-Greeting,
-  .Homepage-Name {
+  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
     font-size: 250%;
   }
-  .Homepage-Description {
+  .Homepage .Homepage-Text-Div .Homepage-Description {
     font-size: 150%;
   }
 }
-
 @media screen and (max-width: 470px) {
-  .Homepage-Greeting,
-  .Homepage-Name {
+  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
     font-size: 200%;
   }
-  .Homepage-Description {
+  .Homepage .Homepage-Text-Div .Homepage-Description {
     font-size: 100%;
   }
 }
@@ -156,21 +128,17 @@ li:hover .underline {
 .Homepage-Icons {
   margin-top: 5%;
 }
-
-.Homepage-Icon {
+.Homepage-Icons .Homepage-Icon {
   margin-right: 25px;
   margin-left: 25px;
   color: #2f4858;
 }
 
 .Homepage-Identification-Div {
-  /* margin-top: 5%;
-  margin-bottom: 5%; */
   padding: 10%;
   padding-bottom: 20%;
 }
-
-.Homepage-Identification {
+.Homepage-Identification-Div .Homepage-Identification-Button {
   outline: none;
   cursor: pointer;
   font-size: 20px;
@@ -186,56 +154,73 @@ li:hover .underline {
     padding-bottom: 35%;
     margin-top: 5%;
   }
+
   .Homepage-Icons {
     margin-top: 10%;
   }
 }
-
 @media screen and (max-width: 850px) {
   .Homepage-Identification-Div {
     padding-bottom: 65%;
     margin-top: 10%;
   }
+
   .Homepage-Icons {
-    margin-top: 20%;
+    margin-top: 15%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .Homepage-Identification-Div {
     padding-bottom: 85%;
   }
+
   .Homepage-Icons {
-    margin-top: 30%;
+    margin-top: 20%;
   }
 }
-
 .About {
   background-color: #2f4858;
   color: #14bdad;
   border-top: 5px solid #2f4858;
 }
-
-.About-Header {
+.About .About-Header-Div .About-Header {
   margin-top: 5%;
   font-size: 250%;
 }
-
-.About-Statement-Div {
+.About .About-Statement-Div {
   margin: auto;
   width: 50%;
 }
-
-.About-Statement {
+.About .About-Statement-Div .About-Statement {
   text-align: center;
   line-height: 2.5;
   font-size: 130%;
 }
-
-.About-Technology-Button-Div {
+@media screen and (max-width: 1100px) {
+  .About .About-Statement-Div {
+    width: 70%;
+  }
+  .About .About-Header {
+    margin-top: 7%;
+  }
 }
-
-.About-Technology-Button {
+@media screen and (max-width: 850px) {
+  .About .About-Statement-Div {
+    width: 85%;
+  }
+  .About .About-Header {
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .About .About-Statement {
+    font-size: 100%;
+  }
+  .About .About-Header {
+    margin-top: 20%;
+  }
+}
+.About .About-Technology-Button {
   margin-top: 10%;
   margin-bottom: 10%;
   outline: none;
@@ -248,54 +233,20 @@ li:hover .underline {
   font-weight: 900;
 }
 
-@media screen and (max-width: 1100px) {
-  .About-Statement-Div {
-    width: 70%;
-  }
-  .About-Header {
-    margin-top: 7%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .About-Statement-Div {
-    width: 85%;
-  }
-  .About-Header {
-    margin-top: 15%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .About-Statement {
-    font-size: 100%;
-  }
-  .About-Header {
-    margin-top: 20%;
-  }
-}
-
 .Front-Back-Tool {
   display: flex;
   justify-content: space-evenly;
-}
-
-.Front-Back-Tool ul {
-  padding-left: 0;
-  list-style: none;
 }
 
 .Skills {
   border-top: 5px solid #2f4858;
   background-color: #14bdad;
 }
-
-.Skills-Header {
+.Skills .Skills-Header {
   font-size: 250%;
   margin-top: 7%;
 }
-
-.Skills-Projects-Button {
+.Skills .Skills-Projects-Button {
   margin-top: 7%;
   margin-bottom: 10%;
   outline: none;
@@ -313,41 +264,32 @@ li:hover .underline {
     flex-direction: column;
   }
 }
-
 .Projects {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-
-.Projects-One-Div {
+.Projects .Projects-One-Div {
   display: flex;
   justify-content: space-evenly;
 }
-
-.Projects-One-Description-Header,
-.Projects-One-Description-Text,
-.Projects-One-Stack-Header,
-.Projects-One-Stack-Text {
+.Projects .Projects-One-Div .Projects-One-Description-Header, .Projects .Projects-One-Div .Projects-One-Description-Text, .Projects .Projects-One-Div .Projects-One-Stack-Header, .Projects .Projects-One-Div .Projects-One-Stack-Text {
   display: flex;
   justify-content: flex-start;
 }
-
-.Projects-One-Icon {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
 @media screen and (max-width: 700px) {
-  .Projects-One-Div {
-    flex-direction: column;
-  }
-  .Projects-One-Description-Header,
-  .Projects-One-Description-Text,
-  .Projects-One-Stack-Header,
-  .Projects-One-Stack-Text {
+  .Projects .Projects-One-Div .Projects-One-Description-Header, .Projects .Projects-One-Div .Projects-One-Description-Text, .Projects .Projects-One-Div .Projects-One-Stack-Header, .Projects .Projects-One-Div .Projects-One-Stack-Text {
     display: flex;
     justify-content: center;
   }
+}
+@media screen and (max-width: 700px) {
+  .Projects .Projects-One-Div {
+    flex-direction: column;
+  }
+}
+.Projects .Projects-One-Icon {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .Contact {
@@ -363,8 +305,7 @@ li:hover .underline {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-
-.Footer-Icon {
+.Footer .Footer-Icon {
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -380,3 +321,7 @@ li:hover .underline {
   bottom: 10px;
   left: 10px;
 }
+
+/*# sourceMappingURL=App.css.map */
+
+/*# sourceMappingURL=App.css.map */

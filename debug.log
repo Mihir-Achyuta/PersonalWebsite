@@ -18,3 +18,9 @@
 [0912/141608.601:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
 [0912/141608.609:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
 [0912/141608.611:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)
+[0913/180620.170:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)
+[0913/180620.175:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0913/180620.176:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)
+[0913/204906.213:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)
+[0913/204906.218:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0913/204906.219:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)

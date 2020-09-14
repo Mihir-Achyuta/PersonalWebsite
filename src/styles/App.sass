@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap")
+
+body
+  margin: 0
+  text-align: center
+  overflow-x: hidden
+  color: #2f4858
+  font-family: Lato
+
+ul
+  padding-left: 0
+  list-style: none
+
+li
+  list-style-type: none
+
+.Header-Homepage
+  background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%)
+
+.Header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .Header-Logo
+    font-size: 100%
+    margin-left: 2%
+    margin-top: 1%
+
+.Header-Navbar
+  margin-right: 5%
+
+  .Header-Unordered-List
+    display: flex
+    flex-direction: row
+    margin-right: 5%
+
+    .Header-List-Item
+      text-align: center
+      margin-left: 45px
+      display: inline-block
+
+      .underline
+        height: 3px
+        background-color: #2f4858
+        width: 0%
+        transition: width 0.2s
+        margin: 0 auto
+
+      &:hover .underline
+        width: 100%
+
+  .Header-Hamburger
+    display: none
+
+  @media screen and (max-width: 870px)
+    .Header-Hamburger
+      display: block
+    .Header-Unordered-List
+      display: none
+
+/* The flexbox navbar and the react version of it
+/* https://codepen.io/Sukhjinder-arora/pen/OZGomv?editors=1100
+/* https://codepen.io/danbuda/pen/mAVALa
+
+.Homepage
+  margin-top: 5%
+
+  .Homepage-Text-Div
+    display: grid
+    grid-template-columns: auto auto
+
+    .Homepage-Grid
+      margin: 0
+
+    .Homepage-Greeting, .Homepage-Name
+      display: flex
+      margin-left: 10%
+      font-size: 500%
+
+    .Homepage-Description, .Homepage-Technology
+      display: flex
+      justify-content: flex-end
+      margin-right: 5%
+
+    .Homepage-Description
+      font-size: 400%
+
+    @media screen and (max-width: 1100px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 400%
+
+      .Homepage-Description
+        font-size: 300%
+
+    @media screen and (max-width: 870px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 300%
+
+      .Homepage-Description
+        font-size: 200%
+
+
+    @media screen and (max-width: 600px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 250%
+
+      .Homepage-Description
+        font-size: 150%
+
+    @media screen and (max-width: 470px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 200%
+
+      .Homepage-Description
+        font-size: 100%
+
+.Homepage-Icons
+  margin-top: 5%
+
+  .Homepage-Icon
+    margin-right: 25px
+    margin-left: 25px
+    color: #2f4858
+
+.Homepage-Identification-Div
+  padding: 10%
+  padding-bottom: 20%
+
+  .Homepage-Identification-Button
+    outline: none
+    cursor: pointer
+    font-size: 20px
+    background-color: #14bdad
+    color: #2f4858
+    padding: 15px 30px
+    border: 5px solid #2f4858
+    font-weight: 900
+
+@media screen and (max-width: 1100px)
+  .Homepage-Identification-Div
+    padding-bottom: 35%
+    margin-top: 5%
+
+  .Homepage-Icons
+    margin-top: 10%
+
+@media screen and (max-width: 850px)
+  .Homepage-Identification-Div
+    padding-bottom: 65%
+    margin-top: 10%
+
+  .Homepage-Icons
+    margin-top: 15%
+
+@media screen and (max-width: 600px)
+  .Homepage-Identification-Div
+    padding-bottom: 85%
+
+  .Homepage-Icons
+    margin-top: 20%
+
+.About
+  background-color: #2f4858
+  color: #14bdad
+  border-top: 5px solid #2f4858
+
+  .About-Header-Div
+    .About-Header
+      margin-top: 5%
+      font-size: 250%
+
+  .About-Statement-Div
+    margin: auto
+    width: 50%
+
+    .About-Statement
+      text-align: center
+      line-height: 2.5
+      font-size: 130%
+
+  @media screen and (max-width: 1100px)
+    .About-Statement-Div
+      width: 70%
+
+    .About-Header
+      margin-top: 7%
+
+  @media screen and (max-width: 850px)
+    .About-Statement-Div
+      width: 85%
+
+    .About-Header
+      margin-top: 15%
+
+  @media screen and (max-width: 600px)
+    .About-Statement
+      font-size: 100%
+
+    .About-Header
+      margin-top: 20%
+
+  .About-Technology-Button
+    margin-top: 10%
+    margin-bottom: 10%
+    outline: none
+    cursor: pointer
+    font-size: 20px
+    background-color: #2f4858
+    color: #14bdad
+    padding: 15px 30px
+    border: 5px solid #14bdad
+    font-weight: 900
+
+.Front-Back-Tool
+  display: flex
+  justify-content: space-evenly
+
+.Skills
+  border-top: 5px solid #2f4858
+  background-color: #14bdad
+
+  .Skills-Header
+    font-size: 250%
+    margin-top: 7%
+
+  .Skills-Projects-Button
+    margin-top: 7%
+    margin-bottom: 10%
+    outline: none
+    cursor: pointer
+    font-size: 20px
+    background-color: #14bdad
+    color: #2f4858
+    padding: 15px 30px
+    border: 5px solid #2f4858
+    font-weight: 900
+
+@media screen and (max-width: 600px)
+  .Front-Back-Tool
+    flex-direction: column
+
+.Projects
+  padding-top: 2%
+  padding-bottom: 2%
+
+  .Projects-One-Div
+    display: flex
+    justify-content: space-evenly
+
+    .Projects-One-Description-Header, .Projects-One-Description-Text, .Projects-One-Stack-Header, .Projects-One-Stack-Text
+      display: flex
+      justify-content: flex-start
+
+    @media screen and (max-width: 700px)
+      .Projects-One-Description-Header, .Projects-One-Description-Text, .Projects-One-Stack-Header, .Projects-One-Stack-Text
+        display: flex
+        justify-content: center
+
+  @media screen and (max-width: 700px)
+    .Projects-One-Div
+      flex-direction: column
+
+  .Projects-One-Icon
+    margin-left: 2.5%
+    margin-right: 2.5%
+
+.Contact
+  padding-top: 5%
+  background-color: #2f4858
+  padding-bottom: 5%
+  color: #7ae2dd
+
+.Footer
+  border-top: 5px solid #2f4858
+  background-color: #7ae2dd
+  padding-top: 2%
+  padding-bottom: 2%
+
+  .Footer-Icon
+    margin-left: 1%
+    margin-right: 1%
+
+.Absolute-Icons-Arrow-Up
+  position: fixed
+  bottom: 10px
+  right: 10px
+
+.Absolute-Icons-Hamburger
+  position: fixed
+  bottom: 10px
+  left: 10px
+
+/*# sourceMappingURL=App.css.map

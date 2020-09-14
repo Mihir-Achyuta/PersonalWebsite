@@ -34,7 +34,7 @@ class Homepage extends React.Component {
           />
         </div>
         <div className="Homepage-Identification-Div">
-          <button className="Homepage-Identification">WHO AM I?</button>
+          <button className="Homepage-Identification-Button">WHO AM I?</button>
         </div>
       </section>
     );

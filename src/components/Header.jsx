@@ -13,22 +13,22 @@ class Header extends React.Component {
         </div>
         <nav className="Header-Navbar">
           <ol className="Header-Unordered-List">
-            <li>
+            <li className="Header-List-Item">
               HOME<div className="underline"></div>
             </li>
-            <li>
+            <li className="Header-List-Item">
               ABOUT<div className="underline"></div>
             </li>
-            <li>
+            <li className="Header-List-Item">
               SKILLS<div className="underline"></div>
             </li>
-            <li>
+            <li className="Header-List-Item">
               PROJECTS<div className="underline"></div>
             </li>
-            <li>
+            <li className="Header-List-Item">
               CONTACT<div className="underline"></div>
             </li>
-            <li>
+            <li className="Header-List-Item">
               RESUME<div className="underline"></div>
             </li>
           </ol>
