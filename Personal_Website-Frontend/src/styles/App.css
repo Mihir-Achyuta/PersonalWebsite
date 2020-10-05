@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 body {
   margin: 0;
   text-align: center;
@@ -20,8 +21,65 @@ input {
   outline: none;
 }
 
+.Initial-Scene {
+  background: #2f4858;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.Initial-Scene-Loaded {
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.Initial-Header {
+  font-size: 400%;
+  margin: 0;
+  color: #14bdad;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Permanent Marker", cursive;
+}
+
+.Initial-Header:before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(90deg, #14bdad 40%, transparent 40%);
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: 3;
+  border-radius: 4px;
+  background-size: 200% 4px;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 8px #14bdad);
+  background-position: 80% 0;
+  animation: beforeLineAnim 2s linear infinite;
+}
+
+@keyframes beforeLineAnim {
+  45%, 50% {
+    background-position: -100% 0;
+  }
+  45% {
+    transform: scale(1);
+  }
+  50%, 95% {
+    transform: scale(1, -1);
+  }
+  95% {
+    background-position: 80% 0;
+  }
+}
 .Header-Homepage {
   background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%);
+  height: 100vh;
 }
 
 .Header {
