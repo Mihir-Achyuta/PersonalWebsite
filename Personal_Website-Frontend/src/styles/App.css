@@ -5,6 +5,7 @@ body {
   text-align: center;
   color: #2f4858;
   font-family: Lato;
+  overflow-x: hidden;
 }
 
 ul {

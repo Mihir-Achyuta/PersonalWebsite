@@ -8,7 +8,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AbsoluteIcons from "./components/AbsoluteIcons";
 import "./styles/App.css";
-import $ from "jquery";
 
 import * as Scroll from "react-scroll";
 import {
@@ -23,30 +22,30 @@ import {
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { contentLoaded: false, headerLoaded: false, isLoaded: false };
+    this.state = { contentLoaded: true, headerLoaded: true, isLoaded: true };
   }
   componentDidMount() {
-    setTimeout(
-      () =>
-        this.setState((state) => ({
-          headerLoaded: true,
-        })),
-      (document.body.style.overflow = "hidden"),
-      500
-    );
-    setTimeout(
-      () =>
-        this.setState((state) => ({
-          isLoaded: true,
-        })),
-      4500
-    );
-    setTimeout(() => {
-      document.body.style.overflow = "visible";
-      this.setState((state) => ({
-        contentLoaded: true,
-      }));
-    }, 5000);
+    // setTimeout(
+    //   () =>
+    //     this.setState((state) => ({
+    //       headerLoaded: true,
+    //     })),
+    //   (document.body.style.overflow = "hidden"),
+    //   500
+    // );
+    // setTimeout(
+    //   () =>
+    //     this.setState((state) => ({
+    //       isLoaded: true,
+    //     })),
+    //   4500
+    // );
+    // setTimeout(() => {
+    //   document.body.style.overflow = "visible";
+    //   this.setState((state) => ({
+    //     contentLoaded: true,
+    //   }));
+    // }, 5000);
   }
   scrollToTop() {
     window.scrollTo({
