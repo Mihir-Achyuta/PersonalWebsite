@@ -12,10 +12,23 @@ import "./styles/App.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isLoaded: true };
+    this.state = { isLoaded: true, headerLoaded: false };
   }
   componentDidMount() {
-    setTimeout(() => this.setState({ isLoaded: false }), 2000);
+    setTimeout(
+      () =>
+        this.setState((state) => ({
+          headerLoaded: false,
+        })),
+      100
+    );
+    setTimeout(
+      () =>
+        this.setState((state) => ({
+          isLoaded: !state.isLoaded,
+        })),
+      4500
+    );
   }
   render() {
     return (
@@ -27,7 +40,13 @@ class App extends React.Component {
               : "Initial-Scene Initial-Scene-Loaded"
           }
         >
-          <h1 className="Initial-Header">
+          <h1
+            className={
+              this.state.headerLoaded
+                ? "Initial-Header"
+                : "Initial-Header Initial-Header-Loaded"
+            }
+          >
             {"<"}MIHIR{"/>"}
           </h1>
         </div>

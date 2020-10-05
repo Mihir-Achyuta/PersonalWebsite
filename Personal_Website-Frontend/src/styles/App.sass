@@ -39,8 +39,20 @@ input
   position: fixed
   top: 50%
   left: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%) scale(0)
   font-family: 'Permanent Marker', cursive
+  transition: 0.5s
+
+.Initial-Header-Loaded
+  animation: loadHeader 4s
+
+@keyframes loadHeader
+  20%,80%
+    transform: translate(-50%,-50%) scale(1)
+  // 40%
+  //   transform: translate(-50%,-50%) scale(1)
+  // 100%
+  //   opacity: 0
 
 .Initial-Header:before
   position: absolute
