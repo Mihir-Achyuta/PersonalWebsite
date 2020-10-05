@@ -5,7 +5,7 @@ class Contact extends React.Component {
     return (
       <section className="Contact">
         <h1>Contact Me!</h1>
-        <form>
+        <form className="Contact-Form">
           <div className="Contact-Name-Div">
             <input
               type="text"
