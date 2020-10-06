@@ -3,49 +3,40 @@ import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Project from "./components/mini-components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AbsoluteIcons from "./components/AbsoluteIcons";
 import "./styles/App.css";
-
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Element } from "react-scroll";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { contentLoaded: true, headerLoaded: true, isLoaded: true };
+    this.state = { contentLoaded: false, headerLoaded: false, isLoaded: false };
   }
   componentDidMount() {
-    // setTimeout(
-    //   () =>
-    //     this.setState((state) => ({
-    //       headerLoaded: true,
-    //     })),
-    //   (document.body.style.overflow = "hidden"),
-    //   500
-    // );
-    // setTimeout(
-    //   () =>
-    //     this.setState((state) => ({
-    //       isLoaded: true,
-    //     })),
-    //   4500
-    // );
-    // setTimeout(() => {
-    //   document.body.style.overflow = "visible";
-    //   this.setState((state) => ({
-    //     contentLoaded: true,
-    //   }));
-    // }, 5000);
+    setTimeout(
+      () =>
+        this.setState((state) => ({
+          headerLoaded: true,
+        })),
+      (document.body.style.overflow = "hidden"),
+      500
+    );
+    setTimeout(
+      () =>
+        this.setState((state) => ({
+          isLoaded: true,
+        })),
+      4500
+    );
+    setTimeout(() => {
+      document.body.style.overflow = "visible";
+      this.setState((state) => ({
+        contentLoaded: true,
+      }));
+    }, 5000);
   }
   scrollToTop() {
     window.scrollTo({
@@ -71,7 +62,7 @@ class App extends React.Component {
               <Skills />
             </Element>
             <Element name="projects">
-              <Projects
+              <Project
                 projectName="Project Name 1"
                 description="Lorem ipsum dolor sit amet, consectetur"
                 stack="Lorem ipsum dolor sit amet, consectetur"
@@ -79,8 +70,9 @@ class App extends React.Component {
                 backColor="#2f4858"
                 textColor="#7ae2dd"
                 topBorder="#14bdad"
+                fadeLeft
               />
-              <Projects
+              <Project
                 projectName="Project Name 2"
                 description="Lorem ipsum dolor sit amet, consectetur"
                 stack="Lorem ipsum dolor sit amet, consectetur"
@@ -89,7 +81,7 @@ class App extends React.Component {
                 textColor="#2f4858"
                 topBorder="#2f4858"
               />
-              <Projects
+              <Project
                 projectName="Project Name 3"
                 description="Lorem ipsum dolor sit amet, consectetur"
                 stack="Lorem ipsum dolor sit amet, consectetur"
@@ -97,8 +89,9 @@ class App extends React.Component {
                 backColor="#2f4858"
                 textColor="#14bdad"
                 topBorder="#7ae2dd"
+                fadeLeft
               />
-              <Projects
+              <Project
                 projectName="Project Name 4"
                 description="Lorem ipsum dolor sit amet, consectetur"
                 stack="Lorem ipsum dolor sit amet, consectetur"

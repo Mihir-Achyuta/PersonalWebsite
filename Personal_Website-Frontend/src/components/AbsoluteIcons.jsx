@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import Fade from "react-reveal/Fade";
 
 class AbsoluteIcons extends React.Component {
   render() {

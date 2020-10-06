@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap")
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap")
 
+html
+  overflow-x: hidden
+
 body
   margin: 0
   text-align: center
@@ -277,6 +280,9 @@ a
       margin-top: 15%
 
   @media screen and (max-width: 600px)
+    .About-Statement-Div
+      width: 75%
+
     .About-Statement
       font-size: 100%
 
@@ -294,6 +300,14 @@ a
     padding: 15px 30px
     border: 5px solid #14bdad
     font-weight: 900
+  @media screen and ( max-width: 540px  )
+    .About-Technology-Button
+      font-size: 15px
+      padding: 10px 25px
+  @media screen and ( max-width: 540px  )
+    .About-Technology-Button
+      font-size: 15px
+      padding: 10px 25px
 
 .Front-Back-Tool
   display: flex
@@ -318,6 +332,10 @@ a
     padding: 15px 30px
     border: 5px solid #2f4858
     font-weight: 900
+  @media screen and ( max-width: 540px  )
+    .Skills-Projects-Button
+      font-size: 15px
+      padding: 10px 25px
 
 @media screen and (max-width: 600px)
   .Front-Back-Tool
@@ -406,12 +424,14 @@ a
     margin-right: 1%
 
 .Absolute-Icons-Arrow-Up
+  color: white
   position: fixed
   bottom: 10px
   right: 10px
   cursor: pointer
 
 .Absolute-Icons-Hamburger
+  color: white
   position: fixed
   bottom: 10px
   left: 10px

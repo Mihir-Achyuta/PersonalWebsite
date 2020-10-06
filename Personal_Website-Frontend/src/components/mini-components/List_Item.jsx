@@ -1,14 +1,5 @@
 import React from "react";
-import * as Scroll from "react-scroll";
-
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 class List_Item extends React.Component {
   handleClick() {
@@ -23,7 +14,7 @@ class List_Item extends React.Component {
           to={this.handleClick()}
           spy={true}
           smooth={true}
-          offset={50}
+          offset={0}
           duration={500}
           onSetActive={this.handleSetActive}
         >

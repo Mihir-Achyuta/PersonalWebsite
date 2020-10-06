@@ -1,15 +1,18 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
+import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 
 class About extends React.Component {
   render() {
     return (
       <section className="About">
-        <Fade>
+        <Fade left delay={500}>
           <div className="About-Header-Div">
             <h1 className="About-Header">Who am I :</h1>
           </div>
+        </Fade>
+        <Fade left delay={1000}>
           <div className="About-Statement-Div">
             <p className="About-Statement">
               I'm a senior attending Evergreen Valley High School that is
@@ -27,13 +30,15 @@ class About extends React.Component {
             to={"skills"}
             spy={true}
             smooth={true}
-            offset={50}
+            offset={0}
             duration={500}
             onSetActive={this.handleSetActive}
           >
-            <button className="About-Technology-Button">
-              WHAT TECH DO I WORK WITH?
-            </button>
+            <Bounce left delay={1500}>
+              <button className="About-Technology-Button">
+                WHAT TECH DO I WORK WITH?
+              </button>
+            </Bounce>
           </Link>
         </div>
       </section>
