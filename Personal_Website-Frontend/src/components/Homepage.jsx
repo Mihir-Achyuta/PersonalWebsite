@@ -16,22 +16,34 @@ class Homepage extends React.Component {
           <p className="Homepage-Technology Homepage-Grid">(In Javascript)</p>
         </div>
         <div className="Homepage-Icons">
-          <FontAwesomeIcon
-            className="Homepage-Icon"
-            icon={faGithubSquare}
-            size="3x"
-          />
-          <FontAwesomeIcon
-            className="Homepage-Icon"
-            icon={faLinkedin}
-            size="3x"
-          />
-          <FontAwesomeIcon className="Homepage-Icon" icon={faFile} size="3x" />
-          <FontAwesomeIcon
-            className="Homepage-Icon"
-            icon={faEnvelope}
-            size="3x"
-          />
+          <a href="">
+            <FontAwesomeIcon
+              className="Homepage-Icon"
+              icon={faGithubSquare}
+              size="3x"
+            />
+          </a>
+          <a href="">
+            <FontAwesomeIcon
+              className="Homepage-Icon"
+              icon={faLinkedin}
+              size="3x"
+            />
+          </a>
+          <a href="">
+            <FontAwesomeIcon
+              className="Homepage-Icon"
+              icon={faFile}
+              size="3x"
+            />
+          </a>
+          <a href="">
+            <FontAwesomeIcon
+              className="Homepage-Icon"
+              icon={faEnvelope}
+              size="3x"
+            />
+          </a>
         </div>
         <div className="Homepage-Identification-Div">
           <button className="Homepage-Identification-Button">WHO AM I?</button>

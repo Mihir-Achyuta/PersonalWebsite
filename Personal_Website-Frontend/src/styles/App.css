@@ -3,7 +3,6 @@
 body {
   margin: 0;
   text-align: center;
-  overflow-x: hidden;
   color: #2f4858;
   font-family: Lato;
 }
@@ -21,30 +20,37 @@ input {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+  color: #2f4858;
+}
+
 .Initial-Scene {
-  background: #2f4858;
   height: 100vh;
   width: 100vw;
   position: absolute;
+  background: #2f4858;
+  transform-origin: 50% -50%;
   transform: scale(1);
   z-index: 2;
 }
 
 .Initial-Scene-Loaded {
-  transition: 0.5s;
   transform: scale(0);
+  transform-origin: 50% -50%;
+  transition: 1s;
 }
 
 .Initial-Header {
+  font-family: "Permanent Marker", cursive;
   font-size: 400%;
-  margin: 0;
-  color: #14bdad;
   position: fixed;
   top: 50%;
   left: 50%;
+  margin: 0;
   transform: translate(-50%, -50%) scale(0);
-  font-family: "Permanent Marker", cursive;
   transition: 0.5s;
+  color: #14bdad;
 }
 
 .Initial-Header-Loaded {
@@ -101,6 +107,7 @@ input {
   font-size: 100%;
   margin-left: 2%;
   margin-top: 1%;
+  font-family: "Permanent Marker", cursive;
 }
 
 .Header-Navbar {
@@ -115,6 +122,7 @@ input {
   text-align: center;
   margin-left: 45px;
   display: inline-block;
+  cursor: pointer;
 }
 .Header-Navbar .Header-Unordered-List .Header-List-Item .underline {
   height: 3px;
@@ -204,6 +212,10 @@ input {
   margin-right: 25px;
   margin-left: 25px;
   color: #2f4858;
+}
+.Homepage-Icons .Homepage-Icon:hover {
+  transform: rotate(360deg);
+  transition: 0.8s;
 }
 
 .Homepage-Identification-Div {
