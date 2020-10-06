@@ -10,6 +10,7 @@ class AbsoluteIcons extends React.Component {
           className="Absolute-Icons-Arrow-Up"
           icon={faArrowUp}
           size="2x"
+          onClick={this.props.scrollTop}
         />
         <FontAwesomeIcon
           className="Absolute-Icons-Hamburger"

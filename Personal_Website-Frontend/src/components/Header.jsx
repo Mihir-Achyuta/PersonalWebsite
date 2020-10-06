@@ -7,13 +7,6 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
   }
-  scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
   render() {
     return (
       <div className="Header">
@@ -26,7 +19,7 @@ class Header extends React.Component {
         </div>
         <nav className="Header-Navbar">
           <ol className="Header-Unordered-List">
-            <li className="Header-List-Item" onClick={this.scrollToTop}>
+            <li className="Header-List-Item" onClick={this.props.scrollTop}>
               HOME<div className="underline"></div>
             </li>
             <List_Item name="ABOUT" />
