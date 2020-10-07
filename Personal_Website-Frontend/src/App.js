@@ -7,13 +7,23 @@ import Project from "./components/mini-components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AbsoluteIcons from "./components/AbsoluteIcons";
+import Sandwich_Menu from "./components/mini-components/Sandwich_Menu";
 import "./styles/App.css";
 import { Element } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { contentLoaded: false, headerLoaded: false, isLoaded: false };
+    this.state = {
+      contentLoaded: true,
+      headerLoaded: true,
+      isLoaded: true,
+      menuShown: false,
+    };
+    this.showMenu = this.showMenu.bind(this);
+    this.dissapearMenu = this.dissapearMenu.bind(this);
   }
   componentDidMount() {
     setTimeout(
@@ -45,11 +55,31 @@ class App extends React.Component {
       behavior: "smooth",
     });
   }
+  showMenu() {
+    this.setState({ menuShown: true });
+  }
+  dissapearMenu() {
+    this.setState({ menuShown: false });
+  }
   render() {
     return (
       <div className="App">
         {this.state.contentLoaded ? (
           <div className="App-Div">
+            {this.state.menuShown ? (
+              <div className="Menu Menu-Load">
+                <FontAwesomeIcon
+                  icon={faTimesCircle}
+                  size="2x"
+                  onClick={this.dissapearMenu}
+                  className="X-Icon"
+                  color="#7ae2dd"
+                />
+                <Sandwich_Menu dissapearMenu={this.dissapearMenu} />
+              </div>
+            ) : (
+              <div className="Menu"></div>
+            )}
             <div className="Header-Homepage">
               <Header scrollTop={this.scrollToTop} />
               <Homepage />
@@ -105,7 +135,10 @@ class App extends React.Component {
               <Contact />
             </Element>
             <Footer />
-            <AbsoluteIcons scrollTop={this.scrollToTop} />
+            <AbsoluteIcons
+              showMenu={this.showMenu}
+              scrollTop={this.scrollToTop}
+            />
           </div>
         ) : (
           <div

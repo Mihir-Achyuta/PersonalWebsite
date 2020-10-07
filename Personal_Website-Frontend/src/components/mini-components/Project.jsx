@@ -36,16 +36,21 @@ class Project extends React.Component {
                   <img src={this.props.imgUrl} alt="Project"></img>
                 </div>
                 <div className="Projects-One-Icons">
-                  <FontAwesomeIcon
-                    className="Projects-One-Icon"
-                    icon={faGithub}
-                    size="2x"
-                  />
-                  <FontAwesomeIcon
-                    className="Projects-One-Icon"
-                    icon={faEye}
-                    size="2x"
-                  />
+                  <a href="">
+                    {" "}
+                    <FontAwesomeIcon
+                      className="Projects-One-Icon"
+                      icon={faGithub}
+                      size="2x"
+                    />
+                  </a>
+                  <a href="">
+                    <FontAwesomeIcon
+                      className="Projects-One-Icon"
+                      icon={faEye}
+                      size="2x"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

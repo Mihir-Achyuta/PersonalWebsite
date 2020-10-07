@@ -465,9 +465,50 @@ a {
   margin-left: 1%;
   margin-right: 1%;
 }
+.Footer .Footer-Icon:hover {
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+
+.Menu {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(47, 72, 88, 0);
+  transition: 0.5s;
+}
+
+.Menu-Load {
+  background-color: #2f4858;
+  height: 102vh;
+  width: 101vw;
+  transition: 0.5s;
+  position: fixed;
+  border-top-right-radius: 20px;
+}
+
+.X-Icon {
+  position: absolute;
+  cursor: pointer;
+  bottom: 10px;
+  left: 10px;
+}
+
+.Sandwich_Menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7ae2dd;
+}
+.Sandwich_Menu .Sandwich_Menu-List {
+  padding: 0;
+}
 
 .Absolute-Icons-Arrow-Up {
-  color: white;
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -475,7 +516,6 @@ a {
 }
 
 .Absolute-Icons-Hamburger {
-  color: white;
   position: fixed;
   bottom: 10px;
   left: 10px;
