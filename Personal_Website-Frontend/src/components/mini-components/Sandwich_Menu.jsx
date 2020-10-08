@@ -3,12 +3,21 @@ import Zoom from "react-reveal/Zoom";
 import { Link } from "react-scroll";
 
 class Sandwich_Menu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.homeClick = this.homeClick.bind(this);
+  }
+  homeClick() {
+    this.props.dissapearMenu();
+    this.props.scrollToTop();
+    console.log(this.props);
+  }
   render() {
     return (
       <nav className="Sandwich_Menu">
         <ol className="Sandwich_Menu-List">
           <Zoom delay={500}>
-            <li className="" onClick={this.props.dissapearMenu}>
+            <li className="" onClick={this.homeClick}>
               HOME<div className=""></div>
             </li>
           </Zoom>

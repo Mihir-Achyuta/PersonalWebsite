@@ -24,6 +24,7 @@ class App extends React.Component {
     };
     this.showMenu = this.showMenu.bind(this);
     this.dissapearMenu = this.dissapearMenu.bind(this);
+    this.scrollToTop = this.scrollToTop.bind(this);
   }
   componentDidMount() {
     setTimeout(
@@ -75,7 +76,10 @@ class App extends React.Component {
                   className="X-Icon"
                   color="#7ae2dd"
                 />
-                <Sandwich_Menu dissapearMenu={this.dissapearMenu} />
+                <Sandwich_Menu
+                  dissapearMenu={this.dissapearMenu}
+                  scrollToTop={this.scrollToTop}
+                />
               </div>
             ) : (
               <div className="Menu"></div>
