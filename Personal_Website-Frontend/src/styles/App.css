@@ -27,7 +27,6 @@ input {
 
 a {
   text-decoration: none;
-  color: #2f4858;
 }
 
 .App {
@@ -118,6 +117,7 @@ a {
   margin-left: 2%;
   margin-top: 1%;
   font-family: "Permanent Marker", cursive;
+  color: #2f4858;
 }
 
 .Header-Navbar {
@@ -133,6 +133,8 @@ a {
   margin-left: 45px;
   display: inline-block;
   cursor: pointer;
+  text-decoration: none;
+  color: #2f4858;
 }
 .Header-Navbar .Header-Unordered-List .Header-List-Item .underline {
   height: 3px;
@@ -490,11 +492,38 @@ a {
   border-top-right-radius: 20px;
 }
 
+.Burger-Menu {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  background-color: rgba(47, 72, 88, 0);
+  transition: 0.5s;
+}
+
+.Burger-Menu-Load {
+  background-color: #2f4858;
+  height: 102vh;
+  width: 101vw;
+  transition: 0.5s;
+  position: fixed;
+  border-bottom-left-radius: 20px;
+}
+
 .X-Icon {
   position: absolute;
   cursor: pointer;
   bottom: 10px;
   left: 10px;
+}
+
+.X-Burger-Icon {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 20px;
 }
 
 .Sandwich_Menu {
@@ -506,6 +535,9 @@ a {
 }
 .Sandwich_Menu .Sandwich_Menu-List {
   padding: 0;
+}
+.Sandwich_Menu .Sandwich_Menu-List .Sandwich-List-Item {
+  margin-top: 20px;
 }
 
 .Absolute-Icons-Arrow-Up {

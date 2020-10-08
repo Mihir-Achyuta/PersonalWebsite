@@ -42,10 +42,12 @@ class Project extends React.Component {
                       className="Projects-One-Icon"
                       icon={faGithub}
                       size="2x"
+                      color={this.props.textColor}
                     />
                   </a>
                   <a href="">
                     <FontAwesomeIcon
+                      color={this.props.textColor}
                       className="Projects-One-Icon"
                       icon={faEye}
                       size="2x"
@@ -78,16 +80,22 @@ class Project extends React.Component {
                   <img src={this.props.imgUrl} alt="Project"></img>
                 </div>
                 <div className="Projects-One-Icons">
-                  <FontAwesomeIcon
-                    className="Projects-One-Icon"
-                    icon={faGithub}
-                    size="2x"
-                  />
-                  <FontAwesomeIcon
-                    className="Projects-One-Icon"
-                    icon={faEye}
-                    size="2x"
-                  />
+                  <a href="">
+                    <FontAwesomeIcon
+                      color={this.props.textColor}
+                      className="Projects-One-Icon"
+                      icon={faGithub}
+                      size="2x"
+                    />
+                  </a>
+                  <a href="">
+                    <FontAwesomeIcon
+                      color={this.props.textColor}
+                      className="Projects-One-Icon"
+                      icon={faEye}
+                      size="2x"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

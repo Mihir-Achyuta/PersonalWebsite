@@ -14,7 +14,7 @@ class Header extends React.Component {
         <Zoom>
           <div className="Header-Logo">
             <a href="">
-              <h1 className="Header-Logo-Left">
+              <h1 className="Header-Logo-Left" style={{ color: "#2f4858" }}>
                 {"<"}MIHIR{"/>"}
               </h1>
             </a>
@@ -51,6 +51,7 @@ class Header extends React.Component {
               className="Header-Hamburger"
               icon={faBars}
               size="2x"
+              onClick={this.props.showBurgerMenu}
             />
           </Zoom>
         </nav>

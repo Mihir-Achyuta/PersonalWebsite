@@ -17,14 +17,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contentLoaded: true,
-      headerLoaded: true,
-      isLoaded: true,
-      menuShown: false,
+      contentLoaded: false,
+      headerLoaded: false,
+      isLoaded: false,
+      bottomMenuShown: false,
+      burgerMenuShown: false,
     };
-    this.showMenu = this.showMenu.bind(this);
-    this.dissapearMenu = this.dissapearMenu.bind(this);
-    this.scrollToTop = this.scrollToTop.bind(this);
+    this.showBottomMenu = this.showBottomMenu.bind(this);
+    this.dissapearBottomMenu = this.dissapearBottomMenu.bind(this);
+    this.showBurgerMenu = this.showBurgerMenu.bind(this);
+    this.dissapearBurgerMenu = this.dissapearBurgerMenu.bind(this);
   }
   componentDidMount() {
     setTimeout(
@@ -56,36 +58,62 @@ class App extends React.Component {
       behavior: "smooth",
     });
   }
-  showMenu() {
-    this.setState({ menuShown: true });
+  showBottomMenu() {
+    this.setState({ bottomMenuShown: true });
   }
-  dissapearMenu() {
-    this.setState({ menuShown: false });
+  dissapearBottomMenu() {
+    this.setState({ bottomMenuShown: false });
+  }
+  showBurgerMenu() {
+    this.setState({ burgerMenuShown: true });
+  }
+  dissapearBurgerMenu() {
+    this.setState({ burgerMenuShown: false });
   }
   render() {
     return (
       <div className="App">
         {this.state.contentLoaded ? (
           <div className="App-Div">
-            {this.state.menuShown ? (
+            {this.state.bottomMenuShown ? (
               <div className="Menu Menu-Load">
                 <FontAwesomeIcon
                   icon={faTimesCircle}
                   size="2x"
-                  onClick={this.dissapearMenu}
+                  onClick={this.dissapearBottomMenu}
                   className="X-Icon"
                   color="#7ae2dd"
                 />
                 <Sandwich_Menu
-                  dissapearMenu={this.dissapearMenu}
                   scrollToTop={this.scrollToTop}
+                  dissapearMenu={this.dissapearBottomMenu}
                 />
               </div>
             ) : (
               <div className="Menu"></div>
             )}
+            {this.state.burgerMenuShown ? (
+              <div className="Burger-Menu Burger-Menu-Load">
+                <FontAwesomeIcon
+                  icon={faTimesCircle}
+                  size="2x"
+                  onClick={this.dissapearBurgerMenu}
+                  className="X-Burger-Icon"
+                  color="#7ae2dd"
+                />
+                <Sandwich_Menu
+                  scrollToTop={this.scrollToTop}
+                  dissapearMenu={this.dissapearBurgerMenu}
+                />
+              </div>
+            ) : (
+              <div className="Burger-Menu"></div>
+            )}
             <div className="Header-Homepage">
-              <Header scrollTop={this.scrollToTop} />
+              <Header
+                scrollTop={this.scrollToTop}
+                showBurgerMenu={this.showBurgerMenu}
+              />
               <Homepage />
             </div>
             <Element name="about">
@@ -140,7 +168,7 @@ class App extends React.Component {
             </Element>
             <Footer />
             <AbsoluteIcons
-              showMenu={this.showMenu}
+              showMenu={this.showBottomMenu}
               scrollTop={this.scrollToTop}
             />
           </div>
