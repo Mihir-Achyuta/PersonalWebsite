@@ -1,8 +1,14 @@
 require('dotenv').config()
 const express = require("express")
 const app = express();
-const nodemailer = require("nodemailer");
+var cors = require('cors')
+var bodyParser = require('body-parser');
 
+app.use(cors())
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const nodemailer = require("nodemailer");
 app.post("/api/email", function (req, res, next) { 
     async function main() { 
         let testAccount = await nodemailer.createTestAccount();
@@ -16,9 +22,9 @@ app.post("/api/email", function (req, res, next) {
             subject: "Personal Website Contact", 
             text: 
             `
-            Name of Person : Dummy Name
-            Email of Person : Dummy Email
-            Inquiry of person : Dummy Text with lots of lorum ipsum ....
+            Name of Person : ${req.body.name}
+            Email of Person : ${req.body.email}
+            Inquiry of person : ${req.body.text}
             `, 
         });
         console.log("Message sent: %s", info.messageId);
