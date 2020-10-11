@@ -1,26 +1,52 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import axios from "axios"
+import axios from "axios";
 
 class Contact extends React.Component {
-  constructor(props) { 
-    super(props)
-    this.state = { name: "", email: "", text: "" }
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      text: "",
+      formSent: false,
+      formText: "",
+    };
     this.changeText = this.changeText.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  changeText(evt) { 
+  changeText(evt) {
     this.setState({ [evt.target.name]: evt.target.value });
   }
-  handleSubmit(evt) { 
-    evt.preventDefault()
-    axios.post("/api/email", {
-      name: this.state.name,
-      email: this.state.email,
-      text: this.state.text
-    })
-    .then((response) => console.log(response))
-    .catch((err) => console.log(err))
+  handleSubmit(evt) {
+    evt.preventDefault();
+    axios
+      .post("/api/email", {
+        name: this.state.name,
+        email: this.state.email,
+        text: this.state.text,
+      })
+      .then((response) => {
+        if (response.data.success) {
+          this.setState({
+            formSent: true,
+            formText: "Email sent! I will get back to you as soon as possible",
+          });
+        } else {
+          this.setState({
+            formSent: true,
+            formText:
+              "Email not sent. Please email me directly at achyutamihir@gmail.com",
+          });
+        }
+      })
+      .catch((err) => {
+        this.setState({
+          formSent: true,
+          formText:
+            "Email not sent. Please email me directly at achyutamihir@gmail.com",
+        });
+      });
   }
   render() {
     return (
