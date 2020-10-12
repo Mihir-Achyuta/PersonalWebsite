@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import Submit_Modal from "./mini-components/Submit_Modal";
 import axios from "axios";
 
 class Contact extends React.Component {
@@ -13,40 +14,45 @@ class Contact extends React.Component {
       formText: "",
     };
     this.changeText = this.changeText.bind(this);
+    this.removeModel = this.removeModel.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   changeText(evt) {
     this.setState({ [evt.target.name]: evt.target.value });
   }
+  removeModel() {
+    this.setState({ formSent: false });
+  }
   handleSubmit(evt) {
     evt.preventDefault();
-    axios
-      .post("/api/email", {
-        name: this.state.name,
-        email: this.state.email,
-        text: this.state.text,
-      })
-      .then((response) => {
-        if (response.data.success) {
-          this.setState({
-            formSent: true,
-            formText: "Email sent! I will get back to you as soon as possible",
-          });
-        } else {
-          this.setState({
-            formSent: true,
-            formText:
-              "Email not sent. Please email me directly at achyutamihir@gmail.com",
-          });
-        }
-      })
-      .catch((err) => {
-        this.setState({
-          formSent: true,
-          formText:
-            "Email not sent. Please email me directly at achyutamihir@gmail.com",
-        });
-      });
+    this.setState({ formSent: true });
+    // axios
+    //   .post("/api/email", {
+    //     name: this.state.name,
+    //     email: this.state.email,
+    //     text: this.state.text,
+    //   })
+    //   .then((response) => {
+    //     if (response.data.success) {
+    //       this.setState({
+    //         formSent: true,
+    //         formText: "Email sent! I will get back to you as soon as possible",
+    //       });
+    //     } else {
+    //       this.setState({
+    //         formSent: true,
+    //         formText:
+    //           "Email not sent. Please email me directly at achyutamihir@gmail.com",
+    //       });
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     this.setState({
+    //       formSent: true,
+    //       formText:
+    //         "Email not sent. Please email me directly at achyutamihir@gmail.com",
+    //     });
+    //   });
   }
   render() {
     return (
@@ -89,6 +95,9 @@ class Contact extends React.Component {
             </form>
           </div>
         </Fade>
+        {this.state.formSent ? (
+          <Submit_Modal removeModel={this.removeModel} />
+        ) : null}
       </section>
     );
   }
