@@ -26,33 +26,33 @@ class Contact extends React.Component {
   handleSubmit(evt) {
     evt.preventDefault();
     this.setState({ formSent: true });
-    // axios
-    //   .post("/api/email", {
-    //     name: this.state.name,
-    //     email: this.state.email,
-    //     text: this.state.text,
-    //   })
-    //   .then((response) => {
-    //     if (response.data.success) {
-    //       this.setState({
-    //         formSent: true,
-    //         formText: "Email sent! I will get back to you as soon as possible",
-    //       });
-    //     } else {
-    //       this.setState({
-    //         formSent: true,
-    //         formText:
-    //           "Email not sent. Please email me directly at achyutamihir@gmail.com",
-    //       });
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     this.setState({
-    //       formSent: true,
-    //       formText:
-    //         "Email not sent. Please email me directly at achyutamihir@gmail.com",
-    //     });
-    //   });
+    axios
+      .post("/api/email", {
+        name: this.state.name,
+        email: this.state.email,
+        text: this.state.text,
+      })
+      .then((response) => {
+        if (response.data.success) {
+          this.setState({
+            formSent: true,
+            formText: "Email sent! I will get back to you as soon as possible",
+          });
+        } else {
+          this.setState({
+            formSent: true,
+            formText:
+              "Email not sent. Please email me directly at achyutamihir@gmail.com",
+          });
+        }
+      })
+      .catch((err) => {
+        this.setState({
+          formSent: true,
+          formText:
+            "Email not sent. Please email me directly at achyutamihir@gmail.com",
+        });
+      });
   }
   render() {
     return (
@@ -96,7 +96,10 @@ class Contact extends React.Component {
           </div>
         </Fade>
         {this.state.formSent ? (
-          <Submit_Modal removeModel={this.removeModel} />
+          <Submit_Modal
+            removeModel={this.removeModel}
+            message={this.state.formText}
+          />
         ) : null}
       </section>
     );

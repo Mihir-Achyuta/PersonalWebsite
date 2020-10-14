@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 class Submit_Modal extends React.Component {
   constructor(props) {
@@ -12,9 +13,9 @@ class Submit_Modal extends React.Component {
     return (
       <div className="Submit_Modal">
         <div className="Submit_Modal-Text">
-          <p>{this.props.message}Message</p>
+          <p className="Submit_Modal-Paragraph">{this.props.message}</p>
           <button className="Submit_Modal-Button" onClick={this.handleClick}>
-            Close Notification
+            X
           </button>
         </div>
       </div>

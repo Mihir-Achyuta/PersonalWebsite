@@ -474,6 +474,9 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #2f4858;
+  border-radius: 8px;
+  padding: 3%;
+  width: 60%;
 }
 .Submit_Modal .Submit_Modal-Text .Submit_Modal-Button {
   margin-top: 5%;
