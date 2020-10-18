@@ -1,34 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-html {
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  text-align: center;
-  color: #2f4858;
-  font-family: Lato;
-  overflow-x: hidden;
-}
-
-ul {
-  padding-left: 0;
-  list-style: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-input {
-  outline: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .App {
   height: 100vh;
   background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%);
@@ -102,6 +73,74 @@ a {
     background-position: 80% 0;
   }
 }
+.Menu {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(47, 72, 88, 0);
+  transition: 0.5s;
+}
+
+.Menu-Load {
+  background-color: #2f4858;
+  height: 102vh;
+  width: 101vw;
+  transition: 0.5s;
+  position: fixed;
+  border-top-right-radius: 20px;
+}
+
+.Burger-Menu {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  background-color: rgba(47, 72, 88, 0);
+  transition: 0.5s;
+}
+
+.Burger-Menu-Load {
+  background-color: #2f4858;
+  height: 102vh;
+  width: 101vw;
+  transition: 0.5s;
+  position: fixed;
+  border-bottom-left-radius: 20px;
+}
+
+.X-Icon {
+  position: absolute;
+  cursor: pointer;
+  bottom: 10px;
+  left: 10px;
+}
+
+.X-Burger-Icon {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 20px;
+}
+
+.Sandwich_Menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7ae2dd;
+}
+.Sandwich_Menu .Sandwich_Menu-List {
+  padding: 0;
+}
+.Sandwich_Menu .Sandwich_Menu-List .Sandwich-List-Item {
+  margin-top: 20px;
+}
+
 .Header-Homepage {
   background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%);
   height: 100vh;
@@ -158,9 +197,6 @@ a {
   }
 }
 
-/* The flexbox navbar and the react version of it */
-/* https://codepen.io/Sukhjinder-arora/pen/OZGomv?editors=1100 */
-/* https://codepen.io/danbuda/pen/mAVALa */
 .Homepage {
   margin-top: 5%;
 }
@@ -344,11 +380,6 @@ a {
   }
 }
 
-.Front-Back-Tool {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .Skills {
   border-top: 5px solid #2f4858;
   background-color: #14bdad;
@@ -356,6 +387,10 @@ a {
 .Skills .Skills-Header {
   font-size: 250%;
   margin-top: 7%;
+}
+.Skills .Front-Back-Tool {
+  display: flex;
+  justify-content: space-evenly;
 }
 .Skills .Skills-Projects-Button {
   margin-top: 7%;
@@ -505,74 +540,6 @@ a {
   transition: 0.4s;
 }
 
-.Menu {
-  position: fixed;
-  height: 10px;
-  width: 10px;
-  bottom: 0;
-  left: 0;
-  z-index: 5;
-  background-color: rgba(47, 72, 88, 0);
-  transition: 0.5s;
-}
-
-.Menu-Load {
-  background-color: #2f4858;
-  height: 102vh;
-  width: 101vw;
-  transition: 0.5s;
-  position: fixed;
-  border-top-right-radius: 20px;
-}
-
-.Burger-Menu {
-  position: fixed;
-  height: 10px;
-  width: 10px;
-  top: 0;
-  right: 0;
-  z-index: 5;
-  background-color: rgba(47, 72, 88, 0);
-  transition: 0.5s;
-}
-
-.Burger-Menu-Load {
-  background-color: #2f4858;
-  height: 102vh;
-  width: 101vw;
-  transition: 0.5s;
-  position: fixed;
-  border-bottom-left-radius: 20px;
-}
-
-.X-Icon {
-  position: absolute;
-  cursor: pointer;
-  bottom: 10px;
-  left: 10px;
-}
-
-.X-Burger-Icon {
-  position: absolute;
-  cursor: pointer;
-  top: 30px;
-  right: 20px;
-}
-
-.Sandwich_Menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #7ae2dd;
-}
-.Sandwich_Menu .Sandwich_Menu-List {
-  padding: 0;
-}
-.Sandwich_Menu .Sandwich_Menu-List .Sandwich-List-Item {
-  margin-top: 20px;
-}
-
 .Absolute-Icons-Arrow-Up {
   position: fixed;
   bottom: 10px;
@@ -585,6 +552,35 @@ a {
   bottom: 10px;
   left: 10px;
   cursor: pointer;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #2f4858;
+  font-family: Lato;
+  overflow-x: hidden;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=App.css.map */

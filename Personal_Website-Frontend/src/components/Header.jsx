@@ -20,7 +20,6 @@ class Header extends React.Component {
             </a>
           </div>
         </Zoom>
-
         <nav className="Header-Navbar">
           <ol className="Header-Unordered-List">
             <Zoom delay={500}>

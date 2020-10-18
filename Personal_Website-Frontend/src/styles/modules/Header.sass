@@ -1,0 +1,51 @@
+.Header-Homepage
+  background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%)
+  height: 100vh
+
+.Header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .Header-Logo
+    font-size: 100%
+    margin-left: 2%
+    margin-top: 1%
+    font-family: 'Permanent Marker', cursive
+    color: #2f4858
+    
+
+.Header-Navbar
+  margin-right: 5%
+
+  .Header-Unordered-List
+    display: flex
+    flex-direction: row
+    margin-right: 5%
+
+    .Header-List-Item
+      text-align: center
+      margin-left: 45px
+      display: inline-block
+      cursor: pointer
+      text-decoration: none
+      color: #2f4858
+
+      .underline
+        height: 3px
+        background-color: #2f4858
+        width: 0%
+        transition: width 0.2s
+        margin: 0 auto
+
+      &:hover .underline
+        width: 100%
+
+  .Header-Hamburger
+    display: none
+
+  @media screen and (max-width: 870px)
+    .Header-Hamburger
+      display: block
+    .Header-Unordered-List
+      display: none

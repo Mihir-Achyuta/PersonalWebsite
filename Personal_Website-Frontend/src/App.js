@@ -17,9 +17,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contentLoaded: true,
-      headerLoaded: true,
-      isLoaded: true,
+      contentLoaded: false,
+      headerLoaded: false,
+      isLoaded: false,
       bottomMenuShown: false,
       burgerMenuShown: false,
     };

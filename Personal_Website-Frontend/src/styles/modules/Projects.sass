@@ -1,0 +1,24 @@
+.Projects
+  padding-top: 2%
+  padding-bottom: 2%
+
+  .Projects-One-Div
+    display: flex
+    justify-content: space-evenly
+
+    .Projects-One-Description-Header, .Projects-One-Description-Text, .Projects-One-Stack-Header, .Projects-One-Stack-Text
+      display: flex
+      justify-content: flex-start
+
+    @media screen and (max-width: 700px)
+      .Projects-One-Description-Header, .Projects-One-Description-Text, .Projects-One-Stack-Header, .Projects-One-Stack-Text
+        display: flex
+        justify-content: center
+
+  @media screen and (max-width: 700px)
+    .Projects-One-Div
+      flex-direction: column
+
+  .Projects-One-Icon
+    margin-left: 2.5%
+    margin-right: 2.5%

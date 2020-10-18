@@ -1,0 +1,99 @@
+.Homepage
+  margin-top: 5%
+
+  .Homepage-Text-Div
+    display: grid
+    grid-template-columns: auto auto
+
+    .Homepage-Grid
+      margin: 0
+
+    .Homepage-Greeting, .Homepage-Name
+      display: flex
+      margin-left: 10%
+      font-size: 500%
+
+    .Homepage-Description, .Homepage-Technology
+      display: flex
+      justify-content: flex-end
+      margin-right: 5%
+
+    .Homepage-Description
+      font-size: 400%
+
+    @media screen and (max-width: 1100px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 400%
+
+      .Homepage-Description
+        font-size: 300%
+
+    @media screen and (max-width: 870px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 300%
+
+      .Homepage-Description
+        font-size: 200%
+
+    @media screen and (max-width: 600px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 250%
+
+      .Homepage-Description
+        font-size: 150%
+
+    @media screen and (max-width: 470px)
+      .Homepage-Greeting, .Homepage-Name
+        font-size: 200%
+
+      .Homepage-Description
+        font-size: 100%
+
+.Homepage-Icons
+  margin-top: 5%
+
+  .Homepage-Icon
+    margin-right: 25px
+    margin-left: 25px
+    color: #2f4858
+
+  .Homepage-Icon:hover
+    transform: rotate(360deg)
+    transition: 0.8s
+
+.Homepage-Identification-Div
+  padding: 10%
+  padding-bottom: 20%
+
+  .Homepage-Identification-Button
+    outline: none
+    cursor: pointer
+    font-size: 20px
+    background-color: #14bdad
+    color: #2f4858
+    padding: 15px 30px
+    border: 5px solid #2f4858
+    font-weight: 900
+
+@media screen and (max-width: 1100px)
+  .Homepage-Identification-Div
+    padding-bottom: 35%
+    margin-top: 5%
+
+  .Homepage-Icons
+    margin-top: 10%
+
+@media screen and (max-width: 850px)
+  .Homepage-Identification-Div
+    padding-bottom: 65%
+    margin-top: 10%
+
+  .Homepage-Icons
+    margin-top: 15%
+
+@media screen and (max-width: 600px)
+  .Homepage-Identification-Div
+    padding-bottom: 85%
+
+  .Homepage-Icons
+    margin-top: 20%

@@ -1,0 +1,127 @@
+.App
+  height: 100vh
+  background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%)
+
+.Initial-Scene
+  height: 100vh
+  width: 100vw
+  position: absolute
+  background: #2f4858
+  transform-origin: 50% -50%
+  transform: scale(1)
+  z-index: 2
+
+.Initial-Scene-Loaded
+  transform: scale(0)
+  transform-origin: 50% -50%
+  transition: 1s
+
+.Initial-Header
+  font-family: 'Permanent Marker', cursive
+  font-size: 400%
+  position: fixed
+  top: 50%
+  left: 50%
+  margin: 0
+  transform: translate(-50%,-50%) scale(0)
+  transition: 0.5s
+  color: #14bdad
+
+.Initial-Header-Loaded
+  animation: loadHeader 4s
+
+@keyframes loadHeader
+  20%,80%
+    transform: translate(-50%,-50%) scale(1)
+
+.Initial-Header:before
+  position: absolute
+  content: ""
+  background: linear-gradient(90deg, #14bdad 40%, transparent 40%)
+  top: -5px
+  bottom: -5px
+  left: -5px
+  right: -5px
+  z-index: 3
+  border-radius: 4px
+  background-size: 200% 4px
+  background-repeat: no-repeat
+  filter: drop-shadow(0 0 8px #14bdad)
+  background-position: 80% 0
+  animation: beforeLineAnim 2s linear infinite
+
+@keyframes beforeLineAnim
+  45%,
+  50%
+    background-position: -100% 0
+
+  45%
+    transform: scale(1)
+
+  50%,
+  95%
+    transform: scale(1, -1)
+
+  95%
+    background-position: 80% 0
+
+.Menu
+  position: fixed
+  height: 10px
+  width: 10px
+  bottom: 0
+  left: 0
+  z-index: 5
+  background-color: rgba(47, 72, 88, 0)
+  transition: 0.5s
+
+.Menu-Load
+  background-color: rgba(47, 72, 88, 1)
+  height: 102vh
+  width: 101vw
+  transition: 0.5s
+  position: fixed
+  border-top-right-radius: 20px
+
+.Burger-Menu
+  position: fixed
+  height: 10px
+  width: 10px
+  top: 0
+  right: 0
+  z-index: 5
+  background-color: rgba(47, 72, 88, 0)
+  transition: 0.5s
+
+.Burger-Menu-Load
+  background-color: rgba(47, 72, 88, 1)
+  height: 102vh
+  width: 101vw
+  transition: 0.5s
+  position: fixed
+  border-bottom-left-radius: 20px
+
+.X-Icon
+  position: absolute
+  cursor: pointer
+  bottom: 10px
+  left: 10px
+
+.X-Burger-Icon
+  position: absolute
+  cursor: pointer
+  top: 30px
+  right: 20px
+
+.Sandwich_Menu
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  color: #7ae2dd
+
+  .Sandwich_Menu-List
+    padding: 0
+
+    .Sandwich-List-Item
+      margin-top: 20px
