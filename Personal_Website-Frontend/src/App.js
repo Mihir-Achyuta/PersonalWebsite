@@ -1,4 +1,5 @@
 import React from "react";
+import Loading_Animation from "./components/mini-components/Loading_Animation";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
@@ -7,7 +8,7 @@ import Project from "./components/mini-components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AbsoluteIcons from "./components/AbsoluteIcons";
-import Sandwich_Menu from "./components/mini-components/Sandwich_Menu";
+import Sandwich_Menu from "./components/mini-components/burger-components/Sandwich_Menu";
 import "./styles/App.css";
 import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,8 +19,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       contentLoaded: false,
-      headerLoaded: false,
-      isLoaded: false,
       bottomMenuShown: false,
       burgerMenuShown: false,
     };
@@ -29,21 +28,6 @@ class App extends React.Component {
     this.dissapearBurgerMenu = this.dissapearBurgerMenu.bind(this);
   }
   componentDidMount() {
-    setTimeout(
-      () =>
-        this.setState((state) => ({
-          headerLoaded: true,
-        })),
-      (document.body.style.overflow = "hidden"),
-      500
-    );
-    setTimeout(
-      () =>
-        this.setState((state) => ({
-          isLoaded: true,
-        })),
-      4500
-    );
     setTimeout(() => {
       document.body.style.overflow = "visible";
       this.setState((state) => ({
@@ -173,23 +157,7 @@ class App extends React.Component {
             />
           </div>
         ) : (
-          <div
-            className={
-              this.state.isLoaded
-                ? "Initial-Scene Initial-Scene-Loaded"
-                : "Initial-Scene"
-            }
-          >
-            <h1
-              className={
-                this.state.headerLoaded
-                  ? "Initial-Header Initial-Header-Loaded"
-                  : "Initial-Header"
-              }
-            >
-              {"<"}MIHIR{"/>"}
-            </h1>
-          </div>
+          <Loading_Animation />
         )}
       </div>
     );
