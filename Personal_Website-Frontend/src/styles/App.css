@@ -111,6 +111,8 @@
   transition: 0.5s;
   position: fixed;
   border-bottom-left-radius: 20px;
+  top: 50;
+  right: 50;
 }
 
 .X-Icon {
@@ -187,6 +189,7 @@
 }
 .Header-Navbar .Header-Hamburger {
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 870px) {
   .Header-Navbar .Header-Hamburger {

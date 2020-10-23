@@ -1,4 +1,7 @@
 import React from "react";
+
+import "./styles/App.css";
+
 import Loading_Animation from "./components/mini-components/Loading_Animation";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
@@ -8,17 +11,16 @@ import Project from "./components/mini-components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AbsoluteIcons from "./components/AbsoluteIcons";
-import Sandwich_Menu from "./components/mini-components/burger-components/Sandwich_Menu";
-import "./styles/App.css";
+import Burger_Menu from "./components/mini-components/burger-components/Burger_Menu";
+import Bottom_Menu from "./components/mini-components/burger-components/Bottom_Menu";
+
 import { Element } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contentLoaded: false,
+      contentLoaded: true,
       bottomMenuShown: false,
       burgerMenuShown: false,
     };
@@ -61,16 +63,9 @@ class App extends React.Component {
           <div className="App-Div">
             {this.state.bottomMenuShown ? (
               <div className="Menu Menu-Load">
-                <FontAwesomeIcon
-                  icon={faTimesCircle}
-                  size="2x"
-                  onClick={this.dissapearBottomMenu}
-                  className="X-Icon"
-                  color="#7ae2dd"
-                />
-                <Sandwich_Menu
-                  scrollToTop={this.scrollToTop}
-                  dissapearMenu={this.dissapearBottomMenu}
+                <Bottom_Menu
+                  scrollTop={this.scrollToTop}
+                  dissapearBottomMenu={this.dissapearBottomMenu}
                 />
               </div>
             ) : (
@@ -78,16 +73,9 @@ class App extends React.Component {
             )}
             {this.state.burgerMenuShown ? (
               <div className="Burger-Menu Burger-Menu-Load">
-                <FontAwesomeIcon
-                  icon={faTimesCircle}
-                  size="2x"
-                  onClick={this.dissapearBurgerMenu}
-                  className="X-Burger-Icon"
-                  color="#7ae2dd"
-                />
-                <Sandwich_Menu
-                  scrollToTop={this.scrollToTop}
-                  dissapearMenu={this.dissapearBurgerMenu}
+                <Burger_Menu
+                  scrollTop={this.scrollToTop}
+                  dissapearBurgerMenu={this.dissapearBurgerMenu}
                 />
               </div>
             ) : (
