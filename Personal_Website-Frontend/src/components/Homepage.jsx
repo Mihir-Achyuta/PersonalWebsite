@@ -11,23 +11,23 @@ class Homepage extends React.Component {
     return (
       <section className="Homepage">
         <div className="Homepage-Text-Div">
-          <Fade delay={2000} left>
+          <Fade delay={900} left>
             <h1 className="Homepage-Greeting Homepage-Grid">Hi,</h1>
           </Fade>
-          <Fade delay={4000} right>
+          <Fade delay={1300} right>
             <h2 className="Homepage-Description Homepage-Grid">
               A Fullstack Developer
             </h2>
           </Fade>
-          <Fade delay={3000} left>
+          <Fade delay={1100} left>
             <h1 className="Homepage-Name Homepage-Grid">I'm Mihir</h1>
           </Fade>
-          <Fade delay={5000} bottom>
+          <Fade delay={1500} bottom>
             <p className="Homepage-Technology Homepage-Grid">(In Javascript)</p>
           </Fade>
         </div>
         <div className="Homepage-Icons">
-          <Fade top big delay={6000}>
+          <Fade top big delay={1700}>
             <a href="">
               <FontAwesomeIcon
                 className="Homepage-Icon"
@@ -36,7 +36,7 @@ class Homepage extends React.Component {
               />
             </a>
           </Fade>
-          <Fade top big delay={6300}>
+          <Fade top big delay={1700}>
             <a href="">
               <FontAwesomeIcon
                 className="Homepage-Icon"
@@ -45,7 +45,7 @@ class Homepage extends React.Component {
               />
             </a>
           </Fade>
-          <Fade top big delay={6600}>
+          <Fade top big delay={1700}>
             <a href="">
               <FontAwesomeIcon
                 className="Homepage-Icon"
@@ -54,7 +54,7 @@ class Homepage extends React.Component {
               />
             </a>
           </Fade>
-          <Fade top big delay={6900}>
+          <Fade top big delay={1700}>
             <a href="">
               <FontAwesomeIcon
                 className="Homepage-Icon"
@@ -64,7 +64,7 @@ class Homepage extends React.Component {
             </a>
           </Fade>
         </div>
-        <Bounce bottom big delay={7500}>
+        <Bounce bottom big delay={1700}>
           <Link
             activeClass="active"
             to={"about"}
