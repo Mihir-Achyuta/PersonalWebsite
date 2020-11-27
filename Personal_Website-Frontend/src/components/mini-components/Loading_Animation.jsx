@@ -19,7 +19,7 @@ class Loading_Animation extends React.Component {
         this.setState((state) => ({
           isLoaded: true,
         })),
-      4500
+      2500
     );
   }
   render() {

@@ -1,12 +1,17 @@
+$base-color:  #253845
+$primary-text-color:#84a7bd
+$secondary-text-color1:#0f9689
+$secondary-text-color2:#7ae2dd
+
 .App
   height: 100vh
-  background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%)
+  background: $base-color
 
 .Initial-Scene
   height: 100vh
   width: 100vw
   position: absolute
-  background: #2f4858
+  background: $base-color
   transform-origin: 50% -50%
   transform: scale(1)
   z-index: 2
@@ -23,12 +28,12 @@
   top: 50%
   left: 50%
   margin: 0
-  color: #14bdad
+  color: $primary-text-color
   transform: translate(-50%,-50%) scale(0)
   transition: 0.5s
 
 .Initial-Header-Loaded
-  animation: loadHeader 4s
+  animation: loadHeader 2s
 
 @keyframes loadHeader
   20%,80%
@@ -37,7 +42,7 @@
 .Initial-Header:before
   position: absolute
   content: ""
-  background: linear-gradient(90deg, #14bdad 40%, transparent 40%)
+  background: linear-gradient(90deg, $primary-text-color 40%, transparent 40%)
   top: -5px
   bottom: -5px
   left: -5px
@@ -46,7 +51,7 @@
   border-radius: 4px
   background-size: 200% 4px
   background-repeat: no-repeat
-  filter: drop-shadow(0 0 8px #14bdad)
+  filter: drop-shadow(0 0 8px $primary-text-color)
   background-position: 80% 0
   animation: beforeLineAnim 2s linear infinite
 
@@ -120,7 +125,7 @@
   top: 50%
   left: 50%
   transform: translate(-50%,-50%)
-  color: #7ae2dd
+  color: $secondary-text-color2
 
   .Sandwich_Menu-List
     padding: 0

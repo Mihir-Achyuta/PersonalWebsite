@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 .App {
   height: 100vh;
-  background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%);
+  background: #253845;
 }
 
 .Initial-Scene {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background: #2f4858;
+  background: #253845;
   transform-origin: 50% -50%;
   transform: scale(1);
   z-index: 2;
@@ -28,13 +28,13 @@
   top: 50%;
   left: 50%;
   margin: 0;
-  color: #14bdad;
+  color: #84a7bd;
   transform: translate(-50%, -50%) scale(0);
   transition: 0.5s;
 }
 
 .Initial-Header-Loaded {
-  animation: loadHeader 4s;
+  animation: loadHeader 2s;
 }
 
 @keyframes loadHeader {
@@ -45,7 +45,7 @@
 .Initial-Header:before {
   position: absolute;
   content: "";
-  background: linear-gradient(90deg, #14bdad 40%, transparent 40%);
+  background: linear-gradient(90deg, #84a7bd 40%, transparent 40%);
   top: -5px;
   bottom: -5px;
   left: -5px;
@@ -54,7 +54,7 @@
   border-radius: 4px;
   background-size: 200% 4px;
   background-repeat: no-repeat;
-  filter: drop-shadow(0 0 8px #14bdad);
+  filter: drop-shadow(0 0 8px #84a7bd);
   background-position: 80% 0;
   animation: beforeLineAnim 2s linear infinite;
 }
@@ -144,7 +144,7 @@
 }
 
 .Header-Homepage {
-  background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%);
+  background: #253845;
   height: 100vh;
 }
 
@@ -158,7 +158,14 @@
   margin-left: 2%;
   margin-top: 1%;
   font-family: "Permanent Marker", cursive;
-  color: #2f4858;
+}
+.Header .Header-Logo .Header-Logo-Left {
+  color: #84a7bd;
+  transition: 1s;
+}
+.Header .Header-Logo .Header-Logo-Left:hover {
+  color: #7ae2dd;
+  transition: 0.3s;
 }
 
 .Header-Navbar {
@@ -175,17 +182,22 @@
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  color: #2f4858;
+  color: #84a7bd;
+  transition: 1s;
 }
 .Header-Navbar .Header-Unordered-List .Header-List-Item .underline {
   height: 3px;
-  background-color: #2f4858;
+  background-color: #7ae2dd;
   width: 0%;
   transition: width 0.2s;
   margin: 0 auto;
 }
 .Header-Navbar .Header-Unordered-List .Header-List-Item:hover .underline {
   width: 100%;
+}
+.Header-Navbar .Header-Unordered-List .Header-List-Item:hover {
+  color: #7ae2dd;
+  transition: 0.3s;
 }
 .Header-Navbar .Header-Hamburger {
   display: none;
@@ -262,7 +274,7 @@
 .Homepage-Icons .Homepage-Icon {
   margin-right: 25px;
   margin-left: 25px;
-  color: #2f4858;
+  color: #84a7bd;
 }
 .Homepage-Icons .Homepage-Icon:hover {
   transform: rotate(360deg);

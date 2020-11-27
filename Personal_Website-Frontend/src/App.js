@@ -20,7 +20,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contentLoaded: true,
+      contentLoaded: false,
       bottomMenuShown: false,
       burgerMenuShown: false,
     };
@@ -35,7 +35,7 @@ class App extends React.Component {
       this.setState((state) => ({
         contentLoaded: true,
       }));
-    }, 5000);
+    }, 2500);
   }
   scrollToTop() {
     window.scrollTo({

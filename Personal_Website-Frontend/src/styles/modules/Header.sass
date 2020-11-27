@@ -1,5 +1,10 @@
+$base-color:  #253845
+$primary-text-color:#84a7bd
+$secondary-text-color1:#0f9689
+$secondary-text-color2:#7ae2dd
+
 .Header-Homepage
-  background: linear-gradient(130deg, #14bdad 50%, #7ae2dd 50%)
+  background: $base-color
   height: 100vh
 
 .Header
@@ -12,7 +17,14 @@
     margin-left: 2%
     margin-top: 1%
     font-family: 'Permanent Marker', cursive
-    color: #2f4858
+
+    .Header-Logo-Left
+      color: $primary-text-color
+      transition: 1s
+
+    .Header-Logo-Left:hover
+      color: $secondary-text-color2
+      transition: 0.3s
 
 .Header-Navbar
   margin-right: 5%
@@ -28,17 +40,22 @@
       display: inline-block
       cursor: pointer
       text-decoration: none
-      color: #2f4858
+      color: $primary-text-color
+      transition: 1s
 
       .underline
         height: 3px
-        background-color: #2f4858
+        background-color: $secondary-text-color2
         width: 0%
         transition: width 0.2s
         margin: 0 auto
 
       &:hover .underline
         width: 100%
+
+    .Header-List-Item:hover
+      color: $secondary-text-color2
+      transition: 0.3s
 
   .Header-Hamburger
     display: none
