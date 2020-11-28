@@ -1,7 +1,10 @@
+$base-color:  #18252e
+$primary-text-color:#84a7bd
+$secondary-text-color:#7ae2dd
 .About
-  background-color: #2f4858
-  color: #14bdad
-  border-top: 5px solid #2f4858
+  background-color: $base-color
+  color: $primary-text-color
+  border-top: 5px solid $base-color
 
   .About-Header-Div
     .About-Header
@@ -41,22 +44,15 @@
     .About-Header
       margin-top: 20%
 
-  .About-Technology-Button
+  .About-Technology-Icon
     margin-top: 10%
     margin-bottom: 10%
-    outline: none
     cursor: pointer
-    font-size: 20px
-    background-color: #2f4858
-    color: #14bdad
-    padding: 15px 30px
-    border: 5px solid #14bdad
-    font-weight: 900
+    color: $primary-text-color
+
   @media screen and ( max-width: 540px  )
-    .About-Technology-Button
-      font-size: 15px
+    .About-Technology-Icon
       padding: 10px 25px
   @media screen and ( max-width: 540px  )
-    .About-Technology-Button
-      font-size: 15px
+    .About-Technology-Icon
       padding: 10px 25px

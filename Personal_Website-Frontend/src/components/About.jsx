@@ -3,6 +3,9 @@ import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 class About extends React.Component {
   render() {
     return (
@@ -35,9 +38,11 @@ class About extends React.Component {
             onSetActive={this.handleSetActive}
           >
             <Bounce left delay={1500}>
-              <button className="About-Technology-Button">
-                WHAT TECH DO I WORK WITH?
-              </button>
+              <FontAwesomeIcon
+                className="About-Technology-Icon"
+                icon={faChevronDown}
+                size={"5x"}
+              />
             </Bounce>
           </Link>
         </div>

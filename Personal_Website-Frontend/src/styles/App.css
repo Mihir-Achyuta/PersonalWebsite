@@ -310,15 +310,10 @@
   padding: 10%;
   padding-bottom: 20%;
 }
-.Homepage-Identification-Div .Homepage-Identification-Button {
+.Homepage-Identification-Div .Homepage-Identification-Icon {
   outline: none;
   cursor: pointer;
-  font-size: 20px;
-  background-color: #14bdad;
-  color: #2f4858;
-  padding: 15px 30px;
-  border: 5px solid #2f4858;
-  font-weight: 900;
+  color: #84a7bd;
 }
 
 @media screen and (max-width: 1100px) {
@@ -351,9 +346,9 @@
   }
 }
 .About {
-  background-color: #2f4858;
-  color: #14bdad;
-  border-top: 5px solid #2f4858;
+  background-color: #18252e;
+  color: #84a7bd;
+  border-top: 5px solid #18252e;
 }
 .About .About-Header-Div .About-Header {
   margin-top: 5%;
@@ -395,27 +390,19 @@
     margin-top: 20%;
   }
 }
-.About .About-Technology-Button {
+.About .About-Technology-Icon {
   margin-top: 10%;
   margin-bottom: 10%;
-  outline: none;
   cursor: pointer;
-  font-size: 20px;
-  background-color: #2f4858;
-  color: #14bdad;
-  padding: 15px 30px;
-  border: 5px solid #14bdad;
-  font-weight: 900;
+  color: #84a7bd;
 }
 @media screen and (max-width: 540px) {
-  .About .About-Technology-Button {
-    font-size: 15px;
+  .About .About-Technology-Icon {
     padding: 10px 25px;
   }
 }
 @media screen and (max-width: 540px) {
-  .About .About-Technology-Button {
-    font-size: 15px;
+  .About .About-Technology-Icon {
     padding: 10px 25px;
   }
 }
@@ -586,6 +573,11 @@
   right: 10px;
   cursor: pointer;
   color: #84a7bd;
+  transition: 1s;
+}
+.Absolute-Icons-Arrow-Up:hover {
+  color: #7ae2dd;
+  transition: 0.3s;
 }
 
 .Absolute-Icons-Hamburger {
@@ -594,6 +586,11 @@
   left: 10px;
   cursor: pointer;
   color: #84a7bd;
+  transition: 1s;
+}
+.Absolute-Icons-Hamburger:hover {
+  color: #7ae2dd;
+  transition: 0.3s;
 }
 
 html {

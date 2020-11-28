@@ -1,7 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faFile,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
@@ -16,14 +20,16 @@ class Homepage extends React.Component {
           </Fade>
           <Fade delay={1300} right>
             <h2 className="Homepage-Description Homepage-Grid">
-              A Fullstack Developer
+              A Full-Stack Developer
             </h2>
           </Fade>
           <Fade delay={1100} left>
             <h1 className="Homepage-Name Homepage-Grid">I'm Mihir</h1>
           </Fade>
           <Fade delay={1500} bottom>
-            <p className="Homepage-Technology Homepage-Grid">(In Javascript)</p>
+            <p className="Homepage-Technology Homepage-Grid">
+              (In Javascript and Dart)
+            </p>
           </Fade>
         </div>
         <div className="Homepage-Icons">
@@ -75,9 +81,11 @@ class Homepage extends React.Component {
             onSetActive={this.handleSetActive}
           >
             <div className="Homepage-Identification-Div">
-              <button className="Homepage-Identification-Button">
-                WHO AM I?
-              </button>
+              <FontAwesomeIcon
+                className="Homepage-Identification-Icon"
+                icon={faChevronDown}
+                size={"5x"}
+              />
             </div>
           </Link>
         </Bounce>
