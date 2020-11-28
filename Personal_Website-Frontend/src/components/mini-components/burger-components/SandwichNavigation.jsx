@@ -2,7 +2,7 @@ import React from "react";
 import Zoom from "react-reveal/Zoom";
 import { Link } from "react-scroll";
 
-class Sandwich_Menu extends React.Component {
+class SandwichMenu extends React.Component {
   constructor(props) {
     super(props);
     this.homeClick = this.homeClick.bind(this);
@@ -106,4 +106,4 @@ class Sandwich_Menu extends React.Component {
   }
 }
 
-export default Sandwich_Menu;
+export default SandwichMenu;

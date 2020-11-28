@@ -2,7 +2,7 @@ import React from "react";
 
 import "./styles/App.css";
 
-import Loading_Animation from "./components/mini-components/Loading_Animation";
+import LoadingAnimation from "./components/mini-components/LoadingAnimation";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
@@ -11,8 +11,8 @@ import Project from "./components/mini-components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AbsoluteIcons from "./components/AbsoluteIcons";
-import Burger_Menu from "./components/mini-components/burger-components/Burger_Menu";
-import Bottom_Menu from "./components/mini-components/burger-components/Bottom_Menu";
+import BurgerMenu from "./components/mini-components/burger-components/BurgerMenu";
+import BottomMenu from "./components/mini-components/burger-components/BottomMenu";
 
 import { Element } from "react-scroll";
 
@@ -63,7 +63,7 @@ class App extends React.Component {
           <div className="App-Div">
             {this.state.bottomMenuShown ? (
               <div className="Menu Menu-Load">
-                <Bottom_Menu
+                <BottomMenu
                   scrollTop={this.scrollToTop}
                   dissapearBottomMenu={this.dissapearBottomMenu}
                 />
@@ -73,7 +73,7 @@ class App extends React.Component {
             )}
             {this.state.burgerMenuShown ? (
               <div className="Burger-Menu Burger-Menu-Load">
-                <Burger_Menu
+                <BurgerMenu
                   scrollTop={this.scrollToTop}
                   dissapearBurgerMenu={this.dissapearBurgerMenu}
                 />
@@ -145,7 +145,7 @@ class App extends React.Component {
             />
           </div>
         ) : (
-          <Loading_Animation />
+          <LoadingAnimation />
         )}
       </div>
     );

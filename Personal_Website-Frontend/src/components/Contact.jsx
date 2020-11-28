@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import Submit_Modal from "./mini-components/Submit_Modal";
+import SubmitModal from "./mini-components/SubmitModal";
 import axios from "axios";
 
 class Contact extends React.Component {
@@ -96,7 +96,7 @@ class Contact extends React.Component {
           </div>
         </Fade>
         {this.state.formSent ? (
-          <Submit_Modal
+          <SubmitModal
             removeModel={this.removeModel}
             message={this.state.formText}
           />

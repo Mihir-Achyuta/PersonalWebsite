@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 class Submit_Modal extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 
-class Loading_Animation extends React.Component {
+class LoadingAnimation extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isLoaded: false, headerLoaded: false };
@@ -45,4 +45,4 @@ class Loading_Animation extends React.Component {
   }
 }
 
-export default Loading_Animation;
+export default LoadingAnimation;
