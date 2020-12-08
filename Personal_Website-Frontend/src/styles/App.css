@@ -85,7 +85,7 @@
 }
 
 .Menu-Load {
-  background-color: #2f4858;
+  background-color: #84a7bd;
   height: 102vh;
   width: 101vw;
   transition: 0.5s;
@@ -105,7 +105,7 @@
 }
 
 .Burger-Menu-Load {
-  background-color: #2f4858;
+  background-color: #84a7bd;
   height: 102vh;
   width: 101vw;
   transition: 0.5s;
@@ -134,13 +134,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #7ae2dd;
+  color: #18252e;
 }
 .Sandwich_Menu .Sandwich_Menu-List {
   padding: 0;
 }
 .Sandwich_Menu .Sandwich_Menu-List .Sandwich-List-Item {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {

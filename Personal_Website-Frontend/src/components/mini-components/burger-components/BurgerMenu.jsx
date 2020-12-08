@@ -13,7 +13,7 @@ class BurgerMenu extends React.Component {
           size="2x"
           onClick={this.props.dissapearBurgerMenu}
           className="X-Burger-Icon"
-          color="#7ae2dd"
+          color="#18252e"
         />
         <SandwichNavigation
           scrollToTop={this.props.scrollTop}

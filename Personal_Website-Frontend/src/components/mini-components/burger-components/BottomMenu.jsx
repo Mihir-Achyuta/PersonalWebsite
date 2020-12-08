@@ -13,7 +13,7 @@ class BottomMenu extends React.Component {
           size="2x"
           onClick={this.props.dissapearBottomMenu}
           className="X-Icon"
-          color="#7ae2dd"
+          color="#18252e"
         />
         <SandwichNavigation
           scrollToTop={this.props.scrollTop}
