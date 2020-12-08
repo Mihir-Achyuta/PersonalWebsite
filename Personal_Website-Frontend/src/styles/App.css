@@ -463,7 +463,7 @@
 
 .Contact {
   padding-top: 75px;
-  background-color: #7ae2dd;
+  background-color: #18252e;
   padding-bottom: 75px;
   color: #7ae2dd;
 }
@@ -477,7 +477,7 @@
   box-shadow: 0 0 40px -10px #000;
 }
 .Contact .Contact-Div .Input-Field {
-  color: #2f4858;
+  color: #18252e;
   outliine: none;
   border: none;
   background-color: #7ae2dd;
@@ -489,7 +489,7 @@
   padding-bottom: 10px;
 }
 .Contact .Contact-Div .Input-Field::placeholder {
-  color: #2f4858;
+  color: #18252e;
   margin-left: 5px;
 }
 .Contact .Contact-Div .Contact-Button {
