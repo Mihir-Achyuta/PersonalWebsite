@@ -3,6 +3,9 @@ import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 class Skills extends React.Component {
   render() {
     return (
@@ -66,9 +69,11 @@ class Skills extends React.Component {
           >
             {" "}
             <div className="Skills-Projects-Button-Div">
-              <button className="Skills-Projects-Button">
-                WHAT HAVE I WORKED ON?
-              </button>
+              <FontAwesomeIcon
+                className="Skills-Projects-Button"
+                icon={faChevronDown}
+                size={"5x"}
+              />
             </div>
           </Link>
         </Bounce>

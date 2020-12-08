@@ -1,11 +1,16 @@
+$base-color:  #18252e
+$primary-text-color:#84a7bd
+$secondary-text-color:#7ae2dd
+
 .Skills
-  border-top: 5px solid #2f4858
-  background-color: #14bdad
+  border-top: 5px solid $base-color
+  background-color: $base-color
+  color: $primary-text-color
 
   .Skills-Header
     font-size: 250%
     margin-top: 7%
-  
+
   .Front-Back-Tool
     display: flex
     justify-content: space-evenly
@@ -15,16 +20,7 @@
     margin-bottom: 10%
     outline: none
     cursor: pointer
-    font-size: 20px
-    background-color: #14bdad
-    color: #2f4858
     padding: 15px 30px
-    border: 5px solid #2f4858
-    font-weight: 900
-  @media screen and ( max-width: 540px  )
-    .Skills-Projects-Button
-      font-size: 15px
-      padding: 10px 25px
 
 @media screen and (max-width: 600px)
   .Front-Back-Tool
