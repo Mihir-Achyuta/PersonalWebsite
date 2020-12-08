@@ -544,9 +544,10 @@
 }
 
 .Footer {
-  background-color: #7ae2dd;
+  background-color: #18252e;
   padding-top: 1%;
   padding-bottom: 2%;
+  color: #84a7bd;
 }
 .Footer .Footer-Icon {
   margin-left: 1%;

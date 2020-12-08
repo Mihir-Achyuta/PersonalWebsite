@@ -15,7 +15,7 @@ class Footer extends React.Component {
               className="Footer-Icon"
               icon={faGithubSquare}
               size="2x"
-              color="#2f4858"
+              color="#84a7bd"
             />
           </a>
           <a href="">
@@ -23,7 +23,7 @@ class Footer extends React.Component {
               className="Footer-Icon"
               icon={faLinkedin}
               size="2x"
-              color="#2f4858"
+              color="#84a7bd"
             />
           </a>
           <a href="">
@@ -31,7 +31,7 @@ class Footer extends React.Component {
               className="Footer-Icon"
               icon={faFile}
               size="2x"
-              color="#2f4858"
+              color="#84a7bd"
             />
           </a>
           <a href="">
@@ -39,7 +39,7 @@ class Footer extends React.Component {
               className="Footer-Icon"
               icon={faEnvelope}
               size="2x"
-              color="#2f4858"
+              color="#84a7bd"
             />
           </a>
         </Bounce>

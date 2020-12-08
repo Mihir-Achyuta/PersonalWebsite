@@ -7,9 +7,9 @@ import Fade from "react-reveal/Fade";
 class Project extends React.Component {
   render() {
     let styles = {
-      backgroundColor: this.props.backColor,
-      color: this.props.textColor,
-      borderTop: "5px solid " + this.props.topBorder,
+      backgroundColor: "#18252e",
+      color: "#84a7bd",
+      borderTop: "5px solid " + "#18252e",
     };
     return (
       <section className="Projects" style={styles}>
@@ -42,12 +42,12 @@ class Project extends React.Component {
                       className="Projects-One-Icon"
                       icon={faGithub}
                       size="2x"
-                      color={this.props.textColor}
+                      color={"#84a7bd"}
                     />
                   </a>
                   <a href="">
                     <FontAwesomeIcon
-                      color={this.props.textColor}
+                      color={"#84a7bd"}
                       className="Projects-One-Icon"
                       icon={faEye}
                       size="2x"
@@ -82,7 +82,7 @@ class Project extends React.Component {
                 <div className="Projects-One-Icons">
                   <a href="">
                     <FontAwesomeIcon
-                      color={this.props.textColor}
+                      color={"#84a7bd"}
                       className="Projects-One-Icon"
                       icon={faGithub}
                       size="2x"
@@ -90,7 +90,7 @@ class Project extends React.Component {
                   </a>
                   <a href="">
                     <FontAwesomeIcon
-                      color={this.props.textColor}
+                      color={"#84a7bd"}
                       className="Projects-One-Icon"
                       icon={faEye}
                       size="2x"
