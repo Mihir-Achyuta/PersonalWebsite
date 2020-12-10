@@ -1,5 +1,6 @@
 // sass compile command
 // sass --watch src/styles/App.sass:src/styles/App.css 
+
 @use "./modules/Loading_Animation.sass"
 @use "./modules/NavBar.sass"
 @use "./modules/Header.sass"
@@ -9,18 +10,22 @@
 @use "./modules/Projects.sass"
 @use "./modules/Contact.sass"
 @use "./modules/Footer.sass"
+@use "./modules/Cursor.sass"
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap")
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap")
+@import "./partials/_variables.sass"
 
 html
   overflow-x: hidden
+  cursor: none
 
 body
   margin: 0
   text-align: center
-  color: #2f4858
+  color: $base-color
   font-family: Lato
   overflow-x: hidden
+  cursor: none
 
 ul
   padding-left: 0
@@ -34,5 +39,9 @@ input
 
 a
   text-decoration: none
+
+::selection
+  background-color: $secondary-text-color
+  color: $base-color
 
 /*# sourceMappingURL=App.css.map

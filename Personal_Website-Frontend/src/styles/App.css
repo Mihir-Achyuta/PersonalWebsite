@@ -585,16 +585,30 @@
   transition: 0.3s;
 }
 
+.Cursor {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fefefe;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
 html {
   overflow-x: hidden;
+  cursor: none;
 }
 
 body {
   margin: 0;
   text-align: center;
-  color: #2f4858;
+  color: #18252e;
   font-family: Lato;
   overflow-x: hidden;
+  cursor: none;
 }
 
 ul {
@@ -612,6 +626,11 @@ input {
 
 a {
   text-decoration: none;
+}
+
+::selection {
+  background-color: #7ae2dd;
+  color: #18252e;
 }
 
 /*# sourceMappingURL=App.css.map */
