@@ -1,27 +1,26 @@
 import React from "react";
-import SandwichNavigation from "./SandwichNavigation";
+import BurgerNavLinks from "./BurgerNavLinks";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 
-class BurgerMenu extends React.Component {
+class BottomBurgerMenu extends React.Component {
   render() {
     return (
       <div>
         <FontAwesomeIcon
           icon={faTimesCircle}
           size="2x"
-          onClick={this.props.dissapearBurgerMenu}
-          className="X-Burger-Icon"
-          color="#18252e"
+          onClick={this.props.dissapearBottomMenu}
+          className="X-Icon"
         />
-        <SandwichNavigation
+        <BurgerNavLinks
           scrollToTop={this.props.scrollTop}
-          dissapearMenu={this.props.dissapearBurgerMenu}
+          dissapearMenu={this.props.dissapearBottomMenu}
         />
       </div>
     );
   }
 }
 
-export default BurgerMenu;
+export default BottomBurgerMenu;

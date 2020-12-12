@@ -14,7 +14,6 @@ class Cursor extends React.Component {
   }
   addMouseEventListener() {
     document.addEventListener("mousemove", this.changeMousePosition);
-    console.log("Added");
   }
   removeMouseEventListener() {
     document.removeEventListener("mousemove", this.changeMousePosition);
