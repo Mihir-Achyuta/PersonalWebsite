@@ -1,8 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import List_Item from "./mini-components/List_Item";
 import Zoom from "react-reveal/Zoom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends React.Component {
   constructor(props) {

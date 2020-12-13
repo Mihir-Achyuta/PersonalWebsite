@@ -1,4 +1,9 @@
 import React from "react";
+
+import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
+import { Link } from "react-scroll";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -6,9 +11,6 @@ import {
   faFile,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
-import Fade from "react-reveal/Fade";
-import Bounce from "react-reveal/Bounce";
-import { Link } from "react-scroll";
 
 class Homepage extends React.Component {
   render() {
