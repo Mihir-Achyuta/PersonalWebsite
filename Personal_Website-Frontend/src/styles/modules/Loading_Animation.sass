@@ -4,7 +4,7 @@
   height: 100vh
   background: $base-color
 
-.Initial-Scene
+.LoadingAnimation-Scene
   height: 100vh
   width: 100vw
   position: absolute
@@ -13,12 +13,7 @@
   transform: scale(1)
   z-index: 2
 
-.Initial-Scene-Loaded
-  transform: scale(0)
-  transform-origin: 50% -50%
-  transition: 1s
-
-.Initial-Header
+.LoadingAnimation-Header
   font-family: 'Permanent Marker', cursive
   font-size: 400%
   position: fixed
@@ -28,15 +23,13 @@
   color: $primary-text-color
   transform: translate(-50%,-50%) scale(0)
   transition: 0.5s
-
-.Initial-Header-Loaded
   animation: loadHeader 2s
 
 @keyframes loadHeader
   20%,80%
     transform: translate(-50%,-50%) scale(1)
 
-.Initial-Header:before
+.LoadingAnimation-Header:before
   position: absolute
   content: ""
   background: linear-gradient(90deg, $primary-text-color 40%, transparent 40%)
