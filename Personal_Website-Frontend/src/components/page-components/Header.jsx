@@ -1,6 +1,6 @@
 import React from "react";
 
-import List_Item from "./mini-components/List_Item";
+import List_Item from "../mini-components/link-components/List_Item";
 import Zoom from "react-reveal/Zoom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

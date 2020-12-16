@@ -2,19 +2,19 @@ import React from "react";
 
 import "./styles/App.css";
 
-import LoadingAnimation from "./components/mini-components/LoadingAnimation";
-import Header from "./components/Header";
-import Homepage from "./components/Homepage";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Project from "./components/mini-components/Project";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import AbsoluteIcons from "./components/AbsoluteIcons";
+import LoadingAnimation from "./components/page-components/LoadingAnimation";
+import Header from "./components/page-components/Header";
+import Homepage from "./components/page-components/Homepage";
+import About from "./components/page-components/About";
+import Skills from "./components/page-components/Skills";
+import Project from "./components/page-components/Project";
+import Contact from "./components/page-components/Contact";
+import Footer from "./components/page-components/Footer";
+import AbsoluteIcons from "./components/page-components/AbsoluteIcons";
 
 import TopBurgerMenu from "./components/mini-components/burger-components/TopBurgerMenu";
 import BottomBurgerMenu from "./components/mini-components/burger-components/BottomBurgerMenu";
-import Cursor from "./components/mini-components/Cursor";
+import Cursor from "./components/mini-components/link-components/Cursor";
 
 import { Element } from "react-scroll";
 
