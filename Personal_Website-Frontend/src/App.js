@@ -21,7 +21,7 @@ class App extends React.Component {
       this.setState((state) => ({
         contentLoaded: true,
       }));
-    }, 2500);
+    }, 5700);
   }
 
   render() {
