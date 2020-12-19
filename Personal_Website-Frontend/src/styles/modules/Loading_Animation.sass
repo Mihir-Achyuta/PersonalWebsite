@@ -66,7 +66,7 @@
   display: flex
   position: absolute
   transform: translate(-50%,-50%)
-  top: 65%
+  top: 70%
   left: 50%
 
   .LoadingAnimation-Dot
@@ -79,9 +79,11 @@
     padding: 5px
 
     &.Dot-One
-      transform: scale(1)
+      transform: scale(0)
+      animation: bob 2s infinite
 
       &::before
+        background-color: red
         position: absolute
         left: 0%
         top: 0%
@@ -93,7 +95,9 @@
         animation: wave 2s infinite
 
     &.Dot-Two
-      transform: scale(1)
+      transform: scale(0)
+      animation: bob 2s infinite
+      animation-delay: 0.25s
 
       &::before
         position: absolute
@@ -108,7 +112,9 @@
         animation-delay: 0.25s
 
     &.Dot-Three
-      transform: scale(1)
+      transform: scale(0)
+      animation: bob 2s infinite
+      animation-delay: 0.5s
 
       &::before
         position: absolute
@@ -123,7 +129,9 @@
         animation-delay: 0.5s
 
     &.Dot-Four
-      transform: scale(1)
+      transform: scale(0)
+      animation: bob 2s infinite
+      animation-delay: 0.75s
 
       &::before
         position: absolute
@@ -144,6 +152,16 @@
       80%,
       100%
         opacity: 0
+
+    @keyframes bob
+      0%,100%
+        transform: scale(1)
+      0%
+        transform: translateY(0px)
+      50%
+        transform: translateY(-50px)
+      100%
+        transform: translateX(0px)
 
 .LoadingAnimation-Transition
   position: absolute
