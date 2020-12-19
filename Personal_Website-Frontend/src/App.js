@@ -16,12 +16,12 @@ class App extends React.Component {
   componentDidMount() {
     // disables scrollbar and shows loading animation at start
     //controls how long the animation goes for to regular screen
-    // setTimeout(() => {
-    //   document.body.style.overflow = "visible";
-    //   this.setState((state) => ({
-    //     contentLoaded: true,
-    //   }));
-    // }, 5700);
+    setTimeout(() => {
+      document.body.style.overflow = "visible";
+      this.setState((state) => ({
+        contentLoaded: true,
+      }));
+    }, 6000);
   }
 
   render() {

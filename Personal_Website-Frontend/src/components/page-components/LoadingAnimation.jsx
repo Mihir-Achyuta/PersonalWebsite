@@ -3,7 +3,7 @@ import React from "react";
 class LoadingAnimation extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { pageTransition: false };
+    this.state = { pageTransition: false, showLoader: true };
   }
   componentDidMount() {
     setTimeout(() => {
@@ -11,13 +11,14 @@ class LoadingAnimation extends React.Component {
       this.setState((state) => ({
         pageTransition: true,
       }));
-    }, 2500);
+    }, 3500);
     setTimeout(() => {
       document.body.style.overflow = "visible";
       this.setState((state) => ({
         pageTransition: false,
+        showLoader: false,
       }));
-    }, 4500);
+    }, 5500);
   }
   render() {
     return (
@@ -26,11 +27,15 @@ class LoadingAnimation extends React.Component {
           <h1 className="LoadingAnimation-Header">
             {"<"}MIHIR{"/>"}
           </h1>
-          <div className="LoadingAnimation-Loader">
+          <div
+            className="LoadingAnimation-Loader"
+            style={{ display: this.state.showLoader ? "flex" : "none" }}
+          >
             <div className="LoadingAnimation-Dot Dot-One"></div>
             <div className="LoadingAnimation-Dot Dot-Two"></div>
             <div className="LoadingAnimation-Dot Dot-Three"></div>
             <div className="LoadingAnimation-Dot Dot-Four"></div>
+            <div className="LoadingAnimation-Dot Dot-Five"></div>
           </div>
         </div>
         <div
