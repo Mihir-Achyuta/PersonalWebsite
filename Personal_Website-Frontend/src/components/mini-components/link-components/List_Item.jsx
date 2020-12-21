@@ -7,7 +7,7 @@ class List_Item extends React.Component {
   }
   render() {
     return (
-      <li className="Header-List-Item">
+      <li className="NavBar-List-Item">
         {" "}
         <Link
           activeClass="active"

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "./page-components/Header";
+import NavBar from "./page-components/NavBar";
 import Homepage from "./page-components/Homepage";
 import About from "./page-components/About";
 import Skills from "./page-components/Skills";
@@ -76,7 +76,7 @@ class Page extends React.Component {
         )}
         <div className="Header-Homepage">
           <Cursor />
-          <Header
+          <NavBar
             scrollTop={this.scrollToTop}
             showBurgerMenu={this.showBurgerMenu}
           />

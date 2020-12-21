@@ -6,26 +6,26 @@ import Zoom from "react-reveal/Zoom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-class Header extends React.Component {
+class NavBar extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <div className="Header">
+      <div className="NavBar">
         <Zoom>
-          <div className="Header-Logo">
+          <div className="NavBar-Logo">
             <a href="">
-              <h1 className="Header-Logo-Left">
+              <h1 className="NavBar-Logo-Left">
                 {"<"}MIHIR{"/>"}
               </h1>
             </a>
           </div>
         </Zoom>
-        <nav className="Header-Navbar">
-          <ol className="Header-Unordered-List">
+        <nav className="NavBar-Navbar">
+          <ol className="NavBar-Unordered-List">
             <Zoom delay={100}>
-              <li className="Header-List-Item" onClick={this.props.scrollTop}>
+              <li className="NavBar-List-Item" onClick={this.props.scrollTop}>
                 HOME<div className="underline"></div>
               </li>
             </Zoom>
@@ -42,14 +42,14 @@ class Header extends React.Component {
               <List_Item name="CONTACT" />
             </Zoom>
             <Zoom delay={600}>
-              <li className="Header-List-Item">
+              <li className="NavBar-List-Item">
                 RESUME<div className="underline"></div>
               </li>
             </Zoom>
           </ol>
           <Zoom delay={500}>
             <FontAwesomeIcon
-              className="Header-Hamburger"
+              className="NavBar-Hamburger"
               icon={faBars}
               size="2x"
               onClick={this.props.showBurgerMenu}
@@ -61,4 +61,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default NavBar;
