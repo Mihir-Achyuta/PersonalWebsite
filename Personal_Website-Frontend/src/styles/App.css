@@ -26,6 +26,7 @@
   color: #84a7bd;
   transform: translate(-50%, -50%) scale(0);
   animation: loadHeader 3s;
+  animation-delay: 1s;
   transition: 0.5s;
   will-change: transform;
 }
@@ -86,6 +87,7 @@
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One {
   transform: scale(0);
   animation: bob 2s infinite;
+  animation-delay: 0.5s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One::before {
   background-color: red;
@@ -98,11 +100,12 @@
   background: inherit;
   border-radius: inherit;
   animation: wave 2s infinite;
+  animation-delay: 0.5s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Two {
   transform: scale(0);
   animation: bob 2s infinite;
-  animation-delay: 0.25s;
+  animation-delay: 0.75s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Two::before {
   position: absolute;
@@ -114,12 +117,12 @@
   background: inherit;
   border-radius: inherit;
   animation: wave 2s infinite;
-  animation-delay: 0.25s;
+  animation-delay: 0.75s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Three {
   transform: scale(0);
   animation: bob 2s infinite;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Three::before {
   position: absolute;
@@ -131,12 +134,12 @@
   background: inherit;
   border-radius: inherit;
   animation: wave 2s infinite;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Four {
   transform: scale(0);
   animation: bob 2s infinite;
-  animation-delay: 0.75s;
+  animation-delay: 1.25s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Four::before {
   position: absolute;
@@ -148,12 +151,12 @@
   background: inherit;
   border-radius: inherit;
   animation: wave 2s infinite;
-  animation-delay: 0.75s;
+  animation-delay: 1.25s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Five {
   transform: scale(0);
   animation: bob 2s infinite;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Five::before {
   position: absolute;
@@ -165,7 +168,7 @@
   background: inherit;
   border-radius: inherit;
   animation: wave 2s infinite;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 @keyframes wave {
   50%, 75% {
@@ -199,6 +202,7 @@
 .LoadingAnimation-Transition.LoadingAnimation-Transition-Left {
   clip-path: polygon(0 100%, 0% 100%, 0 100%);
   transition: 1s;
+  transition-delay: 1s;
   will-change: clip-path, background;
 }
 .LoadingAnimation-Transition.LoadingAnimation-Transition-Left.Transition-Left {
@@ -208,6 +212,7 @@
 .LoadingAnimation-Transition.LoadingAnimation-Transition-Right {
   clip-path: polygon(100% 0, 100% 0, 100% 0%);
   transition: 1s;
+  transition-delay: 1s;
   will-change: clip-path, background;
 }
 .LoadingAnimation-Transition.LoadingAnimation-Transition-Right.Transition-Right {
@@ -246,7 +251,7 @@
 }
 .Header .Header-Logo {
   font-size: 100%;
-  margin-left: 2%;
+  margin-left: 4%;
   margin-top: 1%;
   font-family: "Permanent Marker", cursive;
 }
@@ -260,7 +265,7 @@
 }
 
 .Header-Navbar {
-  margin-right: 5%;
+  margin-right: 3%;
 }
 .Header-Navbar .Header-Unordered-List {
   display: flex;
@@ -299,7 +304,7 @@
 .Header-Navbar .Header-Hamburger:hover {
   color: #7ae2dd;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 930px) {
   .Header-Navbar .Header-Hamburger {
     display: block;
   }

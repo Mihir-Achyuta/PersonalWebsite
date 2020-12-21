@@ -10,7 +10,7 @@ class Footer extends React.Component {
       <section className="Footer">
         <Bounce right>
           <p>Made by ©Mihir-Achyuta</p>
-          <a href="">
+          <a href="https://github.com/Mihir-Achyuta">
             <FontAwesomeIcon
               className="Footer-Icon"
               icon={faGithubSquare}
@@ -27,7 +27,7 @@ class Footer extends React.Component {
           <a href="">
             <FontAwesomeIcon className="Footer-Icon" icon={faFile} size="2x" />
           </a>
-          <a href="">
+          <a href="achyutamihir@gmail.com">
             <FontAwesomeIcon
               className="Footer-Icon"
               icon={faEnvelope}
