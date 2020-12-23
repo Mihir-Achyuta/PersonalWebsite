@@ -8,7 +8,6 @@ class List_Item extends React.Component {
   render() {
     return (
       <li className="NavBar-List-Item">
-        {" "}
         <Link
           activeClass="active"
           to={this.handleClick()}
@@ -19,7 +18,7 @@ class List_Item extends React.Component {
           onSetActive={this.handleSetActive}
         >
           {this.props.name}
-        </Link>{" "}
+        </Link>
         <div className="underline"></div>
       </li>
     );

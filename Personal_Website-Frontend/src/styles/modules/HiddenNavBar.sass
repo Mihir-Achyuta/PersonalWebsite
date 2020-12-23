@@ -1,0 +1,70 @@
+@import "../partials/_variables.sass"
+
+.Header-Homepage
+    background: $base-color
+    height: 100vh
+
+.NavBar
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.NavBar-Logo
+    font-size: 100%
+    margin-left: 4%
+    margin-top: 1%
+    font-family: 'Permanent Marker', cursive
+
+    .NavBar-Logo-Left
+        color: $primary-text-color
+        transition: 1s
+
+    .NavBar-Logo-Left:hover
+        color: $secondary-text-color
+        transition: 0.3s
+
+.NavBar-Navbar
+    margin-right: 3%
+
+.NavBar-Unordered-List
+    display: flex
+    flex-direction: row
+    margin-right: 5%
+
+    .NavBar-List-Item
+        text-align: center
+        margin-left: 45px
+        display: inline-block
+        cursor: pointer
+        text-decoration: none
+        color: $primary-text-color
+        transition: 1s
+
+    .underline
+        height: 3px
+        background-color: $secondary-text-color
+        width: 0%
+        transition: width 0.2s
+        margin: 0 auto
+
+    &:hover .underline
+        width: 100%
+
+    .NavBar-List-Item:hover
+        color: $secondary-text-color
+        transition: 0.3s
+
+.NavBar-Hamburger
+    display: none
+    cursor: pointer
+    color: $primary-text-color
+    transition: 1s
+
+.NavBar-Hamburger:hover
+    color: $secondary-text-color
+
+@media screen and (max-width: 930px)
+    .NavBar-Hamburger
+        display: block
+    .NavBar-Unordered-List
+        display: none
