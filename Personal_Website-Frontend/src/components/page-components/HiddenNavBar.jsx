@@ -12,18 +12,18 @@ class HiddenNavBar extends React.Component {
   }
   render() {
     return (
-      <div className="NavBar">
+      <div className="Hidden-NavBar">
         <Zoom>
-          <div className="NavBar-Logo">
+          <div className="Hidden-NavBar-Logo">
             <a href="">
-              <h1 className="NavBar-Logo-Left">
+              <h1 className="Hidden-NavBar-Logo-Left">
                 {"<"}MIHIR{"/>"}
               </h1>
             </a>
           </div>
         </Zoom>
-        <nav className="NavBar-Navbar">
-          <ol className="NavBar-Unordered-List">
+        <nav className="Hidden-NavBar-Navbar">
+          <ol className="Hidden-NavBar-Unordered-List">
             <Zoom delay={100}>
               <li className="NavBar-List-Item" onClick={this.props.scrollTop}>
                 HOME<div className="underline"></div>
@@ -49,7 +49,7 @@ class HiddenNavBar extends React.Component {
           </ol>
           <Zoom delay={500}>
             <FontAwesomeIcon
-              className="NavBar-Hamburger"
+              className="Hidden-NavBar-Hamburger"
               icon={faBars}
               size="2x"
               onClick={this.props.showBurgerMenu}

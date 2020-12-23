@@ -1,6 +1,7 @@
 import React from "react";
 
 import NavBar from "./page-components/NavBar";
+import HiddenNavBar from "./page-components/HiddenNavBar";
 import Homepage from "./page-components/Homepage";
 import About from "./page-components/About";
 import Skills from "./page-components/Skills";

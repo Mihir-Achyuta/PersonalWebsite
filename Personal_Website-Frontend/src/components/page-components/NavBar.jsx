@@ -22,7 +22,7 @@ class NavBar extends React.Component {
             </a>
           </div>
         </Zoom>
-        <nav className="NavBar-Navbar">
+        <nav className="NavBar-Links">
           <ol className="NavBar-Unordered-List">
             <Zoom delay={100}>
               <li className="NavBar-List-Item" onClick={this.props.scrollTop}>
