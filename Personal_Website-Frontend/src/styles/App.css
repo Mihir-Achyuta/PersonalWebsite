@@ -329,18 +329,11 @@
   align-items: center;
   background-color: #84a7bd;
   z-index: 5;
+  transition: top 0.5s;
 }
 
 .Hidden-NavBar-Scroll {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #84a7bd;
-  z-index: 5;
-  display: none;
+  top: -100px;
 }
 
 .Hidden-NavBar-Logo {

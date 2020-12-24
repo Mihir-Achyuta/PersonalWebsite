@@ -11,13 +11,33 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 class HiddenNavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { visible: false };
+    this.state = { visible: false, prevScrollPosition: window.pageYOffset };
+    this.popNavBar = this.popNavBar.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.popNavBar);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.popNavBar);
+  }
+  popNavBar() {
+    let currentScrollPosition = window.pageYOffset;
+    let navBarVisible =
+      currentScrollPosition < this.state.prevScrollPosition &&
+      currentScrollPosition >= 100;
+
+    this.setState({
+      visible: navBarVisible,
+      prevScrollPosition: currentScrollPosition,
+    });
   }
   render() {
     return (
       <div
         className={
-          this.state.visible ? "Hidden-NavBar" : "Hidden-NavBar-Scroll"
+          this.state.visible
+            ? "Hidden-NavBar"
+            : "Hidden-NavBar Hidden-NavBar-Scroll"
         }
       >
         <Zoom>
