@@ -295,6 +295,9 @@
   color: #7ae2dd;
   transition: 0.3s;
 }
+.NavBar-Links .NavBar-Unordered-List .NavBar-Resume {
+  color: #84a7bd;
+}
 .NavBar-Links .NavBar-Hamburger {
   display: none;
   cursor: pointer;
@@ -366,6 +369,10 @@
 .Hidden-NavBar-Unordered-List .Hidden-NavBar-List-Item:hover {
   color: #7ae2dd;
   transition: 0.3s;
+}
+
+.HiddenNavBar-Resume {
+  color: #18252e;
 }
 
 .Hidden-NavBar-Hamburger {

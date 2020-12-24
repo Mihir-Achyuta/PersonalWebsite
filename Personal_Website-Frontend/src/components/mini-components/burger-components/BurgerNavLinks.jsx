@@ -1,4 +1,7 @@
 import React from "react";
+
+import Resume from "../../../documents/resume.pdf";
+
 import Zoom from "react-reveal/Zoom";
 import { Link } from "react-scroll";
 
@@ -102,10 +105,18 @@ class BurgerNavLinks extends React.Component {
           </Zoom>
           <Zoom delay={1500}>
             <li
-              className="Sandwich-List-Item"
+              className="Sandwich-List-Item NavBar-Resume"
               onClick={this.props.dissapearMenu}
             >
-              RESUME<div className=""></div>
+              <a
+                href={Resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#18252e" }}
+              >
+                RESUME
+              </a>
+              <div className=""></div>
             </li>
           </Zoom>
         </ol>

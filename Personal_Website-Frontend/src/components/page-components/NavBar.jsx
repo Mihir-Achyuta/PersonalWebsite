@@ -1,6 +1,8 @@
 import React from "react";
 
 import List_Item from "../mini-components/link-components/List_Item";
+import Resume from "../../documents/resume.pdf";
+
 import Zoom from "react-reveal/Zoom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,7 +43,15 @@ class NavBar extends React.Component {
             </Zoom>
             <Zoom delay={600}>
               <li className="NavBar-List-Item">
-                RESUME<div className="underline"></div>
+                <a
+                  className=" NavBar-Resume"
+                  href={Resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  RESUME
+                </a>
+                <div className="underline"></div>
               </li>
             </Zoom>
           </ol>

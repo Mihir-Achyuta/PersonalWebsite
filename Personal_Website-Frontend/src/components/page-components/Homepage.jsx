@@ -1,5 +1,7 @@
 import React from "react";
 
+import Resume from "../../documents/resume.pdf";
+
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
@@ -36,7 +38,11 @@ class Homepage extends React.Component {
         </div>
         <div className="Homepage-Icons">
           <Fade top big delay={1700}>
-            <a href="">
+            <a
+              href="https://github.com/Mihir-Achyuta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 className="Homepage-Icon"
                 icon={faGithubSquare}
@@ -45,7 +51,11 @@ class Homepage extends React.Component {
             </a>
           </Fade>
           <Fade top big delay={1700}>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/mihirachyuta/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 className="Homepage-Icon"
                 icon={faLinkedin}
@@ -54,7 +64,7 @@ class Homepage extends React.Component {
             </a>
           </Fade>
           <Fade top big delay={1700}>
-            <a href="">
+            <a href={Resume} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 className="Homepage-Icon"
                 icon={faFile}
@@ -63,7 +73,11 @@ class Homepage extends React.Component {
             </a>
           </Fade>
           <Fade top big delay={1700}>
-            <a href="">
+            <a
+              href="mailto:achyutamihir@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 className="Homepage-Icon"
                 icon={faEnvelope}
