@@ -11,7 +11,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 class HiddenNavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { visible: true };
+    this.state = { visible: false };
   }
   render() {
     return (
@@ -32,9 +32,7 @@ class HiddenNavBar extends React.Component {
         <nav className="Hidden-NavBar-Links">
           <ol className="Hidden-NavBar-Unordered-List">
             <Zoom delay={100}>
-              <li onClick={this.props.scrollTop}>
-                HOME<div className="underline"></div>
-              </li>
+              <List_Item name="HOME" hidden />
             </Zoom>
             <Zoom delay={200}>
               <List_Item name="ABOUT" hidden />

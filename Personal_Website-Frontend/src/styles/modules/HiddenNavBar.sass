@@ -1,7 +1,7 @@
 @import "../partials/_variables.sass"
 
 .Hidden-NavBar
-    // position: absolute
+    position: fixed
     width: 100%
     top: 0
     display: flex
@@ -10,7 +10,15 @@
     background-color: $primary-text-color
     z-index: 5
 
-.Hidden-Navbar-Scroll
+.Hidden-NavBar-Scroll
+    position: fixed
+    width: 100%
+    top: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $primary-text-color
+    z-index: 5
     display: none
 
 .Hidden-NavBar-Logo
@@ -43,22 +51,22 @@
             color: $base-color
             transition: 1s
 
-        .underline
-            height: 3px
-            background-color: $base-color
-            width: 0%
-            transition: width 0.2s
-            margin: 0 auto
+            .underline
+                height: 3px
+                background-color: $base-color
+                width: 0%
+                transition: width 0.2s
+                margin: 0 auto
 
-        &:hover .underline
-            width: 100%
+            &:hover .underline
+                width: 100%
 
-        .Hidden-NavBar-List-Item:hover
-            color: $secondary-text-color
-            transition: 0.3s
+            .Hidden-NavBar-List-Item:hover
+                color: $secondary-text-color
+                transition: 0.3s
 
-    .HiddenNavBar-Resume
-        color: $base-color
+            .HiddenNavBar-Resume
+                color: $base-color
 
     .Hidden-NavBar-Hamburger
         display: none

@@ -321,6 +321,7 @@
 }
 
 .Hidden-NavBar {
+  position: fixed;
   width: 100%;
   top: 0;
   display: flex;
@@ -330,7 +331,15 @@
   z-index: 5;
 }
 
-.Hidden-Navbar-Scroll {
+.Hidden-NavBar-Scroll {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #84a7bd;
+  z-index: 5;
   display: none;
 }
 
@@ -365,21 +374,21 @@
   color: #18252e;
   transition: 1s;
 }
-.Hidden-NavBar-Links .Hidden-NavBar-Unordered-List .underline {
+.Hidden-NavBar-Links .Hidden-NavBar-Unordered-List .Hidden-NavBar-List-Item .underline {
   height: 3px;
   background-color: #18252e;
   width: 0%;
   transition: width 0.2s;
   margin: 0 auto;
 }
-.Hidden-NavBar-Links .Hidden-NavBar-Unordered-List:hover .underline {
+.Hidden-NavBar-Links .Hidden-NavBar-Unordered-List .Hidden-NavBar-List-Item:hover .underline {
   width: 100%;
 }
-.Hidden-NavBar-Links .Hidden-NavBar-Unordered-List .Hidden-NavBar-List-Item:hover {
+.Hidden-NavBar-Links .Hidden-NavBar-Unordered-List .Hidden-NavBar-List-Item .Hidden-NavBar-List-Item:hover {
   color: #7ae2dd;
   transition: 0.3s;
 }
-.Hidden-NavBar-Links .HiddenNavBar-Resume {
+.Hidden-NavBar-Links .Hidden-NavBar-Unordered-List .Hidden-NavBar-List-Item .HiddenNavBar-Resume {
   color: #18252e;
 }
 .Hidden-NavBar-Links .Hidden-NavBar-Hamburger {
