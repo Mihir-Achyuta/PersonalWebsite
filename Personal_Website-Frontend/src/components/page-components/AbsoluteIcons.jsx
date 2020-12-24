@@ -3,6 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 class AbsoluteIcons extends React.Component {
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
   render() {
     return (
       <section className="Absolute-Icons">

@@ -25,9 +25,7 @@ class NavBar extends React.Component {
         <nav className="NavBar-Links">
           <ol className="NavBar-Unordered-List">
             <Zoom delay={100}>
-              <li className="NavBar-List-Item" onClick={this.props.scrollTop}>
-                HOME<div className="underline"></div>
-              </li>
+              <List_Item name="HOME" />
             </Zoom>
             <Zoom delay={200}>
               <List_Item name="ABOUT" />

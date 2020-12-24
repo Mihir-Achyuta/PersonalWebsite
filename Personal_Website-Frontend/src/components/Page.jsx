@@ -29,14 +29,6 @@ class Page extends React.Component {
     this.dissapearBurgerMenu = this.dissapearBurgerMenu.bind(this);
   }
 
-  scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
-
   showBottomMenu() {
     this.setState({ bottomMenuShown: true });
   }
@@ -57,34 +49,26 @@ class Page extends React.Component {
       <div className="App-Div">
         {this.state.bottomMenuShown ? (
           <div className="Menu Menu-Load">
-            <BottomBurgerMenu
-              scrollTop={this.scrollToTop}
-              dissapearBottomMenu={this.dissapearBottomMenu}
-            />
+            <BottomBurgerMenu dissapearBottomMenu={this.dissapearBottomMenu} />
           </div>
         ) : (
           <div className="Menu"></div>
         )}
         {this.state.burgerMenuShown ? (
           <div className="Burger-Menu Burger-Menu-Load">
-            <TopBurgerMenu
-              scrollTop={this.scrollToTop}
-              dissapearBurgerMenu={this.dissapearBurgerMenu}
-            />
+            <TopBurgerMenu dissapearBurgerMenu={this.dissapearBurgerMenu} />
           </div>
         ) : (
           <div className="Burger-Menu"></div>
         )}
         <div className="Header-Homepage">
           <Cursor />
-          <NavBar
-            scrollTop={this.scrollToTop}
-            showBurgerMenu={this.showBurgerMenu}
-          />
+          <Element name="home">
+            <NavBar showBurgerMenu={this.showBurgerMenu} />
+          </Element>
           <Homepage />
         </div>
         <Element name="about">
-          {" "}
           <About />
         </Element>
         <Element name="skills">
@@ -122,10 +106,7 @@ class Page extends React.Component {
           <Contact />
         </Element>
         <Footer />
-        <AbsoluteIcons
-          showMenu={this.showBottomMenu}
-          scrollTop={this.scrollToTop}
-        />
+        <AbsoluteIcons showMenu={this.showBottomMenu} />
       </div>
     );
   }

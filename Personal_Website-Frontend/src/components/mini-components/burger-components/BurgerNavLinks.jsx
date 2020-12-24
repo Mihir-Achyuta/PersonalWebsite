@@ -5,20 +5,28 @@ import { Link } from "react-scroll";
 class BurgerNavLinks extends React.Component {
   constructor(props) {
     super(props);
-    this.homeClick = this.homeClick.bind(this);
-  }
-  homeClick() {
-    this.props.dissapearMenu();
-    this.props.scrollToTop();
   }
   render() {
     return (
       <nav className="Sandwich_Menu">
         <ol className="Sandwich_Menu-List">
           <Zoom delay={500}>
-            <li className="" onClick={this.homeClick}>
-              HOME<div className=""></div>
-            </li>
+            <Link
+              activeClass="active"
+              to={"home"}
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              <li
+                className="Sandwich-List-Item"
+                onClick={this.props.dissapearMenu}
+              >
+                HOME<div className=""></div>
+              </li>
+            </Link>
           </Zoom>
           <Zoom delay={700}>
             <Link

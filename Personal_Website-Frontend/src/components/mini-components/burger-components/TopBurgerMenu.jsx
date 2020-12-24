@@ -14,10 +14,7 @@ class TopBurgerMenu extends React.Component {
           onClick={this.props.dissapearBurgerMenu}
           className="X-Burger-Icon"
         />
-        <BurgerNavLinks
-          scrollToTop={this.props.scrollTop}
-          dissapearMenu={this.props.dissapearBurgerMenu}
-        />
+        <BurgerNavLinks dissapearMenu={this.props.dissapearBurgerMenu} />
       </div>
     );
   }
