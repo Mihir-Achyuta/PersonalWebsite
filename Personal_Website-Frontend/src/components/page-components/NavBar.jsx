@@ -44,7 +44,7 @@ class NavBar extends React.Component {
             <Zoom delay={600}>
               <li className="NavBar-List-Item">
                 <a
-                  className=" NavBar-Resume"
+                  className="NavBar-Resume"
                   href={Resume}
                   target="_blank"
                   rel="noopener noreferrer"

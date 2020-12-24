@@ -1,15 +1,21 @@
 @import "../partials/_variables.sass"
 
 .Hidden-NavBar
+    // position: absolute
+    width: 100%
+    top: 0
     display: flex
     justify-content: space-between
     align-items: center
     background-color: $primary-text-color
+    z-index: 5
+
+.Hidden-Navbar-Scroll
+    display: none
 
 .Hidden-NavBar-Logo
     font-size: 100%
     margin-left: 4%
-    margin-top: 1%
     font-family: 'Permanent Marker', cursive
 
     .Hidden-NavBar-Logo-Left
@@ -20,51 +26,51 @@
         color: $secondary-text-color
         transition: 0.3s
 
-.Hidden-NavBar-Navbar
+.Hidden-NavBar-Links
     margin-right: 3%
 
-.Hidden-NavBar-Unordered-List
-    display: flex
-    flex-direction: row
-    margin-right: 5%
+    .Hidden-NavBar-Unordered-List
+        display: flex
+        flex-direction: row
+        margin-right: 5%
 
-    .Hidden-NavBar-List-Item
-        text-align: center
-        margin-left: 45px
-        display: inline-block
+        .Hidden-NavBar-List-Item
+            text-align: center
+            margin-left: 45px
+            display: inline-block
+            cursor: pointer
+            text-decoration: none
+            color: $base-color
+            transition: 1s
+
+        .underline
+            height: 3px
+            background-color: $base-color
+            width: 0%
+            transition: width 0.2s
+            margin: 0 auto
+
+        &:hover .underline
+            width: 100%
+
+        .Hidden-NavBar-List-Item:hover
+            color: $secondary-text-color
+            transition: 0.3s
+
+    .HiddenNavBar-Resume
+        color: $base-color
+
+    .Hidden-NavBar-Hamburger
+        display: none
         cursor: pointer
-        text-decoration: none
-        color: $primary-text-color
+        color: $base-color
         transition: 1s
 
-    .underline
-        height: 3px
-        background-color: $secondary-text-color
-        width: 0%
-        transition: width 0.2s
-        margin: 0 auto
-
-    &:hover .underline
-        width: 100%
-
-    .Hidden-NavBar-List-Item:hover
+    .Hidden-NavBar-Hamburger:hover
         color: $secondary-text-color
-        transition: 0.3s
 
-.HiddenNavBar-Resume
-    color: $base-color
-
-.Hidden-NavBar-Hamburger
-    display: none
-    cursor: pointer
-    color: $base-color
-    transition: 1s
-
-.Hidden-NavBar-Hamburger:hover
-    color: $secondary-text-color
-
-@media screen and (max-width: 930px)
-    .Hidden-NavBar-Hamburger
-        display: block
-    .Hidden-NavBar-Unordered-List
-        display: none
+    @media screen and (max-width: 930px)
+        .Hidden-NavBar-Hamburger
+            display: block
+        .Hidden-NavBar-Unordered-List
+            display: none

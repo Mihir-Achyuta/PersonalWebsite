@@ -7,7 +7,11 @@ class List_Item extends React.Component {
   }
   render() {
     return (
-      <li className="NavBar-List-Item">
+      <li
+        className={
+          this.props.hidden ? "Hidden-NavBar-List-Item" : "NavBar-List-Item"
+        }
+      >
         <Link
           activeClass="active"
           to={this.handleClick()}

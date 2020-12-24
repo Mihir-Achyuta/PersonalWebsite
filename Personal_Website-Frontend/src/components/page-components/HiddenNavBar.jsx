@@ -11,10 +11,15 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 class HiddenNavBar extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { visible: true };
   }
   render() {
     return (
-      <div className="Hidden-NavBar">
+      <div
+        className={
+          this.state.visible ? "Hidden-NavBar" : "Hidden-NavBar-Scroll"
+        }
+      >
         <Zoom>
           <div className="Hidden-NavBar-Logo">
             <a href="">
@@ -24,27 +29,27 @@ class HiddenNavBar extends React.Component {
             </a>
           </div>
         </Zoom>
-        <nav className="Hidden-NavBar-Navbar">
+        <nav className="Hidden-NavBar-Links">
           <ol className="Hidden-NavBar-Unordered-List">
             <Zoom delay={100}>
-              <li className="NavBar-List-Item" onClick={this.props.scrollTop}>
+              <li onClick={this.props.scrollTop}>
                 HOME<div className="underline"></div>
               </li>
             </Zoom>
             <Zoom delay={200}>
-              <List_Item name="ABOUT" />
+              <List_Item name="ABOUT" hidden />
             </Zoom>
             <Zoom delay={300}>
-              <List_Item name="SKILLS" />
+              <List_Item name="SKILLS" hidden />
             </Zoom>
             <Zoom delay={400}>
-              <List_Item name="PROJECTS" />
+              <List_Item name="PROJECTS" hidden />
             </Zoom>
             <Zoom delay={500}>
-              <List_Item name="CONTACT" />
+              <List_Item name="CONTACT" hidden />
             </Zoom>
             <Zoom delay={600}>
-              <li className="NavBar-List-Item">
+              <li className="Hidden-NavBar-List-Item">
                 <a
                   className="HiddenNavBar-Resume"
                   href={Resume}
