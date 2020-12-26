@@ -22,21 +22,19 @@ class Homepage extends React.Component {
           <Fade delay={900} left>
             <h1 className="Homepage-Greeting Homepage-Grid">Hi,</h1>
           </Fade>
-          <Fade delay={1300} right>
-            <h2 className="Homepage-Description Homepage-Grid">
-              A Full-Stack Developer
-            </h2>
-          </Fade>
           <Fade delay={1100} left>
-            <h1 className="Homepage-Name Homepage-Grid">I'm Mihir</h1>
+            <h1 className="Homepage-Name Homepage-Grid">I'm Mihir.</h1>
+          </Fade>
+          <Fade delay={1300} right>
+            <h1 className="Homepage-Description Homepage-Grid">A Developer</h1>
           </Fade>
           <Fade delay={1500} bottom>
-            <p className="Homepage-Technology Homepage-Grid">
-              (In Javascript and Dart)
-            </p>
+            <h1 className="Homepage-Technology Homepage-Grid">
+              In JS and Dart
+            </h1>
           </Fade>
         </div>
-        <div className="Homepage-Icons">
+        {/* <div className="Homepage-Icons">
           <Fade top big delay={1700}>
             <a
               href="https://github.com/Mihir-Achyuta"
@@ -104,7 +102,7 @@ class Homepage extends React.Component {
               />
             </div>
           </Link>
-        </Bounce>
+        </Bounce> */}
       </section>
     );
   }
