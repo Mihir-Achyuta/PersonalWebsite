@@ -10,7 +10,7 @@
     flex-direction: column
 
     .Homepage-Grid
-      margin: -22px
+      margin: -15px
       color: $primary-text-color
 
     .Homepage-Greeting, .Homepage-Name, .Homepage-Description, .Homepage-Technology
@@ -19,36 +19,17 @@
       font-size: 20vh
       width: 100vw
 
-    @media screen and (max-width: 1100px)
-      .Homepage-Greeting, .Homepage-Name
-        font-size: 400%
-
-      .Homepage-Description
-        font-size: 300%
-
-    @media screen and (max-width: 870px)
-      .Homepage-Greeting, .Homepage-Name
-        font-size: 300%
-
-      .Homepage-Description
-        font-size: 200%
-
-    @media screen and (max-width: 600px)
-      .Homepage-Greeting, .Homepage-Name
-        font-size: 250%
-
-      .Homepage-Description
-        font-size: 150%
-
-    @media screen and (max-width: 470px)
-      .Homepage-Greeting, .Homepage-Name
-        font-size: 200%
-
-      .Homepage-Description
-        font-size: 100%
+    .Homepage-Greeting, .Homepage-Description, .Homepage-Name, .Homepage-Technology
+      justify-content: flex-start
+      margin-left: 100px
 
 .Homepage-Icons
-  margin-top: 5%
+  display: flex
+  flex-direction: column
+  position: fixed
+  top: 50%
+  left: 90%
+  transform: translateY(-50%)
 
   .Homepage-Icon
     margin-right: 25px

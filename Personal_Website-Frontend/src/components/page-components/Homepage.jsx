@@ -34,7 +34,7 @@ class Homepage extends React.Component {
             </h1>
           </Fade>
         </div>
-        {/* <div className="Homepage-Icons">
+        <div className="Homepage-Icons">
           <Fade top big delay={1700}>
             <a
               href="https://github.com/Mihir-Achyuta"
@@ -84,7 +84,7 @@ class Homepage extends React.Component {
             </a>
           </Fade>
         </div>
-        <Bounce bottom big delay={1700}>
+        {/* <Bounce bottom big delay={1700}>
           <Link
             activeClass="active"
             to={"about"}

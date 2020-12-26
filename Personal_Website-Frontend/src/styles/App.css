@@ -412,7 +412,7 @@
   flex-direction: column;
 }
 .Homepage .Homepage-Text-Div .Homepage-Grid {
-  margin: -22px;
+  margin: -15px;
   color: #84a7bd;
 }
 .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name, .Homepage .Homepage-Text-Div .Homepage-Description, .Homepage .Homepage-Text-Div .Homepage-Technology {
@@ -421,41 +421,18 @@
   font-size: 20vh;
   width: 100vw;
 }
-@media screen and (max-width: 1100px) {
-  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
-    font-size: 400%;
-  }
-  .Homepage .Homepage-Text-Div .Homepage-Description {
-    font-size: 300%;
-  }
-}
-@media screen and (max-width: 870px) {
-  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
-    font-size: 300%;
-  }
-  .Homepage .Homepage-Text-Div .Homepage-Description {
-    font-size: 200%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
-    font-size: 250%;
-  }
-  .Homepage .Homepage-Text-Div .Homepage-Description {
-    font-size: 150%;
-  }
-}
-@media screen and (max-width: 470px) {
-  .Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name {
-    font-size: 200%;
-  }
-  .Homepage .Homepage-Text-Div .Homepage-Description {
-    font-size: 100%;
-  }
+.Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Description, .Homepage .Homepage-Text-Div .Homepage-Name, .Homepage .Homepage-Text-Div .Homepage-Technology {
+  justify-content: flex-start;
+  margin-left: 100px;
 }
 
 .Homepage-Icons {
-  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
 }
 .Homepage-Icons .Homepage-Icon {
   margin-right: 25px;
@@ -725,32 +702,6 @@
   color: #7ae2dd;
 }
 
-.Absolute-Icons-Arrow-Up {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: #84a7bd;
-  transition: 1s;
-}
-.Absolute-Icons-Arrow-Up:hover {
-  color: #7ae2dd;
-  transition: 0.3s;
-}
-
-.Absolute-Icons-Hamburger {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  cursor: pointer;
-  color: #84a7bd;
-  transition: 1s;
-}
-.Absolute-Icons-Hamburger:hover {
-  color: #7ae2dd;
-  transition: 0.3s;
-}
-
 .Cursor {
   width: 40px;
   height: 40px;
@@ -835,6 +786,32 @@
 .Sandwich_Menu-List .Sandwich-List-Item {
   margin-top: 20px;
   cursor: pointer;
+}
+
+.Absolute-Icons-Arrow-Up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #84a7bd;
+  transition: 1s;
+}
+.Absolute-Icons-Arrow-Up:hover {
+  color: #7ae2dd;
+  transition: 0.3s;
+}
+
+.Absolute-Icons-Hamburger {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: #84a7bd;
+  transition: 1s;
+}
+.Absolute-Icons-Hamburger:hover {
+  color: #7ae2dd;
+  transition: 0.3s;
 }
 
 html {
