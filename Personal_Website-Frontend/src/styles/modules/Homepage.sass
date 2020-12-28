@@ -28,7 +28,7 @@
         display: flex
         justify-content: flex-start
 
-    @media screen and ( max-width: 730px )
+    @media screen and ( max-width: 830px )
       .Homepage-Grid
         color: $primary-text-color
         margin: 0
@@ -37,7 +37,7 @@
         display: flex
         justify-content: flex-start
 
-    @media screen and ( max-width: 640px )
+    @media screen and ( max-width: 740px )
       .Homepage-Grid
         color: $primary-text-color
         margin: 0
@@ -73,9 +73,43 @@
         display: flex
         justify-content: flex-start
 
-  @media screen and ( max-width: 800px )
+  @media screen and ( max-width: 640px )
     .Homepage-Text-Div
       display: flex
       justify-content: center
       flex-direction: column
-      height: 80vh
+      height: 60vh
+
+  @media screen and ( max-width: 440px )
+    .Homepage-Text-Div
+      display: flex
+      justify-content: center
+      flex-direction: column
+      height: 40vh
+
+.Homepage-Icons
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 50%
+  right: 5%
+  transform: translateY(-50%)
+
+  .Homepage-Icon
+    color: $primary-text-color
+    margin-bottom: 15px
+    margin-top: 15px
+
+@media screen and ( max-width: 620px )
+  .Homepage-Icons
+    flex-direction: row
+    justify-content: center
+    position: absolute
+    top: 75%
+    left: 50%
+    transform: translateX(-50%)
+
+  .Homepage-Icon
+    color: $primary-text-color
+    margin-left: 15px
+    margin-right: 15px
