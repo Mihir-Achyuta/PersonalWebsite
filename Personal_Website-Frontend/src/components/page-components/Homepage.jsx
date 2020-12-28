@@ -3,14 +3,12 @@ import React from "react";
 import Resume from "../../documents/resume.pdf";
 
 import Fade from "react-reveal/Fade";
-import Bounce from "react-reveal/Bounce";
-import { Link } from "react-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
-  faFile,
+  faScroll,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,22 +17,22 @@ class Homepage extends React.Component {
     return (
       <section className="Homepage">
         <div className="Homepage-Text-Div">
-          <Fade delay={900} left>
-            <h1 className="Homepage-Greeting Homepage-Grid">Hi,</h1>
+          <Fade delay={900}>
+            <p className="Homepage-Greeting Homepage-Grid">Hi,</p>
           </Fade>
-          <Fade delay={1100} left>
+          <Fade delay={1300}>
             <h1 className="Homepage-Name Homepage-Grid">I'm Mihir.</h1>
           </Fade>
-          <Fade delay={1300} right>
+          <Fade delay={1700}>
             <h1 className="Homepage-Description Homepage-Grid">A Developer</h1>
           </Fade>
-          <Fade delay={1500} bottom>
+          <Fade delay={2100}>
             <h1 className="Homepage-Technology Homepage-Grid">
               In JS and Dart
             </h1>
           </Fade>
         </div>
-        <div className="Homepage-Icons">
+        {/* <div className="Homepage-Icons">
           <Fade top big delay={1700}>
             <a
               href="https://github.com/Mihir-Achyuta"
@@ -65,7 +63,7 @@ class Homepage extends React.Component {
             <a href={Resume} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 className="Homepage-Icon"
-                icon={faFile}
+                icon={faScroll}
                 size="3x"
               />
             </a>
@@ -83,26 +81,7 @@ class Homepage extends React.Component {
               />
             </a>
           </Fade>
-        </div>
-        {/* <Bounce bottom big delay={1700}>
-          <Link
-            activeClass="active"
-            to={"about"}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onSetActive={this.handleSetActive}
-          >
-            <div className="Homepage-Identification-Div">
-              <FontAwesomeIcon
-                className="Homepage-Identification-Icon"
-                icon={faChevronDown}
-                size={"5x"}
-              />
-            </div>
-          </Link>
-        </Bounce> */}
+        </div> */}
       </section>
     );
   }

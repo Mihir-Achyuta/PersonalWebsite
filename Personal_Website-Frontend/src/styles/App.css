@@ -404,85 +404,92 @@
 
 .Homepage {
   margin: 0;
+  padding: 0;
 }
 .Homepage .Homepage-Text-Div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 80vh;
 }
 .Homepage .Homepage-Text-Div .Homepage-Grid {
-  margin: -15px;
   color: #84a7bd;
-}
-.Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Name, .Homepage .Homepage-Text-Div .Homepage-Description, .Homepage .Homepage-Text-Div .Homepage-Technology {
+  margin: 0;
+  font-size: 130px;
+  width: 90%;
   display: flex;
-  justify-content: center;
-  font-size: 20vh;
-  width: 100vw;
-}
-.Homepage .Homepage-Text-Div .Homepage-Greeting, .Homepage .Homepage-Text-Div .Homepage-Description, .Homepage .Homepage-Text-Div .Homepage-Name, .Homepage .Homepage-Text-Div .Homepage-Technology {
   justify-content: flex-start;
-  margin-left: 100px;
 }
-
-.Homepage-Icons {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  left: 90%;
-  transform: translateY(-50%);
-}
-.Homepage-Icons .Homepage-Icon {
-  margin-right: 25px;
-  margin-left: 25px;
-  color: #84a7bd;
-}
-.Homepage-Icons .Homepage-Icon:hover {
-  transform: rotate(360deg);
-  transition: 0.8s;
-}
-
-.Homepage-Identification-Div {
-  padding: 10%;
-  padding-bottom: 20%;
-}
-.Homepage-Identification-Div .Homepage-Identification-Icon {
-  outline: none;
-  cursor: pointer;
-  color: #84a7bd;
-}
-
-@media screen and (max-width: 1100px) {
-  .Homepage-Identification-Div {
-    padding-bottom: 35%;
-    margin-top: 5%;
-  }
-
-  .Homepage-Icons {
-    margin-top: 10%;
+@media screen and (max-width: 1030px) {
+  .Homepage .Homepage-Text-Div .Homepage-Grid {
+    color: #84a7bd;
+    margin: 0;
+    font-size: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
   }
 }
-@media screen and (max-width: 850px) {
-  .Homepage-Identification-Div {
-    padding-bottom: 65%;
-    margin-top: 10%;
-  }
-
-  .Homepage-Icons {
-    margin-top: 15%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .Homepage-Identification-Div {
-    padding-bottom: 85%;
-  }
-
-  .Homepage-Icons {
-    margin-top: 20%;
+@media screen and (max-width: 730px) {
+  .Homepage .Homepage-Text-Div .Homepage-Grid {
+    color: #84a7bd;
+    margin: 0;
+    font-size: 90px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
   }
 }
+@media screen and (max-width: 640px) {
+  .Homepage .Homepage-Text-Div .Homepage-Grid {
+    color: #84a7bd;
+    margin: 0;
+    font-size: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 530px) {
+  .Homepage .Homepage-Text-Div .Homepage-Grid {
+    color: #84a7bd;
+    margin: 0;
+    font-size: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 440px) {
+  .Homepage .Homepage-Text-Div .Homepage-Grid {
+    color: #84a7bd;
+    margin: 0;
+    font-size: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 390px) {
+  .Homepage .Homepage-Text-Div .Homepage-Grid {
+    color: #84a7bd;
+    margin: 0;
+    font-size: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Homepage .Homepage-Text-Div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+  }
+}
+
 .About {
   background-color: #18252e;
   color: #84a7bd;
@@ -824,6 +831,7 @@ body {
   color: #18252e;
   font-family: Lato;
   overflow-x: hidden;
+  cursor: none;
 }
 
 ul {
