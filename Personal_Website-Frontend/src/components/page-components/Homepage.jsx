@@ -46,55 +46,62 @@ class Homepage extends React.Component {
             </h1>
           </Fade>
         </div>
-        <div className="Homepage-Icons">
-          <Fade top big delay={1700}>
-            <a
-              href="https://github.com/Mihir-Achyuta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className="Homepage-Icon"
-                icon={faGithubSquare}
-                size="3x"
-              />
-            </a>
-          </Fade>
-          <Fade top big delay={1700}>
-            <a
-              href="https://www.linkedin.com/in/mihirachyuta/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className="Homepage-Icon"
-                icon={faLinkedin}
-                size="3x"
-              />
-            </a>
-          </Fade>
-          <Fade top big delay={1700}>
-            <a href={Resume} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon
-                className="Homepage-Icon"
-                icon={faScroll}
-                size="3x"
-              />
-            </a>
-          </Fade>
-          <Fade top big delay={1700}>
-            <a
-              href="mailto:achyutamihir@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className="Homepage-Icon"
-                icon={faEnvelope}
-                size="3x"
-              />
-            </a>
-          </Fade>
+        <div className="Homepage-Sidebar">
+          <div className="Homepage-Message-Div">
+            <Fade delay={2300}>
+              <h1 className="Homepage-Message">Click Us!</h1>
+            </Fade>
+          </div>
+          <div className="Homepage-Icons">
+            <Fade delay={2500}>
+              <a
+                href="https://github.com/Mihir-Achyuta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="Homepage-Icon"
+                  icon={faGithubSquare}
+                  size="3x"
+                />
+              </a>
+            </Fade>
+            <Fade delay={2500}>
+              <a
+                href="https://www.linkedin.com/in/mihirachyuta/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="Homepage-Icon"
+                  icon={faLinkedin}
+                  size="3x"
+                />
+              </a>
+            </Fade>
+            <Fade delay={2500}>
+              <a href={Resume} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon
+                  className="Homepage-Icon"
+                  icon={faScroll}
+                  size="3x"
+                />
+              </a>
+            </Fade>
+            <Fade delay={2500}>
+              <a
+                href="mailto:achyutamihir@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="Homepage-Icon"
+                  icon={faEnvelope}
+                  size="3x"
+                />
+              </a>
+            </Fade>
+          </div>
         </div>
       </section>
     );

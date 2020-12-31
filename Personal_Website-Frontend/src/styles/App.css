@@ -418,7 +418,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
+  height: 85vh;
 }
 .Homepage .Homepage-Text-Div .Homepage-Grid {
   color: #84a7bd;
@@ -451,7 +451,7 @@
   color: #00d2b7;
   font-family: Coiny;
 }
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1160px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
     color: #84a7bd;
     margin: 0;
@@ -461,7 +461,7 @@
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 940px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
     color: #84a7bd;
     margin: 0;
@@ -471,7 +471,7 @@
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 880px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
     color: #84a7bd;
     margin: 0;
@@ -481,7 +481,7 @@
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 730px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
     color: #84a7bd;
     margin: 0;
@@ -491,7 +491,7 @@
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
     color: #84a7bd;
     margin: 0;
@@ -511,7 +511,15 @@
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 730px) {
+  .Homepage .Homepage-Text-Div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 650px) {
   .Homepage .Homepage-Text-Div {
     display: flex;
     justify-content: center;
@@ -519,7 +527,7 @@
     height: 60vh;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .Homepage .Homepage-Text-Div {
     display: flex;
     justify-content: center;
@@ -528,34 +536,105 @@
   }
 }
 
-.Homepage-Icons {
+.Homepage-Sidebar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 0%;
   transform: translateY(-50%);
 }
-.Homepage-Icons .Homepage-Icon {
+.Homepage-Sidebar .Homepage-Message-Div {
+  color: #84a7bd;
+  text-decoration: underline;
+  writing-mode: vertical-lr;
+}
+.Homepage-Sidebar .Homepage-Message-Div .Homepage-Message {
+  font-family: Gorditas;
+  font-size: 50px;
+}
+@media screen and (max-width: 450px) {
+  .Homepage-Sidebar .Homepage-Message-Div .Homepage-Message {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .Homepage-Sidebar .Homepage-Message-Div .Homepage-Message {
+    font-size: 30px;
+  }
+}
+.Homepage-Sidebar .Homepage-Message-Div:hover {
+  color: #7ae2dd;
+  transition: 0.5s;
+  text-decoration: underline;
+  writing-mode: vertical-lr;
+}
+.Homepage-Sidebar .Homepage-Icons {
+  display: flex;
+  flex-direction: column;
+}
+.Homepage-Sidebar .Homepage-Icons .Homepage-Icon {
   color: #84a7bd;
   margin-bottom: 15px;
   margin-top: 15px;
 }
+.Homepage-Sidebar .Homepage-Icons .Homepage-Icon:hover {
+  color: #7ae2dd;
+  transition: 0.5s;
+}
 
-@media screen and (max-width: 620px) {
-  .Homepage-Icons {
-    flex-direction: row;
-    justify-content: center;
+@media screen and (max-width: 730px) {
+  .Homepage-Sidebar {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 75%;
+    top: 78%;
     left: 50%;
     transform: translateX(-50%);
   }
-
-  .Homepage-Icon {
+  .Homepage-Sidebar .Homepage-Message-Div {
+    color: #84a7bd;
+    text-decoration: underline;
+    writing-mode: horizontal-tb;
+  }
+  .Homepage-Sidebar .Homepage-Message-Div .Homepage-Message {
+    margin: 0;
+  }
+  .Homepage-Sidebar .Homepage-Message-Div:hover {
+    color: #7ae2dd;
+    transition: 0.5s;
+    text-decoration: underline;
+    writing-mode: horizontal-tb;
+  }
+  .Homepage-Sidebar .Homepage-Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Homepage-Sidebar .Homepage-Icons .Homepage-Icon {
     color: #84a7bd;
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .Homepage-Sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 450px) {
+  .Homepage-Sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .About {

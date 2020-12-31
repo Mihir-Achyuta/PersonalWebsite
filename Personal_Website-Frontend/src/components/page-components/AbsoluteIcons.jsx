@@ -2,23 +2,30 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
+import { Link } from "react-scroll";
+
 class AbsoluteIcons extends React.Component {
-  scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
+  constructor(props) {
+    super(props);
   }
   render() {
     return (
       <section className="Absolute-Icons">
-        <FontAwesomeIcon
-          className="Absolute-Icons-Arrow-Up"
-          icon={faArrowUp}
-          size="2x"
-          onClick={this.props.scrollTop}
-        />
+        <Link
+          activeClass="active"
+          to={"home"}
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onSetActive={this.handleSetActive}
+        >
+          <FontAwesomeIcon
+            className="Absolute-Icons-Arrow-Up"
+            icon={faArrowUp}
+            size="2x"
+          />
+        </Link>
         <FontAwesomeIcon
           onClick={this.props.showMenu}
           className="Absolute-Icons-Hamburger"

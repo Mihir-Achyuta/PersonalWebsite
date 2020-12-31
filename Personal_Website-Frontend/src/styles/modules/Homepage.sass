@@ -9,7 +9,7 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    height: 80vh
+    height: 85vh
 
     .Homepage-Grid
       color: $primary-text-color
@@ -42,7 +42,7 @@
         color: $dart-logo-color
         font-family: Coiny
 
-    @media screen and ( max-width: 1030px )
+    @media screen and ( max-width: 1160px )
       .Homepage-Grid
         color: $primary-text-color
         margin: 0
@@ -51,7 +51,7 @@
         display: flex
         justify-content: flex-start
 
-    @media screen and ( max-width: 830px )
+    @media screen and ( max-width: 940px )
       .Homepage-Grid
         color: $primary-text-color
         margin: 0
@@ -60,7 +60,7 @@
         display: flex
         justify-content: flex-start
 
-    @media screen and ( max-width: 740px )
+    @media screen and ( max-width: 880px )
       .Homepage-Grid
         color: $primary-text-color
         margin: 0
@@ -69,7 +69,7 @@
         display: flex
         justify-content: flex-start
 
-    @media screen and ( max-width: 530px )
+    @media screen and ( max-width: 730px )
       .Homepage-Grid
         color: $primary-text-color
         margin: 0
@@ -78,7 +78,7 @@
         display: flex
         justify-content: flex-start
 
-    @media screen and ( max-width: 440px )
+    @media screen and ( max-width: 450px )
       .Homepage-Grid
         color: $primary-text-color
         margin: 0
@@ -96,43 +96,118 @@
         display: flex
         justify-content: flex-start
 
-  @media screen and ( max-width: 640px )
+  @media screen and ( max-width: 730px )
+    .Homepage-Text-Div
+      display: flex
+      justify-content: center
+      flex-direction: column
+      height: 70vh
+
+  @media screen and ( max-width: 650px )
     .Homepage-Text-Div
       display: flex
       justify-content: center
       flex-direction: column
       height: 60vh
 
-  @media screen and ( max-width: 440px )
+  @media screen and ( max-width: 450px )
     .Homepage-Text-Div
       display: flex
       justify-content: center
       flex-direction: column
       height: 40vh
 
-.Homepage-Icons
+.Homepage-Sidebar
   display: flex
-  flex-direction: column
+  flex-direction: row-reverse
   position: absolute
   top: 50%
-  right: 5%
+  right: 0%
   transform: translateY(-50%)
 
-  .Homepage-Icon
+  .Homepage-Message-Div
     color: $primary-text-color
-    margin-bottom: 15px
-    margin-top: 15px
+    text-decoration: underline
+    writing-mode: vertical-lr
 
-@media screen and ( max-width: 620px )
+    .Homepage-Message
+      font-family: Gorditas
+      font-size: 50px
+
+    @media screen and ( max-width: 450px )
+      .Homepage-Message
+        font-size: 40px
+
+    @media screen and ( max-width: 350px )
+      .Homepage-Message
+        font-size: 30px
+
+  .Homepage-Message-Div:hover
+    color: $secondary-text-color
+    transition: 0.5s
+    text-decoration: underline
+    writing-mode: vertical-lr
+
   .Homepage-Icons
-    flex-direction: row
-    justify-content: center
+    display: flex
+    flex-direction: column
+
+    .Homepage-Icon
+      color: $primary-text-color
+      margin-bottom: 15px
+      margin-top: 15px
+
+    .Homepage-Icon:hover
+      color: $secondary-text-color
+      transition: 0.5s
+
+@media screen and ( max-width: 730px )
+  .Homepage-Sidebar
+    display: flex
+    flex-direction: column
     position: absolute
-    top: 75%
+    top: 78%
     left: 50%
     transform: translateX(-50%)
 
-  .Homepage-Icon
-    color: $primary-text-color
-    margin-left: 15px
-    margin-right: 15px
+    .Homepage-Message-Div
+      color: $primary-text-color
+      text-decoration: underline
+      writing-mode: horizontal-tb
+
+      .Homepage-Message
+        margin: 0
+
+    .Homepage-Message-Div:hover
+      color: $secondary-text-color
+      transition: 0.5s
+      text-decoration: underline
+      writing-mode: horizontal-tb
+
+    .Homepage-Icons
+      display: flex
+      flex-direction: row
+      justify-content: center
+
+      .Homepage-Icon
+        color: $primary-text-color
+        margin-left: 15px
+        margin-right: 15px
+
+@media screen and ( max-width: 650px )
+  .Homepage-Sidebar
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 70%
+    left: 50%
+    transform: translateX(-50%)
+
+@media screen and ( max-width: 450px )
+  .Homepage-Sidebar
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 65%
+    left: 50%
+    transform: translateX(-50%)
