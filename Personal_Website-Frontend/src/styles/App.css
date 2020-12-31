@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 .App {
   height: 100vh;
   background: #18252e;
@@ -280,6 +285,7 @@
   text-decoration: none;
   color: #84a7bd;
   transition: 1s;
+  font-family: "Varela Round", sans-serif;
 }
 .NavBar-Links .NavBar-Unordered-List .NavBar-List-Item .underline {
   height: 3px;
@@ -366,6 +372,7 @@
   text-decoration: none;
   color: #18252e;
   transition: 1s;
+  font-family: "Varela Round", sans-serif;
 }
 .Hidden-NavBar-Links .Hidden-NavBar-Unordered-List .Hidden-NavBar-List-Item .underline {
   height: 3px;
@@ -420,6 +427,29 @@
   width: 90%;
   display: flex;
   justify-content: flex-start;
+}
+.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Name-Secondary-Color {
+  color: #7ae2dd;
+  font-family: Varela;
+}
+.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Name-PopOut {
+  font-family: "Fira Sans", sans-serif;
+  color: #B7DAF0;
+}
+.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Description-Dev {
+  color: #bed1dc;
+  font-family: Reem Kufi;
+}
+.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Description-Dev .Homepage-Description-Dev-Stack {
+  font-style: italic;
+}
+.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Technology-Javascript {
+  color: #f0db4f;
+  font-family: Gorditas;
+}
+.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Technology-Dart {
+  color: #00d2b7;
+  font-family: Coiny;
 }
 @media screen and (max-width: 1030px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
@@ -861,6 +891,7 @@
 
 html {
   overflow-x: hidden;
+  cursor: none;
 }
 
 body {

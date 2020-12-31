@@ -14,17 +14,35 @@ class Homepage extends React.Component {
       <section className="Homepage">
         <div className="Homepage-Text-Div">
           <Fade delay={900}>
-            <p className="Homepage-Greeting Homepage-Grid">Hi,</p>
+            <p className="Homepage-Greeting Homepage-Grid">Hey!👋</p>
           </Fade>
           <Fade delay={1300}>
-            <h1 className="Homepage-Name Homepage-Grid">I'm Mihir.</h1>
+            <h1 className="Homepage-Name Homepage-Grid">
+              <span>
+                I<span className="Homepage-Name-Secondary-Color">'</span>m‎
+                <span className="Homepage-Name-PopOut">&nbsp;Mihir</span>
+                <span className="Homepage-Name-Secondary-Color">.</span>
+              </span>
+            </h1>
           </Fade>
           <Fade delay={1700}>
-            <h1 className="Homepage-Description Homepage-Grid">A Developer</h1>
+            <h1 className="Homepage-Description Homepage-Grid">
+              <span className="Homepage-Description-Dev">
+                <span className="Homepage-Description-Dev-Stack">
+                  Full-Stack
+                </span>{" "}
+                Dev
+              </span>
+            </h1>
           </Fade>
           <Fade delay={2100}>
             <h1 className="Homepage-Technology Homepage-Grid">
-              In JS and Dart
+              In{" "}
+              <span className="Homepage-Technology-Javascript">
+                &nbsp;JS&nbsp;
+              </span>{" "}
+              and{" "}
+              <span className="Homepage-Technology-Dart">&nbsp;Dart&nbsp;</span>
             </h1>
           </Fade>
         </div>
