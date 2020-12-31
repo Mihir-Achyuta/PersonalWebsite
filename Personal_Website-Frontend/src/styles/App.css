@@ -412,6 +412,7 @@
 .Homepage {
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 .Homepage .Homepage-Text-Div {
   display: flex;
@@ -558,7 +559,7 @@
     font-size: 40px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .Homepage-Sidebar .Homepage-Message-Div .Homepage-Message {
     font-size: 30px;
   }
@@ -641,63 +642,35 @@
   background-color: #18252e;
   color: #84a7bd;
   border-top: 5px solid #18252e;
-  padding-top: 100px;
+  border-bottom: 5px solid #18252e;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.About .About-Header-Div {
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 .About .About-Header-Div .About-Header {
-  margin-top: 5%;
-  font-size: 250%;
+  font-size: 70px;
 }
 .About .About-Statement-Div {
   margin: auto;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.About .About-Statement-Div .About-Picture {
+  align-self: center;
 }
 .About .About-Statement-Div .About-Statement {
   text-align: center;
   line-height: 2.5;
-  font-size: 130%;
-}
-@media screen and (max-width: 1100px) {
-  .About .About-Statement-Div {
-    width: 70%;
-  }
-  .About .About-Header {
-    margin-top: 7%;
-  }
-}
-@media screen and (max-width: 850px) {
-  .About .About-Statement-Div {
-    width: 85%;
-  }
-  .About .About-Header {
-    margin-top: 15%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .About .About-Statement-Div {
-    width: 75%;
-  }
-  .About .About-Statement {
-    font-size: 100%;
-  }
-  .About .About-Header {
-    margin-top: 20%;
-  }
-}
-.About .About-Technology-Icon {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  cursor: pointer;
-  color: #84a7bd;
-}
-@media screen and (max-width: 540px) {
-  .About .About-Technology-Icon {
-    padding: 10px 25px;
-  }
-}
-@media screen and (max-width: 540px) {
-  .About .About-Technology-Icon {
-    padding: 10px 25px;
-  }
+  font-size: 20px;
+  width: 1000px;
+  background: #84a7bd;
+  color: #18252e;
+  padding: 50px;
+  border-radius: 20px;
 }
 
 .Skills {

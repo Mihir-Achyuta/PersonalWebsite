@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-scroll";
-import Fade from "react-reveal/Fade";
-import Bounce from "react-reveal/Bounce";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import ProfilePic from "../../documents/pictures/profile-image.png";
+
+import Fade from "react-reveal/Fade";
+
+import { Element } from "react-scroll";
 
 class About extends React.Component {
   render() {
@@ -12,11 +12,14 @@ class About extends React.Component {
       <section className="About">
         <Fade left delay={500}>
           <div className="About-Header-Div">
-            <h1 className="About-Header">Who am I :</h1>
+            <Element name="about">
+              <h1 className="About-Header">Who am I?</h1>
+            </Element>
           </div>
         </Fade>
         <Fade left delay={1000}>
           <div className="About-Statement-Div">
+            <img className="About-Picture" src={ProfilePic} alt="Profile Pic" />
             <p className="About-Statement">
               I'm a senior attending Evergreen Valley High School that is
               planning to major in Computer Science in college. I started
@@ -26,26 +29,6 @@ class About extends React.Component {
             </p>
           </div>
         </Fade>
-
-        <div className="About-Technology-Button-Div">
-          <Link
-            activeClass="active"
-            to={"skills"}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onSetActive={this.handleSetActive}
-          >
-            <Bounce left delay={1500}>
-              <FontAwesomeIcon
-                className="About-Technology-Icon"
-                icon={faChevronDown}
-                size={"5x"}
-              />
-            </Bounce>
-          </Link>
-        </div>
       </section>
     );
   }

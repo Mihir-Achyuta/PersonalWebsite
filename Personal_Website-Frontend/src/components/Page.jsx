@@ -69,9 +69,9 @@ class Page extends React.Component {
           <HiddenNavBar showBurgerMenu={this.showBurgerMenu} />
           <Homepage />
         </div>
-        <Element name="about">
-          <About />
-        </Element>
+
+        <About />
+
         <Element name="skills">
           <Skills />
         </Element>
