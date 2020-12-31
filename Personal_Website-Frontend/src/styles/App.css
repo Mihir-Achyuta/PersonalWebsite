@@ -643,8 +643,9 @@
   color: #84a7bd;
   border-top: 5px solid #18252e;
   border-bottom: 5px solid #18252e;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100vh;
 }
 .About .About-Header-Div {
   padding-top: 50px;
@@ -652,13 +653,16 @@
 }
 .About .About-Header-Div .About-Header {
   font-size: 70px;
+  font-family: "Fira Sans", sans-serif;
 }
 .About .About-Statement-Div {
   margin: auto;
   display: flex;
   flex-direction: row;
   width: 900px;
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.5);
+  background-color: #f0db4f;
+  border-radius: 20px;
 }
 .About .About-Statement-Div .About-Picture-Div {
   background-color: #f0db4f;
@@ -674,13 +678,18 @@
   color: #92810c;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
   font-size: 30px;
+  font-family: Reem Kufi;
 }
 .About .About-Statement-Div .About-Description-Div {
   background-color: #00d2b7;
+  background: linear-gradient(to right, #f0db4f 50%, #00d2b7 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
   color: #18252e;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 50px;
+  transition: all 0.5s ease;
 }
 .About .About-Statement-Div .About-Description-Div .About-Description {
   margin: 0;
@@ -688,6 +697,16 @@
   display: flex;
   align-items: center;
   color: #00695b;
+  text-align: justify;
+  line-height: 1.5;
+  font-family: Varela Round;
+}
+.About .About-Statement-Div .About-Description-Div:hover {
+  background-position: left bottom;
+}
+.About .About-Statement-Div .About-Description-Div:hover .About-Description {
+  color: #92810c;
+  transition: 0.5s;
 }
 
 .Skills {
