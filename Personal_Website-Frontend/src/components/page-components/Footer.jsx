@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
-import Resume from "../../documents/resume.pdf";
+import Resume from "../../documents/resume/resume.pdf";
 
 class Footer extends React.Component {
   render() {

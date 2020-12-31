@@ -1,7 +1,7 @@
 import React from "react";
 
 import List_Item from "../mini-components/link-components/List_Item";
-import Resume from "../../documents/resume.pdf";
+import Resume from "../../documents/resume/resume.pdf";
 
 import Zoom from "react-reveal/Zoom";
 

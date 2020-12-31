@@ -1,6 +1,6 @@
 import React from "react";
 
-import Resume from "../../documents/resume.pdf";
+import Resume from "../../documents/resume/resume.pdf";
 
 import Fade from "react-reveal/Fade";
 
