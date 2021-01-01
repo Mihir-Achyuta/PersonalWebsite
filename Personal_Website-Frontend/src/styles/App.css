@@ -656,21 +656,38 @@
 .About .About-Statement-Div {
   margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  width: 900px;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
 }
-.About .About-Statement-Div .About-Picture {
-  align-self: center;
-}
-.About .About-Statement-Div .About-Statement {
-  text-align: center;
-  line-height: 2.5;
-  font-size: 20px;
-  width: 1000px;
-  background: #84a7bd;
-  color: #18252e;
+.About .About-Statement-Div .About-Picture-Div {
+  background-color: #f0db4f;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   padding: 50px;
-  border-radius: 20px;
+}
+.About .About-Statement-Div .About-Picture-Div .About-Picture {
+  width: 150px;
+  height: 150px;
+}
+.About .About-Statement-Div .About-Picture-Div .About-Name {
+  color: #92810c;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+}
+.About .About-Statement-Div .About-Description-Div {
+  background-color: #00d2b7;
+  color: #18252e;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 50px;
+}
+.About .About-Statement-Div .About-Description-Div .About-Description {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #00695b;
 }
 
 .Skills {

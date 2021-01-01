@@ -19,14 +19,25 @@ class About extends React.Component {
         </Fade>
         <Fade left delay={1000}>
           <div className="About-Statement-Div">
-            <img className="About-Picture" src={ProfilePic} alt="Profile Pic" />
-            <p className="About-Statement">
-              I'm a senior attending Evergreen Valley High School that is
-              planning to major in Computer Science in college. I started
-              programming junior year and chose the web development path since I
-              briefly dabbed in HTML and CSS years ago. Since then I've been
-              developing with Fullstack Javascript with the MERN stack.
-            </p>
+            <div className="About-Picture-Div">
+              <img
+                className="About-Picture"
+                src={ProfilePic}
+                alt="Profile Pic"
+              />
+              <p className="About-Name">Mihir Achyuta</p>
+            </div>
+            <div className="About-Description-Div">
+              <p className="About-Description">
+                Greetings I'm Mihir. I'm an incoming freshman at Lorum Ipsum
+                University majoring in Computer Science. I started programming
+                junior year of high school in Java and transitioned into
+                Full-Stack JavaScript and Dart for Web/Mobile Applications
+                respectively with my favorite Tech Stack being MERN. When I'm
+                not programming, I'm playing rpg videogames such as the Witcher
+                and Cyberpunk.
+              </p>
+            </div>
           </div>
         </Fade>
       </section>

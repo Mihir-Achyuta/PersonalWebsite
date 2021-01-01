@@ -18,18 +18,35 @@
   .About-Statement-Div
     margin: auto
     display: flex
-    flex-direction: column
-    align-items: center
+    flex-direction: row
+    width: 900px
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4)
 
-    .About-Picture
-      align-self: center
-
-    .About-Statement
-      text-align: center
-      line-height: 2.5
-      font-size: 20px
-      width: 1000px
-      background: $primary-text-color
-      color: $base-color
+    .About-Picture-Div
+      background-color: $javascript-logo-color
+      border-top-left-radius: 20px
+      border-bottom-left-radius: 20px
       padding: 50px
-      border-radius: 20px
+
+      .About-Picture
+        width: 150px
+        height: 150px
+
+      .About-Name
+        color: $javascript-logo-color-darkened
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.1)
+        font-size: 30px
+
+    .About-Description-Div
+      background-color: $dart-logo-color
+      color: $base-color
+      border-top-right-radius: 20px
+      border-bottom-right-radius: 20px
+      padding: 50px
+
+      .About-Description
+        margin: 0
+        height: 100%
+        display: flex
+        align-items: center
+        color: $dart-logo-color-darkened
