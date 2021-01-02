@@ -1,6 +1,5 @@
 import React from "react";
 
-import SkillWord from "../mini-components/skill-components/SkillWord";
 import SkillCard from "../mini-components/skill-components/SkillCard";
 
 import Fade from "react-reveal/Fade";
@@ -14,13 +13,47 @@ class Skills extends React.Component {
         </Fade>
         <div className="Front-Back-Tool">
           <Fade>
-            <SkillCard />
+            <SkillCard
+              path="Frontend"
+              technologies={[
+                "HTML",
+                "CSS",
+                "Sass",
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "React.js",
+                "Flutter",
+              ]}
+            />
           </Fade>
           <Fade>
-            <SkillCard />
+            <SkillCard
+              path="Backend"
+              technologies={[
+                "Node.js",
+                "Aqueduct",
+                "Express.js",
+                "EJS",
+                "PostgresSQL",
+                "MongoDB",
+                "Mongoose",
+                "Passport.js + OAuth",
+                "REST",
+              ]}
+            />
           </Fade>
           <Fade>
-            <SkillCard />
+            <SkillCard
+              path="Tools"
+              technologies={[
+                "Git/Git-Bash",
+                "Github",
+                "Hyper",
+                "Atom",
+                "MongoDB Atlas",
+              ]}
+            />
           </Fade>
         </div>
       </section>
@@ -29,37 +62,3 @@ class Skills extends React.Component {
 }
 
 export default Skills;
-
-//frontend
-// <li>HTML</li>
-{
-  /* <li>CSS</li>
-<li>SASS</li>
-<li>Bootstrap</li>
-<li>Javscript</li>
-<li>jQuery</li>
-<li>React.js</li>
-<li>Flutter</li> */
-}
-
-//backend
-// <li>Node.js</li>
-{
-  /* <li>Aqueduct</li>
-<li>Express.js</li>
-<li>EJS</li>
-<li>PostgresSQL</li>
-<li>MongoDB</li>
-<li>Mongoose</li>
-<li>Passport.js + OAuth</li>
-<li>REST</li> */
-}
-
-//tools
-{
-  /* <li>Git/Git-Bash</li>
-<li>Github</li>
-<li>Hyper</li>
-<li>Atom</li>
-<li>MongoDB Atlas</li> */
-}

@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hanuman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 .App {
   height: 100vh;
   background: #18252e;
@@ -834,6 +834,25 @@
 .Skills .Front-Back-Tool .Skills-Card .Skills-Card-Header {
   font-family: Reem Kufi;
   font-size: 40px;
+}
+
+.Skill-Word-Div {
+  display: inline-block;
+  padding: 0px 10px;
+  background-color: #00695b;
+  color: #00d2b7;
+  border-width: 1px 3px 3px 1px;
+  border-style: solid;
+  border-color: #00342d;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.75em;
+  line-height: 1em;
+  box-shadow: 1px 1px 0 #00695b;
+  margin: 3px;
+  font-family: Righteous;
 }
 
 @media screen and (max-width: 600px) {
