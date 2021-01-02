@@ -1,23 +1,20 @@
 import React from "react";
-import { Link } from "react-scroll";
-import Fade from "react-reveal/Fade";
-import Bounce from "react-reveal/Bounce";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Fade from "react-reveal/Fade";
 
 class Skills extends React.Component {
   render() {
     return (
       <section className="Skills">
         <Fade left>
-          {" "}
           <h1 className="Skills-Header">What I Work With :</h1>
         </Fade>
         <div className="Front-Back-Tool">
-          <Fade top cascade>
-            <div className="Skills-Frontend">
-              <h1 className="Skills-Frontend-Header">Frontend :</h1>
+          <Fade>
+            <div className="Skills-Frontend Skills-Card">
+              <h1 className="Skills-Frontend-Header Skills-Card-Header">
+                Frontend :
+              </h1>
               <ul className="Skills-Frontend-Unordered-List">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -26,17 +23,21 @@ class Skills extends React.Component {
                 <li>Javscript</li>
                 <li>jQuery</li>
                 <li>React.js</li>
+                <li>Flutter</li>
               </ul>
             </div>
           </Fade>
-          <Fade top cascade>
-            <div className="Skills-Backend">
-              <h1 className="Skills-Backend-Header">Backend :</h1>
+          <Fade>
+            <div className="Skills-Backend Skills-Card">
+              <h1 className="Skills-Backend-Header Skills-Card-Header">
+                Backend :
+              </h1>
               <ul className="Skills-Backend-Unordered-List">
                 <li>Node.js</li>
+                <li>Aqueduct</li>
                 <li>Express.js</li>
                 <li>EJS</li>
-                <li>MySQL</li>
+                <li>PostgresSQL</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>Passport.js + OAuth</li>
@@ -44,9 +45,11 @@ class Skills extends React.Component {
               </ul>
             </div>
           </Fade>
-          <Fade top cascade>
-            <div className="Skills-Tools">
-              <h1 className="Skills-Tools-Header">Tools :</h1>
+          <Fade>
+            <div className="Skills-Tools Skills-Card">
+              <h1 className="Skills-Tools-Header Skills-Card-Header">
+                Tools :
+              </h1>
               <ul className="Skills-Tools-Unordered-List">
                 <li>Git/Git-Bash</li>
                 <li>Github</li>
@@ -57,26 +60,6 @@ class Skills extends React.Component {
             </div>
           </Fade>
         </div>
-        <Bounce delay={1000}>
-          <Link
-            activeClass="active"
-            to={"projects"}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onSetActive={this.handleSetActive}
-          >
-            {" "}
-            <div className="Skills-Projects-Button-Div">
-              <FontAwesomeIcon
-                className="Skills-Projects-Button"
-                icon={faChevronDown}
-                size={"5x"}
-              />
-            </div>
-          </Link>
-        </Bounce>
       </section>
     );
   }
