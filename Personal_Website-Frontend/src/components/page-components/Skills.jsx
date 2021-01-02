@@ -1,5 +1,8 @@
 import React from "react";
 
+import SkillWord from "../mini-components/skill-components/SkillWord";
+import SkillCard from "../mini-components/skill-components/SkillCard";
+
 import Fade from "react-reveal/Fade";
 
 class Skills extends React.Component {
@@ -11,53 +14,13 @@ class Skills extends React.Component {
         </Fade>
         <div className="Front-Back-Tool">
           <Fade>
-            <div className="Skills-Frontend Skills-Card">
-              <h1 className="Skills-Frontend-Header Skills-Card-Header">
-                Frontend :
-              </h1>
-              <ul className="Skills-Frontend-Unordered-List">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SASS</li>
-                <li>Bootstrap</li>
-                <li>Javscript</li>
-                <li>jQuery</li>
-                <li>React.js</li>
-                <li>Flutter</li>
-              </ul>
-            </div>
+            <SkillCard />
           </Fade>
           <Fade>
-            <div className="Skills-Backend Skills-Card">
-              <h1 className="Skills-Backend-Header Skills-Card-Header">
-                Backend :
-              </h1>
-              <ul className="Skills-Backend-Unordered-List">
-                <li>Node.js</li>
-                <li>Aqueduct</li>
-                <li>Express.js</li>
-                <li>EJS</li>
-                <li>PostgresSQL</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
-                <li>Passport.js + OAuth</li>
-                <li>REST</li>
-              </ul>
-            </div>
+            <SkillCard />
           </Fade>
           <Fade>
-            <div className="Skills-Tools Skills-Card">
-              <h1 className="Skills-Tools-Header Skills-Card-Header">
-                Tools :
-              </h1>
-              <ul className="Skills-Tools-Unordered-List">
-                <li>Git/Git-Bash</li>
-                <li>Github</li>
-                <li>Hyper</li>
-                <li>Atom</li>
-                <li>MongoDB Atlas</li>
-              </ul>
-            </div>
+            <SkillCard />
           </Fade>
         </div>
       </section>
@@ -66,3 +29,37 @@ class Skills extends React.Component {
 }
 
 export default Skills;
+
+//frontend
+// <li>HTML</li>
+{
+  /* <li>CSS</li>
+<li>SASS</li>
+<li>Bootstrap</li>
+<li>Javscript</li>
+<li>jQuery</li>
+<li>React.js</li>
+<li>Flutter</li> */
+}
+
+//backend
+// <li>Node.js</li>
+{
+  /* <li>Aqueduct</li>
+<li>Express.js</li>
+<li>EJS</li>
+<li>PostgresSQL</li>
+<li>MongoDB</li>
+<li>Mongoose</li>
+<li>Passport.js + OAuth</li>
+<li>REST</li> */
+}
+
+//tools
+{
+  /* <li>Git/Git-Bash</li>
+<li>Github</li>
+<li>Hyper</li>
+<li>Atom</li>
+<li>MongoDB Atlas</li> */
+}
