@@ -69,3 +69,95 @@
       .About-Description
         color: $javascript-logo-color-darkened
         transition: 0.5s
+
+  @media screen and ( max-width: 950px )
+    .About-Statement-Div
+      display: flex
+      flex-direction: column
+      width: 600px
+      box-shadow: 0 8px 16px -8px rgba(0,0,0,0.5)
+
+      .About-Picture-Div
+        background-color: $javascript-logo-color
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+
+        .About-Picture
+          width: 100px
+          height: 100px
+
+        .About-Name
+          margin: 0
+
+      .About-Description-Div
+        border-top-right-radius: 0
+        border-bottom-left-radius: 20px
+        background: $javascript-logo-color
+
+        .About-Description
+          color: $javascript-logo-color-darkened
+
+  @media screen and ( max-width: 650px )
+    .About-Header-Div
+      padding-top: 50px
+      padding-bottom: 50px
+
+      .About-Header
+        font-size: 50px
+        font-family: "Fira Sans", sans-serif
+        margin-bottom: 50px
+
+    .About-Statement-Div
+      display: flex
+      flex-direction: column
+      max-width: 400px
+      box-shadow: 0 8px 16px -8px rgba(0,0,0,0.5)
+
+      .About-Picture-Div
+        background-color: $javascript-logo-color
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        padding: 25px
+
+      .About-Description-Div
+        border-top-right-radius: 0
+        border-bottom-left-radius: 20px
+        background: $javascript-logo-color
+        padding: 25px
+
+  @media screen and ( max-width: 420px )
+    .About-Header-Div
+      padding-top: 50px
+      padding-bottom: 50px
+
+      .About-Header
+        font-size: 40px
+        font-family: "Fira Sans", sans-serif
+        margin-bottom: 50px
+
+    .About-Statement-Div
+      display: flex
+      flex-direction: column
+      max-width: 300px
+      box-shadow: 0 8px 16px -8px rgba(0,0,0,0.5)
+
+      .About-Picture-Div
+        background-color: $javascript-logo-color
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        padding: 15px
+
+      .About-Description-Div
+        border-top-right-radius: 0
+        border-bottom-left-radius: 20px
+        background: $javascript-logo-color
+        padding: 15px
+
+        .About-Description
+          margin: 0
+          height: 100%
+          display: flex
+          align-items: center
+          text-align: left
+          line-height: 1.5
+          font-family: Varela Round

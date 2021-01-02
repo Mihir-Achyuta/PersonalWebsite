@@ -708,9 +708,105 @@
   color: #92810c;
   transition: 0.5s;
 }
+@media screen and (max-width: 950px) {
+  .About .About-Statement-Div {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.5);
+  }
+  .About .About-Statement-Div .About-Picture-Div {
+    background-color: #f0db4f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .About .About-Statement-Div .About-Picture-Div .About-Picture {
+    width: 100px;
+    height: 100px;
+  }
+  .About .About-Statement-Div .About-Picture-Div .About-Name {
+    margin: 0;
+  }
+  .About .About-Statement-Div .About-Description-Div {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    background: #f0db4f;
+  }
+  .About .About-Statement-Div .About-Description-Div .About-Description {
+    color: #92810c;
+  }
+}
+@media screen and (max-width: 650px) {
+  .About .About-Header-Div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .About .About-Header-Div .About-Header {
+    font-size: 50px;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 50px;
+  }
+  .About .About-Statement-Div {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.5);
+  }
+  .About .About-Statement-Div .About-Picture-Div {
+    background-color: #f0db4f;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 25px;
+  }
+  .About .About-Statement-Div .About-Description-Div {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    background: #f0db4f;
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .About .About-Header-Div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .About .About-Header-Div .About-Header {
+    font-size: 40px;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 50px;
+  }
+  .About .About-Statement-Div {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.5);
+  }
+  .About .About-Statement-Div .About-Picture-Div {
+    background-color: #f0db4f;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px;
+  }
+  .About .About-Statement-Div .About-Description-Div {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    background: #f0db4f;
+    padding: 15px;
+  }
+  .About .About-Statement-Div .About-Description-Div .About-Description {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 1.5;
+    font-family: Varela Round;
+  }
+}
 
 .Skills {
   border-top: 5px solid #18252e;
+  padding-top: 25px;
   background-color: #18252e;
   color: #84a7bd;
 }
