@@ -5,7 +5,7 @@ import SkillWord from "./SkillWord";
 class SkillCard extends React.Component {
   render() {
     const skillWords = this.props.technologies.map((technology, index) => (
-      <SkillWord word={technology} />
+      <SkillWord word={technology} key={index} />
     ));
     return (
       <div className="Skills-Card">

@@ -35,7 +35,7 @@ class Skills extends React.Component {
                 "Aqueduct",
                 "Express.js",
                 "EJS",
-                "PostgresSQL",
+                "Postgres-SQL",
                 "MongoDB",
                 "Mongoose",
                 "Passport.js + OAuth",
