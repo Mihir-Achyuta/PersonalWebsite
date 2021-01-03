@@ -1,30 +1,30 @@
 @import "../partials/_variables.sass"
 
-.Projects
+.Project
   padding-top: 50px
   padding-bottom: 50px
   background-color: $base-color
   color: $primary-text-color
   border-top: 5px $base-color
 
-  .Projects-One-Div
+  .Project-Div
     display: flex
     justify-content: space-evenly
 
-    .Projects-One-Description-Header, .Projects-One-Description-Text, .Projects-One-Stack-Header, .Projects-One-Stack-Text
+    .Project-Description-Header, .Project-Description-Text, .Project-Stack-Header, .Project-Stack-Text
       display: flex
       justify-content: flex-start
 
     @media screen and (max-width: 700px)
-      .Projects-One-Description-Header, .Projects-One-Description-Text, .Projects-One-Stack-Header, .Projects-One-Stack-Text
+      .Project-Description-Header, .Project-Description-Text, .Project-Stack-Header, .Project-Stack-Text
         display: flex
         justify-content: center
 
   @media screen and (max-width: 700px)
-    .Projects-One-Div
+    .Project-Div
       flex-direction: column
 
-  .Projects-One-Icon
+  .Project-Icon
     margin-left: 2.5%
     margin-right: 2.5%
     color: $primary-text-color
