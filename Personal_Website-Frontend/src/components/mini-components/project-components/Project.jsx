@@ -8,8 +8,8 @@ class Project extends React.Component {
           <img
             src={this.props.projectPicture}
             alt="Profile Pic"
-            width={300}
-            height={200}
+            width={450}
+            height={300}
           />
         </div>
         <div className="Project-Information">

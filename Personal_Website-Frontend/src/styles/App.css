@@ -842,7 +842,7 @@
   flex-wrap: wrap;
 }
 
-.Skill-Word-Div {
+.Skill-Technology-Div {
   display: inline-block;
   padding: 0px 10px;
   border-width: 1px 3px 3px 1px;
@@ -852,7 +852,7 @@
   box-shadow: 1px 1px 0 #00695b;
   margin: 3px;
 }
-.Skill-Word-Div .Skill-Word {
+.Skill-Technology-Div .Skill-Technology {
   background-color: #00695b;
   color: #00d2b7;
   font-family: Righteous;
@@ -907,7 +907,7 @@
     margin: 5px 0px;
   }
 
-  .Skill-Word-Div {
+  .Skill-Technology-Div {
     display: inline-block;
     padding: 0px 10px;
     border-width: 1px 3px 3px 1px;
@@ -917,7 +917,7 @@
     box-shadow: 1px 1px 0 #00695b;
     margin: 3px;
   }
-  .Skill-Word-Div .Skill-Word {
+  .Skill-Technology-Div .Skill-Technology {
     background-color: #00695b;
     color: #00d2b7;
     font-family: Righteous;
@@ -927,48 +927,20 @@
     line-height: 1em;
   }
 }
-.ProjectInfoModal {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #18252e;
-  color: #84a7bd;
-  border-top: 5px #18252e;
-}
-.ProjectInfoModal .ProjectInfoModal-Div {
-  display: flex;
-  justify-content: space-evenly;
-}
-.ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Description-Header, .ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Description-Text, .ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Stack-Header, .ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Stack-Text {
-  display: flex;
-  justify-content: flex-start;
-}
-@media screen and (max-width: 700px) {
-  .ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Description-Header, .ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Description-Text, .ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Stack-Header, .ProjectInfoModal .ProjectInfoModal-Div .ProjectInfoModal-Stack-Text {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 700px) {
-  .ProjectInfoModal .ProjectInfoModal-Div {
-    flex-direction: column;
-  }
-}
-.ProjectInfoModal .ProjectInfoModal-Icon {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  color: #84a7bd;
-}
-
-.Project {
+.ProjectGallery {
   background-color: #18252e;
   border-top: 5px solid #18252e;
   border-bottom: 5px solid #18252e;
   color: #84a7bd;
+}
+
+.Project {
   height: 50vh;
   display: flex;
   justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-
 .Contact {
   padding-top: 75px;
   background-color: #18252e;
