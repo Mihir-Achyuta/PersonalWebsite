@@ -5,8 +5,7 @@ import HiddenNavBar from "./page-components/HiddenNavBar";
 import Homepage from "./page-components/Homepage";
 import About from "./page-components/About";
 import Skills from "./page-components/Skills";
-import ProjectInfoModal from "./page-components/ProjectInfoModal";
-import ProjectGrid from "./page-components/ProjectGrid";
+import ProjectGallery from "./page-components/ProjectGallery";
 import Contact from "./page-components/Contact";
 import Footer from "./page-components/Footer";
 import AbsoluteIcons from "./page-components/AbsoluteIcons";
@@ -16,6 +15,7 @@ import BottomBurgerMenu from "./mini-components/burger-components/BottomBurgerMe
 import Cursor from "./mini-components/link-components/Cursor";
 
 import { Element } from "react-scroll";
+import { ProjectPicture } from "../../src/documents/pictures/project-picture.png";
 
 class Page extends React.Component {
   constructor(props) {
@@ -75,7 +75,7 @@ class Page extends React.Component {
           <Skills />
         </Element>
         <Element name="projects">
-          <ProjectGrid />
+          <ProjectGallery />
         </Element>
         <Element name="contact">
           <Contact />
@@ -88,15 +88,3 @@ class Page extends React.Component {
 }
 
 export default Page;
-
-//Old project design kept for future reference
-// {
-//   <ProjectInfoModal
-//   projectName="Project Name 1"
-//   description="Lorem ipsum dolor sit amet, consectetur"
-//   stack="Lorem ipsum dolor sit amet, consectetur"
-//   imgUrl="https://picsum.photos/300/200"
-//   projectUrl="https://mihir-achyuta.netlify.app/"
-//   fadeLeft
-// />;
-// }

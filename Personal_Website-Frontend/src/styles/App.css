@@ -959,14 +959,14 @@
   color: #84a7bd;
 }
 
-.Project-Grid {
-  background: #18252e;
-  display: flex;
-  flex-wrap: wrap;
-}
-.Project-Grid .Project-Grid-Photo {
-  width: 50%;
+.Project {
+  background-color: #18252e;
+  border-top: 5px solid #18252e;
+  border-bottom: 5px solid #18252e;
+  color: #84a7bd;
   height: 50vh;
+  display: flex;
+  justify-content: center;
 }
 
 .Contact {
