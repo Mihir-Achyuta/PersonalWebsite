@@ -1,6 +1,6 @@
 import React from "react";
 
-import List_Item from "../mini-components/link-components/List_Item";
+import ListItem from "../mini-components/link-components/ListItem";
 import Resume from "../../documents/resume/resume.pdf";
 
 import Zoom from "react-reveal/Zoom";
@@ -42,7 +42,7 @@ class HiddenNavBar extends React.Component {
       >
         <Zoom>
           <div className="Hidden-NavBar-Logo">
-            <a href="">
+            <a href="/">
               <h1 className="Hidden-NavBar-Logo-Left">
                 {"<"}MIHIR{"/>"}
               </h1>
@@ -52,19 +52,19 @@ class HiddenNavBar extends React.Component {
         <nav className="Hidden-NavBar-Links">
           <ol className="Hidden-NavBar-Unordered-List">
             <Zoom delay={100}>
-              <List_Item name="HOME" hidden />
+              <ListItem name="HOME" hidden />
             </Zoom>
             <Zoom delay={200}>
-              <List_Item name="ABOUT" hidden />
+              <ListItem name="ABOUT" hidden />
             </Zoom>
             <Zoom delay={300}>
-              <List_Item name="SKILLS" hidden />
+              <ListItem name="SKILLS" hidden />
             </Zoom>
             <Zoom delay={400}>
-              <List_Item name="PROJECTS" hidden />
+              <ListItem name="PROJECTS" hidden />
             </Zoom>
             <Zoom delay={500}>
-              <List_Item name="CONTACT" hidden />
+              <ListItem name="CONTACT" hidden />
             </Zoom>
             <Zoom delay={600}>
               <li className="Hidden-NavBar-List-Item">

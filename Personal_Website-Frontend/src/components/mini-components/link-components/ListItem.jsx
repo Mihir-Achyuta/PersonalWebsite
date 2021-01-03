@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-class List_Item extends React.Component {
+class ListItem extends React.Component {
   handleClick() {
     return this.props.name.toLowerCase();
   }
@@ -29,4 +29,4 @@ class List_Item extends React.Component {
   }
 }
 
-export default List_Item;
+export default ListItem;

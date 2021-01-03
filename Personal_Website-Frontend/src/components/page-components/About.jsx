@@ -7,9 +7,6 @@ import Fade from "react-reveal/Fade";
 import { Element } from "react-scroll";
 
 class About extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <section className="About">

@@ -6,9 +6,6 @@ import Zoom from "react-reveal/Zoom";
 import { Link } from "react-scroll";
 
 class BurgerNavLinks extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <nav className="Sandwich_Menu">

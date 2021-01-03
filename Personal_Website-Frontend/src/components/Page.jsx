@@ -81,6 +81,7 @@ class Page extends React.Component {
             description="Lorem ipsum dolor sit amet, consectetur"
             stack="Lorem ipsum dolor sit amet, consectetur"
             imgUrl="https://picsum.photos/300/200"
+            projectUrl="https://mihir-achyuta.netlify.app/"
             fadeLeft
           />
           <Project
@@ -88,12 +89,14 @@ class Page extends React.Component {
             description="Lorem ipsum dolor sit amet, consectetur"
             stack="Lorem ipsum dolor sit amet, consectetur"
             imgUrl="https://picsum.photos/300/200"
+            projectUrl="https://mihir-achyuta.netlify.app/"
           />
           <Project
             projectName="Project Name 3"
             description="Lorem ipsum dolor sit amet, consectetur"
             stack="Lorem ipsum dolor sit amet, consectetur"
             imgUrl="https://picsum.photos/300/200"
+            projectUrl="https://mihir-achyuta.netlify.app/"
             fadeLeft
           />
           <Project
@@ -101,6 +104,7 @@ class Page extends React.Component {
             description="Lorem ipsum dolor sit amet, consectetur"
             stack="Lorem ipsum dolor sit amet, consectetur"
             imgUrl="https://picsum.photos/300/200"
+            projectUrl="https://mihir-achyuta.netlify.app/"
           />
         </Element>
         <Element name="contact">

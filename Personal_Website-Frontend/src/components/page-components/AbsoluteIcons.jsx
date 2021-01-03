@@ -5,9 +5,6 @@ import { faBars, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
 class AbsoluteIcons extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <section className="Absolute-Icons">

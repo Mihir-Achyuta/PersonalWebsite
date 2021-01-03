@@ -31,15 +31,22 @@ class Project extends React.Component {
                   <img src={this.props.imgUrl} alt="Project"></img>
                 </div>
                 <div className="Projects-One-Icons">
-                  <a href="">
-                    {" "}
+                  <a
+                    href="https://github.com/Mihir-Achyuta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       className="Projects-One-Icon"
                       icon={faGithub}
                       size="2x"
                     />
                   </a>
-                  <a href="">
+                  <a
+                    href={this.props.projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       color={"#84a7bd"}
                       className="Projects-One-Icon"
@@ -74,14 +81,22 @@ class Project extends React.Component {
                   <img src={this.props.imgUrl} alt="Project"></img>
                 </div>
                 <div className="Projects-One-Icons">
-                  <a href="">
+                  <a
+                    href="https://github.com/Mihir-Achyuta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       className="Projects-One-Icon"
                       icon={faGithub}
                       size="2x"
                     />
                   </a>
-                  <a href="">
+                  <a
+                    href={this.props.projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       className="Projects-One-Icon"
                       icon={faEye}

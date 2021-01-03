@@ -1,6 +1,6 @@
 import React from "react";
 
-import List_Item from "../mini-components/link-components/List_Item";
+import ListItem from "../mini-components/link-components/ListItem";
 import Resume from "../../documents/resume/resume.pdf";
 
 import Zoom from "react-reveal/Zoom";
@@ -9,15 +9,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="NavBar">
         <Zoom>
           <div className="NavBar-Logo">
-            <a href="">
+            <a href="/">
               <h1 className="NavBar-Logo-Left">
                 {"<"}MIHIR{"/>"}
               </h1>
@@ -27,19 +24,19 @@ class NavBar extends React.Component {
         <nav className="NavBar-Links">
           <ol className="NavBar-Unordered-List">
             <Zoom delay={100}>
-              <List_Item name="HOME" />
+              <ListItem name="HOME" />
             </Zoom>
             <Zoom delay={200}>
-              <List_Item name="ABOUT" />
+              <ListItem name="ABOUT" />
             </Zoom>
             <Zoom delay={300}>
-              <List_Item name="SKILLS" />
+              <ListItem name="SKILLS" />
             </Zoom>
             <Zoom delay={400}>
-              <List_Item name="PROJECTS" />
+              <ListItem name="PROJECTS" />
             </Zoom>
             <Zoom delay={500}>
-              <List_Item name="CONTACT" />
+              <ListItem name="CONTACT" />
             </Zoom>
             <Zoom delay={600}>
               <li className="NavBar-List-Item">
