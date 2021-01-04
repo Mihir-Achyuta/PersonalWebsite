@@ -1,6 +1,6 @@
 import React from "react";
 
-class ProjectStack extends React.Component {
+class ProjectTechnology extends React.Component {
   render() {
     return (
       <div className="Project-Technology-Div">
@@ -9,3 +9,5 @@ class ProjectStack extends React.Component {
     );
   }
 }
+
+export default ProjectTechnology;

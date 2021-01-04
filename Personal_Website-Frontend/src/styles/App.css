@@ -927,20 +927,70 @@
     line-height: 1em;
   }
 }
-.ProjectGallery {
+.Project-Gallery {
   background-color: #18252e;
   border-top: 5px solid #18252e;
   border-bottom: 5px solid #18252e;
   color: #84a7bd;
 }
+.Project-Gallery .Project-Gallery-Header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 70px;
+  font-family: Fira Sans;
+  color: #f0db4f;
+}
 
 .Project {
-  height: 50vh;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 100px;
+  position: relative;
 }
+.Project .Project-Border-Top {
+  border-top: 2px solid #92810c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  top: 0;
+}
+.Project .Project-Image {
+  width: 450px;
+  height: 300px;
+}
+.Project .Project-Information {
+  margin-left: 100px;
+}
+.Project .Project-Information .Project-Information-Name {
+  display: flex;
+}
+.Project .Project-Information .Project-Information-Description {
+  display: flex;
+  width: 500px;
+  text-align: left;
+}
+
+.Project-Technology-Div {
+  display: inline-block;
+  padding: 0px 10px;
+  border-width: 1px 3px 3px 1px;
+  border-style: solid;
+  border-color: #00342d;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0 #00695b;
+  margin: 3px;
+}
+.Project-Technology-Div .Project-Technology {
+  background-color: #00695b;
+  color: #00d2b7;
+  font-family: Righteous;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1em;
+}
+
 .Contact {
   padding-top: 75px;
   background-color: #18252e;
