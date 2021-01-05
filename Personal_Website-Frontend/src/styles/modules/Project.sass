@@ -16,8 +16,8 @@
 .Project
     display: inline-flex
     justify-content: center
-    padding: 100px
     position: relative
+    padding-top: 50px
 
     .Project-Border-Top
         border-top: 2px solid $javascript-logo-color-darkened
@@ -30,6 +30,16 @@
     .Project-Image
         width: 450px
         height: 300px
+
+    @media screen and ( max-width: 1140px  )
+        .Project-Image
+            width: 350px
+            height: 233px
+
+    @media screen and ( max-width: 1040px  )
+        .Project-Image
+            width: 300px
+            height: 200px
 
     .Project-Information
         margin-left: 100px
@@ -50,6 +60,22 @@
             text-align: left
             color: $javascript-logo-color-darkened
             font-family: Varela Round
+
+        @media screen and ( max-width: 600px )
+            .Project-Information-Description
+                display: flex
+                width: 400px
+                text-align: left
+                color: $javascript-logo-color-darkened
+                font-family: Varela Round
+
+        @media screen and ( max-width: 420px )
+            .Project-Information-Description
+                display: flex
+                width: 300px
+                text-align: left
+                color: $javascript-logo-color-darkened
+                font-family: Varela Round
 
         .Project-Information-Tech-Stack
             display: flex
@@ -80,6 +106,13 @@
                 margin-left: 10px
                 font-family: Varela Round
 
+    @media screen and ( max-width: 600px )
+        .Project-Information
+            margin-left: 10px
+            display: inline-flex
+            flex-direction: column
+            justify-content: center
+
 .Project-Technology-Div
     display: inline-block
     padding: 0px 10px
@@ -99,3 +132,18 @@
         font-weight: 700
         font-size: 12px
         line-height: 1em
+
+@media screen and ( max-width: 1000px  )
+    .Project
+        display: inline-flex
+        position: relative
+        flex-direction: column
+        padding-top: 50px
+
+@media screen and ( max-width: 650px  )
+    .Project
+        display: inline-flex
+        position: relative
+        flex-direction: column
+        padding-top: 50px
+        align-items: center
