@@ -1,4 +1,5 @@
 import React from "react";
+
 import Project from "../mini-components/project-components/Project";
 import ProfilePic from "../../documents/pictures/project-picture.png";
 
@@ -11,6 +12,33 @@ class ProjectGallery extends React.Component {
           projectName="Portfolio Website"
           description="My website where you can view my web and mobile application projects utilizing various technologies."
           stack={["React.JS", "Node.JS"]}
+          projectPicture={ProfilePic}
+          projectUrl="https://mihir-achyuta.netlify.app/"
+          githubUrl="https://github.com/Mihir-Achyuta"
+          fadeLeft
+        />
+        <Project
+          projectName="Portfolio Website"
+          description="My website where you can view my web and mobile application projects utilizing various technologies."
+          stack={["HTML", "CSS", "JavaScript", "React", "Node", "Express"]}
+          projectPicture={ProfilePic}
+          projectUrl="https://mihir-achyuta.netlify.app/"
+          githubUrl="https://github.com/Mihir-Achyuta"
+          fadeLeft
+        />
+        <Project
+          projectName="Portfolio Website"
+          description="My website where you can view my web and mobile application projects utilizing various technologies."
+          stack={["React.JS", "Node.JS"]}
+          projectPicture={ProfilePic}
+          projectUrl="https://mihir-achyuta.netlify.app/"
+          githubUrl="https://github.com/Mihir-Achyuta"
+          fadeLeft
+        />
+        <Project
+          projectName="Portfolio Website"
+          description="My website where you can view my web and mobile application projects utilizing various technologies."
+          stack={["HTML", "CSS", "JavaScript", "React", "Node", "Express"]}
           projectPicture={ProfilePic}
           projectUrl="https://mihir-achyuta.netlify.app/"
           githubUrl="https://github.com/Mihir-Achyuta"

@@ -946,6 +946,7 @@
   justify-content: center;
   position: relative;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .Project .Project-Border-Top {
   border-top: 2px solid #92810c;
