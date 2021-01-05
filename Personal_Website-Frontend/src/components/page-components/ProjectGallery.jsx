@@ -10,7 +10,7 @@ class ProjectGallery extends React.Component {
         <Project
           projectName="Portfolio Website"
           description="My website where you can view my web and mobile application projects utilizing various technologies."
-          stack={["React", "Node"]}
+          stack={["React.JS", "Node.JS"]}
           projectPicture={ProfilePic}
           projectUrl="https://mihir-achyuta.netlify.app/"
           githubUrl="https://github.com/Mihir-Achyuta"

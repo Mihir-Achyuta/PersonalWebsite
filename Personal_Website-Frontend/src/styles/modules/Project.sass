@@ -24,7 +24,7 @@
         position: absolute
         left: 50%
         transform: translateX(-50%)
-        width: 100vw
+        width: 10vw
         top: 0
 
     .Project-Image
@@ -33,28 +33,67 @@
 
     .Project-Information
         margin-left: 100px
+        display: inline-flex
+        flex-direction: column
+        justify-content: center
 
         .Project-Information-Name
+            margin: 0
             display: flex
+            padding-bottom: 5px
+            font-family: Reem Kufi
+            color: $javascript-logo-color
 
         .Project-Information-Description
             display: flex
             width: 500px
             text-align: left
+            color: $javascript-logo-color-darkened
+            font-family: Varela Round
+
+        .Project-Information-Tech-Stack
+            display: flex
+
+        .Project-Information-View
+            display: flex
+            justify-content: flex-start
+
+            .Project-Information-Live
+                background-color: $javascript-logo-color-2nddarkened
+                color: $javascript-logo-color
+                padding: 20px
+                padding-left: 30px
+                padding-right: 30px
+                border-radius: 40px
+                margin-top: 20px
+                margin-right: 10px
+                font-family: Varela Round
+
+            .Project-Information-Github
+                background-color: $javascript-logo-color-2nddarkened
+                color: $javascript-logo-color
+                padding: 20px
+                padding-left: 30px
+                padding-right: 30px
+                border-radius: 40px
+                margin-top: 20px
+                margin-left: 10px
+                font-family: Varela Round
 
 .Project-Technology-Div
     display: inline-block
     padding: 0px 10px
     border-width: 1px 3px 3px 1px
     border-style: solid
-    border-color: $dart-logo-color-2nddarkened
+    border-color: $javascript-logo-color-2nddarkened
     border-radius: 3px
-    box-shadow: 1px 1px 0 $dart-logo-color-darkened
+    box-shadow: 1px 1px 0 $javascript-logo-color-darkened
     margin: 3px
+    background-color: $javascript-logo-color-darkened
 
     .Project-Technology
-        background-color: $dart-logo-color-darkened
-        color: $dart-logo-color
+        background-color: $javascript-logo-color-darkened
+        color: $javascript-logo-color
         font-family: Righteous
         text-transform: uppercase
         font-weight: 700
