@@ -334,13 +334,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #84a7bd;
+  background-color: #7ae2dd;
   z-index: 5;
   transition: top 0.5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .Hidden-NavBar-Scroll {
-  top: -100px;
+  top: -150px;
 }
 
 .Hidden-NavBar-Logo {
@@ -350,10 +351,10 @@
 }
 .Hidden-NavBar-Logo .Hidden-NavBar-Logo-Left {
   color: #18252e;
-  transition: 1s;
+  transition: 0.3s;
 }
 .Hidden-NavBar-Logo .Hidden-NavBar-Logo-Left:hover {
-  color: #7ae2dd;
+  transform: scale(1.2) rotate(4deg);
   transition: 0.3s;
 }
 
