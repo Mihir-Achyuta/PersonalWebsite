@@ -1069,6 +1069,11 @@
   font-size: 12px;
   line-height: 1em;
 }
+@media screen and (max-width: 450px) {
+  .Project-Technology-Div .Project-Technology {
+    font-size: 10px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .Project {
