@@ -4,7 +4,6 @@
     background-color: $base-color
     border-top: 5px solid $base-color
     border-bottom: 5px solid $base-color
-    color: $primary-text-color
 
     .Project-Gallery-Header
         padding-top: 50px
@@ -13,142 +12,17 @@
         font-family: Fira Sans
         color: $javascript-logo-color
 
-.Project
-    display: inline-flex
-    justify-content: center
-    position: relative
-    padding-top: 50px
-    padding-bottom: 50px
+    .Project-Gallery-Projects
+        display: inline-flex
+        flex-wrap: wrap
+        justify-content: space-around
 
-    .Project-Border-Top
-        border-top: 2px solid $javascript-logo-color-darkened
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-        width: 10vw
-        top: 0
+.Project
+    position: relative
+    width: 50%
+    height: 50%
 
     .Project-Image
-        width: 450px
-        height: 300px
-
-    @media screen and ( max-width: 1140px  )
-        .Project-Image
-            width: 350px
-            height: 233px
-
-    @media screen and ( max-width: 1040px  )
-        .Project-Image
-            width: 300px
-            height: 200px
-
-    .Project-Information
-        margin-left: 100px
-        display: inline-flex
-        flex-direction: column
-        justify-content: center
-
-        .Project-Information-Name
-            margin: 0
-            display: flex
-            padding-bottom: 5px
-            font-family: Reem Kufi
-            color: $javascript-logo-color
-
-        .Project-Information-Description
-            display: flex
-            width: 500px
-            text-align: left
-            color: $javascript-logo-color-darkened
-            font-family: Varela Round
-
-        @media screen and ( max-width: 600px )
-            .Project-Information-Description
-                display: flex
-                width: 400px
-                text-align: left
-                color: $javascript-logo-color-darkened
-                font-family: Varela Round
-
-        @media screen and ( max-width: 420px )
-            .Project-Information-Description
-                display: flex
-                width: 300px
-                text-align: left
-                color: $javascript-logo-color-darkened
-                font-family: Varela Round
-
-        .Project-Information-Tech-Stack
-            display: flex
-
-        .Project-Information-View
-            display: flex
-            justify-content: flex-start
-
-            .Project-Information-Live
-                background-color: $javascript-logo-color-2nddarkened
-                color: $javascript-logo-color
-                padding: 20px
-                padding-left: 30px
-                padding-right: 30px
-                border-radius: 40px
-                margin-top: 20px
-                margin-right: 10px
-                font-family: Varela Round
-
-            .Project-Information-Github
-                background-color: $javascript-logo-color-2nddarkened
-                color: $javascript-logo-color
-                padding: 20px
-                padding-left: 30px
-                padding-right: 30px
-                border-radius: 40px
-                margin-top: 20px
-                margin-left: 10px
-                font-family: Varela Round
-
-    @media screen and ( max-width: 600px )
-        .Project-Information
-            margin-left: 10px
-            display: inline-flex
-            flex-direction: column
-            justify-content: center
-
-.Project-Technology-Div
-    display: inline-block
-    padding: 0px 10px
-    border-width: 1px 3px 3px 1px
-    border-style: solid
-    border-color: $javascript-logo-color-2nddarkened
-    border-radius: 3px
-    box-shadow: 1px 1px 0 $javascript-logo-color-darkened
-    margin: 3px
-    background-color: $javascript-logo-color-darkened
-
-    .Project-Technology
-        background-color: $javascript-logo-color-darkened
-        color: $javascript-logo-color
-        font-family: Righteous
-        text-transform: uppercase
-        font-weight: 700
-        font-size: 12px
-        line-height: 1em
-
-    @media screen and ( max-width: 450px  )
-        .Project-Technology
-            font-size: 10px
-
-@media screen and ( max-width: 1000px  )
-    .Project
-        display: inline-flex
-        position: relative
-        flex-direction: column
-        padding-top: 50px
-
-@media screen and ( max-width: 650px  )
-    .Project
-        display: inline-flex
-        position: relative
-        flex-direction: column
-        padding-top: 50px
-        align-items: center
+        width: 100%
+        height: 100%
+        margin-top: -3px
