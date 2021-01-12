@@ -1,6 +1,6 @@
 import React from "react";
 
-import Bounce from "react-reveal/Bounce";
+import Fade from "react-reveal/Fade";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -12,7 +12,7 @@ class Footer extends React.Component {
   render() {
     return (
       <section className="Footer">
-        <Bounce right>
+        <Fade>
           <p>Copyright ©2020 | Made by @Mihir-Achyuta</p>
           <a
             href="https://github.com/Mihir-Achyuta"
@@ -50,7 +50,7 @@ class Footer extends React.Component {
               size="2x"
             />
           </a>
-        </Bounce>
+        </Fade>
       </section>
     );
   }

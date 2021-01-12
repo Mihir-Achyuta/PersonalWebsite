@@ -971,51 +971,44 @@
 
 .Contact {
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 25px;
   background-color: #00695b;
-  color: #18252e;
+  color: #00d2b7;
 }
 .Contact .Contact-Div {
-  background-color: #84a7bd;
   display: inline-block;
   padding-left: 8%;
   padding-right: 8%;
   padding-bottom: 5%;
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
+}
+.Contact .Contact-Div .Contact-Header {
+  padding-bottom: 10px;
+  font-size: 50px;
 }
 .Contact .Contact-Div .Input-Field {
-  color: #18252e;
-  outliine: none;
-  border: none;
-  background-color: #7ae2dd;
-  border-radius: 3px;
+  color: #00d2b7;
+  background-color: #00342d;
   width: 100%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: Fira Sans;
+  font-size: 20px;
 }
 .Contact .Contact-Div .Input-Field::placeholder {
-  color: #18252e;
+  color: #009c88;
   margin-left: 5px;
-}
-.Contact .Contact-Div .Contact-Button {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  font-family: Fira Sans;
   font-size: 20px;
-  background-color: #7ae2dd;
-  color: #18252e;
-  padding: 10px 20px;
-  font-weight: 900;
 }
-.Contact .Contact-Header {
-  border-bottom: 3px solid #18252e;
-  padding-bottom: 10px;
-  font-size: 175%;
+.Contact .Contact-Div .Contact-Message-Text {
+  height: 200px;
+  text-align: left;
 }
 
 .Submit_Modal {

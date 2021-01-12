@@ -65,7 +65,7 @@ class Contact extends React.Component {
                 <input
                   name="name"
                   type="text"
-                  placeholder="Enter Name"
+                  placeholder="Name"
                   className="Contact-Name-Text Input-Field"
                   value={this.state.name}
                   onChange={this.changeText}
@@ -75,23 +75,22 @@ class Contact extends React.Component {
                 <input
                   name="email"
                   type="text"
-                  placeholder="Enter Email"
+                  placeholder="Email"
                   className="Contact-Email-Text Input-Field"
                   value={this.state.email}
                   onChange={this.changeText}
                 ></input>
               </div>
               <div className="Contact-Message-Div">
-                <input
+                <textarea
                   name="text"
                   className="Contact-Message-Text Input-Field"
                   type="text"
-                  placeholder="Enter Message"
+                  placeholder="Message"
                   value={this.state.text}
                   onChange={this.changeText}
-                ></input>
+                ></textarea>
               </div>
-              <button className="Contact-Button">SUBMIT</button>
             </form>
           </div>
         </Fade>

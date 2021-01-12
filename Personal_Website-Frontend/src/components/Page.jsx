@@ -79,8 +79,8 @@ class Page extends React.Component {
         </Element>
         <Element name="contact">
           <Contact />
+          <Footer />
         </Element>
-        <Footer />
         <AbsoluteIcons showMenu={this.showBottomMenu} />
       </div>
     );
