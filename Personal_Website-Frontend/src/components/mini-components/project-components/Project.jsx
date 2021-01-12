@@ -19,6 +19,9 @@ class Project extends React.Component {
               alt="Profile Pic"
             />
           </div>
+          <div className="Project-Information-Div">
+            <h1>{this.props.projectName}</h1>
+          </div>
         </div>
       </Fade>
     );

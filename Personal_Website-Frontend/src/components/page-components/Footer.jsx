@@ -13,7 +13,7 @@ class Footer extends React.Component {
     return (
       <section className="Footer">
         <Bounce right>
-          <p>Made by ©Mihir-Achyuta</p>
+          <p>Copyright ©2020 | Made by @Mihir-Achyuta</p>
           <a
             href="https://github.com/Mihir-Achyuta"
             target="_blank"

@@ -334,7 +334,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #7ae2dd;
+  background-color: #00d2b7;
   z-index: 5;
   transition: top 0.5s;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -955,12 +955,24 @@
   width: 100%;
   height: 100%;
   margin-top: -3px;
+  transition: 0.4s;
+}
+.Project .Project-Image:hover {
+  opacity: 0;
+  transition: 0.4s;
+}
+.Project .Project-Information-Div {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0db4f;
 }
 
 .Contact {
   padding-top: 75px;
-  background-color: #18252e;
   padding-bottom: 75px;
+  background-color: #00695b;
   color: #18252e;
 }
 .Contact .Contact-Div {
@@ -1040,20 +1052,24 @@
 }
 
 .Footer {
-  background-color: #18252e;
+  background-color: #00695b;
   padding-top: 1%;
   padding-bottom: 2%;
-  color: #84a7bd;
+  color: #00d2b7;
 }
 .Footer .Footer-Icon {
-  margin-left: 1%;
-  margin-right: 1%;
-  color: #84a7bd;
+  border: 3px solid #00d2b7;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  color: #00d2b7;
 }
 .Footer .Footer-Icon:hover {
-  transform: rotate(360deg);
   transition: 0.4s;
-  color: #7ae2dd;
+  color: #00342d;
+  border: 3px solid #00342d;
+  background-color: #00d2b7;
 }
 
 .Cursor {
@@ -1147,11 +1163,11 @@
   bottom: 10px;
   right: 10px;
   cursor: pointer;
-  color: #84a7bd;
+  color: #00d2b7;
   transition: 1s;
 }
 .Absolute-Icons-Arrow-Up:hover {
-  color: #7ae2dd;
+  color: #f0db4f;
   transition: 0.3s;
 }
 
@@ -1160,11 +1176,11 @@
   bottom: 10px;
   left: 10px;
   cursor: pointer;
-  color: #84a7bd;
+  color: #00d2b7;
   transition: 1s;
 }
 .Absolute-Icons-Hamburger:hover {
-  color: #7ae2dd;
+  color: #f0db4f;
   transition: 0.3s;
 }
 
