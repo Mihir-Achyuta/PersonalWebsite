@@ -1104,13 +1104,13 @@
   width: 10px;
   bottom: 0;
   left: 0;
-  z-index: 5;
+  z-index: 6;
   background-color: rgba(132, 167, 189, 0);
   transition: 0.5s;
 }
 
 .Menu-Load {
-  background-color: #84a7bd;
+  background-color: #f0db4f;
   height: 102vh;
   width: 101vw;
   transition: 0.5s;
@@ -1124,13 +1124,13 @@
   width: 10px;
   top: 0;
   right: 0;
-  z-index: 5;
+  z-index: 6;
   background-color: rgba(132, 167, 189, 0);
   transition: 0.5s;
 }
 
 .Burger-Menu-Load {
-  background-color: #84a7bd;
+  background-color: #f0db4f;
   height: 102vh;
   width: 101vw;
   transition: 0.5s;
@@ -1144,16 +1144,28 @@
   position: absolute;
   cursor: pointer;
   bottom: 10px;
-  left: 10px;
-  color: #18252e;
+  left: 7px;
+  color: #92810c;
+  transition: 0.2s;
+}
+
+.X-Icon:hover {
+  color: #494006;
+  transition: 0.2s;
 }
 
 .X-Burger-Icon {
   position: absolute;
   cursor: pointer;
   top: 30px;
-  right: 35px;
-  color: #18252e;
+  right: 15px;
+  color: #92810c;
+  transition: 0.2s;
+}
+
+.X-Burger-Icon:hover {
+  color: #494006;
+  transition: 0.2s;
 }
 
 .Sandwich_Menu {
@@ -1161,15 +1173,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #18252e;
 }
 
 .Sandwich_Menu-List {
   padding: 0;
 }
 .Sandwich_Menu-List .Sandwich-List-Item {
-  margin-top: 20px;
+  color: #92810c;
+  font-size: 30px;
+  margin-top: 35px;
+  font-family: Righteous;
   cursor: pointer;
+  transition: 0.3s;
+}
+.Sandwich_Menu-List .Sandwich-List-Item:hover {
+  color: #494006;
+  font-size: 35px;
+  transition: 0.3s;
 }
 
 .Absolute-Icons-Arrow-Up {

@@ -102,14 +102,14 @@ class BurgerNavLinks extends React.Component {
           </Zoom>
           <Zoom delay={1500}>
             <li
-              className="Sandwich-List-Item NavBar-Resume"
               onClick={this.props.dissapearMenu}
+              style={{ marginTop: "35px", color: "#92810c" }}
             >
               <a
                 href={Resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#18252e" }}
+                className="Sandwich-List-Item NavBar-Resume"
               >
                 RESUME
               </a>

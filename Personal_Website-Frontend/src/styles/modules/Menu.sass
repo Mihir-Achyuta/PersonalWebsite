@@ -6,12 +6,12 @@
     width: 10px
     bottom: 0
     left: 0
-    z-index: 5
+    z-index: 6
     background-color: $primary-text-color-rgba-nofill
     transition: 0.5s
 
 .Menu-Load
-    background-color: $primary-text-color-rgba-fill
+    background-color: $javascript-logo-color
     height: 102vh
     width: 101vw
     transition: 0.5s
@@ -24,12 +24,12 @@
     width: 10px
     top: 0
     right: 0
-    z-index: 5
+    z-index: 6
     background-color: $primary-text-color-rgba-nofill
     transition: 0.5s
 
 .Burger-Menu-Load
-    background-color: $primary-text-color-rgba-fill
+    background-color: $javascript-logo-color
     height: 102vh
     width: 101vw
     transition: 0.5s
@@ -42,26 +42,44 @@
     position: absolute
     cursor: pointer
     bottom: 10px
-    left: 10px
-    color: $base-color
+    left: 7px
+    color: $javascript-logo-color-darkened
+    transition: 0.2s
+
+.X-Icon:hover
+    color: $javascript-logo-color-2nddarkened
+    transition: 0.2s
 
 .X-Burger-Icon
     position: absolute
     cursor: pointer
     top: 30px
-    right: 35px
-    color: $base-color
+    right: 15px
+    color: $javascript-logo-color-darkened
+    transition: 0.2s
+
+.X-Burger-Icon:hover
+    color: $javascript-logo-color-2nddarkened
+    transition: 0.2s
 
 .Sandwich_Menu
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
-    color: $base-color
 
 .Sandwich_Menu-List
     padding: 0
 
     .Sandwich-List-Item
-        margin-top: 20px
+        color: $javascript-logo-color-darkened
+        font-size: 30px
+        margin-top: 35px
+        font-family: Righteous
         cursor: pointer
+        transition: 0.3s
+
+    .Sandwich-List-Item:hover
+        color: $javascript-logo-color-2nddarkened
+        font-size: 35px
+        transition: 0.3s
