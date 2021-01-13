@@ -60,6 +60,9 @@ class Contact extends React.Component {
         <Fade big left>
           <div className="Contact-Div">
             <h1 className="Contact-Header">Contact Me!</h1>
+            <h3 className="Contact-Alternate">
+              Email : achyutamihir@gmail.com
+            </h3>
             <form className="Contact-Form" onSubmit={this.handleSubmit}>
               <div className="Contact-Name-Div">
                 <input
@@ -69,16 +72,18 @@ class Contact extends React.Component {
                   className="Contact-Name-Text Input-Field"
                   value={this.state.name}
                   onChange={this.changeText}
+                  required
                 ></input>
               </div>
               <div className="Contact-Email-Div">
                 <input
                   name="email"
-                  type="text"
+                  type="email"
                   placeholder="Email"
                   className="Contact-Email-Text Input-Field"
                   value={this.state.email}
                   onChange={this.changeText}
+                  required
                 ></input>
               </div>
               <div className="Contact-Message-Div">
@@ -89,7 +94,13 @@ class Contact extends React.Component {
                   placeholder="Message"
                   value={this.state.text}
                   onChange={this.changeText}
+                  required
                 ></textarea>
+              </div>
+              <div className="Contact-Button-Div">
+                <button type="submit" className="Contact-Button">
+                  SUBMIT
+                </button>
               </div>
             </form>
           </div>
