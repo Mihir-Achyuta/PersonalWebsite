@@ -13,7 +13,9 @@ class Footer extends React.Component {
     return (
       <section className="Footer">
         <Fade>
-          <p>Copyright ©2020 | Made by @Mihir-Achyuta</p>
+          <p className="Footer-Copyright">
+            Copyright ©2020 | Made by @Mihir-Achyuta
+          </p>
           <a
             href="https://github.com/Mihir-Achyuta"
             target="_blank"

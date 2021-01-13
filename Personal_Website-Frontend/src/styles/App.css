@@ -931,7 +931,6 @@
 .Project-Gallery {
   background-color: #18252e;
   border-top: 5px solid #18252e;
-  border-bottom: 5px solid #18252e;
 }
 .Project-Gallery .Project-Gallery-Header {
   padding-top: 50px;
@@ -955,6 +954,7 @@
   width: 100%;
   height: 100%;
   margin-top: -3px;
+  margin-bottom: -4px;
   transition: 0.4s;
 }
 .Project .Project-Image:hover {
@@ -963,7 +963,7 @@
 }
 .Project .Project-Information-Div {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f0db4f;
@@ -973,6 +973,7 @@
   padding-top: 50px;
   background-color: #00695b;
   color: #00d2b7;
+  font-family: Reem Kufi;
 }
 .Contact .Contact-Div {
   padding-bottom: 25px;
@@ -985,11 +986,12 @@
 }
 .Contact .Contact-Div .Contact-Alternate {
   color: #009c88;
+  margin: 0;
 }
 .Contact .Contact-Div .Input-Field {
   color: #00d2b7;
   background-color: #00342d;
-  width: 90%;
+  width: 75%;
   margin-top: 20px;
   margin-bottom: 20px;
   height: 70px;
@@ -1084,6 +1086,17 @@
   color: #00342d;
   border: 3px solid #00342d;
   background-color: #00d2b7;
+}
+@media screen and (max-width: 430px) {
+  .Footer .Footer-Icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .Footer .Footer-Copyright {
+    font-size: 11px;
+  }
 }
 
 .Cursor {

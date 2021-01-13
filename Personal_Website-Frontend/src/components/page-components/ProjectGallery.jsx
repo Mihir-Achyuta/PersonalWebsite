@@ -7,7 +7,7 @@ class ProjectGallery extends React.Component {
   render() {
     return (
       <div className="Project-Gallery">
-        <h1 className="Project-Gallery-Header">Portfolio</h1>
+        <h1 className="Project-Gallery-Header">Projects</h1>
         <div className="Project-Gallery-Projects">
           <Project
             projectName="Portfolio Website"
