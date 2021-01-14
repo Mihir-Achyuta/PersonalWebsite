@@ -5,10 +5,11 @@ import ProjectTechnology from "./ProjectTechnology";
 import Fade from "react-reveal/Fade";
 
 class Project extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { projectPreview: false };
+  }
   render() {
-    const projectTechnologies = this.props.stack.map((technology, index) => (
-      <ProjectTechnology technology={technology} key={index} />
-    ));
     return (
       <Fade>
         <div className="Project">
