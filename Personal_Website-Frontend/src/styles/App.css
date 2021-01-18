@@ -950,16 +950,25 @@
   width: 50%;
   height: 50%;
 }
-.Project .Project-Image {
+.Project .Project-Image-Div {
+  opacity: 1;
+  transition: 0.4s;
+}
+.Project .Project-Image-Div .Project-Image {
   width: 100%;
   height: 100%;
   margin-top: -3px;
   margin-bottom: -4px;
-  transition: 0.4s;
 }
-.Project .Project-Image:hover {
+.Project .Project-Image-Div-Hovered {
   opacity: 0;
   transition: 0.4s;
+}
+.Project .Project-Image-Div-Hovered .Project-Image {
+  width: 100%;
+  height: 100%;
+  margin-top: -3px;
+  margin-bottom: -4px;
 }
 .Project .Project-Information-Div {
   position: absolute;
@@ -967,6 +976,24 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f0db4f;
+  opacity: 0;
+  transition-delay: 5000s;
+  transition: 0.5s;
+}
+.Project .Project-Information-Div .Project-Information-Technologies {
+  display: flex;
+}
+.Project .Project-Information-Div-Hovered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0db4f;
+  transition-delay: 5000s;
+  transition: 1s;
+}
+.Project .Project-Information-Div-Hovered .Project-Information-Technologies {
+  display: flex;
 }
 
 .Contact {
