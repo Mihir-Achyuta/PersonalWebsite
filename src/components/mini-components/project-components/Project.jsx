@@ -1,7 +1,5 @@
 import React from "react";
 
-import ProjectTechnology from "./ProjectTechnology";
-
 import Fade from "react-reveal/Fade";
 
 class Project extends React.Component {

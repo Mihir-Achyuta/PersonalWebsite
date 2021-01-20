@@ -993,11 +993,15 @@
 .Project .Project-Information-Div .Project-Information-Technologies {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .Project .Project-Information-Div .Project-Information-Technologies p {
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-style: italic;
+  opacity: 0.8;
 }
 @media screen and (max-width: 350px) {
   .Project .Project-Information-Div .Project-Information-Technologies p {
@@ -1016,6 +1020,10 @@
   color: #f0db4f;
   transition: 0.3s ease;
   width: 350px;
+}
+.Project .Project-Information-Div .Project-Information-Button:hover {
+  background-color: #f0db4f;
+  color: #92810c;
 }
 @media screen and (max-width: 400px) {
   .Project .Project-Information-Div .Project-Information-Button {

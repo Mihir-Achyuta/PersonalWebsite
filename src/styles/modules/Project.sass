@@ -63,11 +63,15 @@
         .Project-Information-Technologies
             display: flex
             justify-content: center
+            flex-wrap: wrap
 
             p
                 margin-left: 5px
                 margin-right: 5px
+                margin-top: 0px
+                margin-bottom: 0px
                 font-style: italic
+                opacity: 0.8
 
             @media screen and ( max-width:  350px)
                 p
@@ -85,6 +89,10 @@
             color: $javascript-logo-color
             transition: 0.3s ease
             width: 350px
+
+        .Project-Information-Button:hover
+            background-color: $javascript-logo-color
+            color: $javascript-logo-color-darkened
 
         @media screen and ( max-width:400px  )
             .Project-Information-Button
