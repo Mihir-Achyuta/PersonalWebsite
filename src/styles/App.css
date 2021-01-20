@@ -982,12 +982,19 @@
 .Project .Project-Information-Div .Project-Information-Name {
   font-family: Fira Sans;
   text-align: center;
+  margin-bottom: 5px;
 }
 .Project .Project-Information-Div .Project-Information-Technologies {
   display: flex;
   justify-content: center;
 }
+.Project .Project-Information-Div .Project-Information-Technologies p {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-style: italic;
+}
 .Project .Project-Information-Div .Project-Information-Button {
+  margin-top: 40px;
   border: none;
   outline: none;
   border: 2px solid #f0db4f;
@@ -1065,6 +1072,11 @@
   border: none;
   outline: none;
   background-color: Transparent;
+  cursor: pointer;
+  font-family: Varela Round;
+  font-size: 35px;
+  color: #00d2b7;
+  transition: 0.3s ease;
 }
 .Contact .Contact-Div .Contact-Button-Div .Contact-Button:hover {
   color: #00342d;
