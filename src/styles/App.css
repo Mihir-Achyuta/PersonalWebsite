@@ -944,6 +944,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media screen and (max-width: 800px) {
+  .Project-Gallery .Project-Gallery-Projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .Project {
   position: relative;
@@ -993,6 +999,11 @@
   margin-right: 5px;
   font-style: italic;
 }
+@media screen and (max-width: 350px) {
+  .Project .Project-Information-Div .Project-Information-Technologies p {
+    font-size: 12px;
+  }
+}
 .Project .Project-Information-Div .Project-Information-Button {
   margin-top: 40px;
   border: none;
@@ -1005,6 +1016,21 @@
   color: #f0db4f;
   transition: 0.3s ease;
   width: 350px;
+}
+@media screen and (max-width: 400px) {
+  .Project .Project-Information-Div .Project-Information-Button {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border: 2px solid #f0db4f;
+    background-color: Transparent;
+    cursor: pointer;
+    font-family: Righteous;
+    font-size: 35px;
+    color: #f0db4f;
+    transition: 0.3s ease;
+    width: 270px;
+  }
 }
 .Project .Project-Information-Div-Hovered {
   position: absolute;
@@ -1019,6 +1045,13 @@
   height: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  .Project {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+}
 .Contact {
   padding-top: 50px;
   background-color: #00695b;
