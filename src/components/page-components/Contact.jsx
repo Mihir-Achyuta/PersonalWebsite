@@ -15,7 +15,7 @@ class Contact extends React.Component {
     };
     this.changeText = this.changeText.bind(this);
     this.removeModel = this.removeModel.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmitAxios = this.handleSubmitAxios.bind(this);
   }
   changeText(evt) {
     this.setState({ [evt.target.name]: evt.target.value });
@@ -23,24 +23,30 @@ class Contact extends React.Component {
   removeModel() {
     this.setState({ formSent: false });
   }
-  handleSubmit(ev) {
-    ev.preventDefault();
-    this.setState({
-      formSent: true,
-      formText: "Form Sent. I will get back to you as soon as possible.",
-    });
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-      }
-    };
-    xhr.send(data);
+  handleSubmitAxios(evt) {
+    evt.preventDefault();
+    const form = evt.target;
+    axios({
+      method: "post",
+      url: "https://formspree.io/f/moqprelo",
+      data: new FormData(form),
+    })
+      .then((r) => {
+        this.setState({
+          formSent: true,
+          formText: "Form Sent. I will get back to you as soon as possible.",
+          name: "",
+          email: "",
+          text: "",
+        });
+      })
+      .catch((r) => {
+        this.setState({
+          formSent: true,
+          formText:
+            "There was an error with the form submission. Please contact me at achyutamihir@gmail.com",
+        });
+      });
   }
   render() {
     return (
@@ -51,12 +57,7 @@ class Contact extends React.Component {
             <h3 className="Contact-Alternate">
               Email : achyutamihir@gmail.com
             </h3>
-            <form
-              className="Contact-Form"
-              onSubmit={this.handleSubmit}
-              action="https://formspree.io/f/moqprelo"
-              method="POST"
-            >
+            <form className="Contact-Form" onSubmit={this.handleSubmitAxios}>
               <div className="Contact-Name-Div">
                 <input
                   name="name"
