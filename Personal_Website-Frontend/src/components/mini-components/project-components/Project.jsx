@@ -23,15 +23,17 @@ class Project extends React.Component {
     ));
     return (
       <Fade>
-        <div className="Project">
+        <div
+          className="Project"
+          onMouseMove={this.showProjectPreview}
+          onMouseLeave={this.removeProjectPreview}
+        >
           <div
             className={
               this.state.projectPreview
-                ? "Project-Image-Div-Hovered"
+                ? "Project-Image-Div Project-Image-Div-Hovered"
                 : "Project-Image-Div"
             }
-            onMouseEnter={this.showProjectPreview}
-            onMouseOut={this.removeProjectPreview}
           >
             <img
               className="Project-Image"
@@ -42,7 +44,7 @@ class Project extends React.Component {
           <div
             className={
               this.state.projectPreview
-                ? "Project-Information-Div-Hovered"
+                ? "Project-Information-Div Project-Information-Div-Hovered"
                 : "Project-Information-Div"
             }
           >

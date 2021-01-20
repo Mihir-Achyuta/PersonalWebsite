@@ -28,40 +28,56 @@
         .Project-Image
             width: 100%
             height: 100%
-            margin-top: -3px
-            margin-bottom: -4px
+            margin-bottom: -3px
 
     .Project-Image-Div-Hovered
         opacity: 0
         transition: 0.4s
 
-        .Project-Image
-            width: 100%
-            height: 100%
-            margin-top: -3px
-            margin-bottom: -4px
-
     .Project-Information-Div
         position: absolute
-        top: 20%
+        top: 50%
         left: 50%
         transform: translate(-50%,-50%)
         color: $javascript-logo-color
         opacity: 0
         transition-delay: 5000s
         transition: 0.5s
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        .Project-Information-Name
+            font-family: Fira Sans
+            text-align: center
 
         .Project-Information-Technologies
             display: flex
+            justify-content: center
+
+        .Project-Information-Button
+            border: none
+            outline: none
+            border: 2px solid $javascript-logo-color
+            background-color: Transparent
+            cursor: pointer
+            font-family: Righteous
+            font-size: 35px
+            color: $javascript-logo-color
+            transition: 0.3s ease
+            width: 350px
 
     .Project-Information-Div-Hovered
         position: absolute
-        top: 20%
+        top: 50%
         left: 50%
         transform: translate(-50%,-50%)
         color: $javascript-logo-color
         transition-delay: 5000s
         transition: 1s
-
-        .Project-Information-Technologies
-            display: flex
+        opacity: 1
+        width: 100%
+        height: 100%
