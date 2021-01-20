@@ -23,36 +23,24 @@ class Contact extends React.Component {
   removeModel() {
     this.setState({ formSent: false });
   }
-  handleSubmit(evt) {
-    evt.preventDefault();
-    this.setState({ formSent: true });
-    axios
-      .post("/api/email", {
-        name: this.state.name,
-        email: this.state.email,
-        text: this.state.text,
-      })
-      .then((response) => {
-        if (response.data.success) {
-          this.setState({
-            formSent: true,
-            formText: "Email sent! I will get back to you as soon as possible",
-          });
-        } else {
-          this.setState({
-            formSent: true,
-            formText:
-              "Email not sent. Please email me directly at achyutamihir@gmail.com",
-          });
-        }
-      })
-      .catch((err) => {
-        this.setState({
-          formSent: true,
-          formText:
-            "Email not sent. Please email me directly at achyutamihir@gmail.com",
-        });
-      });
+  handleSubmit(ev) {
+    ev.preventDefault();
+    this.setState({
+      formSent: true,
+      formText: "Form Sent. I will get back to you as soon as possible.",
+    });
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+      }
+    };
+    xhr.send(data);
   }
   render() {
     return (
@@ -63,7 +51,12 @@ class Contact extends React.Component {
             <h3 className="Contact-Alternate">
               Email : achyutamihir@gmail.com
             </h3>
-            <form className="Contact-Form" onSubmit={this.handleSubmit}>
+            <form
+              className="Contact-Form"
+              onSubmit={this.handleSubmit}
+              action="https://formspree.io/f/moqprelo"
+              method="POST"
+            >
               <div className="Contact-Name-Div">
                 <input
                   name="name"

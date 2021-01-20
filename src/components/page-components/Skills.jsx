@@ -32,7 +32,6 @@ class Skills extends React.Component {
               path="Backend"
               technologies={[
                 "Node.js",
-                "Aqueduct",
                 "Express.js",
                 "EJS",
                 "Postgres-SQL",
