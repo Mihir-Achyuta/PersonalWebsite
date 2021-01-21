@@ -77,7 +77,15 @@ class Project extends React.Component {
               : "Project-Modal-Hidden"
           }
         >
-          <ProjectModal removeProjectModal={this.removeProjectModal} />
+          <ProjectModal
+            projectName={this.props.projectName}
+            description={this.props.description}
+            technologyDescription={technologyDescription}
+            projectPicture={this.props.projectPicture}
+            projectUrl={this.props.projectUrl}
+            githubUrl={this.props.githubUrl}
+            removeProjectModal={this.removeProjectModal}
+          />
         </div>
       </Fade>
     );
