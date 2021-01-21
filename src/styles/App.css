@@ -1081,6 +1081,18 @@
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+  background-color: #00d2b7;
+  border-radius: 5px;
+  padding-bottom: 35px;
+}
+.Project-Modal-Visible .Project-Modal-Contents .Project-Modal-Image {
+  width: 800px;
+  height: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.Project-Modal-Visible .Project-Modal-Contents .Project-Modal-Technologies {
+  display: flex;
 }
 
 .Contact {
@@ -1216,18 +1228,6 @@
   }
 }
 
-.Cursor {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #84a7bd;
-  border-radius: 100%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-}
-
 .Menu {
   position: fixed;
   height: 10px;
@@ -1350,7 +1350,6 @@
 
 html {
   overflow-x: hidden;
-  cursor: none;
 }
 
 body {
@@ -1359,7 +1358,6 @@ body {
   color: #18252e;
   font-family: Lato;
   overflow-x: hidden;
-  cursor: none;
 }
 
 ul {

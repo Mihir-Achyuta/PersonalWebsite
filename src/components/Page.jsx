@@ -15,7 +15,6 @@ import BottomBurgerMenu from "./mini-components/burger-components/BottomBurgerMe
 import Cursor from "./mini-components/link-components/Cursor";
 
 import { Element } from "react-scroll";
-import { ProjectPicture } from "../../src/documents/pictures/project-picture.png";
 
 class Page extends React.Component {
   constructor(props) {

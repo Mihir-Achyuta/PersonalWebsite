@@ -1,10 +1,10 @@
 import React from "react";
 
-import Fade from "react-reveal/Fade";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
+
+import Fade from "react-reveal/Fade";
 
 import Resume from "../../documents/resume/resume.pdf";
 
