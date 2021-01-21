@@ -1,19 +1,29 @@
 import React from "react";
 
+import ProjectModal from "./ProjectModal";
+
 import Fade from "react-reveal/Fade";
 
 class Project extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { projectPreview: false };
+    this.state = { projectPreview: false, modalShown: false };
     this.showProjectPreview = this.showProjectPreview.bind(this);
     this.removeProjectPreview = this.removeProjectPreview.bind(this);
+    this.showProjectModal = this.showProjectModal.bind(this);
+    this.removeProjectModal = this.removeProjectModal.bind(this);
   }
   showProjectPreview() {
     this.setState({ projectPreview: true });
   }
   removeProjectPreview() {
     this.setState({ projectPreview: false });
+  }
+  showProjectModal() {
+    this.setState({ modalShown: true });
+  }
+  removeProjectModal() {
+    this.setState({ modalShown: false });
   }
   render() {
     const technologyDescription = this.props.stack.map((technology, index) => (
@@ -52,8 +62,22 @@ class Project extends React.Component {
             <div className={"Project-Information-Technologies"}>
               {technologyDescription}
             </div>
-            <button className="Project-Information-Button">More Details</button>
+            <button
+              className="Project-Information-Button"
+              onClick={this.showProjectModal}
+            >
+              More Details
+            </button>
           </div>
+        </div>
+        <div
+          className={
+            this.state.modalShown
+              ? "Project-Modal-Visible"
+              : "Project-Modal-Hidden"
+          }
+        >
+          <ProjectModal removeProjectModal={this.removeProjectModal} />
         </div>
       </Fade>
     );
