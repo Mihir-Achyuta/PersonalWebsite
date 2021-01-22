@@ -32,7 +32,7 @@ class Project extends React.Component {
     ));
     const technologyDescriptionModal = this.props.stack.map(
       (technology, index) => (
-        <ProjectModal key={index} technology={technology} />
+        <ProjectTechnology key={index} technology={technology} />
       )
     );
     return (

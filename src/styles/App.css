@@ -1115,6 +1115,18 @@
 .Project-Modal-Visible .Project-Modal-Contents .Project-Modal-Footer {
   justify-content: space-between;
 }
+.Project-Modal-Visible .Project-Modal-Contents .Project-Modal-Footer .Project-Modal-Close {
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background: Transparent;
+  cursor: pointer;
+}
+.Project-Modal-Visible .Project-Modal-Contents .Project-Modal-Footer .Project-Modal-Icon {
+  color: #00342d;
+  margin-right: 20px;
+}
 
 .Project-Technology-Div {
   display: inline-block;
@@ -1127,8 +1139,7 @@
   margin: 3px;
 }
 .Project-Technology-Div .Project-Technology {
-  background-color: #00695b;
-  color: #00d2b7;
+  color: #00342d;
   font-family: Righteous;
   text-transform: uppercase;
   font-weight: 700;

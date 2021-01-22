@@ -16,15 +16,20 @@ class ProjectModal extends React.Component {
         <h1 className="Project-Modal-Name">{this.props.projectName}</h1>
         <p className="Project-Modal-Description">{this.props.description}</p>
         <div className="Project-Modal-Technologies">
-          {this.props.technologyDescription}
+          {this.props.technologyDescriptionModal}
         </div>
         <div className="Project-Modal-Footer">
-          <button onClick={this.props.removeProjectModal}>Close Modal</button>
-          <div className="Project-Modal-Icons">
-            <a href={this.props.projectUrl}>
+          <button
+            className="Project-Modal-Close"
+            onClick={this.props.removeProjectModal}
+          >
+            X
+          </button>
+          <div>
+            <a href={this.props.projectUrl} className="Project-Modal-Icon">
               <FontAwesomeIcon icon={faEye} size={"3x"} />
             </a>
-            <a href={this.props.githubUrl}>
+            <a href={this.props.githubUrl} className="Project-Modal-Icon">
               <FontAwesomeIcon icon={faGithub} size={"3x"} />
             </a>
           </div>
