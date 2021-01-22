@@ -42,7 +42,7 @@ class NavBar extends React.Component {
               <li className="NavBar-List-Item">
                 <a
                   className="NavBar-Resume"
-                  href={Resume}
+                  href={"/"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

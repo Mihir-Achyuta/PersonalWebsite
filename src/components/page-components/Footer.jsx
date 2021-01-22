@@ -27,18 +27,14 @@ class Footer extends React.Component {
               size="2x"
             />
           </a>
-          <a
-            href="https://www.linkedin.com/in/mihirachyuta/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               className="Footer-Icon"
               icon={faLinkedin}
               size="2x"
             />
           </a>
-          <a href={Resume} target="_blank" rel="noopener noreferrer">
+          <a href={"/"} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon className="Footer-Icon" icon={faFile} size="2x" />
           </a>
           <a

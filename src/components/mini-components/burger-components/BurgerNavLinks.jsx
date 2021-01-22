@@ -106,7 +106,7 @@ class BurgerNavLinks extends React.Component {
               style={{ marginTop: "35px", color: "#92810c" }}
             >
               <a
-                href={Resume}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="Sandwich-List-Item NavBar-Resume"

@@ -70,7 +70,7 @@ class HiddenNavBar extends React.Component {
               <li className="Hidden-NavBar-List-Item">
                 <a
                   className="HiddenNavBar-Resume"
-                  href={Resume}
+                  href={"/"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

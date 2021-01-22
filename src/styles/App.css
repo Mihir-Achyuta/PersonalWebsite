@@ -1123,6 +1123,7 @@
   outline: none;
   background: Transparent;
   cursor: pointer;
+  color: #00342d;
 }
 .Project-Modal-Visible .Project-Modal-Contents .Project-Modal-Footer .Project-Modal-Icon {
   color: #00342d;

@@ -72,11 +72,7 @@ class Homepage extends React.Component {
               </a>
             </Fade>
             <Fade delay={2500}>
-              <a
-                href="https://www.linkedin.com/in/mihirachyuta/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"
                   icon={faLinkedin}
@@ -85,7 +81,7 @@ class Homepage extends React.Component {
               </a>
             </Fade>
             <Fade delay={2500}>
-              <a href={Resume} target="_blank" rel="noopener noreferrer">
+              <a href={"/"} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"
                   icon={faScroll}
