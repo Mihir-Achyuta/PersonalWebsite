@@ -147,6 +147,8 @@
         display: flex
         flex-direction: column
         background-color: $dart-logo-color
+        color: $dart-logo-color-2nddarkened
+        font-family: Varela Round
         border-radius: 5px
         padding-bottom: 35px
 
@@ -156,5 +158,33 @@
             border-top-left-radius: 5px
             border-top-right-radius: 5px
 
-        .Project-Modal-Technologies
+        .Project-Modal-Name, .Project-Modal-Description, .Project-Modal-Technologies, .Project-Modal-Footer
             display: flex
+            margin-left: 100px
+            margin-right: 100px
+
+        .Project-Modal-Name
+            margin-bottom: 0
+            font-size: 40px
+
+        .Project-Modal-Footer
+            justify-content: space-between
+
+.Project-Technology-Div
+    display: inline-block
+    padding: 0px 10px
+    border-width: 1px 3px 3px 1px
+    border-style: solid
+    border-color: $dart-logo-color-2nddarkened
+    border-radius: 3px
+    box-shadow: 1px 1px 0 $dart-logo-color-darkened
+    margin: 3px
+
+    .Project-Technology
+        background-color: $dart-logo-color-darkened
+        color: $dart-logo-color
+        font-family: Righteous
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 10px
+        line-height: 1em

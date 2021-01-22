@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProjectModal from "./ProjectModal";
+import ProjectTechnology from "./ProjectTechnology";
 
 import Fade from "react-reveal/Fade";
 
@@ -29,6 +30,11 @@ class Project extends React.Component {
     const technologyDescription = this.props.stack.map((technology, index) => (
       <p key={index}>{technology}</p>
     ));
+    const technologyDescriptionModal = this.props.stack.map(
+      (technology, index) => (
+        <ProjectModal key={index} technology={technology} />
+      )
+    );
     return (
       <Fade>
         <div
@@ -81,6 +87,7 @@ class Project extends React.Component {
             projectName={this.props.projectName}
             description={this.props.description}
             technologyDescription={technologyDescription}
+            technologyDescriptionModal={technologyDescriptionModal}
             projectPicture={this.props.projectPicture}
             projectUrl={this.props.projectUrl}
             githubUrl={this.props.githubUrl}
