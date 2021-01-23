@@ -1,18 +1,18 @@
 import React from "react";
 
-import NavBar from "./page-components/NavBar";
-import HiddenNavBar from "./page-components/HiddenNavBar";
-import Homepage from "./page-components/Homepage";
-import About from "./page-components/About";
-import Skills from "./page-components/Skills";
-import ProjectGallery from "./page-components/ProjectGallery";
-import Contact from "./page-components/Contact";
-import Footer from "./page-components/Footer";
-import AbsoluteIcons from "./page-components/AbsoluteIcons";
+import NavBar from "./PageComponents/NavBar";
+import HiddenNavBar from "./PageComponents/HiddenNavBar";
+import Homepage from "./PageComponents/Homepage";
+import About from "./PageComponents/About";
+import Skills from "./PageComponents/Skills";
+import ProjectGallery from "./PageComponents/ProjectGallery";
+import Contact from "./PageComponents/Contact";
+import Footer from "./PageComponents/Footer";
+import AbsoluteIcons from "./PageComponents/AbsoluteIcons";
 
-import TopBurgerMenu from "./mini-components/burger-components/TopBurgerMenu";
-import BottomBurgerMenu from "./mini-components/burger-components/BottomBurgerMenu";
-import Cursor from "./mini-components/link-components/Cursor";
+import TopBurgerMenu from "./mini-components/BurgerComponents/TopBurgerMenu";
+import BottomBurgerMenu from "./mini-components/BurgerComponents/BottomBurgerMenu";
+import Cursor from "./mini-components/LinkComponents/Cursor";
 
 import { Element } from "react-scroll";
 

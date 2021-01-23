@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/App.css";
 
 import Page from "./components/Page";
-import LoadingAnimation from "./components/page-components/LoadingAnimation";
+import LoadingAnimation from "./components/PageComponents/LoadingAnimation";
 
 class App extends React.Component {
   constructor(props) {

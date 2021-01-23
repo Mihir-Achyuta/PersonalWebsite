@@ -1,6 +1,6 @@
 import React from "react";
 
-import ListItem from "../mini-components/link-components/ListItem";
+import ListItem from "../mini-components/LinkComponents/ListItem";
 import Resume from "../../documents/resume/resume.pdf";
 
 import Zoom from "react-reveal/Zoom";
