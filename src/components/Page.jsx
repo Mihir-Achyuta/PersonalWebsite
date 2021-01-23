@@ -10,9 +10,9 @@ import Contact from "./PageComponents/Contact";
 import Footer from "./PageComponents/Footer";
 import AbsoluteIcons from "./PageComponents/AbsoluteIcons";
 
-import TopBurgerMenu from "./mini-components/BurgerComponents/TopBurgerMenu";
-import BottomBurgerMenu from "./mini-components/BurgerComponents/BottomBurgerMenu";
-import Cursor from "./mini-components/LinkComponents/Cursor";
+import TopBurgerMenu from "./MiniComponents/BurgerComponents/TopBurgerMenu";
+import BottomBurgerMenu from "./MiniComponents/BurgerComponents/BottomBurgerMenu";
+import Cursor from "./MiniComponents/LinkComponents/Cursor";
 
 import { Element } from "react-scroll";
 

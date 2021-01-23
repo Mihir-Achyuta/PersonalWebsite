@@ -1,6 +1,6 @@
 import React from "react";
 
-import Project from "../mini-components/ProjectComponents/Project";
+import Project from "../MiniComponents/ProjectComponents/Project";
 import ProfilePic from "../../documents/pictures/project-picture.png";
 
 class ProjectGallery extends React.Component {

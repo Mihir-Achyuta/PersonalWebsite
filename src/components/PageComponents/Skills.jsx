@@ -1,6 +1,6 @@
 import React from "react";
 
-import SkillCard from "../mini-components/SkillComponents/SkillCard";
+import SkillCard from "../MiniComponents/SkillComponents/SkillCard";
 
 import Fade from "react-reveal/Fade";
 

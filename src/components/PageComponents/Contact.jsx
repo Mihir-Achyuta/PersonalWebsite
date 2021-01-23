@@ -1,7 +1,9 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
-import SubmitModal from "../mini-components/FormComponents/SubmitModal";
+
 import axios from "axios";
+import SubmitModal from "../MiniComponents/FormComponents/SubmitModal";
+
+import Fade from "react-reveal/Fade";
 
 class Contact extends React.Component {
   constructor(props) {
