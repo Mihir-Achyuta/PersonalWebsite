@@ -41,15 +41,15 @@ class LoadingAnimation extends React.Component {
         <div
           className={
             this.state.pageTransition
-              ? "LoadingAnimation-Transition LoadingAnimation-Transition-Left Transition-Left"
-              : "LoadingAnimation-Transition LoadingAnimation-Transition-Left"
+              ? "LoadingAnimation-Transition-Left Transition-Left"
+              : "LoadingAnimation-Transition-Left"
           }
         ></div>
         <div
           className={
             this.state.pageTransition
-              ? "LoadingAnimation-Transition LoadingAnimation-Transition-Right Transition-Right"
-              : "LoadingAnimation-Transition LoadingAnimation-Transition-Right"
+              ? "LoadingAnimation-Transition-Right Transition-Right"
+              : "LoadingAnimation-Transition-Right"
           }
         ></div>
       </div>

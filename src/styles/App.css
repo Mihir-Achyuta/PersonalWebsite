@@ -19,7 +19,6 @@
   transform-origin: 50% -50%;
   transform: scale(1);
   z-index: 2;
-  will-change: transform;
 }
 
 .LoadingAnimation-Header {
@@ -57,6 +56,7 @@
   filter: drop-shadow(0 0 8px #84a7bd);
   background-position: 80% 0;
   animation: beforeLineAnim 2s linear infinite;
+  will-change: background-position, transform;
 }
 
 @keyframes beforeLineAnim {
@@ -80,6 +80,7 @@
   top: 70%;
   left: 50%;
   transition: 0.5s;
+  will-change: transform, opacity;
 }
 .LoadingAnimation-Loader .LoadingAnimation-Dot {
   height: 3vh;
@@ -199,29 +200,30 @@
   }
 }
 
-.LoadingAnimation-Transition {
+.LoadingAnimation-Transition-Left {
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 5;
-}
-.LoadingAnimation-Transition.LoadingAnimation-Transition-Left {
   clip-path: polygon(0 100%, 0% 100%, 0 100%);
-  transition: 1s;
-  transition-delay: 1s;
+  transition: clip-path 1s 1s, background 1s 1s;
   will-change: clip-path, background;
 }
-.LoadingAnimation-Transition.LoadingAnimation-Transition-Left.Transition-Left {
+.LoadingAnimation-Transition-Left.Transition-Left {
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
   background: #84a7bd;
 }
-.LoadingAnimation-Transition.LoadingAnimation-Transition-Right {
+
+.LoadingAnimation-Transition-Right {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
   clip-path: polygon(100% 0, 100% 0, 100% 0%);
-  transition: 1s;
-  transition-delay: 1s;
+  transition: clip-path 1s 1s, background 1s 1s;
   will-change: clip-path, background;
 }
-.LoadingAnimation-Transition.LoadingAnimation-Transition-Right.Transition-Right {
+.LoadingAnimation-Transition-Right.Transition-Right {
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   background: #84a7bd;
 }
