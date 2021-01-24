@@ -12,7 +12,7 @@ class Skills extends React.Component {
           <h1 className="Skills-Header">What I Work With :</h1>
         </Fade>
         <div className="Front-Back-Tool">
-          <Fade>
+          <Fade delay={500}>
             <SkillCard
               path="Frontend"
               technologies={[
@@ -27,7 +27,7 @@ class Skills extends React.Component {
               ]}
             />
           </Fade>
-          <Fade>
+          <Fade delay={1000}>
             <SkillCard
               path="Backend"
               technologies={[
@@ -42,7 +42,7 @@ class Skills extends React.Component {
               ]}
             />
           </Fade>
-          <Fade>
+          <Fade delay={1500}>
             <SkillCard
               path="Tools"
               technologies={[

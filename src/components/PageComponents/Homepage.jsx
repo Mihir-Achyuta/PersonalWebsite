@@ -13,7 +13,7 @@ class Homepage extends React.Component {
     return (
       <section className="Homepage">
         <div className="Homepage-Text-Div">
-          <Fade delay={900}>
+          <Fade bottom delay={900}>
             <p className="Homepage-Greeting Homepage-Grid">
               Hey!
               <span role="img" aria-label="wave">
@@ -21,7 +21,7 @@ class Homepage extends React.Component {
               </span>
             </p>
           </Fade>
-          <Fade delay={1300}>
+          <Fade bottom delay={950}>
             <h1 className="Homepage-Name Homepage-Grid">
               <span>
                 I<span className="Homepage-Name-Secondary-Color">'</span>m‎
@@ -30,7 +30,7 @@ class Homepage extends React.Component {
               </span>
             </h1>
           </Fade>
-          <Fade delay={1700}>
+          <Fade bottom delay={1000}>
             <h1 className="Homepage-Description Homepage-Grid">
               <span className="Homepage-Description-Dev">
                 <span className="Homepage-Description-Dev-Stack">
@@ -40,7 +40,7 @@ class Homepage extends React.Component {
               </span>
             </h1>
           </Fade>
-          <Fade delay={2100}>
+          <Fade bottom delay={1050}>
             <h1 className="Homepage-Technology Homepage-Grid">
               In{" "}
               <span className="Homepage-Technology-Javascript">
@@ -52,13 +52,11 @@ class Homepage extends React.Component {
           </Fade>
         </div>
         <div className="Homepage-Sidebar">
-          <div className="Homepage-Message-Div">
-            <Fade delay={2300}>
+          <Fade bottom delay={1500}>
+            <div className="Homepage-Message-Div">
               <h1 className="Homepage-Message">Click Us!</h1>
-            </Fade>
-          </div>
-          <div className="Homepage-Icons">
-            <Fade delay={2500}>
+            </div>
+            <div className="Homepage-Icons">
               <a
                 href="https://github.com/Mihir-Achyuta"
                 target="_blank"
@@ -70,8 +68,6 @@ class Homepage extends React.Component {
                   size="3x"
                 />
               </a>
-            </Fade>
-            <Fade delay={2500}>
               <a href="/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"
@@ -79,8 +75,6 @@ class Homepage extends React.Component {
                   size="3x"
                 />
               </a>
-            </Fade>
-            <Fade delay={2500}>
               <a href={"/"} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"
@@ -88,8 +82,6 @@ class Homepage extends React.Component {
                   size="3x"
                 />
               </a>
-            </Fade>
-            <Fade delay={2500}>
               <a
                 href="mailto:achyutamihir@gmail.com"
                 target="_blank"
@@ -101,8 +93,8 @@ class Homepage extends React.Component {
                   size="3x"
                 />
               </a>
-            </Fade>
-          </div>
+            </div>
+          </Fade>
         </div>
       </section>
     );

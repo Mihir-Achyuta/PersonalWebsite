@@ -10,14 +10,14 @@ class About extends React.Component {
   render() {
     return (
       <section className="About">
-        <Fade left delay={500}>
+        <Fade bottom delay={300}>
           <div className="About-Header-Div">
             <Element name="about">
               <h1 className="About-Header">Who am I?</h1>
             </Element>
           </div>
         </Fade>
-        <Fade left delay={1000}>
+        <Fade bottom delay={500}>
           <div
             className="About-Statement-Div"
             onMouseEnter={this.showAboutOverlay}

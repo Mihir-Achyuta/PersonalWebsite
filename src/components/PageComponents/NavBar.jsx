@@ -3,7 +3,7 @@ import React from "react";
 import ListItem from "../MiniComponents/LinkComponents/ListItem";
 import Resume from "../../documents/resume/resume.pdf";
 
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="NavBar">
-        <Zoom>
+        <Fade bottom delay={150}>
           <div className="NavBar-Logo">
             <a href="/">
               <h1 className="NavBar-Logo-Left">
@@ -20,25 +20,25 @@ class NavBar extends React.Component {
               </h1>
             </a>
           </div>
-        </Zoom>
+        </Fade>
         <nav className="NavBar-Links">
           <ol className="NavBar-Unordered-List">
-            <Zoom delay={100}>
+            <Fade bottom delay={150}>
               <ListItem name="HOME" />
-            </Zoom>
-            <Zoom delay={200}>
+            </Fade>
+            <Fade bottom delay={300}>
               <ListItem name="ABOUT" />
-            </Zoom>
-            <Zoom delay={300}>
+            </Fade>
+            <Fade bottom delay={450}>
               <ListItem name="SKILLS" />
-            </Zoom>
-            <Zoom delay={400}>
+            </Fade>
+            <Fade bottom delay={600}>
               <ListItem name="PROJECTS" />
-            </Zoom>
-            <Zoom delay={500}>
+            </Fade>
+            <Fade bottom delay={750}>
               <ListItem name="CONTACT" />
-            </Zoom>
-            <Zoom delay={600}>
+            </Fade>
+            <Fade bottom delay={900}>
               <li className="NavBar-List-Item">
                 <a
                   className="NavBar-Resume"
@@ -50,16 +50,16 @@ class NavBar extends React.Component {
                 </a>
                 <div className="underline"></div>
               </li>
-            </Zoom>
+            </Fade>
           </ol>
-          <Zoom delay={500}>
+          <Fade delay={500}>
             <FontAwesomeIcon
               className="NavBar-Hamburger"
               icon={faBars}
               size="2x"
               onClick={this.props.showBurgerMenu}
             />
-          </Zoom>
+          </Fade>
         </nav>
       </div>
     );
