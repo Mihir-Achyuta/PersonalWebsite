@@ -6,8 +6,6 @@ import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 import Fade from "react-reveal/Fade";
 
-import Resume from "../../documents/resume/resume.pdf";
-
 class Footer extends React.Component {
   render() {
     return (

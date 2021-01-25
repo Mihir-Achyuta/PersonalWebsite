@@ -4,32 +4,43 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 
-class ProjectModal extends React.Component {
+interface IProjectModalProps { 
+  projectName: string,
+  description: string,
+  technologyDescriptionModal: React.ReactNode,
+  projectPicture: any,
+  removeProjectModal: any,
+  projectUrl: string,
+  githubUrl:string,
+}
+
+class ProjectModal extends React.Component<IProjectModalProps, {}> {
   render() {
+    const {projectName, description, technologyDescriptionModal, projectPicture, removeProjectModal, projectUrl,githubUrl } = this.props;
     return (
       <div className="Project-Modal-Contents">
         <img
           className="Project-Modal-Image"
-          src={this.props.projectPicture}
+          src={projectPicture}
           alt="Project Homepage"
         />
-        <h1 className="Project-Modal-Name">{this.props.projectName}</h1>
-        <p className="Project-Modal-Description">{this.props.description}</p>
+        <h1 className="Project-Modal-Name">{projectName}</h1>
+        <p className="Project-Modal-Description">{description}</p>
         <div className="Project-Modal-Technologies">
-          {this.props.technologyDescriptionModal}
+          {technologyDescriptionModal}
         </div>
         <div className="Project-Modal-Footer">
           <button
             className="Project-Modal-Close"
-            onClick={this.props.removeProjectModal}
+            onClick={removeProjectModal}
           >
             X
           </button>
           <div>
-            <a href={this.props.projectUrl} className="Project-Modal-Icon">
+            <a href={projectUrl} className="Project-Modal-Icon">
               <FontAwesomeIcon icon={faEye} size={"3x"} />
             </a>
-            <a href={this.props.githubUrl} className="Project-Modal-Icon">
+            <a href={githubUrl} className="Project-Modal-Icon">
               <FontAwesomeIcon icon={faGithub} size={"3x"} />
             </a>
           </div>

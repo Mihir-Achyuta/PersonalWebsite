@@ -1,25 +1,23 @@
 import React from "react";
 
-class Cursor extends React.Component {
+interface ICursorState { 
+  x: number,
+  y:number,
+}
+
+class Cursor extends React.Component<{},ICursorState> {
   constructor(props) {
     super(props);
     this.state = { x: 0, y: 0 };
     this.changeMousePosition = this.changeMousePosition.bind(this);
   }
-  componentDidMount() {
+  componentDidMount() : void {
     this.addMouseEventListener();
   }
-  componentWillUnmount() {
-    return () => this.removeEventListener();
-  }
-  addMouseEventListener() {
+  addMouseEventListener() : void {
     document.addEventListener("mousemove", this.changeMousePosition);
   }
-  removeMouseEventListener() {
-    document.removeEventListener("mousemove", this.changeMousePosition);
-    console.log("Removed");
-  }
-  changeMousePosition(e) {
+  changeMousePosition(e) : void {
     this.setState({ x: e.clientX, y: e.clientY });
   }
   render() {

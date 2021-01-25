@@ -1,7 +1,5 @@
 import React from "react";
 
-import Resume from "../../documents/resume/resume.pdf";
-
 import Fade from "react-reveal/Fade";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

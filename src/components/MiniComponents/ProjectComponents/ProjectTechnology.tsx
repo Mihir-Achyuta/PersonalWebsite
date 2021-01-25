@@ -1,6 +1,10 @@
 import React from "react";
 
-class ProjectTechnology extends React.Component {
+interface IProjectTechnologyProps { 
+  technology: string,
+}
+
+class ProjectTechnology extends React.Component<IProjectTechnologyProps, {}> {
   render() {
     return (
       <div className="Project-Technology-Div">

@@ -1,11 +1,13 @@
 import React from "react";
 
-import Resume from "../../../documents/resume/resume.pdf";
-
 import Zoom from "react-reveal/Zoom";
 import { Link } from "react-scroll";
 
-class BurgerNavLinks extends React.Component {
+interface IBurgerNavLinksProps { 
+  dissapearMenu:any,
+}
+
+class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
   render() {
     return (
       <nav className="Sandwich_Menu">
@@ -18,7 +20,6 @@ class BurgerNavLinks extends React.Component {
               smooth={true}
               offset={0}
               duration={500}
-              onSetActive={this.handleSetActive}
             >
               <li
                 className="Sandwich-List-Item"
@@ -36,7 +37,6 @@ class BurgerNavLinks extends React.Component {
               smooth={true}
               offset={0}
               duration={500}
-              onSetActive={this.handleSetActive}
             >
               <li
                 className="Sandwich-List-Item"
@@ -54,7 +54,6 @@ class BurgerNavLinks extends React.Component {
               smooth={true}
               offset={0}
               duration={500}
-              onSetActive={this.handleSetActive}
             >
               <li
                 className="Sandwich-List-Item"
@@ -72,7 +71,6 @@ class BurgerNavLinks extends React.Component {
               smooth={true}
               offset={0}
               duration={500}
-              onSetActive={this.handleSetActive}
             >
               <li
                 className="Sandwich-List-Item"
@@ -90,7 +88,6 @@ class BurgerNavLinks extends React.Component {
               smooth={true}
               offset={0}
               duration={500}
-              onSetActive={this.handleSetActive}
             >
               <li
                 className="Sandwich-List-Item"

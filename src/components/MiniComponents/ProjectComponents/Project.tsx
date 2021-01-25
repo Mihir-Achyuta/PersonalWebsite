@@ -5,7 +5,21 @@ import ProjectTechnology from "./ProjectTechnology";
 
 import Fade from "react-reveal/Fade";
 
-class Project extends React.Component {
+interface IProjectProps { 
+  projectName: string,
+  description: string,
+  stack: string[],
+  projectPicture: any,
+  projectUrl: string,
+  githubUrl:string,
+}
+
+interface IProjectState { 
+  projectPreview: boolean,
+  modalShown: boolean,
+}
+
+class Project extends React.Component<IProjectProps, IProjectState> {
   constructor(props) {
     super(props);
     this.state = { projectPreview: false, modalShown: false };
@@ -14,16 +28,16 @@ class Project extends React.Component {
     this.showProjectModal = this.showProjectModal.bind(this);
     this.removeProjectModal = this.removeProjectModal.bind(this);
   }
-  showProjectPreview() {
+  showProjectPreview() : void {
     this.setState({ projectPreview: true });
   }
-  removeProjectPreview() {
+  removeProjectPreview() : void{
     this.setState({ projectPreview: false });
   }
-  showProjectModal() {
+  showProjectModal() : void{
     this.setState({ modalShown: true });
   }
-  removeProjectModal() {
+  removeProjectModal() : void {
     this.setState({ modalShown: false });
   }
   render() {
@@ -86,11 +100,10 @@ class Project extends React.Component {
           <ProjectModal
             projectName={this.props.projectName}
             description={this.props.description}
-            technologyDescription={technologyDescription}
-            technologyDescriptionModal={technologyDescriptionModal}
             projectPicture={this.props.projectPicture}
             projectUrl={this.props.projectUrl}
             githubUrl={this.props.githubUrl}
+            technologyDescriptionModal={technologyDescriptionModal}
             removeProjectModal={this.removeProjectModal}
           />
         </div>

@@ -16,7 +16,6 @@ class ProjectGallery extends React.Component {
             projectPicture={ProfilePic}
             projectUrl="https://mihir-achyuta.netlify.app/"
             githubUrl="https://github.com/Mihir-Achyuta"
-            fadeLeft
           />
           <Project
             projectName="Project Name 2"
@@ -32,7 +31,6 @@ class ProjectGallery extends React.Component {
             projectPicture={ProfilePic}
             projectUrl="https://mihir-achyuta.netlify.app/"
             githubUrl="https://github.com/Mihir-Achyuta"
-            fadeLeft
           />
           <Project
             projectName="Project Name 3"
@@ -48,7 +46,6 @@ class ProjectGallery extends React.Component {
             projectPicture={ProfilePic}
             projectUrl="https://mihir-achyuta.netlify.app/"
             githubUrl="https://github.com/Mihir-Achyuta"
-            fadeLeft
           />
           <Project
             projectName="Project Name 4"
@@ -57,7 +54,6 @@ class ProjectGallery extends React.Component {
             projectPicture={ProfilePic}
             projectUrl="https://mihir-achyuta.netlify.app/"
             githubUrl="https://github.com/Mihir-Achyuta"
-            fadeLeft
           />
         </div>
       </div>

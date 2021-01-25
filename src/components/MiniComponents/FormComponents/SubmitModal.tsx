@@ -1,6 +1,11 @@
 import React from "react";
 
-class Submit_Modal extends React.Component {
+interface ISubmitModalProps { 
+  removeModel: any,
+  message: string,
+}
+
+class Submit_Modal extends React.Component<ISubmitModalProps> {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);

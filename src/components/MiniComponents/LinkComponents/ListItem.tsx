@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-class ListItem extends React.Component {
+interface IListItemProps {
+  name: string,
+  hidden: boolean,
+ }
+
+class ListItem extends React.Component<IListItemProps> {
   handleClick() {
     return this.props.name.toLowerCase();
   }
@@ -19,7 +24,6 @@ class ListItem extends React.Component {
           smooth={true}
           offset={0}
           duration={500}
-          onSetActive={this.handleSetActive}
         >
           {this.props.name}
         </Link>
