@@ -11,10 +11,10 @@ class Cursor extends React.Component<{},ICursorState> {
     this.state = { x: 0, y: 0 };
     this.changeMousePosition = this.changeMousePosition.bind(this);
   }
-  componentDidMount() : void {
+  componentDidMount(){
     this.addMouseEventListener();
   }
-  addMouseEventListener() : void {
+  addMouseEventListener(): void {
     document.addEventListener("mousemove", this.changeMousePosition);
   }
   changeMousePosition(e) : void {

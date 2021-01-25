@@ -16,7 +16,12 @@ import Cursor from "./MiniComponents/LinkComponents/Cursor";
 
 import { Element } from "react-scroll";
 
-class Page extends React.Component {
+interface IPageState { 
+  bottomMenuShown: boolean,
+  burgerMenuShown: boolean,
+}
+
+class Page extends React.Component<{}, IPageState> {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,19 +34,19 @@ class Page extends React.Component {
     this.dissapearBurgerMenu = this.dissapearBurgerMenu.bind(this);
   }
 
-  showBottomMenu() {
+  showBottomMenu() : void {
     this.setState({ bottomMenuShown: true });
   }
 
-  dissapearBottomMenu() {
+  dissapearBottomMenu(): void  {
     this.setState({ bottomMenuShown: false });
   }
 
-  showBurgerMenu() {
+  showBurgerMenu(): void  {
     this.setState({ burgerMenuShown: true });
   }
 
-  dissapearBurgerMenu() {
+  dissapearBurgerMenu(): void  {
     this.setState({ burgerMenuShown: false });
   }
   render() {

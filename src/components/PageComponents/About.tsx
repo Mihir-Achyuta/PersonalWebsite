@@ -3,7 +3,6 @@ import React from "react";
 import ProfilePic from "../../documents/pictures/profile-image.png";
 
 import Fade from "react-reveal/Fade";
-
 import { Element } from "react-scroll";
 
 class About extends React.Component {
@@ -18,11 +17,7 @@ class About extends React.Component {
           </div>
         </Fade>
         <Fade bottom delay={500}>
-          <div
-            className="About-Statement-Div"
-            onMouseEnter={this.showAboutOverlay}
-            onMouseLeave={this.dissapearOverlay}
-          >
+          <div className="About-Statement-Div">
             <div className="About-Picture-Div">
               <img
                 className="About-Picture"

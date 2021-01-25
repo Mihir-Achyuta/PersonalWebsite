@@ -7,7 +7,11 @@ import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-class NavBar extends React.Component {
+interface INavBarProps { 
+  showBurgerMenu: any,
+}
+
+class NavBar extends React.Component<INavBarProps> {
   render() {
     return (
       <div className="NavBar">

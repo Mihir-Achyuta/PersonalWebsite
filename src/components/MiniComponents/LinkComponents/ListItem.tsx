@@ -3,11 +3,11 @@ import { Link } from "react-scroll";
 
 interface IListItemProps {
   name: string,
-  hidden: boolean,
+  hidden?: boolean,
  }
 
 class ListItem extends React.Component<IListItemProps> {
-  handleClick() {
+  handleClick(): string {
     return this.props.name.toLowerCase();
   }
   render() {

@@ -2,10 +2,13 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faArrowUp } from "@fortawesome/free-solid-svg-icons";
-
 import { Link } from "react-scroll";
 
-class AbsoluteIcons extends React.Component {
+interface IAbsoluteIconsProps { 
+  showMenu:any,
+}
+
+class AbsoluteIcons extends React.Component<IAbsoluteIconsProps> {
   render() {
     return (
       <section className="Absolute-Icons">
@@ -16,7 +19,6 @@ class AbsoluteIcons extends React.Component {
           smooth={true}
           offset={0}
           duration={500}
-          onSetActive={this.handleSetActive}
         >
           <FontAwesomeIcon
             className="Absolute-Icons-Arrow-Up"

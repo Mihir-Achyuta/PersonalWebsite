@@ -5,7 +5,15 @@ import SubmitModal from "../MiniComponents/FormComponents/SubmitModal";
 
 import Fade from "react-reveal/Fade";
 
-class Contact extends React.Component {
+interface IContactState { 
+  name: string,
+  email: string,
+  text: string,
+  formSent: boolean,
+  formText:string,
+}
+
+class Contact extends React.Component<{},IContactState> {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,13 +27,13 @@ class Contact extends React.Component {
     this.removeModel = this.removeModel.bind(this);
     this.handleSubmitAxios = this.handleSubmitAxios.bind(this);
   }
-  changeText(evt) {
-    this.setState({ [evt.target.name]: evt.target.value });
+  changeText(evt) : void {
+    this.setState({ [evt.target.name]: evt.target.value } as any);
   }
-  removeModel() {
+  removeModel(): void {
     this.setState({ formSent: false });
   }
-  handleSubmitAxios(evt) {
+  handleSubmitAxios(evt): void {
     evt.preventDefault();
     const form = evt.target;
     axios({
@@ -86,7 +94,6 @@ class Contact extends React.Component {
                 <textarea
                   name="text"
                   className="Contact-Message-Text Input-Field"
-                  type="text"
                   placeholder="Message"
                   value={this.state.text}
                   onChange={this.changeText}

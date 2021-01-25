@@ -1,6 +1,11 @@
 import React from "react";
 
-class LoadingAnimation extends React.Component {
+interface ILoadingAnimationState { 
+  pageTransition: boolean,
+  showLoader: boolean,
+}
+
+class LoadingAnimation extends React.Component<{},ILoadingAnimationState> {
   constructor(props) {
     super(props);
     this.state = { pageTransition: false, showLoader: true };

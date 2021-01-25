@@ -10,7 +10,7 @@ class Submit_Modal extends React.Component<ISubmitModalProps> {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
-  handleClick() {
+  handleClick(): void {
     this.props.removeModel();
   }
   render() {
