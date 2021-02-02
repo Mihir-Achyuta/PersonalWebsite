@@ -10,15 +10,15 @@ class ProjectGallery extends React.Component {
         <h1 className="Project-Gallery-Header">Projects</h1>
         <div className="Project-Gallery-Projects">
           <Project
-            projectName="Project Name 1"
-            description="This is a description of Project Name 1 and a brief function of what it does"
-            stack={["SASS", "React.JS"]}
+            projectName="Personal Website"
+            description="My Personal Website showcasing all my Web Development projects."
+            stack={["React.JS", "Typescript", "SASS"]}
             projectPicture={ProfilePic}
-            projectUrl="https://mihir-achyuta.netlify.app/"
-            githubUrl="https://github.com/Mihir-Achyuta"
+            projectUrl="https://mihirachyuta.netlify.app/"
+            githubUrl="https://github.com/Mihir-Achyuta/PersonalWebsite"
           />
           <Project
-            projectName="Project Name 2"
+            projectName="FontBlurbs"
             description="This is a description of Project Name 2 and a brief function of what it does"
             stack={[
               "Pug",
