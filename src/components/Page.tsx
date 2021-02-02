@@ -12,13 +12,13 @@ import AbsoluteIcons from "./PageComponents/AbsoluteIcons";
 
 import TopBurgerMenu from "./MiniComponents/BurgerComponents/TopBurgerMenu";
 import BottomBurgerMenu from "./MiniComponents/BurgerComponents/BottomBurgerMenu";
-import Cursor from "./MiniComponents/LinkComponents/Cursor";
 
+import AnimatedCursor from "react-animated-cursor";
 import { Element } from "react-scroll";
 
-interface IPageState { 
-  bottomMenuShown: boolean,
-  burgerMenuShown: boolean,
+interface IPageState {
+  bottomMenuShown: boolean;
+  burgerMenuShown: boolean;
 }
 
 class Page extends React.Component<{}, IPageState> {
@@ -34,24 +34,25 @@ class Page extends React.Component<{}, IPageState> {
     this.dissapearBurgerMenu = this.dissapearBurgerMenu.bind(this);
   }
 
-  showBottomMenu() : void {
+  showBottomMenu(): void {
     this.setState({ bottomMenuShown: true });
   }
 
-  dissapearBottomMenu(): void  {
+  dissapearBottomMenu(): void {
     this.setState({ bottomMenuShown: false });
   }
 
-  showBurgerMenu(): void  {
+  showBurgerMenu(): void {
     this.setState({ burgerMenuShown: true });
   }
 
-  dissapearBurgerMenu(): void  {
+  dissapearBurgerMenu(): void {
     this.setState({ burgerMenuShown: false });
   }
   render() {
     return (
       <div className="App-Div">
+        <AnimatedCursor color="190, 209, 220" />
         {this.state.bottomMenuShown ? (
           <div className="Menu Menu-Load">
             <BottomBurgerMenu dissapearBottomMenu={this.dissapearBottomMenu} />
@@ -67,7 +68,6 @@ class Page extends React.Component<{}, IPageState> {
           <div className="Burger-Menu"></div>
         )}
         <div className="Header-Homepage">
-          <Cursor />
           <Element name="home">
             <NavBar showBurgerMenu={this.showBurgerMenu} />
           </Element>

@@ -1450,6 +1450,7 @@
 
 html {
   overflow-x: hidden;
+  cursor: none;
 }
 
 body {
@@ -1458,6 +1459,7 @@ body {
   color: #18252e;
   font-family: Lato;
   overflow-x: hidden;
+  cursor: none;
 }
 
 ul {
