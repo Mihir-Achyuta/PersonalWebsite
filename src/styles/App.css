@@ -23,7 +23,7 @@
 
 .LoadingAnimation-Header {
   font-family: "Permanent Marker", cursive;
-  font-size: 400%;
+  font-size: 60px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -39,6 +39,11 @@
 @keyframes loadHeader {
   20%, 80% {
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+@media screen and (max-width: 415px) {
+  .LoadingAnimation-Header {
+    font-size: 50px;
   }
 }
 .LoadingAnimation-Header:before {
@@ -197,6 +202,17 @@
   }
   100% {
     transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 415px) {
+  .LoadingAnimation-Loader .LoadingAnimation-Dot {
+    height: 2.5vh;
+    height: 2.5vh;
+    background: #84a7bd;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-left: 12px;
+    padding: 5px;
   }
 }
 
@@ -448,12 +464,12 @@
 .Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Description-Dev .Homepage-Description-Dev-Stack {
   font-style: italic;
 }
-.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Technology-Javascript {
-  color: #f0db4f;
+.Homepage .Homepage-Text-Div .Homepage-Technology-Header {
+  color: #00d2b7 !important;
   font-family: Gorditas;
 }
-.Homepage .Homepage-Text-Div .Homepage-Grid .Homepage-Technology-Dart {
-  color: #00d2b7;
+.Homepage .Homepage-Text-Div .Homepage-Technology-Header .Homepage-Technology-Javascript {
+  color: #f0db4f;
   font-family: Coiny;
 }
 @media screen and (max-height: 750px) {

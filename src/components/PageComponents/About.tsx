@@ -31,10 +31,9 @@ class About extends React.Component {
                 Greetings I'm Mihir. I'm an incoming freshman at Lorum Ipsum
                 University majoring in Computer Science. I started programming
                 junior year of high school in Java and transitioned into
-                Full-Stack JavaScript and Dart for Web/Mobile Applications
-                respectively with my favorite Tech Stack being MERN. When I'm
-                not programming, I'm playing rpg videogames such as the Witcher
-                and Cyberpunk.
+                Full-Stack Javascript for Web/Mobile Applications with my
+                favorite Tech Stack being MERN. When I'm not programming, I'm
+                playing rpg videogames such as the Witcher and Cyberpunk.
               </p>
             </div>
           </div>

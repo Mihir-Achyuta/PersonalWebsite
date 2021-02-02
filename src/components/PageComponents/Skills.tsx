@@ -20,10 +20,9 @@ class Skills extends React.Component {
                 "CSS",
                 "Sass",
                 "Bootstrap",
-                "JavaScript",
+                "Javascript",
                 "jQuery",
                 "React.js",
-                "Flutter",
               ]}
             />
           </Fade>

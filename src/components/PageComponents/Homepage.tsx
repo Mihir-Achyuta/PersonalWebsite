@@ -39,13 +39,11 @@ class Homepage extends React.Component {
             </h1>
           </Fade>
           <Fade bottom delay={1050}>
-            <h1 className="Homepage-Technology Homepage-Grid">
+            <h1 className="Homepage-Technology Homepage-Grid Homepage-Technology-Header">
               In{" "}
               <span className="Homepage-Technology-Javascript">
-                &nbsp;JS&nbsp;
+                &nbsp;Javascript&nbsp;
               </span>{" "}
-              and{" "}
-              <span className="Homepage-Technology-Dart">&nbsp;Dart&nbsp;</span>
             </h1>
           </Fade>
         </div>
