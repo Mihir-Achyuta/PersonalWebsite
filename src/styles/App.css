@@ -92,12 +92,7 @@
   margin-left: 20px;
   padding: 5px;
 }
-.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One {
-  transform: scale(0);
-  animation: bob 2s infinite;
-  animation-delay: 0.5s;
-}
-.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One::before {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot::before {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -106,6 +101,13 @@
   height: 100%;
   background: inherit;
   border-radius: inherit;
+}
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One {
+  transform: scale(0);
+  animation: bob 2s infinite;
+  animation-delay: 0.5s;
+}
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One::before {
   animation: wave 2s infinite;
   animation-delay: 0.5s;
 }
@@ -115,14 +117,6 @@
   animation-delay: 0.75s;
 }
 .LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Two::before {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  border-radius: inherit;
   animation: wave 2s infinite;
   animation-delay: 0.75s;
 }
@@ -132,14 +126,6 @@
   animation-delay: 1s;
 }
 .LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Three::before {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  border-radius: inherit;
   animation: wave 2s infinite;
   animation-delay: 1s;
 }
@@ -149,14 +135,6 @@
   animation-delay: 1.25s;
 }
 .LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Four::before {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  border-radius: inherit;
   animation: wave 2s infinite;
   animation-delay: 1.25s;
 }
@@ -166,14 +144,6 @@
   animation-delay: 1.5s;
 }
 .LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Five::before {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  border-radius: inherit;
   animation: wave 2s infinite;
   animation-delay: 1.5s;
 }
@@ -217,18 +187,16 @@
   transition: clip-path 1s 1s, background 1s 1s;
   will-change: clip-path, background;
 }
-
-.LoadingAnimation-Transition-Left {
+.LoadingAnimation-Transition.LoadingAnimation-Transition-Left {
   clip-path: polygon(0 100%, 0% 100%, 0 100%);
 }
-.LoadingAnimation-Transition-Left.Transition-Left {
+.LoadingAnimation-Transition.LoadingAnimation-Transition-Left.Transition-Left {
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
-
-.LoadingAnimation-Transition-Right {
+.LoadingAnimation-Transition.LoadingAnimation-Transition-Right {
   clip-path: polygon(100% 0, 100% 0, 100% 0%);
 }
-.LoadingAnimation-Transition-Right.Transition-Right {
+.LoadingAnimation-Transition.LoadingAnimation-Transition-Right.Transition-Right {
   clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
 

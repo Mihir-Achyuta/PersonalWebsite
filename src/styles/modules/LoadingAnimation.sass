@@ -84,20 +84,22 @@
       margin-left: 20px
       padding: 5px
 
+      &::before
+        position: absolute
+        left: 0%
+        top: 0%
+        content: ""
+        width: 100%
+        height: 100%
+        background: inherit
+        border-radius: inherit
+
       &.Dot-One
         transform: scale(0)
         animation: bob 2s infinite
         animation-delay: 0.5s
 
         &::before
-          position: absolute
-          left: 0%
-          top: 0%
-          content: ""
-          width: 100%
-          height: 100%
-          background: inherit
-          border-radius: inherit
           animation: wave 2s infinite
           animation-delay: 0.5s
 
@@ -107,14 +109,6 @@
         animation-delay: 0.75s
 
         &::before
-          position: absolute
-          left: 0%
-          top: 0%
-          content: ""
-          width: 100%
-          height: 100%
-          background: inherit
-          border-radius: inherit
           animation: wave 2s infinite
           animation-delay: 0.75s
 
@@ -124,14 +118,6 @@
         animation-delay: 1s
 
         &::before
-          position: absolute
-          left: 0%
-          top: 0%
-          content: ""
-          width: 100%
-          height: 100%
-          background: inherit
-          border-radius: inherit
           animation: wave 2s infinite
           animation-delay: 1s
 
@@ -141,14 +127,6 @@
         animation-delay: 1.25s
 
         &::before
-          position: absolute
-          left: 0%
-          top: 0%
-          content: ""
-          width: 100%
-          height: 100%
-          background: inherit
-          border-radius: inherit
           animation: wave 2s infinite
           animation-delay: 1.25s
 
@@ -158,14 +136,6 @@
         animation-delay: 1.5s
 
         &::before
-          position: absolute
-          left: 0%
-          top: 0%
-          content: ""
-          width: 100%
-          height: 100%
-          background: inherit
-          border-radius: inherit
           animation: wave 2s infinite
           animation-delay: 1.5s
 
@@ -203,14 +173,14 @@
   transition: clip-path 1s 1s, background 1s 1s
   will-change: clip-path, background
 
-.LoadingAnimation-Transition-Left
-  clip-path: polygon(0 100%, 0% 100%, 0 100%)
+  &.LoadingAnimation-Transition-Left
+    clip-path: polygon(0 100%, 0% 100%, 0 100%)
 
-  &.Transition-Left
-    clip-path: polygon(0 0, 0% 100%, 100% 100%)
+    &.Transition-Left
+      clip-path: polygon(0 0, 0% 100%, 100% 100%)
 
-.LoadingAnimation-Transition-Right
-  clip-path: polygon(100% 0, 100% 0, 100% 0%)
+  &.LoadingAnimation-Transition-Right
+    clip-path: polygon(100% 0, 100% 0, 100% 0%)
 
-  &.Transition-Right
-    clip-path: polygon(100% 0, 0 0, 100% 100%)
+    &.Transition-Right
+      clip-path: polygon(100% 0, 0 0, 100% 100%)
