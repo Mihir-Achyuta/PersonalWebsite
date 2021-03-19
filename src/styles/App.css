@@ -20,8 +20,7 @@
   transform: scale(1);
   z-index: 2;
 }
-
-.LoadingAnimation-Header {
+.LoadingAnimation-Scene .LoadingAnimation-Header {
   font-family: "Permanent Marker", cursive;
   font-size: 60px;
   position: fixed;
@@ -35,18 +34,17 @@
   transition: 0.5s;
   will-change: transform;
 }
-
 @keyframes loadHeader {
   20%, 80% {
     transform: translate(-50%, -50%) scale(1);
   }
 }
 @media screen and (max-width: 415px) {
-  .LoadingAnimation-Header {
+  .LoadingAnimation-Scene .LoadingAnimation-Header {
     font-size: 50px;
   }
 }
-.LoadingAnimation-Header:before {
+.LoadingAnimation-Scene .LoadingAnimation-Header:before {
   position: absolute;
   content: "";
   background: linear-gradient(90deg, #84a7bd 40%, transparent 40%);
@@ -63,7 +61,6 @@
   animation: beforeLineAnim 2s linear infinite;
   will-change: background-position, transform;
 }
-
 @keyframes beforeLineAnim {
   45%, 50% {
     background-position: -100% 0;
@@ -78,7 +75,7 @@
     background-position: 80% 0;
   }
 }
-.LoadingAnimation-Loader {
+.LoadingAnimation-Scene .LoadingAnimation-Loader {
   display: flex;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -87,7 +84,7 @@
   transition: 0.5s;
   will-change: transform, opacity;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot {
   height: 3vh;
   width: 3vh;
   background: #84a7bd;
@@ -96,12 +93,12 @@
   margin-left: 20px;
   padding: 5px;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One {
   transform: scale(0);
   animation: bob 2s infinite;
   animation-delay: 0.5s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One::before {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-One::before {
   background-color: red;
   position: absolute;
   left: 0%;
@@ -114,12 +111,12 @@
   animation: wave 2s infinite;
   animation-delay: 0.5s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Two {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Two {
   transform: scale(0);
   animation: bob 2s infinite;
   animation-delay: 0.75s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Two::before {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Two::before {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -131,12 +128,12 @@
   animation: wave 2s infinite;
   animation-delay: 0.75s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Three {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Three {
   transform: scale(0);
   animation: bob 2s infinite;
   animation-delay: 1s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Three::before {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Three::before {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -148,12 +145,12 @@
   animation: wave 2s infinite;
   animation-delay: 1s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Four {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Four {
   transform: scale(0);
   animation: bob 2s infinite;
   animation-delay: 1.25s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Four::before {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Four::before {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -165,12 +162,12 @@
   animation: wave 2s infinite;
   animation-delay: 1.25s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Five {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Five {
   transform: scale(0);
   animation: bob 2s infinite;
   animation-delay: 1.5s;
 }
-.LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Five::before {
+.LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot.Dot-Five::before {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -205,7 +202,7 @@
   }
 }
 @media screen and (max-width: 415px) {
-  .LoadingAnimation-Loader .LoadingAnimation-Dot {
+  .LoadingAnimation-Scene .LoadingAnimation-Loader .LoadingAnimation-Dot {
     height: 2.5vh;
     height: 2.5vh;
     background: #84a7bd;
