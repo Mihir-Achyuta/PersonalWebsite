@@ -1,11 +1,11 @@
 import React from "react";
 
-interface ILoadingAnimationState { 
-  pageTransition: boolean,
-  showLoader: boolean,
+interface ILoadingAnimationState {
+  pageTransition: boolean;
+  showLoader: boolean;
 }
 
-class LoadingAnimation extends React.Component<{},ILoadingAnimationState> {
+class LoadingAnimation extends React.Component<{}, ILoadingAnimationState> {
   constructor(props) {
     super(props);
     this.state = { pageTransition: false, showLoader: true };
@@ -46,15 +46,15 @@ class LoadingAnimation extends React.Component<{},ILoadingAnimationState> {
         <div
           className={
             this.state.pageTransition
-              ? "LoadingAnimation-Transition-Left Transition-Left"
-              : "LoadingAnimation-Transition-Left"
+              ? "LoadingAnimation-Transition LoadingAnimation-Transition-Left Transition-Left"
+              : "LoadingAnimation-Transition LoadingAnimation-Transition-Left"
           }
         ></div>
         <div
           className={
             this.state.pageTransition
-              ? "LoadingAnimation-Transition-Right Transition-Right"
-              : "LoadingAnimation-Transition-Right"
+              ? "LoadingAnimation-Transition LoadingAnimation-Transition-Right Transition-Right"
+              : "LoadingAnimation-Transition LoadingAnimation-Transition-Right"
           }
         ></div>
       </div>

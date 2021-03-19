@@ -5,11 +5,11 @@ import "./styles/App.css";
 import Page from "./components/Page";
 import LoadingAnimation from "./components/PageComponents/LoadingAnimation";
 
-interface AppState { 
-  contentLoaded:boolean,
+interface AppState {
+  contentLoaded: boolean;
 }
 
-class App extends React.Component<{},AppState> {
+class App extends React.Component<{}, AppState> {
   constructor(props) {
     super(props);
     this.state = {

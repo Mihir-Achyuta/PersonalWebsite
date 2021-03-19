@@ -9,9 +9,6 @@
   width: 100vw
   position: absolute
   background: $base-color
-  transform-origin: 50% -50%
-  transform: scale(1)
-  z-index: 2
 
   .LoadingAnimation-Header
     font-family: 'Permanent Marker', cursive
@@ -21,7 +18,8 @@
     left: 50%
     margin: 0
     color: $primary-text-color
-    transform: translate(-50%,-50%) scale(0)
+    transform: translate(-50%,-50%)
+    opacity: 0
     animation: loadHeader 3s
     animation-delay: 1s
     transition: 0.5s
@@ -29,7 +27,8 @@
 
   @keyframes loadHeader
     20%,80%
-      transform: translate(-50%,-50%) scale(1)
+      transform: translate(-50%,-50%)
+      opacity: 1
 
   @media screen and ( max-width: 415px  )
     .LoadingAnimation-Header
@@ -91,7 +90,6 @@
         animation-delay: 0.5s
 
         &::before
-          background-color: red
           position: absolute
           left: 0%
           top: 0%
@@ -193,34 +191,26 @@
       .LoadingAnimation-Dot
         height: 2.5vh
         height: 2.5vh
-        background: $primary-text-color
-        border-radius: 50%
         margin-right: 12px
         margin-left: 12px
-        padding: 5px
 
-.LoadingAnimation-Transition-Left
+.LoadingAnimation-Transition
   position: absolute
   height: 100%
   width: 100%
   z-index: 5
-  clip-path: polygon(0 100%, 0% 100%, 0 100%)
+  background: $primary-text-color
   transition: clip-path 1s 1s, background 1s 1s
   will-change: clip-path, background
+
+.LoadingAnimation-Transition-Left
+  clip-path: polygon(0 100%, 0% 100%, 0 100%)
 
   &.Transition-Left
     clip-path: polygon(0 0, 0% 100%, 100% 100%)
-    background: $primary-text-color
 
 .LoadingAnimation-Transition-Right
-  position: absolute
-  height: 100%
-  width: 100%
-  z-index: 5
   clip-path: polygon(100% 0, 100% 0, 100% 0%)
-  transition: clip-path 1s 1s, background 1s 1s
-  will-change: clip-path, background
 
   &.Transition-Right
     clip-path: polygon(100% 0, 0 0, 100% 100%)
-    background: $primary-text-color
