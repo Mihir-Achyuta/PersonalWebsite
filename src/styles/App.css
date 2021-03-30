@@ -467,25 +467,16 @@
 }
 @media screen and (max-width: 730px) {
   .Homepage .Homepage-Text-Div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     height: 70vh;
   }
 }
 @media screen and (max-width: 650px) {
   .Homepage .Homepage-Text-Div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     height: 60vh;
   }
 }
 @media screen and (max-width: 450px) {
   .Homepage .Homepage-Text-Div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     height: 40vh;
   }
 }
@@ -539,9 +530,7 @@
 
 @media screen and (max-width: 730px) {
   .Homepage-Sidebar {
-    display: flex;
     flex-direction: column;
-    position: absolute;
     top: 78%;
     left: 50%;
     transform: translateX(-50%);
@@ -573,9 +562,6 @@
 }
 @media screen and (max-width: 650px) {
   .Homepage-Sidebar {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
@@ -583,9 +569,6 @@
 }
 @media screen and (max-width: 450px) {
   .Homepage-Sidebar {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
     top: 65%;
     left: 50%;
     transform: translateX(-50%);
