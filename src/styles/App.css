@@ -430,72 +430,39 @@
 }
 @media screen and (max-height: 750px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
-    color: #84a7bd;
-    margin: 0;
     font-size: 100px;
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 1160px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
-    color: #84a7bd;
-    margin: 0;
     font-size: 100px;
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 940px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
-    color: #84a7bd;
-    margin: 0;
     font-size: 90px;
     width: 90%;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 880px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
-    color: #84a7bd;
-    margin: 0;
     font-size: 70px;
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 730px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
-    color: #84a7bd;
-    margin: 0;
     font-size: 60px;
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 450px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
-    color: #84a7bd;
-    margin: 0;
     font-size: 50px;
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 390px) {
   .Homepage .Homepage-Text-Div .Homepage-Grid {
-    color: #84a7bd;
-    margin: 0;
     font-size: 40px;
     width: 90%;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 730px) {
