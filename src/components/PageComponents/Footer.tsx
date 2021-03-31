@@ -11,9 +11,12 @@ class Footer extends React.Component {
     return (
       <section className="Footer">
         <Fade>
-          <p className="Footer-Copyright">
-            Copyright ©2020 | Made by @Mihir-Achyuta
-          </p>
+          <h1 className="Footer-Logo">
+            {"<"}MIHIR{"/>"}
+          </h1>
+          <h2 className="Footer-Thanks">
+            Thanks for scrolling through my entire website!
+          </h2>
           <a
             href="https://github.com/Mihir-Achyuta"
             target="_blank"
@@ -46,6 +49,9 @@ class Footer extends React.Component {
               size="2x"
             />
           </a>
+          <p className="Footer-Copyright">
+            Copyright ©2021 | Built by @Mihir-Achyuta
+          </p>
         </Fade>
       </section>
     );

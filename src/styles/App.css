@@ -536,8 +536,6 @@
     transform: translateX(-50%);
   }
   .Homepage-Sidebar .Homepage-Message-Div {
-    color: #84a7bd;
-    text-decoration: underline;
     writing-mode: horizontal-tb;
   }
   .Homepage-Sidebar .Homepage-Message-Div .Homepage-Message {
@@ -550,12 +548,10 @@
     writing-mode: horizontal-tb;
   }
   .Homepage-Sidebar .Homepage-Icons {
-    display: flex;
     flex-direction: row;
     justify-content: center;
   }
   .Homepage-Sidebar .Homepage-Icons .Homepage-Icon {
-    color: #84a7bd;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -1203,29 +1199,45 @@
 }
 
 .Footer {
-  background-color: #00695b;
-  padding-top: 25px;
+  background-color: #00342d;
+  padding-top: 35px;
   padding-bottom: 35px;
   color: #00d2b7;
 }
+.Footer .Footer-Logo {
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.Footer .Footer-Thanks {
+  color: #00695b;
+  font-style: italic;
+}
 .Footer .Footer-Icon {
-  border: 3px solid #00d2b7;
-  border-radius: 20%;
+  border: 3px solid #00695b;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
   color: #00d2b7;
+  transition: 0.5s;
 }
 .Footer .Footer-Icon:hover {
-  transition: 0.4s;
+  transition: 0.5s;
   color: #00342d;
   border: 3px solid #00342d;
   background-color: #00d2b7;
 }
+.Footer .Footer-Copyright {
+  color: #00695b;
+  margin-top: 30px;
+}
 @media screen and (max-width: 430px) {
   .Footer .Footer-Icon {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 }
 @media screen and (max-width: 420px) {
