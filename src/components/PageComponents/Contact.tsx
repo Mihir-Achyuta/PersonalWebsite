@@ -5,29 +5,29 @@ import SubmitModal from "../MiniComponents/FormComponents/SubmitModal";
 
 import Fade from "react-reveal/Fade";
 
-interface IContactState { 
-  name: string,
-  email: string,
-  text: string,
-  formSent: boolean,
-  formText:string,
+interface IContactState {
+  name: string;
+  email: string;
+  text: string;
+  formSent: boolean;
+  formText: string;
 }
 
-class Contact extends React.Component<{},IContactState> {
+class Contact extends React.Component<{}, IContactState> {
   constructor(props) {
     super(props);
     this.state = {
       name: "",
       email: "",
       text: "",
-      formSent: false,
       formText: "",
+      formSent: false,
     };
     this.changeText = this.changeText.bind(this);
     this.removeModel = this.removeModel.bind(this);
     this.handleSubmitAxios = this.handleSubmitAxios.bind(this);
   }
-  changeText(evt) : void {
+  changeText(evt): void {
     this.setState({ [evt.target.name]: evt.target.value } as any);
   }
   removeModel(): void {
@@ -77,7 +77,7 @@ class Contact extends React.Component<{},IContactState> {
                   value={this.state.name}
                   onChange={this.changeText}
                   required
-                ></input>
+                />
               </div>
               <div className="Contact-Email-Div">
                 <input
@@ -88,7 +88,7 @@ class Contact extends React.Component<{},IContactState> {
                   value={this.state.email}
                   onChange={this.changeText}
                   required
-                ></input>
+                />
               </div>
               <div className="Contact-Message-Div">
                 <textarea
@@ -98,7 +98,7 @@ class Contact extends React.Component<{},IContactState> {
                   value={this.state.text}
                   onChange={this.changeText}
                   required
-                ></textarea>
+                />
               </div>
               <div className="Contact-Button-Div">
                 <button type="submit" className="Contact-Button">

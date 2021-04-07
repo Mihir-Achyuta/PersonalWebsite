@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faScroll } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 class Homepage extends React.Component {
   render() {
@@ -74,7 +74,7 @@ class Homepage extends React.Component {
               <a href={"/"} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"
-                  icon={faScroll}
+                  icon={faPaperPlane}
                   size="3x"
                 />
               </a>

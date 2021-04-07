@@ -1098,7 +1098,7 @@
 }
 
 .Contact {
-  padding-top: 50px;
+  padding-top: 150px;
   background-color: #18252e;
   color: #00d2b7;
   font-family: Reem Kufi;
@@ -1154,6 +1154,7 @@
   font-size: 35px;
   color: #00d2b7;
   transition: 0.3s ease;
+  padding: 10px;
 }
 .Contact .Contact-Div .Contact-Button-Div .Contact-Button:hover {
   color: #00342d;
