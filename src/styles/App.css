@@ -1099,7 +1099,7 @@
 
 .Contact {
   padding-top: 50px;
-  background-color: #00695b;
+  background-color: #18252e;
   color: #00d2b7;
   font-family: Reem Kufi;
 }
@@ -1117,8 +1117,8 @@
   margin: 0;
 }
 .Contact .Contact-Div .Input-Field {
-  color: #00d2b7;
-  background-color: #00342d;
+  color: #00342d;
+  background-color: #00d2b7;
   width: 75%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1130,7 +1130,7 @@
   font-size: 20px;
 }
 .Contact .Contact-Div .Input-Field::placeholder {
-  color: #009c88;
+  color: #00342d;
   font-family: Fira Sans;
   font-size: 20px;
 }
@@ -1143,11 +1143,10 @@
   text-align: left;
 }
 .Contact .Contact-Div .Contact-Button-Div {
-  border: 2px solid #00d2b7;
   display: inline-block;
 }
 .Contact .Contact-Div .Contact-Button-Div .Contact-Button {
-  border: none;
+  border: 2px solid #00d2b7;
   outline: none;
   background-color: Transparent;
   cursor: pointer;
@@ -1199,22 +1198,13 @@
 }
 
 .Footer {
-  background-color: #00342d;
+  background-color: #18252e;
   padding-top: 35px;
   padding-bottom: 35px;
   color: #00d2b7;
 }
-.Footer .Footer-Logo {
-  font-family: "Permanent Marker", cursive;
-  font-size: 40px;
-  margin-bottom: 0;
-}
-.Footer .Footer-Thanks {
-  color: #00695b;
-  font-style: italic;
-}
 .Footer .Footer-Icon {
-  border: 3px solid #00695b;
+  border: 3px solid #00d2b7;
   border-radius: 50px;
   height: 25px;
   width: 25px;
@@ -1227,11 +1217,10 @@
 .Footer .Footer-Icon:hover {
   transition: 0.5s;
   color: #00342d;
-  border: 3px solid #00342d;
   background-color: #00d2b7;
 }
 .Footer .Footer-Copyright {
-  color: #00695b;
+  color: #00d2b7;
   margin-top: 30px;
 }
 @media screen and (max-width: 430px) {

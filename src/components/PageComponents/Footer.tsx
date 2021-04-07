@@ -11,12 +11,6 @@ class Footer extends React.Component {
     return (
       <section className="Footer">
         <Fade>
-          <h1 className="Footer-Logo">
-            {"<"}MIHIR{"/>"}
-          </h1>
-          <h2 className="Footer-Thanks">
-            Thanks for scrolling through my entire website!
-          </h2>
           <a
             href="https://github.com/Mihir-Achyuta"
             target="_blank"
