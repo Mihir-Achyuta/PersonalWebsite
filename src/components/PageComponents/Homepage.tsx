@@ -42,7 +42,7 @@ class Homepage extends React.Component {
             <h1 className="Homepage-Technology Homepage-Grid Homepage-Technology-Header">
               In{" "}
               <span className="Homepage-Technology-Javascript">
-                &nbsp;Javascript&nbsp;
+                &nbsp;JavaScript&nbsp;
               </span>{" "}
             </h1>
           </Fade>

@@ -287,9 +287,11 @@
   display: none;
   cursor: pointer;
   color: #84a7bd;
-  transition: 1s;
+  transition: 0.3s;
 }
 .NavBar-Links .NavBar-Hamburger:hover {
+  height: 45px;
+  width: 45px;
   color: #7ae2dd;
 }
 @media screen and (max-width: 930px) {
@@ -371,10 +373,12 @@
   display: none;
   cursor: pointer;
   color: #18252e;
-  transition: 1s;
+  transition: 0.3s;
 }
 .Hidden-NavBar-Links .Hidden-NavBar-Hamburger:hover {
-  color: #7ae2dd;
+  height: 45px;
+  width: 45px;
+  color: #f0db4f;
 }
 @media screen and (max-width: 930px) {
   .Hidden-NavBar-Links .Hidden-NavBar-Hamburger {
@@ -1284,12 +1288,14 @@
   bottom: 10px;
   left: 7px;
   color: #92810c;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .X-Icon:hover {
+  width: 45px;
+  height: 45px;
   color: #494006;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .X-Burger-Icon {
@@ -1298,12 +1304,14 @@
   top: 30px;
   right: 15px;
   color: #92810c;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .X-Burger-Icon:hover {
+  width: 45px;
+  height: 45px;
   color: #494006;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .Sandwich_Menu {
@@ -1336,9 +1344,11 @@
   right: 10px;
   cursor: pointer;
   color: #00d2b7;
-  transition: 1s;
+  transition: 0.3s;
 }
 .Absolute-Icons-Arrow-Up:hover {
+  width: 45px;
+  height: 45px;
   color: #f0db4f;
   transition: 0.3s;
 }
@@ -1349,9 +1359,11 @@
   left: 10px;
   cursor: pointer;
   color: #00d2b7;
-  transition: 1s;
+  transition: 0.3s;
 }
 .Absolute-Icons-Hamburger:hover {
+  width: 45px;
+  height: 45px;
   color: #f0db4f;
   transition: 0.3s;
 }

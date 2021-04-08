@@ -3,8 +3,8 @@ import React from "react";
 import Zoom from "react-reveal/Zoom";
 import { Link } from "react-scroll";
 
-interface IBurgerNavLinksProps { 
-  dissapearMenu:any,
+interface IBurgerNavLinksProps {
+  dissapearMenu: any;
 }
 
 class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
@@ -29,7 +29,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
               </li>
             </Link>
           </Zoom>
-          <Zoom delay={700}>
+          <Zoom delay={600}>
             <Link
               activeClass="active"
               to={"about"}
@@ -46,7 +46,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
               </li>
             </Link>
           </Zoom>
-          <Zoom delay={900}>
+          <Zoom delay={700}>
             <Link
               activeClass="active"
               to={"skills"}
@@ -63,7 +63,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
               </li>
             </Link>
           </Zoom>
-          <Zoom delay={1100}>
+          <Zoom delay={800}>
             <Link
               activeClass="active"
               to={"projects"}
@@ -80,7 +80,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
               </li>
             </Link>
           </Zoom>
-          <Zoom delay={1300}>
+          <Zoom delay={900}>
             <Link
               activeClass="active"
               to={"contact"}
@@ -97,7 +97,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
               </li>
             </Link>
           </Zoom>
-          <Zoom delay={1500}>
+          <Zoom delay={1000}>
             <li
               onClick={this.props.dissapearMenu}
               style={{ marginTop: "35px", color: "#92810c" }}
