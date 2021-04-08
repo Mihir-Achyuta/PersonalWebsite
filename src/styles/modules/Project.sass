@@ -16,7 +16,7 @@
         flex-wrap: wrap
         justify-content: space-around
 
-    @media screen and ( max-width: 800px )
+    @media screen and ( max-width: 1000px )
         .Project-Gallery-Projects
             display: flex
             flex-direction: column
@@ -33,6 +33,7 @@
         .Project-Image
             width: 100%
             height: 100%
+            min-height: 400px
             margin-bottom: -3px
 
     .Project-Image-Div-Hovered
@@ -46,7 +47,6 @@
         transform: translate(-50%,-50%)
         color: $javascript-logo-color
         opacity: 0
-        transition-delay: 5000s
         transition: 0.5s
         width: 100%
         height: 100%
@@ -120,7 +120,7 @@
         width: 100%
         height: 100%
 
-@media screen and ( max-width: 800px )
+@media screen and ( max-width: 1000px )
     .Project
         position: relative
         width: 100%

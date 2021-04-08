@@ -5,18 +5,18 @@ import ProjectTechnology from "./ProjectTechnology";
 
 import Fade from "react-reveal/Fade";
 
-interface IProjectProps { 
-  projectName: string,
-  description: string,
-  stack: string[],
-  projectPicture: any,
-  projectUrl: string,
-  githubUrl:string,
+interface IProjectProps {
+  projectName: string;
+  description: string;
+  stack: string[];
+  projectPicture: any;
+  projectUrl: string;
+  githubUrl: string;
 }
 
-interface IProjectState { 
-  projectPreview: boolean,
-  modalShown: boolean,
+interface IProjectState {
+  projectPreview: boolean;
+  modalShown: boolean;
 }
 
 class Project extends React.Component<IProjectProps, IProjectState> {
@@ -28,16 +28,16 @@ class Project extends React.Component<IProjectProps, IProjectState> {
     this.showProjectModal = this.showProjectModal.bind(this);
     this.removeProjectModal = this.removeProjectModal.bind(this);
   }
-  showProjectPreview() : void {
+  showProjectPreview(): void {
     this.setState({ projectPreview: true });
   }
-  removeProjectPreview() : void{
+  removeProjectPreview(): void {
     this.setState({ projectPreview: false });
   }
-  showProjectModal() : void{
+  showProjectModal(): void {
     this.setState({ modalShown: true });
   }
-  removeProjectModal() : void {
+  removeProjectModal(): void {
     this.setState({ modalShown: false });
   }
   render() {
