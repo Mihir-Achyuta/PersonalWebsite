@@ -12,38 +12,20 @@ class Homepage extends React.Component {
       <section className="Homepage">
         <div className="Homepage-Text-Div">
           <Fade bottom delay={900}>
-            <p className="Homepage-Greeting Homepage-Grid">
-              Hey!
-              <span role="img" aria-label="wave">
-                👋
-              </span>
-            </p>
-          </Fade>
-          <Fade bottom delay={950}>
-            <h1 className="Homepage-Name Homepage-Grid">
-              <span>
-                I<span className="Homepage-Name-Secondary-Color">'</span>m‎
-                <span className="Homepage-Name-PopOut">&nbsp;Mihir</span>
-                <span className="Homepage-Name-Secondary-Color">.</span>
-              </span>
+            <h1 className="Homepage-Greeting Homepage-Grid">
+              Hey 👋 I'm Mihir !
             </h1>
           </Fade>
           <Fade bottom delay={1000}>
-            <h1 className="Homepage-Description Homepage-Grid">
-              <span className="Homepage-Description-Dev">
-                <span className="Homepage-Description-Dev-Stack">
-                  Full-Stack
-                </span>{" "}
-                Dev
-              </span>
-            </h1>
+            <h3 className="Homepage-Description Homepage-Grid">
+              Software Engineering intern @ Hardly & Computer Science
+              Student @ UW Madison
+            </h3>
           </Fade>
           <Fade bottom delay={1050}>
-            <h1 className="Homepage-Technology Homepage-Grid Homepage-Technology-Header">
-              In{" "}
-              <span className="Homepage-Technology-Javascript">
-                &nbsp;JavaScript&nbsp;
-              </span>{" "}
+            <h1 className="Homepage-Technology Homepage-Grid">
+              I love building applications with JavaScript and diving deep into the
+              unknown into the development world.
             </h1>
           </Fade>
         </div>
