@@ -49,9 +49,6 @@ class Homepage extends React.Component {
         </div>
         <div className="Homepage-Sidebar">
           <Fade bottom delay={1500}>
-            <div className="Homepage-Message-Div">
-              <h1 className="Homepage-Message">Click Us!</h1>
-            </div>
             <div className="Homepage-Icons">
               <a
                 href="https://github.com/Mihir-Achyuta"

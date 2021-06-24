@@ -4,6 +4,7 @@
   margin: 0
   padding: 0
   height: 100vh
+  background-color: $base-color
 
   .Homepage-Text-Div
     display: flex
@@ -21,26 +22,26 @@
       justify-content: flex-start
 
       .Homepage-Name-Secondary-Color
-        color: $secondary-text-color
+        color: $primary-text-color
         font-family: Varela
 
       .Homepage-Name-PopOut
         font-family: 'Fira Sans', sans-serif
-        color: $primary-text-color-lightened
+        color: $primary-text-color
 
       .Homepage-Description-Dev
-        color: $primary-text-color-2ndlightened
+        color: $primary-text-color
         font-family: Reem Kufi
 
         .Homepage-Description-Dev-Stack
           font-style: italic
 
     .Homepage-Technology-Header
-      color: $dart-logo-color !important
+      color: $primary-text-color
       font-family: Gorditas
 
       .Homepage-Technology-Javascript
-        color: $javascript-logo-color
+        color: $primary-text-color
         font-family: Coiny
 
     @media screen and ( max-height:750px )
@@ -90,31 +91,8 @@
   flex-direction: row-reverse
   position: absolute
   top: 50%
-  right: 0%
+  right: 3%
   transform: translateY(-50%)
-
-  .Homepage-Message-Div
-    color: $primary-text-color
-    text-decoration: underline
-    writing-mode: vertical-lr
-
-    .Homepage-Message
-      font-family: Gorditas
-      font-size: 50px
-
-    @media screen and ( max-width: 450px )
-      .Homepage-Message
-        font-size: 40px
-
-    @media screen and ( max-width: 360px )
-      .Homepage-Message
-        font-size: 30px
-
-  .Homepage-Message-Div:hover
-    color: $secondary-text-color
-    transition: 0.5s
-    text-decoration: underline
-    writing-mode: vertical-lr
 
   .Homepage-Icons
     display: flex
@@ -126,7 +104,7 @@
       margin-top: 15px
 
     .Homepage-Icon:hover
-      color: $secondary-text-color
+      color: $primary-text-color
       transition: 0.5s
 
 @media screen and ( max-width: 730px )
@@ -143,7 +121,7 @@
         margin: 0
 
     .Homepage-Message-Div:hover
-      color: $secondary-text-color
+      color: $primary-text-color
       transition: 0.5s
       text-decoration: underline
       writing-mode: horizontal-tb

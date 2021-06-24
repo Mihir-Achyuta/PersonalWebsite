@@ -52,7 +52,7 @@ class Page extends React.Component<{}, IPageState> {
   render() {
     return (
       <div className="App-Div">
-        <AnimatedCursor color="190, 209, 220" />
+        <AnimatedCursor color="38, 34, 33" />
         {this.state.bottomMenuShown ? (
           <div className="Menu Menu-Load">
             <BottomBurgerMenu dissapearBottomMenu={this.dissapearBottomMenu} />
@@ -71,10 +71,10 @@ class Page extends React.Component<{}, IPageState> {
           <Element name="home">
             <NavBar showBurgerMenu={this.showBurgerMenu} />
           </Element>
-          <HiddenNavBar showBurgerMenu={this.showBurgerMenu} />
+          {/* <HiddenNavBar showBurgerMenu={this.showBurgerMenu} /> */}
           <Homepage />
         </div>
-        <About />
+        {/* <About />
         <Element name="skills">
           <Skills />
         </Element>
@@ -85,7 +85,7 @@ class Page extends React.Component<{}, IPageState> {
           <Contact />
           <Footer />
         </Element>
-        <AbsoluteIcons showMenu={this.showBottomMenu} />
+        <AbsoluteIcons showMenu={this.showBottomMenu} /> */}
       </div>
     );
   }
