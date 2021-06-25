@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from "./PageComponents/NavBar";
 import HiddenNavBar from "./PageComponents/HiddenNavBar";
 import Homepage from "./PageComponents/Homepage";
-import About from "./PageComponents/About";
+import Experience from "./PageComponents/Experience";
 import Skills from "./PageComponents/Skills";
 import ProjectGallery from "./PageComponents/ProjectGallery";
 import Contact from "./PageComponents/Contact";
@@ -52,7 +52,7 @@ class Page extends React.Component<{}, IPageState> {
   render() {
     return (
       <div className="App-Div">
-        <AnimatedCursor color="190, 209, 220" />
+        <AnimatedCursor color="255, 255, 255" />
         {this.state.bottomMenuShown ? (
           <div className="Menu Menu-Load">
             <BottomBurgerMenu dissapearBottomMenu={this.dissapearBottomMenu} />
@@ -71,21 +71,23 @@ class Page extends React.Component<{}, IPageState> {
           <Element name="home">
             <NavBar showBurgerMenu={this.showBurgerMenu} />
           </Element>
-          <HiddenNavBar showBurgerMenu={this.showBurgerMenu} />
+          {/* <HiddenNavBar showBurgerMenu={this.showBurgerMenu} /> */}
           <Homepage />
         </div>
-        <About />
-        <Element name="skills">
-          <Skills />
+        <Element name="experience">
+          <Experience />
         </Element>
         <Element name="projects">
           <ProjectGallery />
+        </Element>
+        {/* <Element name="skills">
+          <Skills />
         </Element>
         <Element name="contact">
           <Contact />
           <Footer />
         </Element>
-        <AbsoluteIcons showMenu={this.showBottomMenu} />
+        <AbsoluteIcons showMenu={this.showBottomMenu} /> */}
       </div>
     );
   }

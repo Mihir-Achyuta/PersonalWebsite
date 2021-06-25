@@ -20,18 +20,18 @@ class App extends React.Component<{}, AppState> {
   componentDidMount() {
     // disables scrollbar and shows loading animation at start
     //controls how long the animation goes for to regular screen
-    setTimeout(() => {
-      document.body.style.overflow = "visible";
-      this.setState((state) => ({
-        contentLoaded: true,
-      }));
-    }, 7500);
+    // setTimeout(() => {
+    //   document.body.style.overflow = "visible";
+    //   this.setState((state) => ({
+    //     contentLoaded: true,
+    //   }));
+    // }, 7500);
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.contentLoaded ? <Page /> : <LoadingAnimation />}
+        <Page />
       </div>
     );
   }

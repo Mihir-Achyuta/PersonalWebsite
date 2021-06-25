@@ -1,26 +1,20 @@
 // sass compile command
 // sass --watch src/styles/App.sass:src/styles/App.css 
 
-@use "./modules/LoadingAnimation"
+// @use "./modules/LoadingAnimation"
 @use "./modules/ScrollBar"
 @use "./modules/NavBar"
-@use "./modules/HiddenNavBar"
+// @use "./modules/HiddenNavBar"
 @use "./modules/Homepage"
-@use "./modules/About"
-@use "./modules/Skills"
+@use "./modules/Experience"
 @use "./modules/Project"
-@use "./modules/Contact"
-@use "./modules/Footer"
-@use "./modules/Menu"
-@use "./modules/AbsoluteIcons"
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap")
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap")
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap')
+// @use "./modules/Skills"
+// @use "./modules/Contact"
+// @use "./modules/Footer"
+// @use "./modules/Menu"
+// @use "./modules/AbsoluteIcons"
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap')
 @import "./partials/_variables.sass"
 
 html
@@ -34,6 +28,9 @@ body
   font-family: Lato
   overflow-x: hidden
   cursor: none
+  min-height: 100vh
+  background-color: $base-color
+  font-family: Libre Franklin
 
 ul
   padding-left: 0

@@ -7,16 +7,19 @@ import Zoom from "react-reveal/Zoom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-interface IHiddenNavBarProps { 
-  showBurgerMenu:any,
+interface IHiddenNavBarProps {
+  showBurgerMenu: any;
 }
 
 interface IHiddenNavBarState {
-  visible: boolean,
-  prevScrollPosition:number,
- }
+  visible: boolean;
+  prevScrollPosition: number;
+}
 
-class HiddenNavBar extends React.Component<IHiddenNavBarProps,IHiddenNavBarState> {
+class HiddenNavBar extends React.Component<
+  IHiddenNavBarProps,
+  IHiddenNavBarState
+> {
   constructor(props) {
     super(props);
     this.state = { visible: false, prevScrollPosition: window.pageYOffset };
@@ -28,7 +31,7 @@ class HiddenNavBar extends React.Component<IHiddenNavBarProps,IHiddenNavBarState
   componentWillUnmount() {
     window.removeEventListener("scroll", this.popNavBar);
   }
-  popNavBar(): void  {
+  popNavBar(): void {
     let currentScrollPosition = window.pageYOffset;
     let navBarVisible =
       currentScrollPosition < this.state.prevScrollPosition &&
@@ -63,13 +66,13 @@ class HiddenNavBar extends React.Component<IHiddenNavBarProps,IHiddenNavBarState
               <ListItem name="HOME" hidden />
             </Zoom>
             <Zoom delay={200}>
-              <ListItem name="ABOUT" hidden />
+              <ListItem name="EXPERIENCE" hidden />
             </Zoom>
             <Zoom delay={300}>
-              <ListItem name="SKILLS" hidden />
+              <ListItem name="PROJECTS" hidden />
             </Zoom>
             <Zoom delay={400}>
-              <ListItem name="PROJECTS" hidden />
+              <ListItem name="SKILLS" hidden />
             </Zoom>
             <Zoom delay={500}>
               <ListItem name="CONTACT" hidden />

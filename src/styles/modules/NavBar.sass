@@ -1,30 +1,13 @@
 @import "../partials/_variables.sass"
 
-.Header-Homepage
-  background: $base-color
-  height: 100vh
-
 .NavBar
   display: flex
   justify-content: space-between
   align-items: center
-
-  .NavBar-Logo
-    font-size: 100%
-    margin-left: 4%
-    margin-top: 1%
-    font-family: 'Permanent Marker', cursive
-
-    .NavBar-Logo-Left
-      color: $primary-text-color
-      transition: 1s
-
-    .NavBar-Logo-Left:hover
-      color: $secondary-text-color
-      transition: 0.3s
+  background: $base-color
 
 .NavBar-Links
-  margin-right: 3%
+  margin-top: 20px
 
   .NavBar-Unordered-List
     display: flex
@@ -33,13 +16,14 @@
 
     .NavBar-List-Item
       text-align: center
-      margin-left: 45px
+      margin-right: 45px
       display: inline-block
       cursor: pointer
       text-decoration: none
       color: $primary-text-color
       transition: 1s
       font-family: 'Varela Round', sans-serif
+      font-size: 20px
 
       .underline
         height: 3px

@@ -7,36 +7,27 @@ import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-interface INavBarProps { 
-  showBurgerMenu: any,
+interface INavBarProps {
+  showBurgerMenu: any;
 }
 
 class NavBar extends React.Component<INavBarProps> {
   render() {
     return (
       <div className="NavBar">
-        <Fade bottom delay={150}>
-          <div className="NavBar-Logo">
-            <a href="/">
-              <h1 className="NavBar-Logo-Left">
-                {"<"}MIHIR{"/>"}
-              </h1>
-            </a>
-          </div>
-        </Fade>
         <nav className="NavBar-Links">
           <ol className="NavBar-Unordered-List">
             <Fade bottom delay={150}>
               <ListItem name="HOME" />
             </Fade>
             <Fade bottom delay={300}>
-              <ListItem name="ABOUT" />
+              <ListItem name="EXPERIENCE" />
             </Fade>
             <Fade bottom delay={450}>
-              <ListItem name="SKILLS" />
+              <ListItem name="PROJECTS" />
             </Fade>
             <Fade bottom delay={600}>
-              <ListItem name="PROJECTS" />
+              <ListItem name="SKILLS" />
             </Fade>
             <Fade bottom delay={750}>
               <ListItem name="CONTACT" />
