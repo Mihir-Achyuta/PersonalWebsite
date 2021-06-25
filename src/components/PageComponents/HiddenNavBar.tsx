@@ -69,10 +69,10 @@ class HiddenNavBar extends React.Component<
               <ListItem name="EXPERIENCE" hidden />
             </Zoom>
             <Zoom delay={300}>
-              <ListItem name="SKILLS" hidden />
+              <ListItem name="PROJECTS" hidden />
             </Zoom>
             <Zoom delay={400}>
-              <ListItem name="PROJECTS" hidden />
+              <ListItem name="SKILLS" hidden />
             </Zoom>
             <Zoom delay={500}>
               <ListItem name="CONTACT" hidden />

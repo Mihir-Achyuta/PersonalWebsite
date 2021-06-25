@@ -77,11 +77,11 @@ class Page extends React.Component<{}, IPageState> {
         <Element name="experience">
           <Experience />
         </Element>
-        {/* <Element name="skills">
-          <Skills />
-        </Element>
         <Element name="projects">
           <ProjectGallery />
+        </Element>
+        {/* <Element name="skills">
+          <Skills />
         </Element>
         <Element name="contact">
           <Contact />

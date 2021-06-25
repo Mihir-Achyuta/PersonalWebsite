@@ -29,6 +29,7 @@
   color: #262221;
   transition: 1s;
   font-family: "Varela Round", sans-serif;
+  font-size: 20px;
 }
 .NavBar-Links .NavBar-Unordered-List .NavBar-List-Item .underline {
   height: 3px;
@@ -163,6 +164,7 @@
   position: relative;
   font-family: Libre Franklin;
   min-height: 50vh;
+  padding-bottom: 30px;
 }
 .About .About-Header-Div {
   margin-left: 50px;
@@ -227,6 +229,47 @@
   }
 }
 
+.Project-Gallery {
+  background-color: #FFD0CE;
+  color: #262221;
+  border-top: 5px solid #FFD0CE;
+}
+.Project-Gallery .Project-Gallery-Header {
+  color: #262221;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 70px;
+  font-family: Reem Kufi;
+  margin-left: 50px;
+  height: 40px;
+}
+.Project-Gallery .Project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 50px;
+  padding-bottom: 10px;
+}
+.Project-Gallery .Project .Project-Title {
+  font-size: 40px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.Project-Gallery .Project .Project-Description {
+  font-size: 20px;
+  text-align: left;
+}
+.Project-Gallery .Project .Project-Links a {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #262221;
+  border-bottom: 5px solid #FFFFFF;
+}
+.Project-Gallery .Project .Project-Links a:hover {
+  color: #FFFFFF;
+}
+
 html {
   overflow-x: hidden;
   cursor: none;
@@ -241,6 +284,7 @@ body {
   cursor: none;
   min-height: 100vh;
   background-color: #FFD0CE;
+  font-family: Libre Franklin;
 }
 
 ul {
