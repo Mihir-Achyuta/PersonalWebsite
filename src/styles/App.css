@@ -2,7 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFD0CE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262221;
 }
 
 .NavBar {
