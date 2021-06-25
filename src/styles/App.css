@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 ::-webkit-scrollbar {
   width: 0px;
@@ -101,9 +98,11 @@
 }
 .Homepage .Homepage-Text-Div .Homepage-Description {
   font-size: 40px;
+  font-family: Libre Franklin;
 }
 .Homepage .Homepage-Text-Div .Homepage-Technology {
   font-size: 30px;
+  font-family: Libre Franklin;
 }
 
 .Homepage-Sidebar {
@@ -120,9 +119,10 @@
   color: #262221;
   margin-bottom: 15px;
   margin-top: 15px;
+  transition: 0.5s;
 }
 .Homepage-Sidebar .Homepage-Icons .Homepage-Icon:hover {
-  color: #262221;
+  color: #FFFFFF;
   transition: 0.5s;
 }
 
@@ -132,18 +132,6 @@
     top: 78%;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .Homepage-Sidebar .Homepage-Message-Div {
-    writing-mode: horizontal-tb;
-  }
-  .Homepage-Sidebar .Homepage-Message-Div .Homepage-Message {
-    margin: 0;
-  }
-  .Homepage-Sidebar .Homepage-Message-Div:hover {
-    color: #262221;
-    transition: 0.5s;
-    text-decoration: underline;
-    writing-mode: horizontal-tb;
   }
   .Homepage-Sidebar .Homepage-Icons {
     flex-direction: row;
@@ -168,6 +156,69 @@
     transform: translateX(-50%);
   }
 }
+.About {
+  background-color: #262221;
+  color: #FFFFFF;
+  position: relative;
+  font-family: Libre Franklin;
+  min-height: 50vh;
+}
+.About .About-Header-Div {
+  margin-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  height: 150px;
+}
+.About .About-Header-Div .About-Header {
+  font-size: 70px;
+  font-family: Reem Kufi;
+}
+.About .Experience-Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+.About .Experience-Div .Experience-Headers {
+  display: flex;
+}
+.About .Experience-Div .Experience-Headers .Experience-Date {
+  font-size: 35px;
+  font-family: Reem Kufi;
+  color: #FFD0CE;
+}
+.About .Experience-Div .Experience-Headers .Experience-Role {
+  font-size: 35px;
+  margin-left: 20px;
+}
+.About .Experience-Div .Experience-Description {
+  font-size: 20px;
+  text-align: left;
+  width: 60%;
+}
+@media screen and (max-width: 650px) {
+  .About .About-Header-Div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .About .About-Header-Div .About-Header {
+    font-size: 50px;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .About .About-Header-Div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .About .About-Header-Div .About-Header {
+    font-size: 40px;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 50px;
+  }
+}
+
 html {
   overflow-x: hidden;
   cursor: none;

@@ -21,7 +21,7 @@ class NavBar extends React.Component<INavBarProps> {
               <ListItem name="HOME" />
             </Fade>
             <Fade bottom delay={300}>
-              <ListItem name="ABOUT" />
+              <ListItem name="EXPERIENCE" />
             </Fade>
             <Fade bottom delay={450}>
               <ListItem name="SKILLS" />

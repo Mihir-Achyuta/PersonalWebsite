@@ -28,9 +28,11 @@
 
     .Homepage-Description
       font-size: 40px
+      font-family: Libre Franklin
 
     .Homepage-Technology
       font-size: 30px
+      font-family: Libre Franklin
 
 .Homepage-Sidebar
   display: flex
@@ -46,9 +48,10 @@
       color: $primary-text-color
       margin-bottom: 15px
       margin-top: 15px
+      transition: 0.5s
 
     .Homepage-Icon:hover
-      color: $primary-text-color
+      color: $secondary-text-color
       transition: 0.5s
 
 @media screen and ( max-width: 730px )
@@ -57,18 +60,6 @@
     top: 78%
     left: 50%
     transform: translateX(-50%)
-
-    .Homepage-Message-Div
-      writing-mode: horizontal-tb
-
-      .Homepage-Message
-        margin: 0
-
-    .Homepage-Message-Div:hover
-      color: $primary-text-color
-      transition: 0.5s
-      text-decoration: underline
-      writing-mode: horizontal-tb
 
     .Homepage-Icons
       flex-direction: row
