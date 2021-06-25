@@ -22,14 +22,20 @@ class About extends React.Component {
                 Software Engineering Intern @ Hardly
               </h2>
             </div>
-            <p className="Experience-Description">
-              Working on a productivity app that takes incoming notifications
-              and filters them to improve remote worker’s productivity. Built
-              UI’s with React.js and styled components with the TailwindCSS
-              Framework in an Electron.js desktop app. Queried data with
-              DynamoDB with the web application connecting to AWS and built out
-              integrations with Gmail.
-            </p>
+            <ul className="Experience-Description">
+              <li className="Experience-Point">
+                Working on a productivity app that takes incoming notifications
+                and filters them to improve remote worker’s productivity.
+              </li>
+              <li className="Experience-Point">
+                Built UI’s with React.js and styled components with the
+                TailwindCSS Framework in an Electron.js desktop app.
+              </li>
+              <li className="Experience-Point">
+                Queried data with DynamoDB with the web application connecting
+                to AWS and built out integrations with Gmail.
+              </li>
+            </ul>
           </div>
           <div className="Experience-Div">
             <div className="Experience-Headers">
@@ -38,11 +44,23 @@ class About extends React.Component {
                 Java Programmer @ First Robotics(FTC)
               </h2>
             </div>
-            <p className="Experience-Description">
-              Maximized the number of points scored using the default TensorFlow
-              Lite model to accurately guide the robot based on the number of
-              rings present on the field
-            </p>
+            <ul className="Experience-Description">
+              <li className="Experience-Point">
+                Educated the programming cohort using a condensed version of the
+                AP Computer Science A curriculum covering introductory data
+                structures and object oriented programming concepts in Java.
+              </li>
+              <li className="Experience-Point">
+                Oversaw changes to the codebase using Git and Github and built
+                the controller driven and autonomous robot code from scratch
+                using the FTC Software Development Kit.
+              </li>
+              <li className="Experience-Point">
+                Maximized the number of points scored using the default
+                TensorFlow Lite model to accurately guide the robot based on the
+                number of rings present on the field
+              </li>
+            </ul>
           </div>
         </Fade>
       </section>
