@@ -285,6 +285,19 @@
   color: #FFFFFF;
 }
 
+.Skills {
+  background-color: #262221;
+  color: #FFFFFF;
+  min-height: 50vh;
+}
+.Skills .Skills-Header {
+  display: flex;
+  font-size: 70px;
+  font-family: Reem Kufi;
+  margin-left: 50px;
+  padding-top: 50px;
+}
+
 html {
   overflow-x: hidden;
   cursor: none;
