@@ -330,6 +330,43 @@
   border-bottom-right-radius: 10px;
 }
 
+.Contact {
+  background-color: #FFD0CE;
+  color: #262221;
+  font-family: Reem Kufi;
+  padding-bottom: 30px;
+}
+.Contact .Contact-Header {
+  font-size: 70px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+.Contact .Contact-Row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Libre Franklin;
+}
+.Contact .Contact-Row .Contact-Method {
+  margin-right: 100px;
+  margin-top: 30px;
+  width: 300px;
+}
+.Contact .Contact-Row .Contact-Method h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.Contact .Contact-Row .Contact-Method a {
+  font-size: 30px;
+  color: #262221;
+  border-bottom: 5px solid #FFFFFF;
+}
+.Contact .Contact-Row .Contact-Method a:hover {
+  color: #FFFFFF;
+}
+
 html {
   overflow-x: hidden;
   cursor: none;

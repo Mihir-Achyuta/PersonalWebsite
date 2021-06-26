@@ -43,13 +43,13 @@ class Homepage extends React.Component {
                   size="3x"
                 />
               </a>
-              <a href="/" target="_blank" rel="noopener noreferrer">
+              {/* <a href="/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"
                   icon={faLinkedin}
                   size="3x"
                 />
-              </a>
+              </a> */}
               <a href={"/"} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"

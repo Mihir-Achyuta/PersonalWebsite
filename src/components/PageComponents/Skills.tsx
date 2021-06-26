@@ -13,7 +13,7 @@ class Skills extends React.Component {
     return (
       <section className="Skills">
         <Fade left>
-          <h1 className="Skills-Header">What I Work With :</h1>
+          <h1 className="Skills-Header">What I Work With</h1>
         </Fade>
         <div className="Skills-List">
           <div className="Skills-Category Skills-Left">
