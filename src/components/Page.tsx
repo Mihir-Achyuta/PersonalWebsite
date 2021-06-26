@@ -80,14 +80,14 @@ class Page extends React.Component<{}, IPageState> {
         <Element name="projects">
           <ProjectGallery />
         </Element>
-        {/* <Element name="skills">
+        <Element name="skills">
           <Skills />
         </Element>
         <Element name="contact">
           <Contact />
           <Footer />
         </Element>
-        <AbsoluteIcons showMenu={this.showBottomMenu} /> */}
+        {/* <AbsoluteIcons showMenu={this.showBottomMenu} /> */}
       </div>
     );
   }

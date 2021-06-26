@@ -1,120 +1,37 @@
 import React from "react";
 
-import axios from "axios";
-import SubmitModal from "../MiniComponents/FormComponents/SubmitModal";
-
 import Fade from "react-reveal/Fade";
 
-interface IContactState {
-  name: string;
-  email: string;
-  text: string;
-  formSent: boolean;
-  formText: string;
-}
-
-class Contact extends React.Component<{}, IContactState> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      text: "",
-      formText: "",
-      formSent: false,
-    };
-    this.changeText = this.changeText.bind(this);
-    this.removeModel = this.removeModel.bind(this);
-    this.handleSubmitAxios = this.handleSubmitAxios.bind(this);
-  }
-  changeText(evt): void {
-    this.setState({ [evt.target.name]: evt.target.value } as any);
-  }
-  removeModel(): void {
-    this.setState({ formSent: false });
-  }
-  handleSubmitAxios(evt): void {
-    evt.preventDefault();
-    const form = evt.target;
-    axios({
-      method: "post",
-      url: "https://formspree.io/f/moqprelo",
-      data: new FormData(form),
-    })
-      .then((r) => {
-        this.setState({
-          formSent: true,
-          formText: "Form Sent. I will get back to you as soon as possible.",
-          name: "",
-          email: "",
-          text: "",
-        });
-      })
-      .catch((r) => {
-        this.setState({
-          formSent: true,
-          formText:
-            "There was an error with the form submission. Please contact me at achyutamihir@gmail.com",
-        });
-      });
-  }
+class Contact extends React.Component {
   render() {
     return (
-      <section className="Contact">
-        <Fade big left>
-          <div className="Contact-Div">
-            <h1 className="Contact-Header">Contact Me!</h1>
-            <h3 className="Contact-Alternate">
-              Email : achyutamihir@gmail.com
-            </h3>
-            <form className="Contact-Form" onSubmit={this.handleSubmitAxios}>
-              <div className="Contact-Name-Div">
-                <input
-                  name="name"
-                  type="text"
-                  placeholder="Name"
-                  className="Contact-Name-Text Input-Field"
-                  value={this.state.name}
-                  onChange={this.changeText}
-                  required
-                />
-              </div>
-              <div className="Contact-Email-Div">
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  className="Contact-Email-Text Input-Field"
-                  value={this.state.email}
-                  onChange={this.changeText}
-                  required
-                />
-              </div>
-              <div className="Contact-Message-Div">
-                <textarea
-                  name="text"
-                  className="Contact-Message-Text Input-Field"
-                  placeholder="Message"
-                  value={this.state.text}
-                  onChange={this.changeText}
-                  required
-                />
-              </div>
-              <div className="Contact-Button-Div">
-                <button type="submit" className="Contact-Button">
-                  SUBMIT
-                </button>
-              </div>
-            </form>
+      <Fade>
+        <section className="Contact">
+          <h1 className="Contact-Header">Contact Me</h1>
+          <div className="Contact-Row">
+            <div className="Contact-Method">
+              <h2>Email</h2>
+              <a href="mailto::achyutamihir@gmail.com">
+                achyutamihir@gmail.com
+              </a>
+            </div>
+            <div className="Contact-Method">
+              <h2>LinkedIn</h2>
+              <a href="https://linkedin.com/in/mihirachyuta">/mihirachyuta</a>
+            </div>
           </div>
-        </Fade>
-        {this.state.formSent ? (
-          <SubmitModal
-            removeModel={this.removeModel}
-            message={this.state.formText}
-          />
-        ) : null}
-      </section>
+          <div className="Contact-Row">
+            <div className="Contact-Method">
+              <h2>Github</h2>
+              <a href="https://github.com/Mihir-Achyuta">/mihir-achyuta</a>
+            </div>
+            <div className="Contact-Method">
+              <h2>Resume</h2>
+              <a href="">resume</a>
+            </div>
+          </div>
+        </section>
+      </Fade>
     );
   }
 }

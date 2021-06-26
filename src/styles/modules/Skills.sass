@@ -1,113 +1,45 @@
 @import "../partials/_variables.sass"
 
 .Skills
-  border-top: 5px solid $base-color
-  color: $dart-logo-color
-  height: 100vh
-  background: $base-color url("data:image/svg+xml,%3Csvg width='1280' height='710' xmlns='http://www.w3.org/2000/svg'%3E %3Cg fill='%2300d2b7' fill-rule='evenodd'%3E %3Cpath d='M0 63.354c47.677-2.931 102.14 12.343 163.387 45.822 91.87 50.22 126.954 158.927 248.81 226.016 121.856 67.09 217.644 28.645 324.582 86.582C843.72 479.71 882.997 594 979.392 646.458c64.263 34.971 130.87 56.185 199.821 63.641H0V63.354z'/%3E %3Cpath d='M0 1.393C50.612-3.2 109.835 13.082 177.667 50.234c101.749 55.73 130.439 163.5 265.397 237.95 134.958 74.45 204.648 26.67 323.085 90.963 118.436 64.293 142.832 176.85 249.59 235.062 71.173 38.808 167.927 70.771 290.261 95.89H0V1.393z' opacity='.7'/%3E %3C/g%3E %3C/svg%3E") left bottom/70% no-repeat fixed
+  background-color: $primary-text-color
+  color: $secondary-text-color
+  min-height: 50vh
+  padding-bottom: 30px
 
   .Skills-Header
-    font-size: 70px
-    font-family: Fira Sans
-    color: $dart-logo-color
-
-  .Front-Back-Tool
     display: flex
-    justify-content: space-evenly
+    font-size: 70px
+    font-family: Reem Kufi
+    margin-left: 50px
+    padding-top: 50px
 
-    .Skills-Card
-      background-color: $dart-logo-color-darkened
-      width: 200px
-      padding: 40px
-      border-radius: 20px
-      box-shadow: 0 8px 16px -8px rgba(0,0,0,0.5)
+  .Skills-List
+    display: inline-flex
+    justify-content: center
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
 
-      .Skills-Card-Header
-        font-family: Reem Kufi
-        font-size: 40px
-        margin: 10px 0px
-
-.Skills-Card-Holder
-  display: flex
-  flex-wrap: wrap
-
-.Skill-Technology-Div
-  display: inline-block
-  padding: 0px 10px
-  border-width: 1px 3px 3px 1px
-  border-style: solid
-  border-color: $dart-logo-color-2nddarkened
-  border-radius: 3px
-  box-shadow: 1px 1px 0 $dart-logo-color-darkened
-  margin: 3px
-
-  .Skill-Technology
-    background-color: $dart-logo-color-darkened
-    color: $dart-logo-color
-    font-family: Righteous
-    text-transform: uppercase
-    font-weight: 700
-    font-size: 12px
-    line-height: 1em
-
-@media screen and (max-width: 900px)
-  .Skills
-    border-top: 5px solid $base-color
-    color: $dart-logo-color
-    height: 210vh
-    background: $base-color url("data:image/svg+xml,%3Csvg width='1280' height='710' xmlns='http://www.w3.org/2000/svg'%3E %3Cg fill='%2300d2b7' fill-rule='evenodd'%3E %3Cpath d='M0 63.354c47.677-2.931 102.14 12.343 163.387 45.822 91.87 50.22 126.954 158.927 248.81 226.016 121.856 67.09 217.644 28.645 324.582 86.582C843.72 479.71 882.997 594 979.392 646.458c64.263 34.971 130.87 56.185 199.821 63.641H0V63.354z'/%3E %3Cpath d='M0 1.393C50.612-3.2 109.835 13.082 177.667 50.234c101.749 55.73 130.439 163.5 265.397 237.95 134.958 74.45 204.648 26.67 323.085 90.963 118.436 64.293 142.832 176.85 249.59 235.062 71.173 38.808 167.927 70.771 290.261 95.89H0V1.393z' opacity='.7'/%3E %3C/g%3E %3C/svg%3E") left bottom/70% no-repeat fixed
-
-    .Front-Back-Tool
+    .Skills-Category
+      display: flex
       flex-direction: column
-      align-items: center
+      width: 300px
+      border: 1px solid $base-color
+      padding: 20px
+      background-color: $secondary-text-color
+      color: $primary-text-color
 
-      .Skills-Card
-        background-color: $dart-logo-color-darkened
-        width: 200px
-        padding: 40px
-        border-radius: 20px
-        box-shadow: 0 8px 16px -8px rgba(0,0,0,0.5)
-        margin: 20px 0px
+      .Skills-Category-Header
+        padding-bottom: 10px
+        color: $base-color
+        display: flex
+        justify-content: center
 
-@media screen and ( max-height: 680px  )
-  .Skills
-    border-top: 5px solid $base-color
-    color: $dart-logo-color
-    height: 210vh
-    background: $base-color url("data:image/svg+xml,%3Csvg width='1280' height='710' xmlns='http://www.w3.org/2000/svg'%3E %3Cg fill='%2300d2b7' fill-rule='evenodd'%3E %3Cpath d='M0 63.354c47.677-2.931 102.14 12.343 163.387 45.822 91.87 50.22 126.954 158.927 248.81 226.016 121.856 67.09 217.644 28.645 324.582 86.582C843.72 479.71 882.997 594 979.392 646.458c64.263 34.971 130.87 56.185 199.821 63.641H0V63.354z'/%3E %3Cpath d='M0 1.393C50.612-3.2 109.835 13.082 177.667 50.234c101.749 55.73 130.439 163.5 265.397 237.95 134.958 74.45 204.648 26.67 323.085 90.963 118.436 64.293 142.832 176.85 249.59 235.062 71.173 38.808 167.927 70.771 290.261 95.89H0V1.393z' opacity='.7'/%3E %3C/g%3E %3C/svg%3E") left bottom/70% no-repeat fixed
+    .Skills-Category p
+      margin-top: 1px
 
-    .Front-Back-Tool
-      flex-direction: column
-      align-items: center
+    .Skills-Left
+      border-top-left-radius: 10px
+      border-bottom-left-radius: 10px
 
-      .Skills-Card
-        background-color: $dart-logo-color-darkened
-        width: 200px
-        padding: 15px
-        border-radius: 20px
-        box-shadow: 0 8px 16px -8px rgba(0,0,0,0.5)
-        margin: 10px 0px
-
-        .Skills-Card-Header
-          font-family: Reem Kufi
-          font-size: 30px
-          margin: 5px 0px
-
-  .Skill-Technology-Div
-    display: inline-block
-    padding: 0px 10px
-    border-width: 1px 3px 3px 1px
-    border-style: solid
-    border-color: $dart-logo-color-2nddarkened
-    border-radius: 3px
-    box-shadow: 1px 1px 0 $dart-logo-color-darkened
-    margin: 3px
-
-    .Skill-Technology
-      background-color: $dart-logo-color-darkened
-      color: $dart-logo-color
-      font-family: Righteous
-      text-transform: uppercase
-      font-weight: 700
-      font-size: 10px
-      line-height: 1em
+    .Skills-Right
+      border-top-right-radius: 10px
+      border-bottom-right-radius: 10px

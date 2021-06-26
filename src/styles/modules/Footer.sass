@@ -3,34 +3,25 @@
 .Footer
   background-color: $base-color
   padding-top: 35px
-  padding-bottom: 35px
-  color: $dart-logo-color
+  padding-bottom: 15px
+  color: $primary-text-color
+  border-top: 10px solid $secondary-text-color
+  display: flex
+  justify-content: space-around
+  align-items: center
+  font-weight: bold
 
-  .Footer-Icon
-    border: 3px solid $dart-logo-color
-    border-radius: 50px
-    height: 25px
-    width: 25px
-    margin-left: 10px
-    margin-right: 10px
-    padding: 10px
-    color: $dart-logo-color
-    transition: 0.5s
+  .Footer-Right
+    display: flex
 
-  .Footer-Icon:hover
-    transition: 0.5s
-    color: $dart-logo-color-2nddarkened
-    background-color: $dart-logo-color
+    .Footer-Copyright, .Footer-Icons
+      margin: 0
 
-  .Footer-Copyright
-    color: $dart-logo-color
-    margin-top: 30px
+      .Footer-Icon
+        margin-left: 10px
+        transition: 0.5s
+        color: $primary-text-color
 
-  @media screen and ( max-width: 430px )
-    .Footer-Icon
-      width: 20px
-      height: 20px
-
-  @media screen and ( max-width: 420px )
-    .Footer-Copyright
-      font-size: 11px
+        &:hover
+          color: $secondary-text-color
+          transition: 0.5s

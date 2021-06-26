@@ -1,100 +1,37 @@
 @import "../partials/_variables.sass"
 
 .Contact
-  padding-top: 150px
   background-color: $base-color
-  color: $dart-logo-color
+  color: $primary-text-color
   font-family: Reem Kufi
+  padding-bottom: 100px
 
-  .Contact-Div
-    padding-bottom: 25px
-    border-radius: 8px
+  .Contact-Header
+    font-size: 70px
+    display: flex
+    justify-content: flex-start
+    margin-left: 50px
+    margin-bottom: 0
 
-    .Contact-Header
-      padding-bottom: 10px
+  .Contact-Row
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    font-family: Libre Franklin
+
+    .Contact-Method
+      margin-right: 100px
+      margin-top: 30px
+      width: 300px
+
+    .Contact-Method h2
       font-size: 50px
-      margin: 0
+      margin-bottom: 10px
 
-    .Contact-Alternate
-      color: $dart-logo-color-lightened
-      margin: 0
+    .Contact-Method a
+      font-size: 30px
+      color: $primary-text-color
+      border-bottom: 5px solid $secondary-text-color
 
-    .Input-Field
-      color: $dart-logo-color-2nddarkened
-      background-color: $dart-logo-color
-      width: 75%
-      margin-top: 20px
-      margin-bottom: 20px
-      height: 70px
-      outline: none
-      border: none
-      border-radius: 3px
-      font-family: Fira Sans
-      font-size: 20px
-
-    .Input-Field::placeholder
-      color: $dart-logo-color-2nddarkened
-      font-family: Fira Sans
-      font-size: 20px
-
-    .Input-Field:focus::placeholder
-      font-size: 10px
-      transition: all 0.225s ease
-
-    .Contact-Message-Text
-      height: 200px
-      text-align: left
-
-    .Contact-Button-Div
-      display: inline-block
-
-      .Contact-Button
-        border: 2px solid $dart-logo-color
-        outline: none
-        background-color: Transparent
-        cursor: pointer
-        font-family: Varela Round
-        font-size: 35px
-        color: $dart-logo-color
-        transition: 0.3s ease
-        padding: 10px
-
-      .Contact-Button:hover
-        color: $dart-logo-color-2nddarkened
-        background-color: $dart-logo-color
-        transition: 0.3s ease
-
-.Submit_Modal
-  position: fixed
-  top: 50%
-  left: 50%
-  transform: translate(-50%,-50%)
-  height: 100vh
-  width: 100vw
-  background-color: rgba(191, 191, 191, 0.5)
-  z-index: 10
-  transition: 0.5s
-
-  .Submit_Modal-Text
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
-    background-color: $dart-logo-color
-    color: $dart-logo-color-darkened
-    border-radius: 8px
-    padding: 3%
-    width: 60%
-    font-size: 20px
-
-    .Submit_Modal-Button
-      margin-top: 5%
-      margin-bottom: 5%
-      border: none
-      outline: none
-      cursor: pointer
-      font-size: 20px
-      background-color: $dart-logo-color-2nddarkened
-      color: $dart-logo-color
-      padding: 10px 20px
-      font-weight: 900
+      &:hover
+        color: $secondary-text-color
