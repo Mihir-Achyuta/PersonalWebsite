@@ -71,7 +71,7 @@ class Page extends React.Component<{}, IPageState> {
           <Element name="home">
             <NavBar showBurgerMenu={this.showBurgerMenu} />
           </Element>
-          {/* <HiddenNavBar showBurgerMenu={this.showBurgerMenu} /> */}
+          <HiddenNavBar showBurgerMenu={this.showBurgerMenu} />
           <Homepage />
         </div>
         <Element name="experience">
@@ -87,7 +87,7 @@ class Page extends React.Component<{}, IPageState> {
           <Contact />
           <Footer />
         </Element>
-        {/* <AbsoluteIcons showMenu={this.showBottomMenu} /> */}
+        <AbsoluteIcons showMenu={this.showBottomMenu} />
       </div>
     );
   }
