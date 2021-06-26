@@ -452,6 +452,25 @@
 .Contact .Contact-Row .Contact-Method a:hover {
   color: #FFFFFF;
 }
+@media screen and (max-width: 500px) {
+  .Contact .Contact-Header {
+    font-size: 50px;
+  }
+  .Contact .Contact-Row {
+    margin-left: 50px;
+    width: 330px;
+  }
+  .Contact .Contact-Row .Contact-Method h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Contact .Contact-Row .Contact-Method a {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 
 .Footer {
   background-color: #FFD0CE;
