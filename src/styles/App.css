@@ -480,6 +480,11 @@
   color: #FFFFFF;
   transition: 0.5s;
 }
+@media screen and (max-width: 500px) {
+  .Footer {
+    font-size: 10px;
+  }
+}
 
 .Menu {
   position: fixed;
