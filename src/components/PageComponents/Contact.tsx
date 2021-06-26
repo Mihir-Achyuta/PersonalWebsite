@@ -16,7 +16,7 @@ class Contact extends React.Component {
               </a>
             </div>
             <div className="Contact-Method">
-              <h2>Linkedin</h2>
+              <h2>LinkedIn</h2>
               <a href="https://linkedin.com/in/mihirachyuta">/mihirachyuta</a>
             </div>
           </div>

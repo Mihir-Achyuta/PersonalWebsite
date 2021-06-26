@@ -334,7 +334,7 @@
   background-color: #FFD0CE;
   color: #262221;
   font-family: Reem Kufi;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 .Contact .Contact-Header {
   font-size: 70px;
@@ -365,6 +365,33 @@
 }
 .Contact .Contact-Row .Contact-Method a:hover {
   color: #FFFFFF;
+}
+
+.Footer {
+  background-color: #FFD0CE;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  color: #262221;
+  border-top: 10px solid #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+.Footer .Footer-Right {
+  display: flex;
+}
+.Footer .Footer-Right .Footer-Copyright, .Footer .Footer-Right .Footer-Icons {
+  margin: 0;
+}
+.Footer .Footer-Right .Footer-Copyright .Footer-Icon, .Footer .Footer-Right .Footer-Icons .Footer-Icon {
+  margin-left: 10px;
+  transition: 0.5s;
+  color: #262221;
+}
+.Footer .Footer-Right .Footer-Copyright .Footer-Icon:hover, .Footer .Footer-Right .Footer-Icons .Footer-Icon:hover {
+  color: #FFFFFF;
+  transition: 0.5s;
 }
 
 html {
