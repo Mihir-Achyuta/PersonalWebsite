@@ -23,6 +23,7 @@ class Skills extends React.Component {
             <h1 className="Skills-Category-Header">Frontend</h1>
             <p>JavaScript, TypeScript</p>
             <p>React : JS, Native(Expo CLI), Electron, Next.JS, Ionic </p>
+            <p>Redux</p>
             <p>JavaScript</p>
             <p>TailwindCSS, Material UI, ChakraUI</p>
             <p>CSS and SASS</p>
