@@ -341,7 +341,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+  width: 90%;
   margin-left: 50px;
   padding-bottom: 10px;
 }
@@ -352,6 +352,7 @@
 }
 .Project-Gallery .Project .Project-Tech {
   display: flex;
+  flex-wrap: wrap;
 }
 .Project-Gallery .Project .Project-Tech p {
   margin-right: 10px;
@@ -369,6 +370,25 @@
 }
 .Project-Gallery .Project .Project-Links a:hover {
   color: #FFFFFF;
+}
+@media screen and (max-width: 500px) {
+  .Project-Gallery .Project {
+    width: 80%;
+  }
+  .Project-Gallery .Project .Project-Title {
+    font-size: 30px;
+  }
+  .Project-Gallery .Project .Project-Description {
+    font-size: 15px;
+  }
+  .Project-Gallery .Project .Project-Links a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Project-Gallery .Project-Gallery-Header {
+    font-size: 50px;
+  }
 }
 
 .Skills {
