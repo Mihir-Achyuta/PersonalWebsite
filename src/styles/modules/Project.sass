@@ -18,7 +18,7 @@
         display: flex
         flex-direction: column
         align-items: flex-start
-        width: 50%
+        width: 90%
         margin-left: 50px
         padding-bottom: 10px
 
@@ -29,6 +29,7 @@
 
         .Project-Tech
             display: flex
+            flex-wrap: wrap
 
         .Project-Tech p
             margin-right: 10px
@@ -46,3 +47,20 @@
 
             &:hover
                 color: $secondary-text-color
+
+    @media screen and ( max-width: 500px )
+        .Project
+            width: 80%
+
+            .Project-Title
+                font-size: 30px
+
+            .Project-Description
+                font-size: 15px
+
+            .Project-Links a
+                font-size: 15px
+
+    @media screen and ( max-width: 500px )
+        .Project-Gallery-Header
+            font-size: 50px
