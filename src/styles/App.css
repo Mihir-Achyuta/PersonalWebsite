@@ -252,74 +252,87 @@
     transform: translateX(-50%);
   }
 }
-.About {
+.Experience {
   background-color: #262221;
   color: #FFFFFF;
   position: relative;
   font-family: Libre Franklin;
-  min-height: 50vh;
   padding-bottom: 30px;
 }
-.About .About-Header-Div {
+.Experience .Experience-Header-Div {
   margin-left: 50px;
   display: flex;
   justify-content: flex-start;
   height: 150px;
 }
-.About .About-Header-Div .About-Header {
+.Experience .Experience-Header-Div .Experience-Header {
   font-size: 70px;
   font-family: Reem Kufi;
 }
-.About .Experience-Div {
+@media screen and (max-width: 500px) {
+  .Experience .Experience-Header-Div .Experience-Header {
+    font-size: 50px;
+  }
+}
+.Experience .Experience-Div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 50px;
 }
-.About .Experience-Div .Experience-Headers {
+.Experience .Experience-Div .Experience-Headers {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.About .Experience-Div .Experience-Headers .Experience-Date {
+.Experience .Experience-Div .Experience-Headers .Experience-Date {
   font-size: 35px;
   font-family: Reem Kufi;
   color: #FFD0CE;
+  margin-right: 20px;
 }
-.About .Experience-Div .Experience-Headers .Experience-Role {
+.Experience .Experience-Div .Experience-Headers .Experience-Role {
   font-size: 35px;
-  margin-left: 20px;
 }
-.About .Experience-Div .Experience-Description {
+@media screen and (max-width: 750px) {
+  .Experience .Experience-Div .Experience-Headers .Experience-Date {
+    font-size: 25px;
+  }
+  .Experience .Experience-Div .Experience-Headers .Experience-Role {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Experience .Experience-Div .Experience-Headers .Experience-Date {
+    font-size: 15px;
+  }
+  .Experience .Experience-Div .Experience-Headers .Experience-Role {
+    font-size: 13px;
+  }
+}
+.Experience .Experience-Div .Experience-Description {
   font-size: 20px;
   text-align: left;
   width: 60%;
 }
-.About .Experience-Div .Experience-Description .Experience-Point {
-  margin-top: 15px;
-}
-.About .Experience-Div .Experience-Description .Experience-Point::before {
-  content: "•";
-  color: white;
-}
-@media screen and (max-width: 650px) {
-  .About .About-Header-Div {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .About .About-Header-Div .About-Header {
-    font-size: 50px;
-    font-family: "Fira Sans", sans-serif;
-    margin-bottom: 50px;
+@media screen and (max-width: 750px) {
+  .Experience .Experience-Div .Experience-Description {
+    font-size: 15px;
+    width: 80%;
   }
 }
-@media screen and (max-width: 420px) {
-  .About .About-Header-Div {
-    padding-top: 50px;
-    padding-bottom: 50px;
+@media screen and (max-width: 550px) {
+  .Experience .Experience-Div .Experience-Description {
+    font-size: 15px;
+    width: 90%;
   }
-  .About .About-Header-Div .About-Header {
-    font-size: 40px;
-    font-family: "Fira Sans", sans-serif;
-    margin-bottom: 50px;
+  .Experience .Experience-Div .Experience-Point {
+    margin-top: 15px;
+  }
+  .Experience .Experience-Div .Experience-Point::before {
+    content: "•";
+    color: white;
   }
 }
 

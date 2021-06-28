@@ -6,18 +6,18 @@ import { Element } from "react-scroll";
 class About extends React.Component {
   render() {
     return (
-      <section className="About">
+      <section className="Experience">
         <Fade bottom delay={300}>
-          <div className="About-Header-Div">
-            <Element name="about">
-              <h1 className="About-Header">Experience</h1>
+          <div className="Experience-Header-Div">
+            <Element name="experience">
+              <h1 className="Experience-Header">Experience</h1>
             </Element>
           </div>
         </Fade>
         <Fade bottom delay={500}>
           <div className="Experience-Div">
             <div className="Experience-Headers">
-              <h2 className="Experience-Date">May 2021 - June 2021 —</h2>
+              <h2 className="Experience-Date">May 2021 - June 2021</h2>
               <h2 className="Experience-Role">
                 Software Engineering Intern @ Hardly
               </h2>
@@ -28,18 +28,19 @@ class About extends React.Component {
                 and filters them to improve remote worker’s productivity.
               </li>
               <li className="Experience-Point">
-                Built UI’s with React.js and styled components with the
+                Building UI’s with React.js and styling components with the
                 TailwindCSS Framework in an Electron.js desktop app.
               </li>
               <li className="Experience-Point">
-                Queried data with DynamoDB with the web application connecting
-                to AWS and built out integrations with Gmail.
+                Will query data with DynamoDB with the desktop application
+                connecting to AWS and built out integrations with various
+                providers.
               </li>
             </ul>
           </div>
           <div className="Experience-Div">
             <div className="Experience-Headers">
-              <h2 className="Experience-Date">August 2020 - April 2021 —</h2>
+              <h2 className="Experience-Date">August 2020 - April 2021</h2>
               <h2 className="Experience-Role">
                 Java Programmer @ First Robotics(FTC)
               </h2>
