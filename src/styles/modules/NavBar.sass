@@ -50,15 +50,21 @@
     display: none
     cursor: pointer
     color: $primary-text-color
-    transition: 0.3s
+    transition: 0.5s
+    padding-bottom: 10px
 
   .NavBar-Hamburger:hover
-    height: 45px
-    width: 45px
+    transition: 0.5s
     color: $secondary-text-color
 
   @media screen and (max-width: 930px)
-    .NavBar-Hamburger
-      display: block
+    .NavBar-Hamburger-Div
+      width: 97vw
+      display: flex
+      justify-content: flex-end
+
+      .NavBar-Hamburger
+        display: block
+
     .NavBar-Unordered-List
       display: none

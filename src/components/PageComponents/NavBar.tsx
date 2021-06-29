@@ -47,12 +47,14 @@ class NavBar extends React.Component<INavBarProps> {
             </Fade>
           </ol>
           <Fade delay={500}>
-            <FontAwesomeIcon
-              className="NavBar-Hamburger"
-              icon={faBars}
-              size="2x"
-              onClick={this.props.showBurgerMenu}
-            />
+            <div className="NavBar-Hamburger-Div">
+              <FontAwesomeIcon
+                className="NavBar-Hamburger"
+                icon={faBars}
+                size="3x"
+                onClick={this.props.showBurgerMenu}
+              />
+            </div>
           </Fade>
         </nav>
       </div>
