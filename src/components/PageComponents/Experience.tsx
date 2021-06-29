@@ -7,14 +7,14 @@ class About extends React.Component {
   render() {
     return (
       <section className="Experience">
-        <Fade bottom delay={300}>
+        <Fade left delay={500}>
           <div className="Experience-Header-Div">
             <Element name="experience">
               <h1 className="Experience-Header">Experience</h1>
             </Element>
           </div>
         </Fade>
-        <Fade bottom delay={500}>
+        <Fade left delay={500}>
           <div className="Experience-Div">
             <div className="Experience-Headers">
               <h2 className="Experience-Date">May 2021 - June 2021</h2>

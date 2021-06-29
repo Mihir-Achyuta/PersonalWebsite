@@ -315,9 +315,11 @@
   font-family: Reem Kufi;
   color: #FFD0CE;
   margin-right: 20px;
+  margin-bottom: 0;
 }
 .Experience .Experience-Div .Experience-Headers .Experience-Role {
   font-size: 35px;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 750px) {
   .Experience .Experience-Div .Experience-Headers .Experience-Date {
@@ -351,13 +353,13 @@
     font-size: 15px;
     width: 90%;
   }
-  .Experience .Experience-Div .Experience-Point {
-    margin-top: 15px;
-  }
-  .Experience .Experience-Div .Experience-Point::before {
-    content: "•";
-    color: white;
-  }
+}
+.Experience .Experience-Div .Experience-Point {
+  margin-top: 15px;
+}
+.Experience .Experience-Div .Experience-Point::before {
+  content: "•";
+  color: white;
 }
 
 .Project-Gallery {
