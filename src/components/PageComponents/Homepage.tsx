@@ -12,18 +12,18 @@ class Homepage extends React.Component {
     return (
       <section className="Homepage">
         <div className="Homepage-Text-Div">
-          <Fade bottom delay={900}>
+          <Fade bottom delay={200}>
             <h1 className="Homepage-Greeting Homepage-Grid">
               Hey 👋 I'm Mihir !
             </h1>
           </Fade>
-          <Fade bottom delay={1000}>
+          <Fade bottom delay={300}>
             <h3 className="Homepage-Description Homepage-Grid">
               Software Engineering Intern @ Hardly & Computer Science Student @
               UW Madison
             </h3>
           </Fade>
-          <Fade bottom delay={1050}>
+          <Fade bottom delay={400}>
             <h1 className="Homepage-Technology Homepage-Grid">
               I love building applications with JavaScript and diving deep into
               the unknown into the development world.
@@ -31,7 +31,7 @@ class Homepage extends React.Component {
           </Fade>
         </div>
         <div className="Homepage-Sidebar">
-          <Fade bottom delay={1500}>
+          <Fade bottom delay={500}>
             <div className="Homepage-Icons">
               <a
                 href="https://github.com/Mihir-Achyuta"

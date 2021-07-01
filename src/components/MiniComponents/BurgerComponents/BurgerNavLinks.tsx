@@ -32,7 +32,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
           <Zoom delay={600}>
             <Link
               activeClass="active"
-              to={"about"}
+              to={"experience"}
               spy={true}
               smooth={true}
               offset={0}
@@ -42,7 +42,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
                 className="Sandwich-List-Item"
                 onClick={this.props.dissapearMenu}
               >
-                ABOUT<div className=""></div>
+                EXPERIENCE<div className=""></div>
               </li>
             </Link>
           </Zoom>

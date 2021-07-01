@@ -21,14 +21,26 @@ class Project extends React.Component<IProjectProps, IProjectState> {
       <p key={index}>{technology}</p>
     ));
     return (
-      <Fade>
+      <Fade left delay={200}>
         <div className="Project">
           <h2 className="Project-Title">{this.props.projectName}</h2>
           <div className="Project-Tech">{technologyDescription}</div>
           <p className="Project-Description">{this.props.description}</p>
           <div className="Project-Links">
-            <a href={this.props.projectUrl}>Website</a>
-            <a href={this.props.githubUrl}>Github Repository</a>
+            <a
+              href={this.props.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+            <a
+              href={this.props.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github Repository
+            </a>
           </div>
         </div>
       </Fade>
