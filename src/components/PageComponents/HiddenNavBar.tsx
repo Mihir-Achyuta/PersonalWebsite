@@ -1,9 +1,10 @@
 import React from "react";
 
 import ListItem from "../MiniComponents/LinkComponents/ListItem";
+//@ts-ignore
+import resume from "../../documents/resume/resume.pdf";
 
 import Zoom from "react-reveal/Zoom";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -81,7 +82,7 @@ class HiddenNavBar extends React.Component<
               <li className="Hidden-NavBar-List-Item">
                 <a
                   className="HiddenNavBar-Resume"
-                  href={"/"}
+                  href={resume}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

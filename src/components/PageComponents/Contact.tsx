@@ -1,5 +1,8 @@
 import React from "react";
 
+//@ts-ignore
+import resume from "../../documents/resume/resume.pdf";
+
 import Fade from "react-reveal/Fade";
 
 class Contact extends React.Component {
@@ -46,7 +49,7 @@ class Contact extends React.Component {
             <Fade delay={1100}>
               <div className="Contact-Method">
                 <h2>Resume</h2>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href={resume} target="_blank" rel="noopener noreferrer">
                   resume
                 </a>
               </div>

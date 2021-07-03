@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
 
-import Fade from "react-reveal/Fade";
+//@ts-ignore
+import resume from "../../documents/resume/resume.pdf";
 
+import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -51,7 +53,7 @@ class Homepage extends React.Component {
                   size="3x"
                 />
               </a> */}
-              <a href={"/"} target="_blank" rel="noopener noreferrer">
+              <a href={resume} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   className="Homepage-Icon"
                   icon={faPaperPlane}

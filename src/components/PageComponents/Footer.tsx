@@ -1,7 +1,9 @@
 import React from "react";
 
-import Fade from "react-reveal/Fade";
+//@ts-ignore
+import resume from "../../documents/resume/resume.pdf";
 
+import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -23,13 +25,17 @@ class Footer extends React.Component {
               {/* <a href="https://linkedin.com/in/mihirachyuta">
               <FontAwesomeIcon className="Footer-Icon" icon={faLinkedin} />
             </a> */}
-              <a href="https://github.com/Mihir-Achyuta">
+              <a
+                href="https://github.com/Mihir-Achyuta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   className="Footer-Icon"
                   icon={faGithubSquare}
                 />
               </a>
-              <a href="">
+              <a href={resume} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="Footer-Icon" icon={faPaperPlane} />
               </a>
             </div>

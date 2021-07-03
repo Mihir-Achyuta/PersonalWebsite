@@ -1,9 +1,10 @@
 import React from "react";
 
 import ListItem from "../MiniComponents/LinkComponents/ListItem";
+// @ts-ignore
+import resume from "../../documents/resume/resume.pdf";
 
 import Fade from "react-reveal/Fade";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,7 +37,7 @@ class NavBar extends React.Component<INavBarProps> {
               <li className="NavBar-List-Item">
                 <a
                   className="NavBar-Resume"
-                  href={"/"}
+                  href={resume}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

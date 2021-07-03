@@ -1,5 +1,8 @@
 import React from "react";
 
+//@ts-ignore
+import resume from "../../../documents/resume/resume.pdf";
+
 import Zoom from "react-reveal/Zoom";
 import { Link } from "react-scroll";
 
@@ -103,7 +106,7 @@ class BurgerNavLinks extends React.Component<IBurgerNavLinksProps> {
               style={{ marginTop: "35px", color: "#92810c" }}
             >
               <a
-                href={"/"}
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="Sandwich-List-Item NavBar-Resume"
