@@ -24,17 +24,21 @@ class About extends React.Component {
             </div>
             <ul className="Experience-Description">
               <li className="Experience-Point">
-                Working on a productivity app that takes incoming notifications
-                and filters them to improve remote worker’s productivity.
+                Worked on a productivity web app that prioritizes notifications
+                to improve remote work productivity
               </li>
               <li className="Experience-Point">
-                Building UI’s with React.js and styling components with the
-                TailwindCSS Framework in an Electron.js desktop app.
+                Built and integrated React and ChartJS UI's into production and
+                styled respective components with Tailwind CSS
               </li>
               <li className="Experience-Point">
-                Will query data with DynamoDB with the desktop application
-                connecting to AWS and built out integrations with various
-                providers.
+                Queried PostgresSQL data for the UI in an AWS connected app and
+                built out integrations with various API's
+              </li>
+              <li className="Experience-Point">
+                Devised a UI for users to input multiple CSV datasets and
+                dynamically displayed the sentiment analyzed data highlighting
+                important keywords
               </li>
             </ul>
           </div>
