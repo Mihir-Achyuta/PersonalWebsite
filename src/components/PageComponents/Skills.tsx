@@ -23,7 +23,7 @@ class Skills extends React.Component {
               </div>
               <h1 className="Skills-Category-Header">Frontend</h1>
               <p>JavaScript, TypeScript</p>
-              <p>React : JS, Native(Expo CLI), Electron, Next.JS, Ionic </p>
+              <p>React : JS, Native(Expo), Next.js</p>
               <p>Redux</p>
               <p>JavaScript</p>
               <p>TailwindCSS, Material UI, ChakraUI</p>
@@ -35,13 +35,12 @@ class Skills extends React.Component {
                 <FontAwesomeIcon icon={faServer} size="3x" />
               </div>
               <h1 className="Skills-Category-Header">Backend</h1>
-              <p>Node.JS</p>
+              <p>Node</p>
               <p>Java</p>
               <p>Express</p>
-              <p>SQL(Postgres)</p>
+              <p>SQL(MySQL)</p>
               <p>MongoDB</p>
               <p>Firebase</p>
-              <p>AWS</p>
               <p>Apollo GraphQL</p>
               <p>ORMS: Mongoose, Prisma</p>
             </div>
@@ -51,9 +50,11 @@ class Skills extends React.Component {
               </div>
               <h1 className="Skills-Category-Header">Tools</h1>
               <p>Git</p>
+              <p>AWS(EC2, RDS)</p>
+              <p>Docker</p>
               <p>Heroku</p>
               <p>MongoDB Atlas</p>
-              <p>VSCode</p>
+              <p>Jest</p>
             </div>
           </div>
         </Fade>

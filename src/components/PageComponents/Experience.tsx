@@ -24,21 +24,22 @@ class About extends React.Component {
             </div>
             <ul className="Experience-Description">
               <li className="Experience-Point">
-                Worked on a productivity web app that prioritizes notifications
-                to improve remote work productivity
+                Worked on a productivity app that prioritizes 1000's of
+                notifications to improve remote work productivity
               </li>
               <li className="Experience-Point">
-                Built and integrated React and ChartJS UI's into production and
-                styled respective components with Tailwind CSS
+                Built and integrated 5+ React and ChartJS UI’s into production
+                and styled them with Tailwind CSS
               </li>
               <li className="Experience-Point">
-                Queried PostgresSQL data for the UI in an AWS connected app and
-                built out integrations with various API's
+                Migrated the old Electron React and TypeScript code into the new
+                React.js app and established the new local component library of
+                over 7 components
               </li>
               <li className="Experience-Point">
-                Devised a UI for users to input multiple CSV datasets and
-                dynamically displayed the sentiment analyzed data highlighting
-                important keywords
+                Devised a Tailwind styled UI in Electron for users to input
+                multiple CSV datasets and dynamically displayed the
+                sentiment-analyzed data, highlighting important keywords
               </li>
             </ul>
           </div>
@@ -61,9 +62,9 @@ class About extends React.Component {
                 using the FTC Software Development Kit.
               </li>
               <li className="Experience-Point">
-                Maximized the number of points scored using the default
-                TensorFlow Lite model to accurately guide the robot based on the
-                number of rings present on the field
+                Maximized the number of points scored using the TensorFlow Lite
+                model to accurately guide the robot based on the number of rings
+                present on the field
               </li>
             </ul>
           </div>

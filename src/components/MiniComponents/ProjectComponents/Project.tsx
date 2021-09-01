@@ -6,7 +6,6 @@ interface IProjectProps {
   projectName: string;
   description: string;
   stack: string[];
-  projectUrl: string;
   githubUrl: string;
 }
 
@@ -27,13 +26,6 @@ class Project extends React.Component<IProjectProps, IProjectState> {
           <div className="Project-Tech">{technologyDescription}</div>
           <p className="Project-Description">{this.props.description}</p>
           <div className="Project-Links">
-            <a
-              href={this.props.projectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Website
-            </a>
             <a
               href={this.props.githubUrl}
               target="_blank"
