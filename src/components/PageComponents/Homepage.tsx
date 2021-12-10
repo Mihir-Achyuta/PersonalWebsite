@@ -16,7 +16,7 @@ class Homepage extends React.Component {
         <div className="Homepage-Text-Div">
           <Fade bottom delay={200}>
             <h1 className="Homepage-Greeting Homepage-Grid">
-              Hey 👋 I'm Mihir !
+              Hey 👋 I am Mihir !
             </h1>
           </Fade>
           <Fade bottom delay={300}>

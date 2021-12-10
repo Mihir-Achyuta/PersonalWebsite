@@ -17,6 +17,20 @@ class About extends React.Component {
         <Fade left delay={500}>
           <div className="Experience-Div">
             <div className="Experience-Headers">
+              <h2 className="Experience-Date">May 2022 - August 2022</h2>
+              <h2 className="Experience-Role">
+                Software Engineering Intern @ Facebook
+              </h2>
+            </div>
+            <ul className="Experience-Description">
+              <li className="Experience-Point">
+                Will be interning at Facebook Summer 2022 in their Menlo Park
+                Campus
+              </li>
+            </ul>
+          </div>
+          <div className="Experience-Div">
+            <div className="Experience-Headers">
               <h2 className="Experience-Date">May 2021 - June 2021</h2>
               <h2 className="Experience-Role">
                 Software Engineering Intern @ Hardly
