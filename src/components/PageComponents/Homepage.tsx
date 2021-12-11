@@ -16,13 +16,13 @@ class Homepage extends React.Component {
         <div className="Homepage-Text-Div">
           <Fade bottom delay={200}>
             <h1 className="Homepage-Greeting Homepage-Grid">
-              Hey 👋 I am Mihir !
+              Hey 👋 I'm Mihir !
             </h1>
           </Fade>
           <Fade bottom delay={300}>
             <h3 className="Homepage-Description Homepage-Grid">
-              Software Engineering Intern @ Hardly & Computer Science Student @
-              UW Madison
+              Incoming Software Engineering Intern @ Facebook, Prev. @ Hardly &
+              Computer Science Student @ UW Madison
             </h3>
           </Fade>
           <Fade bottom delay={400}>
