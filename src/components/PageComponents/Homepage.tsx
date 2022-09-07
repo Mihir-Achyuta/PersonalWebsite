@@ -21,8 +21,8 @@ class Homepage extends React.Component {
           </Fade>
           <Fade bottom delay={300}>
             <h3 className="Homepage-Description Homepage-Grid">
-              Incoming Software Engineering Intern @ Facebook, Prev. @ Hardly &
-              Computer Science Student @ UW Madison
+              Software Engineering Intern @ Facebook & Rippling, Prev. @ Hardly
+              & Computer Science Student @ UW Madison
             </h3>
           </Fade>
           <Fade bottom delay={400}>

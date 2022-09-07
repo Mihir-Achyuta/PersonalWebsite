@@ -17,6 +17,26 @@ class About extends React.Component {
         <Fade left delay={500}>
           <div className="Experience-Div">
             <div className="Experience-Headers">
+              <h2 className="Experience-Date">
+                September 2022 - December 2022
+              </h2>
+              <h2 className="Experience-Role">
+                Software Engineering Intern @ Rippling
+              </h2>
+            </div>
+            <ul className="Experience-Description">
+              <li className="Experience-Point">
+                Will be working to build an all-in-one Unified Workforce
+                Platform combining HR and IT Software and Operations
+              </li>
+              <li className="Experience-Point">
+                Will be developing in Typescript and React on the frontend and
+                Python and Django on the backend
+              </li>
+            </ul>
+          </div>
+          <div className="Experience-Div">
+            <div className="Experience-Headers">
               <h2 className="Experience-Date">May 2022 - August 2022</h2>
               <h2 className="Experience-Role">
                 Software Engineering Intern @ Facebook
@@ -24,8 +44,28 @@ class About extends React.Component {
             </div>
             <ul className="Experience-Description">
               <li className="Experience-Point">
-                Will be interning at Facebook Summer 2022 in their Menlo Park
-                Campus
+                Worked with Rust Systems and Javascript on Hallmark, a policy
+                engine and metadata store ensuring an end-to-end verifiable
+                software supply chain, tracking and auditing artifacts through
+                Facebook’s Dev Infra Org
+              </li>
+              <li className="Experience-Point">
+                Engineered a time based explain feature to help debug
+                dynamically changing artifact property evaluations affecting 25+
+                million artifacts and the validation of 5+ billion references
+                with the help of Apache Thrift endpoints
+              </li>
+              <li className="Experience-Point">
+                Converted Hallmark’s 1D Directed Acyclic Graph to allow queries
+                of overlayed transform groups and graphs, making clearthe
+                relationship between artifacts in the build process along with
+                finding theirtransitive closure
+              </li>
+              <li className="Experience-Point">
+                Plotted the generalized transform group graph, tracking
+                genericized paths of common artifacts, in a React.js Web UI,
+                allowing parts of the graph to be collapsible and expandable on
+                demand
               </li>
             </ul>
           </div>
