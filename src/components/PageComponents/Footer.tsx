@@ -5,7 +5,7 @@ import resume from "../../documents/resume/resume.pdf";
 
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 class Footer extends React.Component {

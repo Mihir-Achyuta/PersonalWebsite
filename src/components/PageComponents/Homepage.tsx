@@ -6,7 +6,7 @@ import resume from "../../documents/resume/resume.pdf";
 
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 class Homepage extends React.Component {
@@ -21,14 +21,13 @@ class Homepage extends React.Component {
           </Fade>
           <Fade bottom delay={300}>
             <h3 className="Homepage-Description Homepage-Grid">
-              Software Engineering Intern @ Facebook & Rippling, Prev. @ Hardly
+              Software Engineering Intern @ Ziprecruiter, Facebook & Rippling
               & Computer Science Student @ UW Madison
             </h3>
           </Fade>
           <Fade bottom delay={400}>
             <h1 className="Homepage-Technology Homepage-Grid">
-              I love building applications with JavaScript and diving deep into
-              the unknown into the development world.
+              I like JavaScript and C++
             </h1>
           </Fade>
         </div>

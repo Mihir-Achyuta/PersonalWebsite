@@ -15,6 +15,34 @@ class About extends React.Component {
           </div>
         </Fade>
         <Fade left delay={500}>
+        <div className="Experience-Div">
+            <div className="Experience-Headers">
+              <h2 className="Experience-Date">
+                May 2023 - August 2023
+              </h2>
+              <h2 className="Experience-Role">
+                Software Engineering Intern @ ZipRecruiter
+              </h2>
+            </div>
+            <ul className="Experience-Description">
+              <li className="Experience-Point">
+              Revamped candidate experience by styling Project components, optimizing redundant modals in Candidate
+Sourcing, and overhauling Messaging Service in React and Styled Components for Proactive Sourcing
+              </li>
+              <li className="Experience-Point">
+              Engineered Decipher, a Workflow Integration, that swiftly translates acronym-filled sentences from minutes
+to seconds from scratch available via a Command Line Interface and a Slack Bot
+              </li>
+              <li className="Experience-Point">
+              Deployed company-wide tool to scan and parse thousands of Slack messages and internal sites, enabling
+translation and querying of hundreds of acronyms through DynamoDB
+              </li>
+              <li className="Experience-Point">
+              Implemented Cloudflare GSuite SSO integration in the Node and Express server, enabling seamless
+authentication for thousands of users
+              </li>
+            </ul>
+          </div>
           <div className="Experience-Div">
             <div className="Experience-Headers">
               <h2 className="Experience-Date">
@@ -26,12 +54,20 @@ class About extends React.Component {
             </div>
             <ul className="Experience-Description">
               <li className="Experience-Point">
-                Will be working to build an all-in-one Unified Workforce
-                Platform combining HR and IT Software and Operations
+              Worked on the Time and Attendance team, allowing fast automated tracking of over 5 billion employee
+hours, clock-ins, payrolls, and schedules on any device
               </li>
               <li className="Experience-Point">
-                Will be developing in Typescript and React on the frontend and
-                Python and Django on the backend
+              Built out a forward-looking projection of accruals and caps for multiple leave policies for administrators
+resulting in 30% less support calls and saving over 10k accrual hours into a component library in React
+              </li>
+              <li className="Experience-Point">
+              Developed policy creation UI’s with Typescript and with styled SASS components to show impacts of accrual
+selections over an incremental period of months or years
+              </li>
+              <li className="Experience-Point">
+              Spearheaded first extendable policy preview component library from scratch and created RESTful API’s in
+Django with MongoDB models overseeing thousands of employees and administrators
               </li>
             </ul>
           </div>
@@ -94,31 +130,6 @@ class About extends React.Component {
                 Devised a Tailwind styled UI in Electron for users to input
                 multiple CSV datasets and dynamically displayed the
                 sentiment-analyzed data, highlighting important keywords
-              </li>
-            </ul>
-          </div>
-          <div className="Experience-Div">
-            <div className="Experience-Headers">
-              <h2 className="Experience-Date">August 2020 - April 2021</h2>
-              <h2 className="Experience-Role">
-                Java Programmer @ First Robotics(FTC)
-              </h2>
-            </div>
-            <ul className="Experience-Description">
-              <li className="Experience-Point">
-                Educated the programming cohort using a condensed version of the
-                AP Computer Science A curriculum covering introductory data
-                structures and object oriented programming concepts in Java.
-              </li>
-              <li className="Experience-Point">
-                Oversaw changes to the codebase using Git and Github and built
-                the controller driven and autonomous robot code from scratch
-                using the FTC Software Development Kit.
-              </li>
-              <li className="Experience-Point">
-                Maximized the number of points scored using the TensorFlow Lite
-                model to accurately guide the robot based on the number of rings
-                present on the field
               </li>
             </ul>
           </div>
