@@ -4,7 +4,6 @@ import ListItem from "../MiniComponents/LinkComponents/ListItem";
 //@ts-ignore
 import resume from "../../documents/resume/resume.pdf";
 
-import Zoom from "react-reveal/Zoom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -52,54 +51,38 @@ class HiddenNavBar extends React.Component<
             : "Hidden-NavBar Hidden-NavBar-Scroll"
         }
       >
-        <Zoom>
-          <div className="Hidden-NavBar-Logo">
-            <a href="/">
-              <h1 className="Hidden-NavBar-Logo-Left">
-                {"<"}MIHIR{"/>"}
-              </h1>
-            </a>
-          </div>
-        </Zoom>
+        <div className="Hidden-NavBar-Logo">
+          <a href="/">
+            <h1 className="Hidden-NavBar-Logo-Left">
+              {"<"}MIHIR{"/>"}
+            </h1>
+          </a>
+        </div>
         <nav className="Hidden-NavBar-Links">
           <ol className="Hidden-NavBar-Unordered-List">
-            <Zoom delay={100}>
-              <ListItem name="HOME" hidden />
-            </Zoom>
-            <Zoom delay={200}>
-              <ListItem name="EXPERIENCE" hidden />
-            </Zoom>
-            <Zoom delay={300}>
-              <ListItem name="PROJECTS" hidden />
-            </Zoom>
-            <Zoom delay={400}>
-              <ListItem name="SKILLS" hidden />
-            </Zoom>
-            <Zoom delay={500}>
-              <ListItem name="CONTACT" hidden />
-            </Zoom>
-            <Zoom delay={600}>
-              <li className="Hidden-NavBar-List-Item">
-                <a
-                  className="HiddenNavBar-Resume"
-                  href={resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  RESUME
-                </a>
-                <div className="underline"></div>
-              </li>
-            </Zoom>
+            <ListItem name="HOME" hidden />
+            <ListItem name="EXPERIENCE" hidden />
+            <ListItem name="PROJECTS" hidden />
+            <ListItem name="SKILLS" hidden />
+            <ListItem name="CONTACT" hidden />
+            <li className="Hidden-NavBar-List-Item">
+              <a
+                className="HiddenNavBar-Resume"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RESUME
+              </a>
+              <div className="underline"></div>
+            </li>
           </ol>
-          <Zoom delay={500}>
-            <FontAwesomeIcon
-              className="Hidden-NavBar-Hamburger"
-              icon={faBars}
-              size="2x"
-              onClick={this.props.showBurgerMenu}
-            />
-          </Zoom>
+          <FontAwesomeIcon
+            className="Hidden-NavBar-Hamburger"
+            icon={faBars}
+            size="2x"
+            onClick={this.props.showBurgerMenu}
+          />
         </nav>
       </div>
     );
